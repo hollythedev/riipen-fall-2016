@@ -3,7 +3,12 @@
     height: 100%;
     .footer-container {
         margin: 0 30px;
-        .site-info {
+        padding-top: 3%;
+        @media (min-width: $breakpoint) {
+            margin: 0 30%;
+            padding-top: 5%;
+        }
+        .footer-social-media {
             display: flex;
             justify-content: space-around;
             a {
@@ -23,8 +28,8 @@
                 a {
                     color: white;
                     text-decoration: none;
-                     border: 1px solid green;
-                    padding: 10px;
+                    border: 1px solid green;
+                    padding: 10px 51px;
                 }
             }
         }

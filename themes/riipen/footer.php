@@ -10,7 +10,7 @@
 	<!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<section class= footer-container>
-		<div class="site-info">
+		<div class="footer-social-media">
 			<p>
 				<a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
 			</p>
