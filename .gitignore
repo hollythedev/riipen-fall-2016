@@ -57,3 +57,4 @@ themes/riipen/node_modules/*
 # Ignore build files #
 # ================== #
 themes/riipen/gulpfile.js
+themes/riipen/build/css/style.min.css
