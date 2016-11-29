@@ -16,6 +16,7 @@ get_header(); ?>
 					<h1 class="page-title"><?php echo esc_html( '404' ); ?></h1>
 					<h2>Sorry</h2>
 					<p>The page you are looking for is not found</p>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
