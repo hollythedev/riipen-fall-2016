@@ -10,17 +10,23 @@
                 color: grey;
                 background-color: white;
                 font-size: 2rem;
-                 border-radius: 100%;
+                border-radius: 100%;
                 i {
                     padding: 15px;
                 }
             }
         }
-        .footer-buttons{
-            visibility: hidden;
+        .footer-buttons {
+            display: none;
             @media (min-width: $breakpoint) {
-  
-}
+                display: inline-block;
+                a {
+                    color: white;
+                    text-decoration: none;
+                     border: 1px solid green;
+                    padding: 10px;
+                }
+            }
         }
         .footer-information {
             display: flex;

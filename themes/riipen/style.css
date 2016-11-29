@@ -701,7 +701,15 @@ object {
         .site-footer .footer-container .site-info a i {
           padding: 15px; }
     .site-footer .footer-container .footer-buttons {
-      visibility: hidden; }
+      display: none; }
+      @media (min-width: 1000px) {
+        .site-footer .footer-container .footer-buttons {
+          display: inline-block; }
+          .site-footer .footer-container .footer-buttons a {
+            color: white;
+            text-decoration: none;
+            border: 1px solid green;
+            padding: 10px; } }
     .site-footer .footer-container .footer-information {
       display: -ms-flexbox;
       display: flex;
