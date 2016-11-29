@@ -92,7 +92,7 @@ function register_Institutions_post_type() {
 	);
 	$args = array(
 		'label'                 => 'Institution Type',
-		'description'           => 'The summery page of Institutions',
+		'description'           => 'The summary page of Institutions',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', ),
 		'hierarchical'          => false,
@@ -114,7 +114,7 @@ function register_Institutions_post_type() {
 add_action( 'init', 'register_Institutions_post_type', 0 );
 
 // Register Custom Post Type
-function register_Organizationss_post_type() {
+function register_Organizations_post_type() {
 
 	$labels = array(
 		'name'                  => 'Organizations',
@@ -123,8 +123,8 @@ function register_Organizationss_post_type() {
 		'name_admin_bar'        => 'Organizations Type',
 		'archives'              => 'Organizations Archives',
 		'parent_item_colon'     => 'Organizations Item:',
-		'all_items'             => 'All Organizationss',
-		'add_new_item'          => 'Add New Organizationss',
+		'all_items'             => 'All Organizations',
+		'add_new_item'          => 'Add New Organizations',
 		'add_new'               => 'Add New',
 		'new_item'              => 'New Organizations',
 		'edit_item'             => 'Edit Organizations',
@@ -139,13 +139,13 @@ function register_Organizationss_post_type() {
 		'use_featured_image'    => 'Use as featured image',
 		'insert_into_item'      => 'Insert into Organizations',
 		'uploaded_to_this_item' => 'Uploaded to this Organizations',
-		'items_list'            => 'Organizationss list',
-		'items_list_navigation' => 'Organizationss list navigation',
-		'filter_items_list'     => 'Filter Organizationss list',
+		'items_list'            => 'Organizations list',
+		'items_list_navigation' => 'Organizations list navigation',
+		'filter_items_list'     => 'Filter Organizations list',
 	);
 	$args = array(
 		'label'                 => 'Organizations Type',
-		'description'           => 'The summery page of Organizationss',
+		'description'           => 'The summary page of Organizations',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', ),
 		'hierarchical'          => false,
@@ -161,7 +161,7 @@ function register_Organizationss_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'Organizationss', $args );
+	register_post_type( 'Organizations', $args );
 
 }
-add_action( 'init', 'register_Organizationss_post_type', 0 );
+add_action( 'init', 'register_Organizations_post_type', 0 );
