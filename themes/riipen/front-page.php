@@ -1,0 +1,34 @@
+<?php
+/**
+ * The main template file.
+ *
+ * @package RED_Starter_Theme
+ */
+
+get_header(); ?>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+      <section class="hero">
+				<div class="headline">
+					<div class="headline-wrap">
+						<h2>Riipen your life</h2>
+						<p>Where talent and industry meet</p>
+					</div>
+				</div>
+      </section>
+      <section class="stats">
+      </section>
+      <section class="about">
+      </section>
+      <section class="difference">
+      </section>
+      <section class="testimonial">
+      </section>
+      <section class="school-carousel">
+      </section>
+      <section class="companies-carousel">
+      </section>
+		</main><!-- #main -->
+	</div><!-- #primary -->
+<?php get_footer(); ?>
