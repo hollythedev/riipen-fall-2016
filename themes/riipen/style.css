@@ -844,3 +844,6 @@ section {
     text-align: center; }
   .difference p {
     text-align: center; }
+
+.wp-posts-carousel-container {
+  box-shadow: none; }
