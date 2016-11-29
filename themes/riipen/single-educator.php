@@ -8,11 +8,9 @@ get_header(); ?>
 	<section id="primary" class="content-area-sep">
 		<main id="main" class="site-main-sep" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="sep-info">
-					<h2 class="single-educator-title">
+					<h2 class="sep-title">
 						<?php the_title();?>
 					</h2>
-				</div>
 				<div class="sep-picture">
 					<?php the_post_thumbnail( 'category-thumb'); ?>
 				</div>
