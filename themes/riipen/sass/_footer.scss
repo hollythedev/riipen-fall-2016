@@ -1,0 +1,21 @@
+.site-footer{
+  background: grey;
+    .site-info{
+           display: flex;
+        justify-content: space-around;
+        a{
+     color: grey;   
+     background-color: white;
+    }
+}
+.footer-information{
+       display: flex;
+justify-content: space-around;
+a{
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+}
+}
