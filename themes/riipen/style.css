@@ -347,17 +347,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  border: none;
+  background: transparent; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -392,6 +383,9 @@ textarea {
   textarea:focus {
     color: #111; }
 
+fieldset {
+  border: none; }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -419,11 +413,23 @@ a {
     outline: 0; }
 
 /* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
+.site-header {
+  background-color: red;
+  text-transform: uppercase;
+  height: 50px;
   width: 100%; }
+  .site-header .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%; }
+
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -483,6 +489,26 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+/* Search Bar */
+.site-search .show-search {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem; }
+
+.site-search input[type=search] {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 0;
+  padding-left: 1rem;
+  margin: 0;
+  width: 200px;
+  display: none; }
+  .site-search input[type=search]:focus {
+    outline: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
