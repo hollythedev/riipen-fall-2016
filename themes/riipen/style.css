@@ -751,6 +751,8 @@ object {
         align-items: center;
     text-align: center;
     border-radius: 50%; }
+<<<<<<< HEAD
+=======
 
 .stats {
   background-color: #DCDBDB;
@@ -793,3 +795,4 @@ object {
         height: 100%;
         border-radius: 100%;
         position: absolute; }
+>>>>>>> 43fba1af5ccb0092fe0db79fcef974b1f6b4ef5c
