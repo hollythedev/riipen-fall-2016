@@ -705,6 +705,9 @@ object {
         border-radius: 100%; }
         .site-footer .footer-container .footer-social-media a i {
           padding: 15px; }
+      @media (min-width: 1000px) {
+        .site-footer .footer-container .footer-social-media {
+          margin: 0 20%; } }
     .site-footer .footer-container .footer-buttons {
       display: none; }
       @media (min-width: 1000px) {

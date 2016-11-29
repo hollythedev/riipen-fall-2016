@@ -20,6 +20,9 @@
                     padding: 15px;
                 }
             }
+            @media (min-width: $breakpoint) {
+            margin: 0 20%;
+        }
         }
         .footer-buttons {
             display: none;
