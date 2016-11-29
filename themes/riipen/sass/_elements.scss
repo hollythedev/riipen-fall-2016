@@ -33,12 +33,9 @@ hr {
 	margin-bottom: $base__space-unit;
 }
 
-ul, ol {
-	margin: 0 0 $base__space-unit ($base__space-unit * 2);
-}
-
 ul {
-	list-style: disc;
+	list-style: none;
+	padding: 0;
 }
 
 ol {
@@ -67,4 +64,8 @@ img {
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
+}
+
+p {
+	margin: 0 0 24px 0;
 }

@@ -54,4 +54,4 @@ themes/riipen/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/riipen/build/*
+themes/riipen/gulpfile.js
