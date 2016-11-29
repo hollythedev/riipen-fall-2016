@@ -16,6 +16,7 @@ ehthumbs.db
 *.log
 *.sql
 *.sqlite
+yarn.lock
 error_log
 access_log
 
