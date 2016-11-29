@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   .headline {
     width: 300px;
     height: 300px;
@@ -98,5 +99,36 @@ section {
   li {
     list-style: disc;
     margin-left: 20px;
+  }
+}
+
+.difference {
+  background-color: #F7F7F7;
+  h2 {
+    background-color: white;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.figures {
+  display: flex;
+  li {
+    width: 33%;
+    text-align: center;
+  }
+}
+
+.testimonial {
+  .container {
+    display: flex;
+  }
+  .icon {
+    width: 25%;
+  }
+  .text {
+    width: 75%;
   }
 }
