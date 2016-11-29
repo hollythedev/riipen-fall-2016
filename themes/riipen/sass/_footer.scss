@@ -18,7 +18,9 @@
         }
         .footer-buttons{
             visibility: hidden;
-            
+            @media (min-width: $breakpoint) {
+  
+}
         }
         .footer-information {
             display: flex;
