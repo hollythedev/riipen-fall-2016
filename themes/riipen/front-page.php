@@ -9,6 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<?php echo do_shortcode('[tpmfcarouselpost items="3" img_height="190"]'); ?>
       <section class="hero">
 				<div class="headline">
 					<div class="headline-wrap">
