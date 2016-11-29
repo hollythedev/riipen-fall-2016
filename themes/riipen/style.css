@@ -684,25 +684,32 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
-  background: grey; }
-  .site-footer .site-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .site-footer .site-info a {
-      color: grey;
-      background-color: white; }
-  .site-footer .footer-information {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .site-footer .footer-information a {
-      font-size: 1rem;
-      color: white;
-      text-transform: uppercase;
-      text-decoration: none; }
+  background: grey;
+  height: 100%; }
+  .site-footer .footer-container {
+    margin: 0 30px; }
+    .site-footer .footer-container .site-info {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .site-footer .footer-container .site-info a {
+        color: grey;
+        background-color: white;
+        font-size: 2rem;
+        border-radius: 100%; }
+        .site-footer .footer-container .site-info a i {
+          padding: 15px; }
+    .site-footer .footer-container .footer-information {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .site-footer .footer-container .footer-information a {
+        font-size: 0.75rem;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none; }
 
 .hero {
   width: 100%;

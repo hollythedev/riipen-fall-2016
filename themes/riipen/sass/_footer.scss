@@ -1,21 +1,30 @@
-.site-footer{
-  background: grey;
-    .site-info{
-           display: flex;
-        justify-content: space-around;
-        a{
-     color: grey;   
-     background-color: white;
+.site-footer {
+    background: grey;
+    height: 100%;
+    .footer-container {
+        margin: 0 30px;
+        .site-info {
+            display: flex;
+            justify-content: space-around;
+            a {
+                color: grey;
+                background-color: white;
+                font-size: 2rem;
+                 border-radius: 100%;
+                i {
+                    padding: 15px;
+                }
+            }
+        }
+        .footer-information {
+            display: flex;
+            justify-content: space-around;
+            a {
+                font-size: 0.75rem;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
     }
-}
-.footer-information{
-       display: flex;
-justify-content: space-around;
-a{
-    font-size: 1rem;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-}
 }
