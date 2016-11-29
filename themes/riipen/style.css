@@ -568,6 +568,41 @@ a {
   content: "";
   display: table; }
 
+.sep-title {
+  text-align: center; }
+
+.sep-classes {
+  margin-top: 50px; }
+  .sep-classes p {
+    text-transform: uppercase;
+    margin: 0; }
+  .sep-classes .sep-course-title {
+    color: lightblue;
+    font-size: 1rem;
+    margin-top: 50px; }
+  .sep-classes .sep-course-info {
+    margin-top: 20px; }
+
+.sep-picture-container {
+  height: 200px;
+  width: 61%;
+  position: absolute;
+  border: 2px solid orange;
+  margin-left: 58px;
+  margin-top: 20px; }
+  .sep-picture-container :after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; }
+
+.sep-picture {
+  position: relative; }
+  .sep-picture img {
+    display: block;
+    margin: auto auto;
+    height: 250px;
+    width: 174px; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -747,7 +782,8 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  color: white; }
   .hero .headline {
     width: 300px;
     height: 300px;
@@ -845,6 +881,23 @@ section {
   .difference p {
     text-align: center; }
 
+.figures {
+  display: -ms-flexbox;
+  display: flex; }
+  .figures li {
+    width: 33%;
+    text-align: center; }
+
+.testimonial .container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.testimonial .icon {
+  width: 25%; }
+
+.testimonial .text {
+  width: 75%; }
+
 .wp-posts-carousel-container {
   box-shadow: none; }
 
@@ -861,3 +914,15 @@ section {
     padding: 5%; }
     .post-type-archive-institutions .site-main a img {
       width: 100%; }
+
+.error-404 {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  height: calc(100vh - 50px);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .error-404 .page-content {
+    width: 240px; }

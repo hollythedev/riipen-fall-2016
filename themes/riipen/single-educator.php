@@ -5,25 +5,20 @@
  * @package Riipen_Theme
  */
 get_header(); ?>
+<h2 class="back-button"><a href="<?php $cat = get_the_category(); $cat = $cat[0]; echo get_category_link($cat->cat_ID); ?>"> < Back </a></h2>
 	<section id="primary" class="content-area-sep">
 		<main id="main" class="site-main-sep" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-			<section class="sep-container">
-				<div class="sep-thumbnail">
-					<?php the_post_thumbnail( 'category-thumb'); ?>
-				</div>
-				<div class="sep-info">
-					<h2 class="single-educator-title">
+					<h2 class="sep-title">
 						<?php the_title();?>
 					</h2>
-					<p class="sp-price">
-						<?php echo CFS()->get( 'product_price' ); ?> </p>
-					<p class="sp-description" <?php the_content();?> </>
-
+				<div class="sep-picture-container">
 				</div>
-			</section>
-
-				<?php endwhile; // End of the loop. ?>
+				<div class= "sep-picture"><?php the_post_thumbnail( 'category-thumb'); ?></div>
+				<div class="sep-classes">
+		 <?php the_content();?>
+				</div>
+			<?php endwhile; // End of the loop. ?>
 		</main>
 		<!-- #main -->
 	</section>

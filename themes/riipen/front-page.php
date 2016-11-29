@@ -43,8 +43,30 @@ get_header(); ?>
 				</ul>
 			</section>
 			<section class="difference">
-			</section>
+				<h2>Riipen want's to make a difference</h2>
+				<p>and it's simple</p>
+				<ol>
+					<li>You sign up</li>
+					<li>Create your dashboard</li>
+					<li>Customize your profile</li>
+					<li>Participate in projects</li>
+				</ol>
+				<p>Take the opportunity to discover what it's like to be a Riipened...</p>
+					<ul class="figures">
+						<li>Organizations</li>
+						<li>Talents</li>
+						<li>Educators</li>
+					</ul>
+      </section>
 			<section class="testimonial">
+				<div class="container">
+					<div class="icon">
+					</div>
+					<div class="text">
+						<p>We did great volunteers through Riipen for our projects. Caitlyn & Carly from Bites of Vitality heard about the social media project through Riipen, applied and we worked with them. Overall we were really happy with our experience and have been spreading the word</p>
+						<h3>Amy Robinson, Founder & Co-Executive Director LOCO BC</h3>
+					</div>
+				</div>
 			</section>
 			<?php dynamic_sidebar( 'carousels' ); ?>
 		</main><!-- #main -->
