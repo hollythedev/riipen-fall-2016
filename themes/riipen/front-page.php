@@ -33,8 +33,15 @@ get_header(); ?>
 						<p>Employers say 18% of students are ready for the job market after graduation</p>
 					</li>
 				</ul>
+				<p class="double-border">"Why aren't students being evaluated on their school work by industry as well?"</p>
       </section>
       <section class="about">
+				<p>Riipen is a web platform that partners with post-secondary schools from around the globe. We enable meaningful in-class project-based experimential learning that mutually benefits all parties involved.</p>
+				<ul>
+					<li>Talent increases skill</li>
+					<li>Educators enrich their curriculim</li>
+					<li>Organizations build their talent pool</li>
+				</ul>
       </section>
       <section class="difference">
       </section>
