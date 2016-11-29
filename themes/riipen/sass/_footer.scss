@@ -21,13 +21,16 @@
                 }
             }
             @media (min-width: $breakpoint) {
-            margin: 0 20%;
-        }
+                margin: 0 20%;
+            }
         }
         .footer-buttons {
             display: none;
             @media (min-width: $breakpoint) {
-                display: inline-block;
+                display: flex;
+                justify-content: space-around;
+                padding-bottom: 5%;
+                width: 100%;
                 a {
                     color: white;
                     text-decoration: none;
@@ -44,6 +47,10 @@
                 color: white;
                 text-transform: uppercase;
                 text-decoration: none;
+            }
+            @media (min-width: $breakpoint) {
+                font-size: 1rem;
+                margin-bottom: 10%;
             }
         }
     }

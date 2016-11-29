@@ -712,7 +712,12 @@ object {
       display: none; }
       @media (min-width: 1000px) {
         .site-footer .footer-container .footer-buttons {
-          display: inline-block; }
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          padding-bottom: 5%;
+          width: 100%; }
           .site-footer .footer-container .footer-buttons a {
             color: white;
             text-decoration: none;
@@ -728,6 +733,10 @@ object {
         color: white;
         text-transform: uppercase;
         text-decoration: none; }
+      @media (min-width: 1000px) {
+        .site-footer .footer-container .footer-information {
+          font-size: 1rem;
+          margin-bottom: 10%; } }
 
 .hero {
   width: 100%;
@@ -751,8 +760,6 @@ object {
         align-items: center;
     text-align: center;
     border-radius: 50%; }
-<<<<<<< HEAD
-=======
 
 .stats {
   background-color: #DCDBDB;
@@ -795,4 +802,3 @@ object {
         height: 100%;
         border-radius: 100%;
         position: absolute; }
->>>>>>> 43fba1af5ccb0092fe0db79fcef974b1f6b4ef5c
