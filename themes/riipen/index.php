@@ -9,8 +9,6 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-<div [tpmfcarousel category="26" items="3" items_tablet="2" items_desktop="3" itemsdesktop_small="2" display_caption="none" img_height="150"]>
-	
 	</div>
 		<?php if ( have_posts() ) : ?>
 

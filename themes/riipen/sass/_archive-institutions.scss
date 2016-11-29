@@ -1,0 +1,14 @@
+.post-type-archive-institutions .site-main{
+	display: flex;
+	flex-wrap: wrap;
+	a{
+		flex-basis: 50%;
+		width: 50%;
+		box-sizing: border-box;
+		padding: 5%;
+
+		img{
+			width: 100%;
+		}
+	}
+}

@@ -847,3 +847,17 @@ section {
 
 .wp-posts-carousel-container {
   box-shadow: none; }
+
+.post-type-archive-institutions .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-type-archive-institutions .site-main a {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5%; }
+    .post-type-archive-institutions .site-main a img {
+      width: 100%; }
