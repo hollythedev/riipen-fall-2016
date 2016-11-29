@@ -44,6 +44,15 @@ get_header(); ?>
 				</ul>
       </section>
       <section class="difference">
+				<h2>Riipen want's to make a difference</h2>
+				<p>and it's simple</p>
+				<ol>
+					<li>You sign up</li>
+					<li>Create your dashboard</li>
+					<li>Customize your profile</li>
+					<li>Participate in projects</li>
+				</ol>
+				<p>Take the opportunity to discover what it's like to be a Riipened...</p>
       </section>
       <section class="testimonial">
       </section>

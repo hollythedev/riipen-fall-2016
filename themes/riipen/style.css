@@ -836,3 +836,11 @@ section {
   .about li {
     list-style: disc;
     margin-left: 20px; }
+
+.difference {
+  background-color: #F7F7F7; }
+  .difference h2 {
+    background-color: white;
+    text-align: center; }
+  .difference p {
+    text-align: center; }
