@@ -5,6 +5,7 @@
  * @package Riipen_Theme
  */
 get_header(); ?>
+<h2 class="back-button"><a href="<?php $cat = get_the_category(); $cat = $cat[0]; echo get_category_link($cat->cat_ID); ?>"> < Back </a></h2>
 	<section id="primary" class="content-area-sep">
 		<main id="main" class="site-main-sep" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>

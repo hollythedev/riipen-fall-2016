@@ -5,9 +5,8 @@
  * @package Riipen_Theme
  */
 get_header(); ?>
-<?php get_back-button();?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area-sep-archive">
+		<main id="main" class="site-main-sep-archive" role="main">
 			<?php if ( have_posts() ) : ?>
 			<header class="page-header">
 				<?php

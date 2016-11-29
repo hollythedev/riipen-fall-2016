@@ -585,18 +585,23 @@ a {
 
 .sep-picture-container {
   height: 200px;
-  width: 200px;
+  width: 61%;
   position: absolute;
   border: 2px solid orange;
-  margin-left: 65px;
+  margin-left: 58px;
   margin-top: 20px; }
+  .sep-picture-container :after {
+    content: "";
+    display: block;
+    padding-bottom: 100%; }
 
 .sep-picture {
-  overflow: visible;
   position: relative; }
   .sep-picture img {
     display: block;
-    margin: auto auto; }
+    margin: auto auto;
+    height: 250px;
+    width: 174px; }
 
 /*--------------------------------------------------------------
 # Widgets

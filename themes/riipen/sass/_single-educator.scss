@@ -1,39 +1,43 @@
-.sep-title{
-    text-align:center;
+.sep-title {
+    text-align: center;
 }
 
-
-
-.sep-classes{
-     margin-top: 50px;
-p{
-text-transform: uppercase;
-margin: 0;
-}
-.sep-course-title{
-color: lightblue;
-font-size: 1rem;
-margin-top: 50px;
-}
-.sep-course-info{
-    margin-top: 20px;
-}
+.sep-classes {
+    margin-top: 50px;
+    p {
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .sep-course-title {
+        color: lightblue;
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+    .sep-course-info {
+        margin-top: 20px;
+    }
 }
 
-.sep-picture-container{
-height: 200px;
-    width: 200px;
+.sep-picture-container {
+    height: 200px;
+    width: 61%;
     position: absolute;
     border: 2px solid orange;
-    margin-left: 65px;
+    margin-left: 58px;
     margin-top: 20px;
+    :after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 }
 
 .sep-picture {
-   overflow: visible;
-   position:relative;
-   img{
-       display: block;
-   margin: auto auto;
-   }
+    position: relative;
+    img {
+        display: block;
+        margin: auto auto;
+            height: 250px;
+    width: 174px;
+    }
 }
