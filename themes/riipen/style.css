@@ -864,4 +864,13 @@ section {
   width: 75%; }
 
 .error-404 {
-  max-width: 300px; }
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  height: calc(100vh - 50px);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .error-404 .page-content {
+    width: 240px; }
