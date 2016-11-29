@@ -747,7 +747,8 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  color: white; }
   .hero .headline {
     width: 300px;
     height: 300px;
@@ -844,3 +845,20 @@ section {
     text-align: center; }
   .difference p {
     text-align: center; }
+
+.figures {
+  display: -ms-flexbox;
+  display: flex; }
+  .figures li {
+    width: 33%;
+    text-align: center; }
+
+.testimonial .container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.testimonial .icon {
+  width: 25%; }
+
+.testimonial .text {
+  width: 75%; }

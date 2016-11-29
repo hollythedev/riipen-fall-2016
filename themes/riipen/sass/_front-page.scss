@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   .headline {
     width: 300px;
     height: 300px;
@@ -109,5 +110,25 @@ section {
   }
   p {
     text-align: center;
+  }
+}
+
+.figures {
+  display: flex;
+  li {
+    width: 33%;
+    text-align: center;
+  }
+}
+
+.testimonial {
+  .container {
+    display: flex;
+  }
+  .icon {
+    width: 25%;
+  }
+  .text {
+    width: 75%;
   }
 }
