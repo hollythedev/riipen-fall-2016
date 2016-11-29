@@ -48,6 +48,7 @@ plugins/*
 # ====================================================== #
 themes/*
 !themes/riipen/
+themes/riipen/gulpfile.js
 
 # Ignore npm packages #
 # =================== #
