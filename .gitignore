@@ -16,6 +16,7 @@ ehthumbs.db
 *.log
 *.sql
 *.sqlite
+yarn.lock
 error_log
 access_log
 
@@ -47,6 +48,7 @@ plugins/*
 # ====================================================== #
 themes/*
 !themes/riipen/
+themes/riipen/gulpfile.js
 
 # Ignore npm packages #
 # =================== #
@@ -55,3 +57,4 @@ themes/riipen/node_modules/*
 # Ignore build files #
 # ================== #
 themes/riipen/gulpfile.js
+themes/riipen/build/css/style.min.css

@@ -1,0 +1,57 @@
+.site-footer {
+    background: grey;
+    height: 100%;
+    .footer-container {
+        margin: 0 30px;
+        padding-top: 3%;
+        @media (min-width: $breakpoint) {
+            margin: 0 30%;
+            padding-top: 5%;
+        }
+        .footer-social-media {
+            display: flex;
+            justify-content: space-around;
+            a {
+                color: grey;
+                background-color: white;
+                font-size: 2rem;
+                border-radius: 100%;
+                i {
+                    padding: 15px;
+                }
+            }
+            @media (min-width: $breakpoint) {
+                margin: 0 20%;
+            }
+        }
+        .footer-buttons {
+            display: none;
+            @media (min-width: $breakpoint) {
+                display: flex;
+                justify-content: space-around;
+                padding-bottom: 5%;
+                width: 100%;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    border: 1px solid green;
+                    padding: 10px 51px;
+                }
+            }
+        }
+        .footer-information {
+            display: flex;
+            justify-content: space-around;
+            a {
+                font-size: 0.75rem;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+            @media (min-width: $breakpoint) {
+                font-size: 1rem;
+                margin-bottom: 10%;
+            }
+        }
+    }
+}
