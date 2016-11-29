@@ -881,3 +881,6 @@ section {
 
 .testimonial .text {
   width: 75%; }
+
+.error-404 {
+  max-width: 300px; }

@@ -1,0 +1,10 @@
+.error-404 {
+  display: flex;
+  text-align: center;
+  height: calc(100vh-50px);
+  justify-content: center;
+  align-items: center;
+  .page-content {
+    width: 240px;
+  }
+}
