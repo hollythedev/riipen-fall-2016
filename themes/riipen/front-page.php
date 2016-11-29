@@ -32,6 +32,7 @@ get_header(); ?>
 						<p>Employers say 18% of students are ready for the job market after graduation</p>
 					</li>
 				</ul>
+				<p class="double-border">"Why aren't students being evaluated on their school work by industry as well?"</p>
       </section>
       <section class="about">
       </section>
