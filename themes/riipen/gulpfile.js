@@ -63,7 +63,7 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-      proxy: 'http://localhost:8888/riipen/',//Change this line to localhost
+      proxy: 'http://localhost:8000/riipen/',//Change this line to localhost
     });
 
     gulp.watch(files).on('change', browserSync.reload);
