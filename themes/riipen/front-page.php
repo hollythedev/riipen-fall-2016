@@ -18,6 +18,20 @@ get_header(); ?>
 				</div>
       </section>
       <section class="stats">
+				<ul>
+					<li>
+						<h2>42%</h2>
+						<p>of new university graduates are under employed.</p>
+					</li>
+					<li>
+						<h2>92%</h2>
+						<p>of Teachers say their students are ready for the job market after graduation.</p>
+					</li>
+					<li>
+						<h2>18%</h2>
+						<p>Employers say 18% of students are ready for the job market after graduation</p>
+					</li>
+				</ul>
       </section>
       <section class="about">
       </section>
