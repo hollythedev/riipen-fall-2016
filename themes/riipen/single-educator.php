@@ -11,9 +11,9 @@ get_header(); ?>
 					<h2 class="sep-title">
 						<?php the_title();?>
 					</h2>
-				<div class="sep-picture">
-					<?php the_post_thumbnail( 'category-thumb'); ?>
+				<div class="sep-picture-container">
 				</div>
+				<div class= "sep-picture"><?php the_post_thumbnail( 'category-thumb'); ?></div>
 				<div class="sep-classes">
 		 <?php the_content();?>
 				</div>
