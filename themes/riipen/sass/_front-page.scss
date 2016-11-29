@@ -87,3 +87,16 @@ section {
     }
   }
 }
+
+.about {
+  background-color: #4CC88D;
+  padding: 16px;
+  color: white;
+  ul {
+    padding-left: 40px;
+  }
+  li {
+    list-style: disc;
+    margin-left: 20px;
+  }
+}

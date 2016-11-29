@@ -338,7 +338,7 @@ table {
   width: 100%; }
 
 p {
-  margin: 0 0 24px 0; }
+  margin: 0 0 16px 0; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -826,3 +826,13 @@ section {
       position: absolute;
       white-space: nowrap;
       box-sizing: initial; }
+
+.about {
+  background-color: #4CC88D;
+  padding: 16px;
+  color: white; }
+  .about ul {
+    padding-left: 40px; }
+  .about li {
+    list-style: disc;
+    margin-left: 20px; }
