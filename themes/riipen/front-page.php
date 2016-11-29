@@ -10,6 +10,12 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <section class="hero">
+				<div class="headline">
+					<div class="headline-wrap">
+						<h2>Riipen your life</h2>
+						<p>Where talent and industry meet</p>
+					</div>
+				</div>
       </section>
       <section class="stats">
       </section>
