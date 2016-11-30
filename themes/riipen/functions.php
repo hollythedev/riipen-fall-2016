@@ -59,15 +59,6 @@ add_action( 'after_setup_theme', 'riipen_content_width', 0 );
  * Register our sidebars and widgetized areas.
  *
  */
-
-	
-
-
-
-
-
-
-
 function riipen_slider_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Carousel' ),
@@ -78,10 +69,9 @@ function riipen_slider_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	
+
 }
 add_action( 'widgets_init', 'riipen_slider_widgets_init' );
-
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
@@ -99,9 +89,11 @@ add_filter( 'stylesheet_uri', 'riipen_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function riipen_scripts() {
-	wp_enqueue_style( 'riipen-style', get_stylesheet_uri() );
-	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
-	wp_enqueue_script( 'riipen-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );//Styles
+	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');//Font Awesome
+	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script ( 'red-comments', get_template_directory_uri() . '/js/scripts.js', array ( 'jquery' ), false, true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
