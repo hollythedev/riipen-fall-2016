@@ -13,7 +13,7 @@ get_header(); ?>
 			<a class="list-view psudeo-button" > <div class="psudeo-button"></div></a>
 			<a class="box-view psudeo-button"> <div class="psudeo-button"></div> </a>
 		</div>
-		<div class="riipen-list">
+		<div class="riipen-list organizationgrid">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
@@ -22,7 +22,7 @@ get_header(); ?>
 				
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					<div class="personwrapper">
+					<div class="personwrapper ">
 						<a href="<?php echo the_permalink(); ?>">
 							<?php if ( has_post_thumbnail() ) : ?>
 								<?php the_post_thumbnail( 'large' ); ?>
