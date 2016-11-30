@@ -1,0 +1,40 @@
+ .post-type-archive-organizations .site-main{
+	.view-type-buttons{
+		width:500px;
+		height: 100px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.psudeo-button{
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+	}
+	.riipen-list{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.personwrapper{
+			width: 30%;
+			margin: 30px auto;
+
+			box-sizing: border-box;
+			// margin: 1%;
+		}
+		h2{
+			text-align: center;
+		}
+		a{
+
+		// flex-basis: 50%;
+		
+
+
+		img{
+			box-shadow: 4px 17px 53px 1px rgba(166,166,166,1);
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+}
