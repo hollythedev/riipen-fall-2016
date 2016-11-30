@@ -2,12 +2,12 @@
 /**
  * The template for displaying all single posts.
  *
- * @package RED_Starter_Theme
+ * @package Riipen_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-areas">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
