@@ -280,6 +280,9 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.uppercase {
+  text-transform: uppercase; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -911,19 +914,35 @@ section {
 .wp-posts-carousel-container {
   box-shadow: none; }
 
-.post-type-archive-institutions .site-main {
+.post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  border: 1px grey solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 5px 5px;
+  width: 28%; }
+  .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
+    padding: 8px 0px;
+    padding-right: 10px;
+    border-right: 1px solid grey; }
+  .post-type-archive-institutions .site-main .tabbingsection a:last-child, .post-type-archive-educator .site-main .tabbingsection a:last-child {
+    padding-left: 5px; }
+
+.post-type-archive-institutions .site-main .riipen-list, .post-type-archive-educator .site-main .riipen-list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .post-type-archive-institutions .site-main a {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    width: 50%;
+  .post-type-archive-institutions .site-main .riipen-list a, .post-type-archive-educator .site-main .riipen-list a {
+    box-shadow: 4px 17px 53px 1px #a6a6a6;
+    width: 30%;
     box-sizing: border-box;
-    padding: 5%; }
-    .post-type-archive-institutions .site-main a img {
-      width: 100%; }
+    margin: 1%; }
+    .post-type-archive-institutions .site-main .riipen-list a img, .post-type-archive-educator .site-main .riipen-list a img {
+      width: 100%;
+      height: 100%; }
 
 .error-404 {
   display: -ms-flexbox;
