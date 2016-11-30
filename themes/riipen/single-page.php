@@ -1,18 +1,18 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single page posts.
  *
- * @package Riipen_Theme
+ * @package Riiper_Theme
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-areas">
+	<div id="primary" class="content-areazzzzzz">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'content-page' ); ?>
 
 
 		<?php endwhile; // End of the loop. ?>
