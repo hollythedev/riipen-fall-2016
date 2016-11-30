@@ -11,12 +11,12 @@
     event.preventDefault();
     console.log("Is it working?");
 
-    $('.site-search input[type=search]').animate({height: 'toggle'}).focus();
+    $('.site-search input[type=search]').slideToggle("fast").css('display','block').focus();
   });
 
   //This will hide the search form when no longer in focus.
-  $('#site-navigation input[type=search]').on('focusout', function(){
-	   $(this).animate({width: 'toggle'});
+  $('.site-search input[type=search]').on('focusout', function(){
+    $(this).slideToggle("fast");
   });
 
 })( jQuery );
