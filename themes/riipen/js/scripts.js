@@ -3,7 +3,13 @@
   //This will show/hide the navigation list in mobile view.
   $('.menu-toggle').on('click', function(event){
     event.preventDefault();
-    $('#primary-menu').slideToggle("fast").css('display','block');
+    $('#primary-menu').show("slide", { direction: "left" }, 1000).focus();
+    });
+  });
+
+  //This will hide the navigation when no longer in focus.
+  $('#primary-menu').on('focusout', function(){
+    $(this).slideToggle("fast");
   });
 
   //This will show/hide the search form in navigation.

@@ -5,7 +5,7 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: black;
 
 	&:visited {
 		color: $color__link-visited;
@@ -26,21 +26,30 @@ a {
 
 /* Menus */
 .site-header {
-	text-transform: uppercase;
 	height: 50px;
 	width: 100%;
 	.container {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
+		padding: 0 20px;
 		height: 100%;
-		position: relative
+		position: relative;
+	}
+	.fa {
+		color: $color_twilight-blue;
 	}
 }
 .main-navigation {
 	display: flex;
 	ul {
 		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: white;
+		height: calc(100vh - 50px);
+		width: 100%;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -84,8 +93,10 @@ a {
 		}
 	}
 	li {
-		float: left;
-		position: relative;
+		background-color: $color_white-smoke;
+		margin-right: 20px;
+		padding: 10px 20px;
+		white-space: nowrap;
 
 		&:hover > a,
 		&.focus > a {

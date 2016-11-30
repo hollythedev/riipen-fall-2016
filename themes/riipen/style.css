@@ -406,7 +406,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: black; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -418,7 +418,6 @@ a {
 
 /* Menus */
 .site-header {
-  text-transform: uppercase;
   height: 50px;
   width: 100%; }
   .site-header .container {
@@ -426,16 +425,25 @@ a {
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 0 20px;
     height: 100%;
     position: relative; }
+  .site-header .fa {
+    color: #0c4160; }
 
 .main-navigation {
   display: -ms-flexbox;
   display: flex; }
   .main-navigation ul {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    height: calc(100vh - 50px);
+    width: 100%;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -458,8 +466,10 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    background-color: #f7f7f7;
+    margin-right: 20px;
+    padding: 10px 20px;
+    white-space: nowrap; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
