@@ -23,4 +23,10 @@
     $(this).slideToggle("fast");
   });
 
+  //This will look for the iis in Riipen and give them a span
+  $('.riipen-brand').html(function (i, html) {
+    console.log("Is it working?");
+    return html.replace('ii', '<span class="highlight">ii</span>');
+  });
+
 })( jQuery );
