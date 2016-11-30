@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
   height: calc(100vh - 64px);
-  background-color: silver;
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
   .headline {
     width: 300px;
     height: 300px;
-    background-color: blue;
+    background-color: $color_azure;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ section {
 }
 
 .stats {
-  background-color: #DCDBDB;
+  background-color: $color_white-smoke;
   ul {
     margin-bottom: 20px;
   }
@@ -36,7 +36,7 @@ section {
       margin: 0 20px;
       display: block;
       position: relative;
-      border: 3px solid blue;
+      border: 3px solid $color_azure;
       min-width: 150px;
       height: 150px;
       text-align: center;
@@ -46,7 +46,7 @@ section {
       justify-content: center;
       &:after {
         content: '';
-        border: 2px solid red;
+        border: 2px solid $color_pumpkin-orange;
         top: 2px;
         left: -6px;
         width: 100%;
@@ -56,7 +56,7 @@ section {
       }
       &:before {
         content: '';
-        border: 2px solid green;
+        border: 2px solid $color_dark-mint;
         top: 2px;
         left: 5px;
         width: 100%;
@@ -72,12 +72,12 @@ section {
   .double-border {
       display: block;
       position: relative;
-      border: 3px solid blue;
+      border: 3px solid $color_azure;
       padding: 20px 30px;
       margin: 40px;
     &:before {
       content: '';
-      border: 3px solid blue;
+      border: 3px solid $color_azure;
       top: 5px;
       left: 5px;
       width: 100%;
@@ -90,7 +90,7 @@ section {
 }
 
 .about {
-  background-color: #4CC88D;
+  background-color: $color_dark-mint;
   padding: 16px;
   color: white;
   ul {
@@ -103,7 +103,7 @@ section {
 }
 
 .difference {
-  background-color: #F7F7F7;
+  background-color: $color_white-smoke;
   h2 {
     background-color: white;
     text-align: center;
