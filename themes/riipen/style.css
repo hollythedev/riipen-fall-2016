@@ -418,7 +418,7 @@ a {
 
 /* Menus */
 .site-header {
-  height: 50px;
+  height: 64px;
   width: 100%; }
   .site-header .container {
     display: -ms-flexbox;
@@ -442,7 +442,7 @@ a {
     top: 100%;
     left: 0;
     background-color: white;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 68px);
     width: 100%;
     list-style: none;
     margin: 0;
@@ -958,7 +958,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 68px);
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
