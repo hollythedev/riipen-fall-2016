@@ -1,23 +1,25 @@
 <?php /* Template Name: Educator Page */ ?>
 <?php get_header(); ?>
-
-
-   <section class="about-hero">
-    <h6> about </h6>
-   </section>
-
-   <div class= "about-section">
-            <p>
-         
-               <?php echo CFS()->get( 'our_story'); ?></p>
-
-               <p>
-               
-            
-               <?php echo CFS()->get( 'our_team'); ?></p>
-
-
-
-	</div><!-- #primary -->
-
+<div class="educator-section-1">
+    <h1>r<span>ii</span>pen</h1>
+    <p>
+        <?php echo CFS()->get( 'motto'); ?> </p>
+    <p>
+</div>
+<div class="educator-section-2">
+</div>
+<div class="educator-section-3">
+    <p> 4 easy steps to being Riipened </p>
+    <a href="<?php the_permalink(); ?>" class='eductor-btn'> riipen up</a>
+</div>
+<div class="educator-section-4">
+</div>
+<div class="educator-section-5">
+    <?php echo CFS()->get( 'testimonial'); ?>
+</div>
+<aside id="wp_posts_carousel-2">
+</aside>
+<aside id="wp_posts_carousel-3">
+</aside>
+<!-- #primary -->
 <?php get_footer(); ?>
