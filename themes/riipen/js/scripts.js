@@ -9,8 +9,6 @@
   //This will show/hide the search form in navigation.
   $('.show-search').on('click', function(event){
     event.preventDefault();
-    console.log("Is it working?");
-
     $('.site-search input[type=search]').slideToggle("fast").css('display','block').focus();
   });
 
