@@ -225,6 +225,9 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+* {
+  font: 12px "Open Sans", sans-serif; }
+
 body,
 button,
 input,
@@ -944,7 +947,7 @@ section {
   box-sizing: border-box;
   border-radius: 10px;
   padding: 5px 5px;
-  width: 28%; }
+  width: 35%; }
   .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
     color: black; }
   .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
@@ -973,16 +976,17 @@ section {
     height: 100%; }
 
 .post-type-archive-organizations .site-main .view-type-buttons {
-  width: 500px;
+  width: 50%;
   height: 100px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin: 0 auto; }
 
 .post-type-archive-organizations .site-main .psudeo-button {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: blue; }
 
 .post-type-archive-organizations .site-main .riipen-list.organizationgrid {
@@ -1008,9 +1012,11 @@ section {
     height: 100%; }
 
 .post-type-archive-organizations .site-main .riipen-list.organizationlist {
+  width: 95%;
   display: -ms-flexbox;
   display: flex;
   margin: 10px 0px;
+  margin: 10px auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper {
@@ -1030,7 +1036,8 @@ section {
       .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper a img {
         margin: auto 0;
         max-width: 100%;
-        height: auto; }
+        height: auto;
+        padding-left: 5px; }
 
 .error-404 {
   background-color: #f7f7f7;

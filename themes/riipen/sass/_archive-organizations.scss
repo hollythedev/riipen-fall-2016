@@ -1,13 +1,14 @@
  .post-type-archive-organizations .site-main{
  	.view-type-buttons{
- 		width:500px;
+ 		width:50%;
  		height: 100px;
  		display: flex;
  		justify-content: space-around;
+ 		margin: 0 auto;
  	}
  	.psudeo-button{
- 		width: 100px;
- 		height: 100px;
+ 		width: 50px;
+ 		height: 50px;
  		background-color: blue;
  	}
  	.riipen-list.organizationgrid{
@@ -38,8 +39,11 @@
  		}
  	}
  	.riipen-list.organizationlist{
+ 		width: 95%;
+
  		display: flex;
  		margin: 10px 0px;
+ 		margin: 10px auto;
  		flex-wrap: wrap;
  		.personwrapper{
  			width: 100%;
@@ -55,11 +59,12 @@
  			}
  			a{
  				display: flex;
- 						width: 25%;
+ 				width: 25%;
  				img {
  					margin: auto 0;
  					max-width: 100%;
  					height: auto;
+ 					padding-left: 5px;
  				}
  			}
  		}
