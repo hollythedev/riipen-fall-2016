@@ -300,7 +300,8 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  counter-reset: item; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -743,7 +744,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
-  background: grey;
+  background: #7E7E7E;
   height: 226px; }
   .site-footer .footer-container {
     margin: 0 30px;
@@ -903,6 +904,21 @@ section {
     text-align: center; }
   .difference p {
     text-align: center; }
+  .difference ol {
+    list-style: none; }
+    .difference ol li {
+      counter-increment: item;
+      margin-bottom: 1rem; }
+      .difference ol li:before {
+        margin-right: 10px;
+        content: counter(item);
+        border-radius: 100%;
+        border: 2px solid #27aefb;
+        width: 1.75rem;
+        height: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        display: inline-block; }
 
 .figures {
   display: -ms-flexbox;
