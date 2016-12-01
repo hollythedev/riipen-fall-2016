@@ -641,6 +641,9 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget_wp_posts_carousel h2 {
+  text-align: center; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -980,12 +983,15 @@ section {
   font-size: .8rem;
   font-style: italic; }
 
-.riipen-brand {
+.highlight-orange {
   color: #f68708; }
-  .riipen-brand a {
+  .highlight-orange a {
     color: #f68708; }
-    .riipen-brand a .highlight {
-      color: #0c4160; }
+
+.highlight-blue {
+  color: #0c4160; }
+  .highlight-blue a {
+    color: #0c4160; }
 
 .wp-posts-carousel-container {
   box-shadow: none; }
