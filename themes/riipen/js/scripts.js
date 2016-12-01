@@ -1,16 +1,15 @@
 (function( $ ) {
 
  //This will show/hide the navigation list in mobile view.
- $('.menu-toggle').on('click', function(event){
+ $('.menu-toggle').on('click', function(){
    event.preventDefault();
-   $('#primary-menu').toggle("slide", { direction: "left" }, 1000);
-   });
- });
+   $('#primary-menu').toggle();
+  });
 
- //This will hide the navigation when no longer in focus.
- $('.menu-toggle').on('focusout', function(){
-   $('#primary-menu').toggle("slide", { direction: "left" }, 1000);
- });
+  $('.menu-toggle').on('focusout', function(){
+    event.preventDefault();
+    $('#primary-menu').hide();
+   });
 
  //This will show/hide the search form in navigation.
  $('.show-search').on('click', function(event){
@@ -25,8 +24,7 @@
 
  //This will look for the iis in Riipen and give them a span
  $('.riipen-brand').html(function (i, html) {
-   console.log("Is it working?");
-   return html.replace('ii', '<span class="highlight">ii</span>');
+   return html.replace('Riipen', 'R<span class="highlight">ii</span>pen');
  });
 
 })( jQuery );
