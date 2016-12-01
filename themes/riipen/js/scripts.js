@@ -1,7 +1,7 @@
 (function( $ ) {
 
  //This will show/hide the navigation list in mobile view.
- /*$('.menu-toggle').on('click', function(){
+ $('.menu-toggle').on('click', function(){
    event.preventDefault();
    $('#primary-menu').toggle();
   });
@@ -29,6 +29,6 @@
 
  $('#wp_posts_carousel-3').html(function (i, html) {
    return html.replace('Riipen', '<span class="highlight-blue">R<span class="highlight-orange">ii</span>pen</span>');
- });*/
+ });
 
 })( jQuery );
