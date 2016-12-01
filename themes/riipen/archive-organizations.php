@@ -11,7 +11,12 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="view-type-buttons">
 			<a class="list-view psudeo-button" > <div class="psudeo-button"></div></a>
-			<a class="grid-view psudeo-button"> <div class="psudeo-button"></div> </a>
+			<a class="grid-view psudeo-button"> 
+				<div class="grey-boxes"></div>
+				<div class="grey-boxes"></div>
+				<div class="grey-boxes"></div>
+				<div class="grey-boxes"></div> 
+			</a>
 		</div>
 		<div class="riipen-list organizationgrid">
 			<?php if ( have_posts() ) : ?>
