@@ -11,9 +11,9 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="tabbingsection">
 
-			<a href="<?php echo get_post_type_archive_link( 'institutions' ); ?>" >Institutions</a>
+			<a class="inactive">Institutions</a>
 
-			<a href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
+			<a class="active" href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
 
 		</div>
 		<div class="riipen-list">
@@ -22,15 +22,16 @@ get_header(); ?>
 				<header class="page-header">
 
 				</header><!-- .page-header -->
-
+				
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
+					<div class="personwrapper">
 					<a href="<?php echo the_permalink(); ?>">
 						<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
 						<?php endif; ?>
 					</a>
-
+			</div>
 				<?php endwhile; ?>
 
 				<?php the_posts_navigation(); ?>
