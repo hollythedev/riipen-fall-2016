@@ -20,16 +20,22 @@ get_header(); ?>
 			<section class="stats">
 				<ul>
 					<li>
-						<h2>42%</h2>
-						<p>of new university graduates are under employed.</p>
+						<div>
+							<h2>42%</h2>
+							<p>of new university graduates are under employed.</p>
+						</div>
 					</li>
 					<li>
-						<h2>92%</h2>
-						<p>of Teachers say their students are ready for the job market after graduation.</p>
+						<div>
+							<h2>92%</h2>
+							<p>of Teachers say their students are ready for the job market after graduation.</p>
+						</div>
 					</li>
 					<li>
-						<h2>18%</h2>
-						<p>Employers say 18% of students are ready for the job market after graduation</p>
+						<div>
+							<h2>18%</h2>
+							<p>Employers say 18% of students are ready for the job market after graduation</p>
+						</div>
 					</li>
 				</ul>
 				<p class="double-border">"Why aren't students being evaluated on their school work by industry as well?"</p>
