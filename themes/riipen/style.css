@@ -822,7 +822,7 @@ object {
     border-radius: 50%; }
 
 section {
-  padding: 24px 16px; }
+  padding: 1.5rem 1rem; }
 
 .stats {
   background-color: #f7f7f7; }
@@ -874,8 +874,7 @@ section {
     display: block;
     position: relative;
     border: 3px solid #27aefb;
-    padding: 20px 30px;
-    margin: 40px; }
+    padding: 1rem; }
     .stats .double-border:before {
       content: '';
       border: 3px solid #27aefb;
@@ -920,7 +919,13 @@ section {
   width: 25%; }
 
 .testimonial .text {
-  width: 75%; }
+  width: 75%;
+  font-size: .8rem; }
+
+.testimonial h3 {
+  text-align: right;
+  font-size: .8rem;
+  font-style: italic; }
 
 .riipen-brand {
   color: #f68708; }
@@ -963,6 +968,7 @@ section {
       height: 100%; }
 
 .error-404 {
+  background-color: #f7f7f7;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
