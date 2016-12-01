@@ -1,16 +1,13 @@
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-*{
-font: $font__main;	
-}
 body,
 button,
 input,
 select,
 textarea {
-	color: $color__text-main;
 	font: $font__main;
+	color: $color__text-main;
 	@include font-size(1);
 	line-height: $font__line-height-body;
 }

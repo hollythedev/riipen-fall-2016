@@ -225,16 +225,13 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-* {
-  font: 12px "Open Sans", sans-serif; }
-
 body,
 button,
 input,
 select,
 textarea {
-  color: black;
   font: 12px "Open Sans", sans-serif;
+  color: black;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -999,9 +996,6 @@ section {
 .wp-posts-carousel-container {
   box-shadow: none; }
 
-.widget_wp_posts_carousel .widget-title {
-  color: #f68708; }
-
 .post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
   background: #f7f7f7; }
   .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
@@ -1125,5 +1119,17 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  .error-404 .page-content {
-    width: 240px; }
+  .error-404 h1 {
+    color: rgba(246, 135, 8, 0.2);
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 5rem; }
+  .error-404 h2 {
+    color: #f68708;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px; }
+  .error-404 p {
+    color: #919191;
+    font-size: 1rem; }
