@@ -48,13 +48,9 @@
 	display: block;
 }
 
+/* Base Structure */
 
-/*Back button */
-
-.back{
-	color: $color__greyborders;
-	font: 1rem $font__main;
-	@media (min-width: $breakpoint) {
-                display:none;
-            }
+.container {
+	max-width: $desktop;
+	margin: 0 auto;
 }

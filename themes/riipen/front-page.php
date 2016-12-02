@@ -18,51 +18,57 @@ get_header(); ?>
 				</div>
 			</section>
 			<section class="stats">
-				<ul>
-					<li>
-						<div>
-							<h2>42%</h2>
-							<p>of new university graduates are under employed.</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>92%</h2>
-							<p>of Teachers say their students are ready for the job market after graduation.</p>
-						</div>
-					</li>
-					<li>
-						<div>
-							<h2>18%</h2>
-							<p>Employers say 18% of students are ready for the job market after graduation</p>
-						</div>
-					</li>
-				</ul>
-				<p class="double-border">"Why aren't students being evaluated on their school work by industry as well?"</p>
+				<div class="container">
+					<ul>
+						<li>
+							<div>
+								<h2>42%</h2>
+								<p>of new university graduates are under employed.</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>92%</h2>
+								<p>of Teachers say their students are ready for the job market after graduation.</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h2>18%</h2>
+								<p>Employers say 18% of students are ready for the job market after graduation</p>
+							</div>
+						</li>
+					</ul>
+					<p class="double-border">"Why aren't students being evaluated on their school work by industry as well?"</p>
+				</div>
 			</section>
 			<section class="about">
-				<p>Riipen is a web platform that partners with post-secondary schools from around the globe. We enable meaningful in-class project-based experimential learning that mutually benefits all parties involved.</p>
-				<ul>
-					<li>Talent increases skill</li>
-					<li>Educators enrich their curriculim</li>
-					<li>Organizations build their talent pool</li>
-				</ul>
+				<div class="container">
+					<p>Riipen is a web platform that partners with post-secondary schools from around the globe. We enable meaningful in-class project-based experimential learning that mutually benefits all parties involved.</p>
+					<ul>
+						<li>Talent increases skill</li>
+						<li>Educators enrich their curriculim</li>
+						<li>Organizations build their talent pool</li>
+					</ul>
+				</div>
 			</section>
 			<section class="difference">
-				<h2>Riipen want's to make a difference</h2>
-				<p>and it's simple</p>
-				<ol>
-					<li>You sign up</li>
-					<li>Create your dashboard</li>
-					<li>Customize your profile</li>
-					<li>Participate in projects</li>
-				</ol>
-				<p>Take the opportunity to discover what it's like to be a Riipened...</p>
+				<div class="container">
+					<h2>Riipen want's to make a difference</h2>
+					<p>and it's simple</p>
+					<ol>
+						<li>You sign up</li>
+						<li>Create your dashboard</li>
+						<li>Customize your profile</li>
+						<li>Participate in projects</li>
+					</ol>
+					<p>Take the opportunity to discover what it's like to be a Riipened...</p>
 					<ul class="figures">
 						<li>Organizations</li>
 						<li>Talents</li>
 						<li>Educators</li>
 					</ul>
+				</div>
       </section>
 			<section class="testimonial">
 				<div class="container">
