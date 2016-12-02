@@ -1,0 +1,23 @@
+.single-organizations{
+
+	.entry-header{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+			
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		.entry-title{
+			width: 100%;
+			padding-left: 5%;
+			margin-bottom: 90px;
+
+		}
+	}	
+	.entry-content{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
