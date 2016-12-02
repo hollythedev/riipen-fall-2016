@@ -1135,24 +1135,63 @@ section {
           height: auto;
           padding-left: 5px; }
 
-.single-organizations .entry-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .single-organizations .entry-header img {
-    width: 200px;
-    height: 200px; }
-  .single-organizations .entry-header .entry-title {
+.single-organizations {
+  /*----- Tabs -----*/
+  /*----- Tab Links -----*/
+  /* Clearfix */
+  /*----- Content of Tabs -----*/ }
+  .single-organizations .entry-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .single-organizations .entry-header img {
+      width: 200px;
+      height: 200px; }
+    .single-organizations .entry-header .entry-title {
+      width: 100%;
+      padding-left: 5%;
+      margin-bottom: 90px; }
+  .single-organizations .entry-content {
+    width: 90%;
+    margin: 0 auto; }
+  .single-organizations .tabs {
     width: 100%;
-    padding-left: 5%;
-    margin-bottom: 90px; }
-
-.single-organizations .entry-content {
-  width: 90%;
-  margin: 0 auto; }
+    display: inline-block; }
+  .single-organizations .tab-links:after {
+    display: block;
+    clear: both;
+    content: ''; }
+  .single-organizations .tab-links li {
+    margin: 0px 5px;
+    float: left;
+    list-style: none; }
+  .single-organizations .tab-links a {
+    padding: 9px 15px;
+    display: inline-block;
+    border-radius: 10px 10px 0 0;
+    background: #7FB5DA;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4c4c4c;
+    transition: all linear 0.15s; }
+  .single-organizations .tab-links a:hover {
+    background: #a7cce5;
+    text-decoration: none; }
+  .single-organizations li.active a, .single-organizations li.active a:hover {
+    background: #fff;
+    color: #4c4c4c; }
+  .single-organizations .tab-content {
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+    background: #fff; }
+  .single-organizations .tab {
+    display: none; }
+  .single-organizations .tab.active {
+    display: block; }
 
 .error-404 {
   background-color: #f7f7f7;
