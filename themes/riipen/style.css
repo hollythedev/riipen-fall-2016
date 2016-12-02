@@ -413,7 +413,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #999999; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -421,7 +421,7 @@ a {
 
 /* Menus */
 .site-header {
-  height: 64px;
+  height: 68px;
   width: 100%; }
   .site-header .container {
     display: -ms-flexbox;
@@ -437,6 +437,9 @@ a {
     color: #0c4160;
     font-size: 1.5rem;
     -webkit-text-stroke: 1px white; }
+    @media (min-width: 600px) {
+      .site-header .fa {
+        font-size: 1rem; } }
 
 .site-branding {
   background-color: #27aefb;
@@ -466,20 +469,19 @@ a {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 100%;
       left: -999em;
       z-index: 99999; }
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
+      .main-navigation ul ul li {
+        display: block; }
+        .main-navigation ul ul li:hover > ul,
+        .main-navigation ul ul li.focus > ul {
+          left: 100%; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -501,11 +503,16 @@ a {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: -ms-flexbox;
-    display: flex;
+    height: 68px;
+    width: auto;
+    display: block;
+    -ms-flex-align: center;
+        align-items: center;
     position: initial;
     height: inherit; }
     .main-navigation ul li {
+      position: relative;
+      display: inline-block;
       background-color: transparent;
       margin: 0;
       padding: 0 10px; } }
