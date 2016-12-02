@@ -56,8 +56,8 @@
 }
 
 .back{
-	color: $gray;
-	font: 1rem $color__greyborders;
+	color: $color__greyborders;
+	font: 1rem $font__main;
 	@media (min-width: $breakpoint) {
                 display:none;
             }

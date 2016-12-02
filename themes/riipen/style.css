@@ -699,6 +699,13 @@ a {
   max-width: 1280px;
   margin: 0 auto; }
 
+.back {
+  color: grey;
+  font: 1rem 12px "Open Sans", sans-serif; }
+  @media (min-width: 600px) {
+    .back {
+      display: none; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
