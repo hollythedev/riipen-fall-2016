@@ -41,6 +41,7 @@ function register_educators_post_type() {
 		'description'           => 'Educators post',
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

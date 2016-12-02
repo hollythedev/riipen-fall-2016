@@ -411,7 +411,7 @@ a {
   color: black;
   text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: black; }
   a:hover, a:focus, a:active {
     color: #999999; }
   a:focus {
@@ -1041,6 +1041,11 @@ section {
 
 .post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
   background: #f7f7f7; }
+  .post-type-archive-institutions .site-main .educators-category, .post-type-archive-educator .site-main .educators-category {
+    color: #27aefb;
+    text-align: center; }
+    .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
+      color: #27aefb; }
   .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
     margin: 50px auto;
     text-align: center;
@@ -1048,11 +1053,13 @@ section {
     box-sizing: border-box;
     border-radius: 10px;
     padding: 5px 5px;
-    width: 35%; }
+    width: 50%; }
     .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
       color: #919191; }
     .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
       color: black; }
+    .post-type-archive-institutions .site-main .tabbingsection a, .post-type-archive-educator .site-main .tabbingsection a {
+      font-size: 15px; }
     .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
       padding: 8px 0px;
       padding-right: 10px;
@@ -1086,20 +1093,25 @@ section {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 0 auto; }
-  .post-type-archive-organizations .site-main .grey-boxes {
-    box-sizing: border-box;
-    width: 50%;
-    height: 50%;
-    background-color: #919191;
-    border: 2px white solid; }
+    margin: 0 auto;
+    padding-top: 36px; }
   .post-type-archive-organizations .site-main .grid-view {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .post-type-archive-organizations .site-main .list-view:hover {
-    background-color: rgba(255, 255, 255, 0.5); }
+    .post-type-archive-organizations .site-main .grid-view:hover .grey-boxes {
+      background-color: #919191; }
+    .post-type-archive-organizations .site-main .grid-view .grey-boxes {
+      box-sizing: border-box;
+      width: 50%;
+      height: 50%;
+      background-color: #7e7e7e;
+      border: 2px #f7f7f7 solid; }
+  .post-type-archive-organizations .site-main .list-view {
+    padding-top: 2px; }
+    .post-type-archive-organizations .site-main .list-view:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
   .post-type-archive-organizations .site-main .psudeo-button {
     width: 50px;
     height: 50px; }
@@ -1111,7 +1123,8 @@ section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    padding-bottom: 140px; }
     .post-type-archive-organizations .site-main .riipen-list.organizationgrid .personwrapper {
       width: 30%;
       margin: 30px auto;
@@ -1128,6 +1141,7 @@ section {
       height: 100%; }
   .post-type-archive-organizations .site-main .riipen-list.organizationlist {
     width: 95%;
+    padding-bottom: 140px;
     display: -ms-flexbox;
     display: flex;
     margin: 10px 0px;
@@ -1140,6 +1154,8 @@ section {
       display: flex;
       height: 200px;
       border: 2px solid grey; }
+      .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper:hover {
+        border: 2px solid #7e7e7e; }
       .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper .organization-content {
         width: 75%; }
       .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper .entry-title {
@@ -1154,24 +1170,71 @@ section {
           height: auto;
           padding-left: 5px; }
 
-.single-organizations .entry-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .single-organizations .entry-header img {
-    width: 200px;
-    height: 200px; }
-  .single-organizations .entry-header .entry-title {
-    width: 100%;
-    padding-left: 5%;
-    margin-bottom: 90px; }
-
-.single-organizations .entry-content {
-  width: 90%;
-  margin: 0 auto; }
+.single-organizations {
+  /*----- Tabs -----*/
+  /*----- Tab Links -----*/
+  /* Clearfix */
+  /*----- Content of Tabs -----*/ }
+  .single-organizations .site-content {
+    background: #f7f7f7; }
+  .single-organizations .entry-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .single-organizations .entry-header img {
+      width: 200px;
+      height: 200px; }
+    .single-organizations .entry-header .entry-title {
+      width: 100%;
+      padding-left: 5%;
+      margin-bottom: 90px; }
+  .single-organizations .entry-content {
+    width: 90%;
+    margin: 0 auto; }
+  .single-organizations .tabs {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 146px; }
+    .single-organizations .tabs p {
+      word-wrap: break-word;
+      margin: 0; }
+  .single-organizations .tab-links {
+    margin: 0; }
+    .single-organizations .tab-links:after {
+      display: block;
+      clear: both;
+      content: ''; }
+    .single-organizations .tab-links li {
+      margin: 0px 5px;
+      float: left;
+      list-style: none; }
+    .single-organizations .tab-links a {
+      padding: 9px 15px;
+      display: inline-block;
+      border-radius: 10px 10px 0 0;
+      background: #7FB5DA;
+      font-size: 16px;
+      font-weight: 600;
+      color: #4c4c4c;
+      transition: all linear 0.15s; }
+    .single-organizations .tab-links a:hover {
+      background: #a7cce5;
+      text-decoration: none; }
+  .single-organizations li.active a, .single-organizations li.active a:hover {
+    background: #fff;
+    color: #4c4c4c; }
+  .single-organizations .tab-content {
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+    background: #fff; }
+  .single-organizations .tab {
+    display: none; }
+  .single-organizations .tab.active {
+    display: block; }
 
 .error-404 {
   background-color: #f7f7f7;

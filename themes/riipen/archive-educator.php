@@ -6,8 +6,9 @@
  */
 
 get_header(); ?>
-<button onclick="history.go(-1);" class="back"><  Back</button>
+
 <div id="primary" class="content-area">
+<button onclick="history.go(-1);" class="back"><  Back</button>
 	<main id="main" class="site-main" role="main">
 		<div class="tabbingsection">
 
@@ -34,7 +35,9 @@ get_header(); ?>
 					</a>
 					</div>
 					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
+					<p class="educators-category"> 
+					
+						 <?php the_tags("" ); ?> 
 					</div>
 				<?php endwhile; ?>
 

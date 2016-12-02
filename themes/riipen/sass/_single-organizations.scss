@@ -1,10 +1,12 @@
 .single-organizations{
-
+	.site-content{
+		background: $color_white-smoke;
+	}
 	.entry-header{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-			
+
 		img{
 			width: 200px;
 			height: 200px;
@@ -19,5 +21,71 @@
 	.entry-content{
 		width: 90%;
 		margin: 0 auto;
+	}
+
+	/*----- Tabs -----*/
+	.tabs {
+		width:90%;
+		// display:inline-block;
+
+		margin: 0 auto;
+		padding-bottom: 146px;
+		p{
+			word-wrap: break-word;
+			margin: 0;
+		}
+	}
+
+	/*----- Tab Links -----*/
+	/* Clearfix */
+	.tab-links{
+		margin: 0;
+		&:after {
+			display:block;
+			clear:both;
+			content:'';
+		}
+	
+		li {
+			margin:0px 5px;
+			float:left;
+			list-style:none;
+		}
+	
+		a {
+			padding:9px 15px;
+			display:inline-block;
+			border-radius:10px 10px 0 0;
+			background:#7FB5DA;
+			font-size:16px;
+			font-weight:600;
+			color:#4c4c4c;
+			transition:all linear 0.15s;
+		}
+	
+		 a:hover {
+			background:#a7cce5;
+			text-decoration:none;
+		}
+	}
+	li.active a, li.active a:hover {
+		background:#fff;
+		color:#4c4c4c;
+	}
+
+	/*----- Content of Tabs -----*/
+	.tab-content {
+		padding:15px;
+		border-radius:7px;
+		box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+		background:#fff;
+	}
+
+	.tab {
+		display:none;
+	}
+
+	.tab.active {
+		display:block;
 	}
 }
