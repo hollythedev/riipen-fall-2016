@@ -33,13 +33,13 @@
 			</a>
 		</div>
 		<div class="footer-information">
-			<a href="<?php echo esc_url( '#' ); ?>">
+			<a href="<?php echo esc_url( 'https://riipen.com/about' ); ?>">
 				<?php printf( esc_html( 'about us' ) ); ?>
 			</a>
-			<a href="<?php echo esc_url( '#' ); ?>">
+			<a href="<?php echo esc_url( 'https://riipen.com/terms-of-use' ); ?>">
 				<?php printf( esc_html( 'legal' ) ); ?>
 			</a>
-			<a href="<?php echo esc_url( '#' ); ?>">
+			<a href="<?php echo esc_url( 'https://riipen.com/faq' ); ?>">
 				<?php printf( esc_html( 'help' ) ); ?>
 			</a>
 		</div>
