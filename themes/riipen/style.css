@@ -1006,6 +1006,8 @@ section {
 
 .post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
   background: #f7f7f7; }
+  .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
+    color: #27aefb; }
   .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
     margin: 50px auto;
     text-align: center;
@@ -1013,11 +1015,13 @@ section {
     box-sizing: border-box;
     border-radius: 10px;
     padding: 5px 5px;
-    width: 35%; }
+    width: 50%; }
     .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
       color: #919191; }
     .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
       color: black; }
+    .post-type-archive-institutions .site-main .tabbingsection a, .post-type-archive-educator .site-main .tabbingsection a {
+      font-size: 15px; }
     .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
       padding: 8px 0px;
       padding-right: 10px;
@@ -1052,19 +1056,23 @@ section {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: 0 auto; }
-  .post-type-archive-organizations .site-main .grey-boxes {
-    box-sizing: border-box;
-    width: 50%;
-    height: 50%;
-    background-color: #919191;
-    border: 2px white solid; }
   .post-type-archive-organizations .site-main .grid-view {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .post-type-archive-organizations .site-main .list-view:hover {
-    background-color: rgba(255, 255, 255, 0.5); }
+    .post-type-archive-organizations .site-main .grid-view:hover .grey-boxes {
+      background-color: #919191; }
+    .post-type-archive-organizations .site-main .grid-view .grey-boxes {
+      box-sizing: border-box;
+      width: 50%;
+      height: 50%;
+      background-color: #7e7e7e;
+      border: 2px #f7f7f7 solid; }
+  .post-type-archive-organizations .site-main .list-view {
+    padding-top: 2px; }
+    .post-type-archive-organizations .site-main .list-view:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
   .post-type-archive-organizations .site-main .psudeo-button {
     width: 50px;
     height: 50px; }

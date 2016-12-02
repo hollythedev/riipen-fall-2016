@@ -8,18 +8,25 @@
  		margin: 0 auto;
  		
  	}
- 	.grey-boxes{
- 		box-sizing: border-box;
- 		width: 50%;
- 		height: 50%;
- 		background-color: rgb(145, 145, 145);
- 		border: 2px white solid;
- 	}
+ 	
  	.grid-view{
  		display: flex;
  		flex-wrap: wrap;
+ 		&:hover{
+ 			.grey-boxes{
+ 			background-color: $color_warm-grey-two;	
+ 			}
+ 		}
+ 		.grey-boxes{
+ 		box-sizing: border-box;
+ 		width: 50%;
+ 		height: 50%;
+ 		background-color: $color_warm-grey;
+ 		border: 2px $color__lightgrey solid;
+ 	}
  	}
  	.list-view{
+ 		padding-top: 2px;
  		&:hover{
 		background-color: rgba(255, 255, 255, 0.5);
  			// background: url("../../images/btsMobileListgallery.png")
