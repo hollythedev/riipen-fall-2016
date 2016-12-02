@@ -14,9 +14,11 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<div class="page-content">
 					<h1 class="page-title"><?php echo esc_html( '404' ); ?></h1>
+					<div class="error-image">
+				  </div>
 					<h2>Sorry</h2>
 					<p>The page you are looking for is not found</p>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a>
+					<p class="home-link"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a></p>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
