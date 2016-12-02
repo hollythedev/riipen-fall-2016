@@ -16,10 +16,12 @@
 </div>
 
 <div class="educator-talentsection-4"> 
-<?php echo CFS()->get( 'banner2'); ?></div>
+<?php echo CFS()->get( 'banner_2'); ?></div>
 
 <div class="educator-talent-section-5">
     <?php echo CFS()->get( 'testimonial'); ?>
+     <?php echo CFS()->get( 'position'); ?>
+      <?php echo CFS()->get( 'name'); ?>
 </div>
 
 
