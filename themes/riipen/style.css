@@ -225,16 +225,13 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-* {
-  font: 12px "Open Sans", sans-serif; }
-
 body,
 button,
 input,
 select,
 textarea {
-  color: black;
   font: 12px "Open Sans", sans-serif;
+  color: black;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -411,7 +408,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: black; }
+  color: black;
+  text-decoration: none; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -436,7 +434,9 @@ a {
     height: 100%;
     position: relative; }
   .site-header .fa {
-    color: #0c4160; }
+    color: #0c4160;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px white; }
 
 .main-navigation {
   display: -ms-flexbox;
@@ -685,6 +685,11 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Base Structure */
+.container {
+  max-width: 1280px;
+  margin: 0 auto; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -884,7 +889,7 @@ section {
       display: block;
       position: relative;
       border: 3px solid #27aefb;
-      min-width: 300px;
+      width: 300px;
       height: 300px;
       text-align: center;
       border-radius: 100%;
@@ -998,9 +1003,6 @@ section {
 
 .wp-posts-carousel-container {
   box-shadow: none; }
-
-.widget_wp_posts_carousel .widget-title {
-  color: #f68708; }
 
 .post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
   background: #f7f7f7; }
@@ -1147,4 +1149,46 @@ section {
   -ms-flex-align: center;
       align-items: center; }
   .error-404 .page-content {
-    width: 240px; }
+    position: relative;
+    margin: 0; }
+  .error-404 .error-image {
+    background-color: #0c4160;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: absolute;
+    top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
+  .error-404 h1 {
+    color: rgba(246, 135, 8, 0.2);
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 5rem;
+    position: inherit;
+    z-index: 1; }
+  .error-404 h2 {
+    color: #f68708;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px; }
+  .error-404 p {
+    color: #919191;
+    font-size: 1rem; }
+  .error-404 .home-link {
+    background-color: #4cc88d;
+    width: 110px;
+    height: 34px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .error-404 .home-link a {
+      color: white; }

@@ -6,6 +6,51 @@
   justify-content: center;
   align-items: center;
   .page-content {
-    width: 240px;
+    position: relative;
+    margin: 0;
+  }
+  .error-image {
+    background-color: $color_twilight-blue;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: absolute;
+    top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  h1 {
+    color: $transparent_pumpkin-orange;
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 5rem;
+    position: inherit;
+    z-index: 1;
+  }
+  h2 {
+    color: $color_pumpkin-orange;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  p {
+    color: $color_warm-grey-two;
+    font-size: 1rem;
+  }
+  .home-link {
+    background-color: $color_dark-mint;
+    width: 110px;
+    height: 34px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      color: white;
+    }
   }
 }

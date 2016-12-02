@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<button onclick="history.go(-1);" class="back"><  Back</button>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

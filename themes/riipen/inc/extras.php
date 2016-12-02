@@ -2,7 +2,7 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * @package RED_Starter_Theme
+ * @package Riipen_Theme
  */
 
 /**
@@ -36,7 +36,7 @@ function my_login_logo_url() {
 }
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 function my_login_logo_url_title() {
-    return 'Inhabitent';
+    return 'Riipen';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
@@ -47,7 +47,7 @@ function my_styles_method() {
     if(!is_page_template( 'page-templates/educator.php' )){
         return;
     }
-    $url = CFS()->get('background_image');
+    ///$url = CFS()->get('background_image');
     wp_add_inline_style( 'riipen-style');
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );

@@ -47,3 +47,10 @@
 .bypostauthor {
 	display: block;
 }
+
+/* Base Structure */
+
+.container {
+	max-width: $desktop;
+	margin: 0 auto;
+}

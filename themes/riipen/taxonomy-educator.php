@@ -5,6 +5,7 @@
  * @package Riipen_Theme
  */
 get_header(); ?>
+<button onclick="history.go(-1);" class="back"><  Back</button>
 	<div id="primary" class="content-area-sep-archive">
 		<main id="main" class="site-main-sep-archive" role="main">
 			<?php if ( have_posts() ) : ?>
