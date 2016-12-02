@@ -6,7 +6,7 @@
  		display: flex;
  		justify-content: space-around;
  		margin: 0 auto;
- 		
+ 		padding-top: 36px;
  	}
  	
  	.grid-view{
@@ -44,6 +44,7 @@
  		display: flex;
  		flex-wrap: wrap;
  		justify-content: space-around;
+ 		padding-bottom: 140px;
  		.personwrapper{
  			width: 30%;
  			margin: 30px auto;
@@ -69,7 +70,7 @@
  	}
  	.riipen-list.organizationlist{
  		width: 95%;
-
+		    padding-bottom: 140px;
  		display: flex;
  		margin: 10px 0px;
  		margin: 10px auto;
@@ -79,6 +80,9 @@
  			display: flex;
  			height: 200px;
  			border: 2px solid $color__greyborders;
+ 			&:hover{
+			border: 2px solid $color_warm-grey;
+ 			}
  			.organization-content{
  				width: 75%;
  			}
