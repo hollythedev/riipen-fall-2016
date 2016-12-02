@@ -685,6 +685,11 @@ a {
 .bypostauthor {
   display: block; }
 
+/*Back button */
+.back {
+  color: grey;
+  font: 1rem 12px "Open Sans", sans-serif; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

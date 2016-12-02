@@ -5,7 +5,7 @@
  * @package Riipen_Theme
  */
 get_header(); ?>
-<button onclick="history.go(-1);"><  Back</button>
+<button onclick="history.go(-1);" class="back"><  Back</button>
 	<section id="primary" class="content-area-sep">
 		<main id="main" class="site-main-sep" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
