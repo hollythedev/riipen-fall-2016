@@ -54,3 +54,11 @@
 	max-width: $desktop;
 	margin: 0 auto;
 }
+
+.back{
+	color: $gray;
+	font: 1rem $color__greyborders;
+	@media (min-width: $breakpoint) {
+                display:none;
+            }
+}
