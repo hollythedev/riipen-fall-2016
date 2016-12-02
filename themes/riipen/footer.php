@@ -42,6 +42,9 @@
 			<a href="<?php echo esc_url( 'https://riipen.com/faq' ); ?>">
 				<?php printf( esc_html( 'help' ) ); ?>
 			</a>
+			<a href="<?php echo esc_url( 'https://riipen.com/careers' ); ?>">
+				<?php printf( esc_html( 'careers' ) ); ?>
+			</a>
 		</div>
 		</section>
 		<!-- .site-info -->
