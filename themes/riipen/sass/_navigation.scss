@@ -48,6 +48,7 @@ a {
 	background-color: $color_azure;
 	height: 1.5rem;
 	width: 5rem;
+	order: 1;
 }
 
 .main-navigation {
@@ -162,6 +163,7 @@ a {
 
 /* Search Bar */
 .site-search {
+	order: 3;
 	fieldset {
 		margin: 0;
 		padding: 0;
