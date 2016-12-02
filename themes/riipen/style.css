@@ -434,7 +434,9 @@ a {
     height: 100%;
     position: relative; }
   .site-header .fa {
-    color: #0c4160; }
+    color: #0c4160;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px white; }
 
 .main-navigation {
   display: -ms-flexbox;
