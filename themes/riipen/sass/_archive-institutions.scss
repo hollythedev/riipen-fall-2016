@@ -13,6 +13,9 @@
 		padding: 5px 5px;
 		width: 35%;
 		.inactive{
+			color: $color_warm-grey-two;
+		}
+		.active{
 			color: black;
 		}
 		a:first-child{

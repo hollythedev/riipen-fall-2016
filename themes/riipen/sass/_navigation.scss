@@ -39,11 +39,19 @@ a {
 	}
 	.fa {
 		color: $color_twilight-blue;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		-webkit-text-stroke: 1px white;
 	}
 }
+
+.site-branding {
+	background-color: $color_azure;
+	height: 1.5rem;
+	width: 5rem;
+}
+
 .main-navigation {
+	order: 0;
 	display: flex;
 	ul {
 		display: none;

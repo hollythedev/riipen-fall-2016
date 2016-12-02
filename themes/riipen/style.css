@@ -435,10 +435,17 @@ a {
     position: relative; }
   .site-header .fa {
     color: #0c4160;
-    font-size: 2rem;
+    font-size: 1.5rem;
     -webkit-text-stroke: 1px white; }
 
+.site-branding {
+  background-color: #27aefb;
+  height: 1.5rem;
+  width: 5rem; }
+
 .main-navigation {
+  -ms-flex-order: 0;
+      order: 0;
   display: -ms-flexbox;
   display: flex; }
   .main-navigation ul {
@@ -685,13 +692,10 @@ a {
 .bypostauthor {
   display: block; }
 
-/*Back button */
-.back {
-  color: grey;
-  font: 1rem 12px "Open Sans", sans-serif; }
-  @media (min-width: 750px) {
-    .back {
-      display: none; } }
+/* Base Structure */
+.container {
+  max-width: 1280px;
+  margin: 0 auto; }
 
 /*--------------------------------------------------------------
 # Media
@@ -892,7 +896,7 @@ section {
       display: block;
       position: relative;
       border: 3px solid #27aefb;
-      min-width: 300px;
+      width: 300px;
       height: 300px;
       text-align: center;
       border-radius: 100%;
@@ -1018,6 +1022,8 @@ section {
     padding: 5px 5px;
     width: 35%; }
     .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
+      color: #919191; }
+    .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
       color: black; }
     .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
       padding: 8px 0px;
@@ -1064,8 +1070,8 @@ section {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .post-type-archive-organizations .site-main .list-view {
-    background: url("../../images/btsMobileListgallery.png"); }
+  .post-type-archive-organizations .site-main .list-view:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
   .post-type-archive-organizations .site-main .psudeo-button {
     width: 50px;
     height: 50px; }
@@ -1119,6 +1125,25 @@ section {
           max-width: 100%;
           height: auto;
           padding-left: 5px; }
+
+.single-organizations .entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .single-organizations .entry-header img {
+    width: 200px;
+    height: 200px; }
+  .single-organizations .entry-header .entry-title {
+    width: 100%;
+    padding-left: 5%;
+    margin-bottom: 90px; }
+
+.single-organizations .entry-content {
+  width: 90%;
+  margin: 0 auto; }
 
 .error-404 {
   background-color: #f7f7f7;
