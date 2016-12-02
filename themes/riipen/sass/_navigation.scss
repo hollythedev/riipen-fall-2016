@@ -49,6 +49,9 @@ a {
 	height: 1.5rem;
 	width: 5rem;
 	order: 1;
+	@include desktop {
+		order: 0;
+	}
 }
 
 .main-navigation {
@@ -65,7 +68,6 @@ a {
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -131,13 +133,21 @@ a {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@include desktop {
 	.menu-toggle {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
+		position: initial;
+		height: inherit;
+		li {
+			background-color: transparent;
+			margin: 0;
+			padding: 0 10px;
+		}
 	}
+
 }
 
 .comment-navigation,

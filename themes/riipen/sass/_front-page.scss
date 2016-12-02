@@ -87,6 +87,7 @@ section {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 0 auto;
       &:after {
         content: '';
         border: 2px solid $color_pumpkin-orange;
