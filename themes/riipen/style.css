@@ -435,10 +435,23 @@ a {
     position: relative; }
   .site-header .fa {
     color: #0c4160;
-    font-size: 2rem;
+    font-size: 1.5rem;
     -webkit-text-stroke: 1px white; }
 
+.site-branding {
+  background-color: #27aefb;
+  height: 1.5rem;
+  width: 5rem;
+  -ms-flex-order: 1;
+      order: 1; }
+  @media (min-width: 600px) {
+    .site-branding {
+      -ms-flex-order: 0;
+          order: 0; } }
+
 .main-navigation {
+  -ms-flex-order: 0;
+      order: 0;
   display: -ms-flexbox;
   display: flex; }
   .main-navigation ul {
@@ -484,11 +497,18 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 37.5em) {
+@media (min-width: 600px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: -ms-flexbox;
+    display: flex;
+    position: initial;
+    height: inherit; }
+    .main-navigation ul li {
+      background-color: transparent;
+      margin: 0;
+      padding: 0 10px; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -510,34 +530,34 @@ a {
   width: 50%; }
 
 /* Search Bar */
-.site-search fieldset {
-  margin: 0;
-  padding: 0; }
-
-.site-search .show-search {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1rem; }
-
-.site-search label {
-  position: absolute;
-  top: 100%;
-  right: 0; }
-
-.site-search input[type=search] {
-  background-color: white;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 0;
-  padding-left: 1rem;
-  margin: 0;
-  width: 200px;
-  display: none; }
-  .site-search input[type=search]:focus {
-    outline: 0; }
+.site-search {
+  -ms-flex-order: 3;
+      order: 3; }
+  .site-search fieldset {
+    margin: 0;
+    padding: 0; }
+  .site-search .show-search {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem; }
+  .site-search label {
+    position: absolute;
+    top: 100%;
+    right: 0; }
+  .site-search input[type=search] {
+    background-color: white;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0;
+    padding-left: 1rem;
+    margin: 0;
+    width: 200px;
+    display: none; }
+    .site-search input[type=search]:focus {
+      outline: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -690,6 +710,13 @@ a {
   max-width: 1280px;
   margin: 0 auto; }
 
+.back {
+  color: grey;
+  font: 1rem 12px "Open Sans", sans-serif; }
+  @media (min-width: 600px) {
+    .back {
+      display: none; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -760,7 +787,7 @@ object {
   .site-footer .footer-container {
     margin: 0 30px;
     padding-top: 3%; }
-    @media (min-width: 750px) {
+    @media (min-width: 600px) {
       .site-footer .footer-container {
         margin: 0 30%;
         padding-top: 5%; } }
@@ -776,12 +803,12 @@ object {
         border-radius: 100%; }
         .site-footer .footer-container .footer-social-media a i {
           padding: 15px; }
-      @media (min-width: 750px) {
+      @media (min-width: 600px) {
         .site-footer .footer-container .footer-social-media {
           margin: 0 20%; } }
     .site-footer .footer-container .footer-buttons {
       display: none; }
-      @media (min-width: 750px) {
+      @media (min-width: 600px) {
         .site-footer .footer-container .footer-buttons {
           display: -ms-flexbox;
           display: flex;
@@ -804,7 +831,7 @@ object {
         color: white;
         text-transform: uppercase;
         text-decoration: none; }
-      @media (min-width: 750px) {
+      @media (min-width: 600px) {
         .site-footer .footer-container .footer-information {
           font-size: 1rem;
           margin-bottom: 10%; } }
@@ -898,7 +925,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+      margin: 0 auto; }
       .stats li:nth-child(2):after {
         content: '';
         border: 2px solid #f68708;

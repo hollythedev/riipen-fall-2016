@@ -7,8 +7,9 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-areas">
-	<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-areas">
+	<button onclick="history.go(-1);" class="back"><  Back</button>
+		<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				

@@ -9,9 +9,8 @@
 
 get_header(); ?>
 
-<button onclick="history.go(-1);" class="back"><  Back</button>
-
 	<div id="primary" class="content-area">
+	<button onclick="history.go(-1);" class="back"><  Back</button>
 		<main id="main" class="site-main" role="main">
 			<section class="error-404 not-found">
 				<div class="page-content">

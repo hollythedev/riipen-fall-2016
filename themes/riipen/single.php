@@ -6,9 +6,10 @@
  */
 
 get_header(); ?>
-<button onclick="history.go(-1);" class="back"><  Back</button>
+
 
 	<div id="primary" class="content-areas">
+	<button onclick="history.go(-1);" class="back"><  Back</button>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
