@@ -689,6 +689,9 @@ a {
 .back {
   color: grey;
   font: 1rem 12px "Open Sans", sans-serif; }
+  @media (min-width: 750px) {
+    .back {
+      display: none; } }
 
 /*--------------------------------------------------------------
 # Media
