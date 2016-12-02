@@ -435,10 +435,17 @@ a {
     position: relative; }
   .site-header .fa {
     color: #0c4160;
-    font-size: 2rem;
+    font-size: 1.5rem;
     -webkit-text-stroke: 1px white; }
 
+.site-branding {
+  background-color: #27aefb;
+  height: 1.5rem;
+  width: 5rem; }
+
 .main-navigation {
+  -ms-flex-order: 0;
+      order: 0;
   display: -ms-flexbox;
   display: flex; }
   .main-navigation ul {
