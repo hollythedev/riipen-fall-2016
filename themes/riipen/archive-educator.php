@@ -11,9 +11,9 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="tabbingsection">
 
-			<a class="active" href="<?php echo get_post_type_archive_link( 'institutions' ); ?>" >Institutions</a>
+			<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'institutions' ); ?>" >Institutions</a>
 
-			<a class="inactive">Educators</a>
+			<a class="inactive uppercase">Educators</a>
 
 		</div>
 		<div class="riipen-list">

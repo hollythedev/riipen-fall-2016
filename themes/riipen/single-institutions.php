@@ -36,7 +36,8 @@ get_header(); ?>
 
 			<?php endif; ?>
 		</div>
+
 	</main><!-- #main -->
 </div><!-- #primary -->
-
+		<?php dynamic_sidebar( 'carousels2' ); ?>
 <?php get_footer(); ?>

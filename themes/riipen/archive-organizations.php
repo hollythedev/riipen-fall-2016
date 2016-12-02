@@ -10,7 +10,11 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div class="view-type-buttons">
-			<a class="list-view psudeo-button" > <div class="psudeo-button"></div></a>
+			<a class="list-view psudeo-button" > 
+				<div class="psudeo-button"> 
+					<img src=" <?php echo get_template_directory_uri() ?>/images/btsMobileListgallery.png"> 
+					</div>
+					</a>
 			<a class="grid-view psudeo-button"> 
 				<div class="grey-boxes"></div>
 				<div class="grey-boxes"></div>
