@@ -3,6 +3,10 @@
 ?>
 
 <?php get_header(); ?>
+<?php
+  $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+  echo "<a href='$url'>back</a>"; 
+?>
 <div class="educator-talent-section-1">
     <h1>r<span>ii</span>pen</h1>  <p> <?php echo CFS()->get( 'motto'); ?> </p>
 </div>
