@@ -876,8 +876,8 @@ object {
       align-items: center;
   color: white; }
   .hero .headline {
-    width: 300px;
-    height: 300px;
+    width: 19rem;
+    height: 19rem;
     background-color: #27aefb;
     display: -ms-flexbox;
     display: flex;
@@ -894,10 +894,10 @@ section {
 .stats {
   background-color: #f7f7f7; }
   .stats ul {
-    margin-bottom: 20px; }
+    margin-bottom: 1.5rem; }
   .stats li {
     list-style: none;
-    margin-bottom: 20px; }
+    margin-bottom: 1.5rem; }
     .stats li:last-child h2 {
       -ms-flex-order: 1;
           order: 1; }
@@ -907,12 +907,12 @@ section {
       -ms-flex-align: center;
           align-items: center; }
     .stats li:first-child h2, .stats li:last-child h2 {
-      margin: 0 20px;
+      margin: 0 1rem;
       display: block;
       position: relative;
       border: 3px solid #27aefb;
-      min-width: 150px;
-      height: 150px;
+      min-width: 10rem;
+      height: 10rem;
       text-align: center;
       border-radius: 100%;
       display: -ms-flexbox;
@@ -940,12 +940,12 @@ section {
         border-radius: 100%;
         position: absolute; }
     .stats li:nth-child(2) {
-      margin: 0 20px;
+      padding: 0 1rem;
       display: block;
       position: relative;
       border: 3px solid #27aefb;
-      width: 300px;
-      height: 300px;
+      width: 20rem;
+      height: 20rem;
       text-align: center;
       border-radius: 100%;
       display: -ms-flexbox;
@@ -975,7 +975,12 @@ section {
         position: absolute; }
     .stats li p {
       margin: 0; }
+    .stats li h2 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: lighter; }
   .stats .double-border {
+    font-style: italic;
     display: block;
     position: relative;
     border: 3px solid #27aefb;
@@ -1009,8 +1014,16 @@ section {
   .difference p {
     text-align: center; }
   .difference ol {
+    margin: 0 auto;
+    width: 65%;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     list-style: none; }
     .difference ol li {
+      width: 100%;
       counter-increment: item;
       margin-bottom: 1rem; }
       .difference ol li:before {
