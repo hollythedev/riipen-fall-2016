@@ -14,7 +14,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: lighten( black, 60% )
 	}
 	&:focus {
 		outline: thin dotted;
@@ -27,7 +27,7 @@ a {
 
 /* Menus */
 .site-header {
-	height: 64px;
+	height: 68px;
 	width: 100%;
 	.container {
 		display: flex;
@@ -41,6 +41,9 @@ a {
 		color: $color_twilight-blue;
 		font-size: 1.5rem;
 		-webkit-text-stroke: 1px white;
+		@include desktop {
+			font-size: 1rem;
+		}
 	}
 }
 
@@ -68,59 +71,83 @@ a {
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		li {
+			background-color: $color_white-smoke;
+			margin-right: 20px;
+			padding: 10px 20px;
+			white-space: nowrap;
+			&:hover > a,
+			&.focus > a {
+			}
+			@include desktop {
+				position: relative;
+				display: inline-block;
+				background-color: transparent;
+				margin: 0;
+				padding: 0 10px;
+			}
+		}
+		.menu-item-has-children {
+			padding: 0 20px;
+			font-size: 0;
+			@include desktop {
+				padding: 0 10px;
+				font-size: 1rem;
+			}
+		}
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: $base__space-unit;
-			left: -999em;
-			z-index: 99999;
-
+			display: block;
+			top: inherit;
+			position: inherit;
+			height: auto;
+			@include desktop{
+				float: left;
+				position: absolute;
+				top: 100%;
+				left: -999em;
+				z-index: 99999;
+			}
 			ul {
 				left: -999em;
 				top: 0;
 			}
-
 			li {
+				font-size: 1rem;
+				margin: 0;
+				padding: 10px 20px;
+				display: block;
 				&:hover > ul,
 				&.focus > ul {
+					margin-left: auto;
+					margin-right: auto;
 					left: 100%;
+					right: 100%;
 				}
 			}
-
-			a {
-				width: 200px;
-			}
-
 			:hover > a,
 			.focus > a {
 			}
-
 			a:hover,
 			a.focus {
 			}
 		}
-
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
 		}
-	}
-	li {
-		background-color: $color_white-smoke;
-		margin-right: 20px;
-		padding: 10px 20px;
-		white-space: nowrap;
-
-		&:hover > a,
-		&.focus > a {
+		@include desktop {
+			font-weight: bold;
+			height: 68px;
+			width: auto;
+			display: block;
+			align-items: center;
+			position: initial;
+			height: inherit;
+			a {
+				color: $color_twilight-blue;
+			}
 		}
 	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
@@ -138,16 +165,7 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
-		display: flex;
-		position: initial;
-		height: inherit;
-		li {
-			background-color: transparent;
-			margin: 0;
-			padding: 0 10px;
-		}
 	}
-
 }
 
 .comment-navigation,
