@@ -1,38 +1,40 @@
 <?php 
-/* Template Name: Educator Page */ 
+/**
+ * The template for displaying the organization page.
+ *
+ * @package Riipen_Theme
+ */
 ?>
-
 <?php get_header(); ?>
-<?php
-  $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-  echo "<a href='$url'>back</a>"; 
-?>
-<div class="organization-section-1">
-    <h1>r<span>ii</span>pen</h1>  <p> <?php echo CFS()->get( 'motto'); ?> </p>
+<div id="primary" class="content-area">
+    <button onclick="history.go(-1);" class="back"><  Back</button>
+    <main id="main" class="site-main" role="main">
+        <section class="organization-page">
+            <div class="organization-section-1">
+                <h1>r<span>ii</span>pen</h1>
+                <p>
+                    <?php echo CFS()->get( 'motto'); ?> </p>
+            </div>
+            <div class="description">
+                <?php echo CFS()->get( 'description'); ?>
+            </div>
+            <div class="organization-section-2">
+                <?php echo CFS()->get( 'banner'); ?>
+            </div>
+            <div class="organization-section-3">
+                <p> 4 easy steps to being Riipened </p>
+                <a href="<?php the_permalink(); ?>" class='eductor-talent-btn'> riipen up</a>
+            </div>
+            <div class="organizationsection-4">
+                <?php echo CFS()->get( 'banner_2'); ?>
+            </div>
+            <div class="organization-section-5">
+                <?php echo CFS()->get( 'testimonial'); ?>
+                <?php echo CFS()->get( 'position'); ?>
+                <?php echo CFS()->get( 'name'); ?>
+            </div>
+        </section>
+    </main>
 </div>
-
-<div class="organization-section2">
-<?php echo CFS()->get( 'explanation'); ?></div>
-</div>
-
-<div class="organization-section-3"> 
-<?php echo CFS()->get( 'banner'); ?></div>
-
-<div class="organization-section-4">
-    <p> 4 easy steps to being Riipened </p>
-    <a href="<?php the_permalink(); ?>" class='eductor-talent-btn'> riipen up</a>
-</div>
-
-<div class="organizationsection-5> 
-<?php echo CFS()->get( 'banner_2'); ?></div>
-
-<div class="organization-section-6">
-    <?php echo CFS()->get( 'testimonial'); ?>
-     <?php echo CFS()->get( 'position'); ?>
-      <?php echo CFS()->get( 'name'); ?>
-</div>
-
-
 <!-- #primary -->
 <?php get_footer(); ?>
-
