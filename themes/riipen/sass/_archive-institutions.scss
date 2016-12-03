@@ -1,7 +1,13 @@
 .post-type-archive-institutions .site-main,.post-type-archive-educator .site-main{
 	
 	background: $color__lightgrey;
-
+	.entry-title{
+		margin: 10px 0;
+		font-size: 18px;
+	}
+	.educatorname{
+		letter-spacing: 0.9pt;
+	}
 	.educators-category{
 		color:$color_azure;
 		text-align: center;

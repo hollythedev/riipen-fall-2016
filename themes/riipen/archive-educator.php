@@ -34,8 +34,8 @@ get_header(); ?>
 						<?php endif; ?>
 					</a>
 					</div>
-					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-					<p class="educators-category"> 
+					<?php the_title( sprintf( '<h2 class="entry-title uppercase educatorname"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+					<p class="educators-category educatorname uppercase"> 
 					
 						 <?php the_tags("" ); ?> 
 					</div>
