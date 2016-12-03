@@ -1176,7 +1176,12 @@ section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    padding-top: 110px; }
+    .single-organizations .entry-header h1 {
+      padding-top: 90px;
+      font-size: 36px;
+      letter-spacing: 1.8pt; }
     .single-organizations .entry-header img {
       width: 200px;
       height: 200px; }
@@ -1186,7 +1191,9 @@ section {
       margin-bottom: 90px; }
   .single-organizations .entry-content {
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 140px;
+    font-size: 24px; }
   .single-organizations .tabs {
     width: 90%;
     margin: 0 auto;
@@ -1208,21 +1215,22 @@ section {
       padding: 9px 15px;
       display: inline-block;
       border-radius: 10px 10px 0 0;
-      background: #7FB5DA;
+      background: #4cc88d;
       font-size: 16px;
       font-weight: 600;
-      color: #4c4c4c;
+      color: #f7f7f7;
       transition: all linear 0.15s; }
     .single-organizations .tab-links a:hover {
-      background: #a7cce5;
+      outline: none;
+      background: #87dab2;
       text-decoration: none; }
   .single-organizations li.active a, .single-organizations li.active a:hover {
     background: #fff;
-    color: #4c4c4c; }
+    outline: none;
+    color: #27aefb; }
   .single-organizations .tab-content {
     padding: 15px;
     border-radius: 7px;
-    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
     background: #fff; }
   .single-organizations .tab {
     display: none; }

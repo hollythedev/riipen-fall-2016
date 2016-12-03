@@ -12,6 +12,7 @@ $color_greyish: #aaaaaa;
 $color_warm-grey: #7e7e7e;
 $color_warm-grey-two: #919191;
 $color_dark-mint: #4cc88d;
+$color_light-mint: lighten($color_dark-mint, 15%);
 $color_dark-sky-blue: #2c8ddc;
 $color_twilight-blue: #0c4160;
 $color_azure: #27aefb;
