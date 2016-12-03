@@ -485,7 +485,7 @@ a {
       font-size: 0; }
       @media (min-width: 600px) {
         .main-navigation ul .menu-item-has-children {
-          padding: 10px 20px;
+          padding: 0 10px;
           font-size: 1rem; } }
     .main-navigation ul ul {
       display: block;
@@ -505,11 +505,14 @@ a {
       .main-navigation ul ul li {
         font-size: 1rem;
         margin: 0;
-        padding: 10px 20px 10px 0;
+        padding: 10px 20px;
         display: block; }
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
-          left: 100%; }
+          margin-left: auto;
+          margin-right: auto;
+          left: 100%;
+          right: 100%; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }

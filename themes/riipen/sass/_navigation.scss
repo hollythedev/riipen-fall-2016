@@ -91,7 +91,7 @@ a {
 			padding: 0 20px;
 			font-size: 0;
 			@include desktop {
-				padding: 10px 20px;
+				padding: 0 10px;
 				font-size: 1rem;
 			}
 		}
@@ -114,23 +114,23 @@ a {
 			li {
 				font-size: 1rem;
 				margin: 0;
-				padding: 10px 20px 10px 0;
+				padding: 10px 20px;
 				display: block;
 				&:hover > ul,
 				&.focus > ul {
+					margin-left: auto;
+					margin-right: auto;
 					left: 100%;
+					right: 100%;
 				}
 			}
-
 			:hover > a,
 			.focus > a {
 			}
-
 			a:hover,
 			a.focus {
 			}
 		}
-
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
@@ -143,14 +143,11 @@ a {
 			align-items: center;
 			position: initial;
 			height: inherit;
-			li {
-			}
 			a {
 				color: $color_twilight-blue;
 			}
 		}
 	}
-
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
