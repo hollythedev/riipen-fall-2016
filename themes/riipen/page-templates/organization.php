@@ -16,6 +16,7 @@
                     <?php echo CFS()->get( 'motto'); ?> </p>
             </div>
             <div class="description">
+             <h3>r<span>ii</span>pen</h3> <p> your assignments </p>
                 <?php echo CFS()->get( 'description'); ?>
             </div>
             <div class="organization-section-2">
