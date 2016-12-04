@@ -1393,35 +1393,33 @@ section {
     margin: 0; }
   .error-404 .error-image {
     background-color: #0c4160;
-    width: 180px;
-    height: 180px;
+    width: 11em;
+    height: 11em;
     border-radius: 100%;
     position: absolute;
-    top: 3rem;
+    top: 3em;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0; }
   .error-404 h1 {
     color: rgba(246, 135, 8, 0.2);
-    font-size: 12rem;
+    font-size: 12em;
     font-weight: bold;
     line-height: 1;
     margin: 0 0 5rem;
-    position: inherit;
-    z-index: 1; }
+    position: inherit; }
   .error-404 h2 {
     color: #f68708;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 24px; }
+    font-size: 2em; }
   .error-404 p {
-    color: #919191;
-    font-size: 1rem; }
+    color: #919191; }
   .error-404 .home-link {
     background-color: #4cc88d;
-    width: 110px;
-    height: 34px;
+    width: 10em;
+    height: 2.5em;
     border-radius: 5px;
     margin: 0 auto;
     display: -ms-flexbox;
