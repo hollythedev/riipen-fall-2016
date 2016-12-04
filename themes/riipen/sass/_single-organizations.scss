@@ -6,7 +6,12 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-
+		padding-top: 110px;
+		h1{
+			padding-top: 90px;
+			font-size: 36px;
+		letter-spacing: 1.8pt
+		}
 		img{
 			width: 200px;
 			height: 200px;
@@ -15,12 +20,14 @@
 			width: 100%;
 			padding-left: 5%;
 			margin-bottom: 90px;
-
+			
 		}
 	}	
 	.entry-content{
 		width: 90%;
 		margin: 0 auto;
+		padding-bottom: 140px;
+		font-size: 24px;
 	}
 
 	/*----- Tabs -----*/
@@ -56,28 +63,32 @@
 			padding:9px 15px;
 			display:inline-block;
 			border-radius:10px 10px 0 0;
-			background:#7FB5DA;
+			background: $color_dark-mint;
+
 			font-size:16px;
 			font-weight:600;
-			color:#4c4c4c;
+			color: $color_white-smoke;
 			transition:all linear 0.15s;
 		}
 	
 		 a:hover {
-			background:#a7cce5;
+		 	outline: none;
+			background:$color_light-mint;
 			text-decoration:none;
 		}
 	}
 	li.active a, li.active a:hover {
 		background:#fff;
-		color:#4c4c4c;
+			outline: none;
+		color:$color_azure;
+
 	}
 
 	/*----- Content of Tabs -----*/
 	.tab-content {
 		padding:15px;
 		border-radius:7px;
-		box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+		// box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
 		background:#fff;
 	}
 
