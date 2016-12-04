@@ -7,8 +7,8 @@
   align-items: center;
   color: white;
   .headline {
-    width: 19rem;
-    height: 19rem;
+    width: 19em;
+    height: 19em;
     background-color: $color_azure;
     display: flex;
     justify-content: center;
@@ -161,7 +161,7 @@ section {
     text-align: center;
   }
   ol {
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     width: 65%;
     padding: 0;
     display: flex;
@@ -172,21 +172,27 @@ section {
       counter-increment: item;
       margin-bottom: 1rem;
       &:before {
-         margin-right: 10px;
-         content: counter(item);
-         border-radius: 100%;
-         border: 2px solid $color_azure;
-         width: 1.75rem;
-         height: 1.5rem;
-         padding-bottom: 1.5rem;
-         text-align: center;
-         display: inline-block;
-       }
+        margin-right: 10px;
+        content: counter(item);
+        border-radius: 100%;
+        border: 2px solid $color_azure;
+        width: 1.75rem;
+        height: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        display: inline-block;
+      }
+      @include desktop {
+        line-height: 1;
+        width: 50%;
+      }
     }
   }
 }
 
 .figures {
+  max-width: 550px;
+  margin: 0 auto;
   display: flex;
   li {
     width: 33%;

@@ -61,6 +61,7 @@ a {
 	order: 0;
 	display: flex;
 	ul {
+		font-size: 1rem;
 		display: none;
 		position: absolute;
 		top: 100%;
@@ -92,7 +93,7 @@ a {
 			font-size: 0;
 			@include desktop {
 				padding: 0 10px;
-				font-size: 1rem;
+				font-size: 1em;
 			}
 		}
 		ul {
@@ -112,7 +113,7 @@ a {
 				top: 0;
 			}
 			li {
-				font-size: 1rem;
+				font-size: 1em;
 				margin: 0;
 				padding: 10px 20px;
 				display: block;
@@ -210,8 +211,8 @@ a {
 		right: 0;
 	}
 	input[type=search] {
+		font-size: 1rem;
 		background-color: white;
-		text-transform: uppercase;
 		border: 0;
 		border-radius: 0;
 		padding-left: 1rem;
