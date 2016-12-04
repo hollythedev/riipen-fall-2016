@@ -1078,6 +1078,11 @@ section {
   .post-type-archive-institutions .site-main .entry-title, .post-type-archive-educator .site-main .entry-title {
     margin: 10px 0;
     font-size: 18px; }
+  .post-type-archive-institutions .site-main .educator-image, .post-type-archive-educator .site-main .educator-image {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
   .post-type-archive-institutions .site-main .educatorname, .post-type-archive-educator .site-main .educatorname {
     letter-spacing: 0.9pt; }
   .post-type-archive-institutions .site-main .educators-category, .post-type-archive-educator .site-main .educators-category {
