@@ -119,16 +119,17 @@ section {
     }
   }
   .double-border {
+    text-align: center;
     font-style: italic;
-      display: block;
-      position: relative;
-      border: 3px solid $color_azure;
-      padding: 1rem;
+    display: block;
+    position: relative;
+    border: 3px solid $color_azure;
+    padding: 1.5em 1em 1em;
     &:before {
       content: '';
       border: 3px solid $color_azure;
-      top: 5px;
-      left: 5px;
+      top: .6em;
+      left: .5em;
       width: 100%;
       height: 100%;
       position: absolute;
@@ -191,7 +192,7 @@ section {
 }
 
 .figures {
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   li {
@@ -203,17 +204,21 @@ section {
 .testimonial {
   .container {
     display: flex;
+    align-items: center;
   }
   .icon {
-    width: 25%;
+    width: 12em;
+    height: 12em;
+    margin-right: 2em;
+    background-color: grey;
   }
   .text {
     width: 75%;
-    font-size: .8rem;
+    font-size: .8em;
   }
   h3 {
     text-align: right;
-    font-size: .8rem;
+    font-size: .8em;
     font-style: italic;
   }
 }
