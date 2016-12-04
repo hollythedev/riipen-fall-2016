@@ -1074,6 +1074,7 @@ section {
   box-shadow: none; }
 
 .post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
+  padding-top: 50px;
   background: #f7f7f7; }
   .post-type-archive-institutions .site-main .entry-title, .post-type-archive-educator .site-main .entry-title {
     margin: 10px 0;
@@ -1091,7 +1092,7 @@ section {
     .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
       color: #27aefb; }
   .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
-    margin: 50px auto;
+    margin: 0px auto;
     text-align: center;
     border: 1px grey solid;
     box-sizing: border-box;
