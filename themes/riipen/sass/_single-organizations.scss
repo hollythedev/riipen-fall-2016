@@ -32,6 +32,7 @@
 
 	/*----- Tabs -----*/
 	.tabs {
+
 		width:90%;
 		// display:inline-block;
 
@@ -54,6 +55,7 @@
 		}
 	
 		li {
+			max-width: 25%;
 			margin:0px 5px;
 			float:left;
 			list-style:none;
@@ -93,6 +95,7 @@
 	}
 
 	.tab {
+
 		display:none;
 	}
 

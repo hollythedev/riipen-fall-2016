@@ -47,8 +47,11 @@
  	}
  	.riipen-list{
  		transition: all 1s ease;
+ 		width: 90%;
+ 		margin: 0 auto;
  	}
  	.riipen-list.organizationgrid{
+
  		display: flex;
  		flex-wrap: wrap;
  		justify-content: space-around;
@@ -77,7 +80,7 @@
  		}
  	}
  	.riipen-list.organizationlist{
- 		width: 95%;
+
  		padding-bottom: 140px;
  		display: flex;
  		margin: 10px 0px;

@@ -1,6 +1,6 @@
 	
 (function($){
-
+setTimeout(removeanimation,1000);
 $('.list-view').on('click', function(){
 	$( ".riipen-list" ).removeClass( "organizationgrid bounceInRight" ).addClass( "organizationlist bounceInRight")
 		

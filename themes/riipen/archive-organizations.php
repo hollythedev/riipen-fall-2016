@@ -23,7 +23,7 @@ get_header(); ?>
 				<div class="grey-boxes"></div> 
 			</a>
 		</div>
-		<div class="riipen-list organizationgrid animated ">
+		<div class="riipen-list organizationgrid animated bounceInRight">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
