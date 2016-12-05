@@ -7,6 +7,7 @@ $color__lightgrey: rgb(247, 247, 247);
 $color__greyborders: grey;
 $color__background-body: #fff;
 $color__text-main: black;
+$color__text-main-hover: lighten($color__text-main, 25%);
 $color_white-smoke: #f7f7f7;
 $color_greyish: #aaaaaa;
 $color_warm-grey: #7e7e7e;

@@ -43,11 +43,15 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 ///For the Educators and Talent Page
 function my_styles_method() {
-    
-    if(!is_page_template( 'page-templates/educator.php' )){
-        return;
+
+	if(!is_page_template('educator.php')){
+		return;
     }
-    ///$url = CFS()->get('background_image');
-    wp_add_inline_style( 'riipen-style');
-}
-add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+
+		$url = CFS()->get ( 'banner'); // This is grabbing the background
+        wp_add_inline_style( 'riipen-style' );
+    }
+
+    add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+

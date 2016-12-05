@@ -1,6 +1,9 @@
 .post-type-archive-institutions .site-main,.post-type-archive-educator .site-main{
-	
+	padding-top: 50px;
 	background: $color__lightgrey;
+	.tabbingwrapper{
+		display: flex;
+	}
 	.entry-title{
 		margin: 10px 0;
 		font-size: 18px;
@@ -24,19 +27,23 @@
 		
 	}
 	.tabbingsection{
-		margin: 50px auto;
-		
+		margin: 0px auto;
+		display: inline-flex;
 		text-align: center;
 		border: 1px $color__greyborders solid;
 		box-sizing: border-box;
 		border-radius: 10px;
-		padding: 5px 5px;
-		width: 50%;
+		padding: 0 10px;
+		
 		.inactive{
 			color: $color_warm-grey-two;
 		}
 		.active{
-			color: black;	
+			color: black;
+			margin: auto;	
+			&:hover{
+				color:$color__text-main-hover;
+			}
 		}
 		a{
 			font-size: 15px;
@@ -48,6 +55,7 @@
 		}
 		a:last-child{
 			padding-left: 5px;
+			margin: auto;
 		}
 	}
 	.riipen-list{

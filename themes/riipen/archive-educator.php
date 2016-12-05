@@ -10,12 +10,14 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<button onclick="history.go(-1);" class="back"><  Back</button>
 	<main id="main" class="site-main" role="main">
-		<div class="tabbingsection">
+		<div  class="tabbingwrapper">
+			<div class="tabbingsection">
 
-			<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'institutions' ); ?>" >Institutions</a>
+				<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'institutions' ); ?>" >Institutions</a>
 
-			<a class="inactive uppercase">Educators</a>
+				<a class="inactive uppercase">Educators</a>
 
+			</div>
 		</div>
 		<div class="riipen-list">
 			<?php if ( have_posts() ) : ?>
@@ -33,7 +35,7 @@ get_header(); ?>
 									<?php $url = wp_get_attachment_url( get_post_thumbnail_id() ) ?>
 									
 									<div class="educator-image" style=background-image:url("<?php echo $url ?>") no repeat ;>
-								
+
 									</div>
 								</a>
 							<?php endif ?>

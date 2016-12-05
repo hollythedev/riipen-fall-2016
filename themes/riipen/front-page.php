@@ -1,4 +1,4 @@
-<?php
+	<?php
 /**
  * The main template file.
  *
@@ -8,6 +8,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+
 	<main id="main" class="site-main" role="main">
 
 		<section class="hero">
@@ -71,7 +72,7 @@ get_header(); ?>
 						<li>Educators</li>
 					</ul>
 				</div>
-      </section>
+			</section>
 			<section class="testimonial">
 				<div class="container animatedParent animateOnce">
 					<div class="icon animated fadeInLeft">
