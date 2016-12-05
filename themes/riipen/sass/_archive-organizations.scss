@@ -14,21 +14,29 @@
  		flex-wrap: wrap;
  		&:hover{
  			.grey-boxes{
- 			background-color: $color_warm-grey-two;	
+ 				background-color: $color_warm-grey-two;	
+ 				&:nth-child(0n+2){
+ 					background-color: $color_pumpkin-orange;
+ 				}
  			}
+
  		}
  		.grey-boxes{
- 		box-sizing: border-box;
- 		width: 50%;
- 		height: 50%;
- 		background-color: $color_warm-grey;
- 		border: 2px $color__lightgrey solid;
- 	}
+ 			box-sizing: border-box;
+ 			width: 50%;
+ 			height: 50%;
+ 			background-color: $color_warm-grey;
+ 			border: 2px $color__lightgrey solid;
+ 			&:nth-child(0n+2){
+ 				background-color: $color_pumpkin-orange;
+ 			}
+ 			
+ 		}
  	}
  	.list-view{
  		padding-top: 2px;
  		&:hover{
-		background-color: rgba(255, 255, 255, 0.5);
+ 			background-color: rgba(255, 255, 255, 0.5);
  			// background: url("../../images/btsMobileListgallery.png")
  		}
  	}
@@ -38,7 +46,7 @@
 
  	}
  	.riipen-list{
- 		  transition: all 1s ease;
+ 		transition: all 1s ease;
  	}
  	.riipen-list.organizationgrid{
  		display: flex;
@@ -70,7 +78,7 @@
  	}
  	.riipen-list.organizationlist{
  		width: 95%;
-		    padding-bottom: 140px;
+ 		padding-bottom: 140px;
  		display: flex;
  		margin: 10px 0px;
  		margin: 10px auto;
@@ -81,7 +89,7 @@
  			height: 200px;
  			border: 2px solid $color__greyborders;
  			&:hover{
-			border: 2px solid $color_warm-grey;
+ 				border: 2px solid $color_warm-grey;
  			}
  			.organization-content{
  				width: 75%;
@@ -92,12 +100,14 @@
  			}
  			a{
  				display: flex;
- 				width: 25%;
+ 				width: 100%;
  				img {
+ 					width: 50%;
  					margin: auto 0;
+ 					
+ 					padding-left: 5px;
  					max-width: 100%;
  					height: auto;
- 					padding-left: 5px;
  				}
  			}
  		}
