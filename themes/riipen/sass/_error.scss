@@ -11,11 +11,11 @@
   }
   .error-image {
     background-color: $color_twilight-blue;
-    width: 180px;
-    height: 180px;
+    width: 11em;
+    height: 11em;
     border-radius: 100%;
     position: absolute;
-    top: 3rem;
+    top: 3em;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -23,34 +23,39 @@
   }
   h1 {
     color: $transparent_pumpkin-orange;
-    font-size: 12rem;
+    font-size: 12em;
     font-weight: bold;
     line-height: 1;
     margin: 0 0 5rem;
     position: inherit;
-    z-index: 1;
   }
   h2 {
     color: $color_pumpkin-orange;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2em;
   }
   p {
     color: $color_warm-grey-two;
-    font-size: 1rem;
   }
   .home-link {
-    background-color: $color_dark-mint;
-    width: 110px;
-    height: 34px;
-    border-radius: 5px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     a {
+      display: block;
+      background-color: $color_dark-mint;
+      width: 10em;
+      height: 2.5em;
+      line-height: 2.5em;
+      border-radius: 5px;
+      border: 2px solid $color_dark-mint;
       color: white;
+      &:hover {
+        background-color: white;
+        color: $color_dark-mint;
+      }
     }
   }
 }

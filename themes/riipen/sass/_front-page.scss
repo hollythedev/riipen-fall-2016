@@ -7,8 +7,8 @@
   align-items: center;
   color: white;
   .headline {
-    width: 300px;
-    height: 300px;
+    width: 19em;
+    height: 19em;
     background-color: $color_azure;
     display: flex;
     justify-content: center;
@@ -25,14 +25,20 @@ section {
 .stats {
   background-color: $color_white-smoke;
   ul {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   li {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     &:last-child {
       h2 {
         order: 1;
+        @include desktop {
+          order: 0;
+        }
       }
     }
     &:first-child,
@@ -42,12 +48,12 @@ section {
         align-items: center;
       }
       h2 {
-        margin: 0 20px;
+        margin: 0 1rem;
         display: block;
         position: relative;
         border: 3px solid $color_azure;
-        min-width: 150px;
-        height: 150px;
+        min-width: 10rem;
+        height: 10rem;
         text-align: center;
         border-radius: 100%;
         display: flex;
@@ -73,15 +79,19 @@ section {
           border-radius: 100%;
           position: absolute;
         }
+        @include desktop {
+          min-width: 15rem;
+          height: 15rem;
+        }
       }
     }
     &:nth-child(2) {
-      margin: 0 20px;
+      padding: 0 1rem;
       display: block;
       position: relative;
       border: 3px solid $color_azure;
-      width: 300px;
-      height: 300px;
+      width: 20rem;
+      height: 20rem;
       text-align: center;
       border-radius: 100%;
       display: flex;
@@ -108,21 +118,84 @@ section {
         border-radius: 100%;
         position: absolute;
       }
+      @include desktop {
+        align-self: flex-end;
+        text-align: left;
+        padding: 0;
+        margin: 0 0 1.5rem;
+        width: 65%;
+        height: auto;
+        border: none;
+        border-radius: 0;
+        div {
+          display: flex;
+          align-items: center;
+        }
+        &:before {
+          content: none;
+        }
+        &:after {
+          content: none;
+        }
+        h2 {
+          margin: 0 1rem;
+          display: block;
+          position: relative;
+          border: 3px solid $color_azure;
+          min-width: 15rem;
+          height: 15rem;
+          text-align: center;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:after {
+            content: '';
+            border: 2px solid $color_pumpkin-orange;
+            top: 2px;
+            left: -6px;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            position: absolute;
+          }
+          &:before {
+            content: '';
+            border: 2px solid $color_dark-mint;
+            top: 2px;
+            left: 5px;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            position: absolute;
+          }
+        }
+      }
     }
     p {
       margin: 0;
     }
+    h2 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: lighter;
+    }
+    @include desktop {
+      width: 65%;
+    }
   }
   .double-border {
-      display: block;
-      position: relative;
-      border: 3px solid $color_azure;
-      padding: 1rem;
+    text-align: center;
+    font-style: italic;
+    display: block;
+    position: relative;
+    border: 3px solid $color_azure;
+    padding: 1.5em 1em 1em;
     &:before {
       content: '';
       border: 3px solid $color_azure;
-      top: 5px;
-      left: 5px;
+      top: .6em;
+      left: .5em;
       width: 100%;
       height: 100%;
       position: absolute;
@@ -155,26 +228,38 @@ section {
     text-align: center;
   }
   ol {
+    margin: 0 auto 2rem;
+    width: 65%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     li {
+      width: 100%;
       counter-increment: item;
       margin-bottom: 1rem;
       &:before {
-         margin-right: 10px;
-         content: counter(item);
-         border-radius: 100%;
-         border: 2px solid $color_azure;
-         width: 1.75rem;
-         height: 1.5rem;
-         padding-bottom: 1.5rem;
-         text-align: center;
-         display: inline-block;
-       }
+        margin-right: 10px;
+        content: counter(item);
+        border-radius: 100%;
+        border: 2px solid $color_azure;
+        width: 1.75rem;
+        height: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        display: inline-block;
+      }
+      @include desktop {
+        line-height: 1;
+        width: 50%;
+      }
     }
   }
 }
 
 .figures {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   li {
     width: 33%;
@@ -185,31 +270,21 @@ section {
 .testimonial {
   .container {
     display: flex;
+    align-items: center;
   }
   .icon {
-    width: 25%;
+    width: 12em;
+    height: 12em;
+    margin-right: 2em;
+    background-color: grey;
   }
   .text {
     width: 75%;
-    font-size: .8rem;
+    font-size: .8em;
   }
   h3 {
     text-align: right;
-    font-size: .8rem;
+    font-size: .8em;
     font-style: italic;
-  }
-}
-
-.highlight-orange {
-  color: $color_pumpkin-orange;
-  a {
-    color: $color_pumpkin-orange;
-  }
-}
-
-.highlight-blue {
-  color:  $color_twilight-blue;
-  a {
-    color: $color_twilight-blue;
   }
 }
