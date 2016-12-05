@@ -1616,6 +1616,39 @@ a {
     height: 250px;
     width: 174px; }
 
+.educator-page .educator-talent-section-1 {
+  text-transform: uppercase;
+  font: 1.5rem "Open Sans", sans-serif;
+  font-weight: bold; }
+  .educator-page .educator-talent-section-1 h1 {
+    color: #f1f1f1; }
+    .educator-page .educator-talent-section-1 h1 span {
+      color: #f68708; }
+
+.educator-page .educator-talent-section-3 p {
+  color: #27aefb;
+  text-align: center;
+  font: 1rem "Open Sans", sans-serif; }
+
+.educator-page .educator-talent-section-3 .educator-talent-btn {
+  border: 1rem solid #4cc88d;
+  color: #f1f1f1;
+  background-color: #4cc88d;
+  text-align: center;
+  padding: 10px 20px; }
+
+.educator-page .educator-talent-section-3 .educator-talent-section-5 {
+  font: 1.2rem "Open Sans", sans-serif; }
+  .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
+    font-style: italics;
+    color: #666; }
+  .educator-page .educator-talent-section-3 .educator-talent-section-5 .position {
+    color: #f68708;
+    text-align: right; }
+  .educator-page .educator-talent-section-3 .educator-talent-section-5 .name {
+    color: #666;
+    text-align: right; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/

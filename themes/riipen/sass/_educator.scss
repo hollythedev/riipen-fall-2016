@@ -1,0 +1,42 @@
+.educator-page{
+    .educator-talent-section-1{
+        text-transform: uppercase;
+        font: 1.5rem $font__main;
+        font-weight: bold;
+        h1{
+            color: $color__background-screen;
+            span{
+                color: $color_pumpkin-orange
+            }
+        }
+    }
+   .educator-talent-section-3{
+       p{
+           color: $color_azure;
+           text-align: center;
+           font: 1rem $font__main;
+       }
+       .educator-talent-btn{
+           border: 1rem solid $color_dark-mint;
+           color: $color__background-screen;
+           background-color: $color_dark-mint;
+           text-align: center;
+        padding: 10px 20px;
+       }
+.educator-talent-section-5{
+    font: 1.2rem $font__main;
+    .testimonial{
+        font-style: italics;
+        color: $color__border-abbr;
+    }
+    .position{
+        color:$color_pumpkin-orange;
+        text-align: right;
+    }
+    .name{
+        color: $color__border-abbr;
+        text-align: right;
+    }
+}
+   } 
+}
