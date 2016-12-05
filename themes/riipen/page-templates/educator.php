@@ -22,7 +22,7 @@
                 <p> 4 easy steps to being Riipened </p>
                 <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
             </div>
-            <div class="educator-talentsection-4">
+            <div class="educator-talent-section-4">
                 <?php echo CFS()->get( 'banner_2'); ?>
             </div>
             <div class="educator-talent-section-5">
@@ -31,6 +31,7 @@
                 <?php echo CFS()->get( 'name'); ?>
             </div>
         </section>
+        <?php dynamic_sidebar( 'carousels' ); ?>
     </main>
 </div>
 <!-- #primary -->

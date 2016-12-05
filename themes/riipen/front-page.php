@@ -13,9 +13,9 @@ get_header(); ?>
 
 		<section class="hero">
 			<div class="headline">
-				<div class="headline-wrap">
-					<h2>Riipen your life</h2>
-					<p>Where talent and industry meet</p>
+				<div class="headline-wrap animatedParent">
+					<h2 class="animated bounceInDown">Riipen your life</h2>
+					<p class="animated bounceInLeft">Where talent and industry meet</p>
 				</div>
 			</section>
 			<section class="stats">
