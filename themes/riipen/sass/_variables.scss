@@ -31,11 +31,10 @@ $color__border-abbr: #666;
 $color__link: royalblue;
 $color__link-visited: black;
 $color__link-hover: midnightblue;
-
 $color_footer: #7E7E7E;
-// Typography
 
-$font__main: 12px 'Open Sans', sans-serif;
+// Typography
+$font__main: 'Open Sans', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
@@ -44,4 +43,4 @@ $font__line-height-pre: 1.6;
 
 //Breakpoints
 $breakpoint: 600px;
-$desktop: 1280px;
+$desktop: 1000px;
