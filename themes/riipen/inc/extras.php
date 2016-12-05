@@ -48,6 +48,7 @@ function my_styles_method() {
         return;
     }
     ///$url = CFS()->get('background_image');
-    wp_add_inline_style( 'riipen-style');
+    wp_add_inline_style( 'riipen-style', "body{
+        background: blue");
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
