@@ -21,7 +21,7 @@
 
   $('.menu-toggle').on('focusout', function(){
     event.preventDefault();
-    $('#primary-menu').hide();
+    //$('#primary-menu').slideToggle(350);
    });
 
  //This will show/hide the search form in navigation.
@@ -32,7 +32,7 @@
 
  //This will hide the search form when no longer in focus.
  $('.site-search input[type=search]').on('focusout', function(){
-   $(this).slideToggle("fast");
+   $(this).slideToggle(350);
  });
 
 })( jQuery );
