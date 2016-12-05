@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 <button onclick="history.go(-1);" class="back"><  Back</button>
-	<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main animatedParent" role="main">
 		<div class="view-type-buttons">
 			<a class="list-view psudeo-button" > 
 				<div class="psudeo-button"> 
@@ -23,7 +23,7 @@ get_header(); ?>
 				<div class="grey-boxes"></div> 
 			</a>
 		</div>
-		<div class="riipen-list organizationgrid">
+		<div class="riipen-list organizationgrid animated ">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
