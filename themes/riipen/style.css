@@ -529,17 +529,13 @@ a {
     @media (min-width: 600px) {
       .main-navigation ul {
         font-weight: bold;
-        height: 68px;
         width: auto;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-align: center;
-            align-items: center;
         position: initial;
-        height: inherit; }
+        height: 68px; }
         .main-navigation ul a {
           display: block;
-          height: 68px;
           line-height: 68px;
           padding: 0 10px;
           color: #0c4160; }
