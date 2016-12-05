@@ -487,6 +487,10 @@ a {
           background-color: transparent;
           margin: 0;
           padding: 0; } }
+    @media (min-width: 600px) {
+      .main-navigation ul .riipen-brand {
+        -ms-flex-order: 1;
+            order: 1; } }
     .main-navigation ul .menu-item-has-children {
       padding: 0 20px;
       font-size: 0; }

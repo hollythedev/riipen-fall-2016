@@ -87,6 +87,11 @@ a {
 				padding: 0;
 			}
 		}
+		.riipen-brand {
+			@include desktop {
+				order: 1;
+			}
+		}
 		.menu-item-has-children {
 			padding: 0 20px;
 			font-size: 0;
