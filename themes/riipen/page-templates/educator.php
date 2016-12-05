@@ -20,7 +20,7 @@
             </div>
             <div class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
-                <a href="<?php the_permalink(); ?>" class='eductor-talent-btn'> riipen up</a>
+                <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
             </div>
             <div class="educator-talentsection-4">
                 <?php echo CFS()->get( 'banner_2'); ?>
