@@ -31,6 +31,7 @@
                 <?php echo CFS()->get( 'name'); ?>
             </div>
         </section>
+        <?php dynamic_sidebar( 'carousels' ); ?>
     </main>
 </div>
 <!-- #primary -->
