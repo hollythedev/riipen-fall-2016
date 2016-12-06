@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 <button onclick="history.go(-1);" class="back"><  Back</button>
-	<main id="main" class="site-main animatedParent" role="main">
+	<main id="main" class="site-main animatedParent container" role="main">
 		<div class="view-type-buttons">
 			<a class="list-view psudeo-button" > 
 				<div class="psudeo-button"> 

@@ -428,6 +428,8 @@ a {
 
 /* Menus */
 .site-header {
+  position: fixed;
+  z-index: 1;
   height: 68px;
   width: 100%; }
   .site-header .container {
@@ -1858,11 +1860,13 @@ object {
     #bgvid {
       display: block; } }
 
+.site-content {
+  padding-top: 68px; }
+
 .hero {
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 64px);
   background: url("../../images/new-york-stock-photo.jpg ") no-repeat, rgba(0, 0, 0, 0.4);
   background-size: cover;
   display: -ms-flexbox;
@@ -2092,7 +2096,7 @@ section {
     text-align: center; }
   .difference ol {
     margin: 0 auto 2rem;
-    width: 65%;
+    width: 85%;
     padding: 0;
     display: -ms-flexbox;
     display: flex;
@@ -2100,9 +2104,11 @@ section {
         flex-wrap: wrap;
     list-style: none; }
     .difference ol li {
+      padding-left: 30%;
       width: 100%;
       counter-increment: item;
-      margin-bottom: 1rem; }
+      margin-bottom: 2rem;
+      padding-right: 5px; }
       .difference ol li:before {
         margin-right: 10px;
         content: counter(item);
@@ -2115,6 +2121,7 @@ section {
         display: inline-block; }
       @media (min-width: 750px) {
         .difference ol li {
+          padding: 0;
           line-height: 1;
           width: 50%; } }
 
@@ -2164,9 +2171,11 @@ video#bgvid {
 .wp-posts-carousel-container {
   box-shadow: none; }
 
-.post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
-  padding-top: 50px;
+.post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
   background: #f7f7f7; }
+
+.post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
+  padding-top: 50px; }
   .post-type-archive-institutions .site-main .tabbingwrapper, .post-type-archive-educator .site-main .tabbingwrapper {
     display: -ms-flexbox;
     display: flex; }
@@ -2175,8 +2184,9 @@ video#bgvid {
     font-size: 18px; }
   .post-type-archive-institutions .site-main .educator-image, .post-type-archive-educator .site-main .educator-image {
     height: 200px;
+    width: 200px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover; }
   .post-type-archive-institutions .site-main .educatorname, .post-type-archive-educator .site-main .educatorname {
     letter-spacing: 0.9pt; }
@@ -2230,100 +2240,116 @@ video#bgvid {
       width: 100%;
       height: 100%; }
 
-.post-type-archive-organizations .site-main {
+.post-type-archive-institutions .personwrapper {
+  width: 30%; }
+  @media (min-width: 750px) {
+    .post-type-archive-institutions .personwrapper {
+      width: 15%; } }
+
+.post-type-archive-organizations .content-area {
   background: #f7f7f7; }
-  .post-type-archive-organizations .site-main .view-type-buttons {
+
+.post-type-archive-organizations .view-type-buttons {
+  width: 50%;
+  height: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 36px; }
+
+.post-type-archive-organizations .grid-view {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-type-archive-organizations .grid-view:hover .grey-boxes {
+    background-color: #919191; }
+    .post-type-archive-organizations .grid-view:hover .grey-boxes:nth-child(0n+2) {
+      background-color: #f68708; }
+  .post-type-archive-organizations .grid-view .grey-boxes {
+    box-sizing: border-box;
     width: 50%;
-    height: 100px;
+    height: 50%;
+    background-color: #7e7e7e;
+    border: 2px #f7f7f7 solid; }
+    .post-type-archive-organizations .grid-view .grey-boxes:nth-child(0n+2) {
+      background-color: #f68708; }
+
+.post-type-archive-organizations .list-view {
+  padding-top: 2px; }
+  .post-type-archive-organizations .list-view:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
+
+.post-type-archive-organizations .psudeo-button {
+  width: 50px;
+  height: 50px; }
+
+.post-type-archive-organizations .riipen-list {
+  transition: all 1s ease;
+  width: 90%;
+  margin: 0 auto; }
+
+.post-type-archive-organizations .riipen-list.organizationgrid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 140px; }
+  .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
+    width: 30%;
+    margin: 30px auto;
+    box-sizing: border-box; }
+    @media (min-width: 750px) {
+      .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
+        width: 15%; } }
+    .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-title {
+      display: none; }
+    .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-summary {
+      display: none; }
+  .post-type-archive-organizations .riipen-list.organizationgrid h2 {
+    text-align: center; }
+  .post-type-archive-organizations .riipen-list.organizationgrid a img {
+    box-shadow: 4px 17px 53px 1px #a6a6a6;
+    width: 100%;
+    height: 100%; }
+
+.post-type-archive-organizations .riipen-list.organizationlist {
+  padding-bottom: 140px;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0px;
+  margin: 10px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .post-type-archive-organizations .riipen-list.organizationlist .personwrapper {
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 0 auto;
-    padding-top: 36px; }
-  .post-type-archive-organizations .site-main .grid-view {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .post-type-archive-organizations .site-main .grid-view:hover .grey-boxes {
-      background-color: #919191; }
-      .post-type-archive-organizations .site-main .grid-view:hover .grey-boxes:nth-child(0n+2) {
-        background-color: #f68708; }
-    .post-type-archive-organizations .site-main .grid-view .grey-boxes {
-      box-sizing: border-box;
-      width: 50%;
-      height: 50%;
-      background-color: #7e7e7e;
-      border: 2px #f7f7f7 solid; }
-      .post-type-archive-organizations .site-main .grid-view .grey-boxes:nth-child(0n+2) {
-        background-color: #f68708; }
-  .post-type-archive-organizations .site-main .list-view {
-    padding-top: 2px; }
-    .post-type-archive-organizations .site-main .list-view:hover {
-      background-color: rgba(255, 255, 255, 0.5); }
-  .post-type-archive-organizations .site-main .psudeo-button {
-    width: 50px;
-    height: 50px; }
-  .post-type-archive-organizations .site-main .riipen-list {
-    transition: all 1s ease;
-    width: 90%;
-    margin: 0 auto; }
-  .post-type-archive-organizations .site-main .riipen-list.organizationgrid {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-bottom: 140px; }
-    .post-type-archive-organizations .site-main .riipen-list.organizationgrid .personwrapper {
-      width: 30%;
-      margin: 30px auto;
-      box-sizing: border-box; }
-      .post-type-archive-organizations .site-main .riipen-list.organizationgrid .personwrapper .entry-title {
-        display: none; }
-      .post-type-archive-organizations .site-main .riipen-list.organizationgrid .personwrapper .entry-summary {
-        display: none; }
-    .post-type-archive-organizations .site-main .riipen-list.organizationgrid h2 {
-      text-align: center; }
-    .post-type-archive-organizations .site-main .riipen-list.organizationgrid a img {
-      box-shadow: 4px 17px 53px 1px #a6a6a6;
-      width: 100%;
-      height: 100%; }
-  .post-type-archive-organizations .site-main .riipen-list.organizationlist {
-    padding-bottom: 140px;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 10px 0px;
-    margin: 10px auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper {
-      width: 100%;
+    height: 200px;
+    border: 2px solid grey; }
+    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper:hover {
+      border: 2px solid #7e7e7e; }
+    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content {
+      width: 75%; }
+    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .entry-title {
+      margin: 0; }
+    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a {
+      padding-left: 5px;
       display: -ms-flexbox;
       display: flex;
-      height: 200px;
-      border: 2px solid grey; }
-      .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper:hover {
-        border: 2px solid #7e7e7e; }
-      .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper .organization-content {
-        width: 75%; }
-      .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper .entry-title {
-        margin: 0; }
-      .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper a {
-        display: -ms-flexbox;
-        display: flex;
-        width: 100%; }
-        .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper a img {
-          width: 50%;
-          margin: auto 0;
-          padding-left: 5px;
-          max-width: 100%;
-          height: auto; }
-          @media (min-width: 750px) {
-            .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper a img {
-              width: 25%; } }
+      width: 150px; }
+      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a img {
+        margin: auto 0;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%; }
+    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content a {
+      width: auto;
+      padding-left: 10px; }
 
 .single-organizations {
   /*----- Tabs -----*/

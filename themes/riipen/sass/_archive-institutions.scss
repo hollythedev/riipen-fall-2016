@@ -1,6 +1,10 @@
-.post-type-archive-institutions .site-main,.post-type-archive-educator .site-main{
-	padding-top: 50px;
+.post-type-archive-institutions ,.post-type-archive-educator {
+	.site-content{
 	background: $color__lightgrey;
+}
+.site-main{
+	padding-top: 50px;
+	
 	.tabbingwrapper{
 		display: flex;
 	}
@@ -10,8 +14,9 @@
 	}
 	.educator-image{
 		height: 200px;
+		width: 200px;
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: top;
 		background-size: cover;
 
 	}
@@ -65,7 +70,7 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 		.personwrapper{
-			width: 30%;
+			width: 30%;		
 			margin: 30px auto;
 			box-sizing: border-box;
 		}
@@ -80,4 +85,14 @@
 			}
 		}
 	}
+
+}
+}
+.post-type-archive-institutions {
+	.personwrapper{
+			width: 30%;
+			@include desktop{
+				width: 15%;
+			}
+		}
 }

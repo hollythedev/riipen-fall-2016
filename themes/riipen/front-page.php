@@ -61,7 +61,7 @@ get_header(); ?>
 					<div class="container">
 						<h2>Riipen want's to make a difference</h2>
 						<p>and it's simple</p>
-						<ol>
+						<ol class="flex">
 							<li>You sign up</li>
 							<li>Create your dashboard</li>
 							<li>Customize your profile</li>

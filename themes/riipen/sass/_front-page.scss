@@ -4,11 +4,14 @@
     display: block;
   }
 }
+.site-content{
+padding-top: 68px;
+}
 .hero {
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 64px);
+  // height: calc(100vh - 64px);
   background: url( "../../images/new-york-stock-photo.jpg " ) no-repeat,rgba(0, 0, 0, 0.4);
   background-size: cover;
   display: flex;
@@ -249,15 +252,21 @@ section {
   }
   ol {
     margin: 0 auto 2rem;
-    width: 65%;
+    width: 85%;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    @include desktop{
+
+    }
     li {
+      padding-left: 30%;
       width: 100%;
       counter-increment: item;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      padding-right: 5px;
+
       &:before {
         margin-right: 10px;
         content: counter(item);
@@ -270,6 +279,7 @@ section {
         display: inline-block;
       }
       @include desktop {
+        padding: 0;
         line-height: 1;
         width: 50%;
       }

@@ -8,8 +8,9 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+	
+	<main id="main" class="site-main container" role="main">
 	<button onclick="history.go(-1);" class="back"><  Back</button>
-	<main id="main" class="site-main" role="main">
 		<div  class="tabbingwrapper">
 			<div class="tabbingsection">
 

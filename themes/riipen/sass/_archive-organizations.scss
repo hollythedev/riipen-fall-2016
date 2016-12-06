@@ -1,42 +1,45 @@
- .post-type-archive-organizations .site-main{
- 	background: $color__lightgrey;
- 	.view-type-buttons{
- 		width:50%;
- 		height: 100px;
- 		display: flex;
- 		justify-content: space-around;
- 		margin: 0 auto;
- 		padding-top: 36px;
- 	}
- 	
- 	.grid-view{
- 		display: flex;
- 		flex-wrap: wrap;
- 		&:hover{
- 			.grey-boxes{
- 				background-color: $color_warm-grey-two;	
- 				&:nth-child(0n+2){
- 					background-color: $color_pumpkin-orange;
- 				}
- 			}
+.post-type-archive-organizations {
+	.content-area{
+		background: $color__lightgrey; 
+	}
+	
+	.view-type-buttons{
+		width:50%;
+		height: 100px;
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto;
+		padding-top: 36px;
+	}
 
- 		}
- 		.grey-boxes{
- 			box-sizing: border-box;
- 			width: 50%;
- 			height: 50%;
- 			background-color: $color_warm-grey;
- 			border: 2px $color__lightgrey solid;
- 			&:nth-child(0n+2){
- 				background-color: $color_pumpkin-orange;
- 			}
- 			
- 		}
- 	}
- 	.list-view{
- 		padding-top: 2px;
- 		&:hover{
- 			background-color: rgba(255, 255, 255, 0.5);
+	.grid-view{
+		display: flex;
+		flex-wrap: wrap;
+		&:hover{
+			.grey-boxes{
+				background-color: $color_warm-grey-two;	
+				&:nth-child(0n+2){
+					background-color: $color_pumpkin-orange;
+				}
+			}
+
+		}
+		.grey-boxes{
+			box-sizing: border-box;
+			width: 50%;
+			height: 50%;
+			background-color: $color_warm-grey;
+			border: 2px $color__lightgrey solid;
+			&:nth-child(0n+2){
+				background-color: $color_pumpkin-orange;
+			}
+
+		}
+	}
+	.list-view{
+		padding-top: 2px;
+		&:hover{
+			background-color: rgba(255, 255, 255, 0.5);
  			// background: url("../../images/btsMobileListgallery.png")
  		}
  	}
@@ -58,8 +61,10 @@
  		padding-bottom: 140px;
  		.personwrapper{
  			width: 30%;
+ 			@include desktop{
+ 				width: 15%;
+ 			}
  			margin: 30px auto;
-
  			box-sizing: border-box;
  			.entry-title{
  				display: none;
@@ -102,21 +107,22 @@
  				margin: 0;
  			}
  			a{
+ 				padding-left: 5px;
  				display: flex;
- 				width: 100%;
+ 				width: 150px;
  				img {
- 					width: 50%;
- 					@include desktop{
- 						width: 25%;
- 					}
  					margin: auto 0;
- 					
- 					padding-left: 5px;
  					max-width: 100%;
  					height: auto;
+ 					max-height: 100%;
+ 				}
+ 			}
+ 			.organization-content{
+ 				a{
+ 					width: auto;
+ 					padding-left: 10px;
  				}
  			}
  		}
-		// display: none;
-	}
-}
+ 	}
+ }
