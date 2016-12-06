@@ -3,9 +3,9 @@
     height: 226px;
     .footer-container {
         margin: 0 30px;
-        padding-top: 3%;
+padding-top: 76px;
         @media (min-width: $breakpoint) {
-            margin: 0 30%;
+            
             padding-top: 5%;
         }
         .footer-social-media {
@@ -33,6 +33,8 @@
                 justify-content: space-around;
                 padding-bottom: 5%;
                 width: 100%;
+                    width: 50%;
+                    margin: 0px 270px;
                 a {
                     color: white;
                     text-decoration: none;
@@ -42,6 +44,7 @@
             }
         }
         .footer-information {
+                padding-top: 15px;
             display: flex;
             justify-content: space-around;
             a {
