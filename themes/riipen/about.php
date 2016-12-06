@@ -6,7 +6,12 @@
           <h1><?php the_title(); ?></h1>
         </section>
         <section class="about-wrap">
-          <h2>Our Story</h2>
+          <div class="container">
+            <h2>Story about Riipen</h2>
+            <?php echo CFS()->get( 'story' ) ?>
+          </div>
+        </section>
+        <section class="founders">
         </section>
       </main><!-- #main -->
     </div><!-- #primary -->

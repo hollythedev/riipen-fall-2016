@@ -51,7 +51,7 @@ function register_educators_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'educators',		
+		'has_archive'           => 'educators',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
@@ -104,7 +104,7 @@ function register_Institutions_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -157,7 +157,7 @@ function register_Organizations_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -166,3 +166,58 @@ function register_Organizations_post_type() {
 
 }
 add_action( 'init', 'register_Organizations_post_type', 0 );
+
+// Register Founders Post Type
+function register_founders_post_type() {
+
+	$labels = array(
+		'name'                  => 'Founders',
+		'singular_name'         => 'Founder',
+		'menu_name'             => 'Founders',
+		'name_admin_bar'        => 'Founders',
+		'archives'              => 'Founder Archives',
+		'parent_item_colon'     => 'Parent Founder:',
+		'all_items'             => 'All Founders',
+		'add_new_item'          => 'Add New Founders',
+		'add_new'               => 'Add New Founder',
+		'new_item'              => 'New Founder',
+		'edit_item'             => 'Edit Founder',
+		'update_item'           => 'Update Founder',
+		'view_item'             => 'View Founder',
+		'search_items'          => 'Search Founder',
+		'not_found'             => 'Not found',
+		'not_found_in_trash'    => 'Not found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into Founder',
+		'uploaded_to_this_item' => 'Uploaded to this Founder',
+		'items_list'            => 'Founder list',
+		'items_list_navigation' => 'Founders list navigation',
+		'filter_items_list'     => 'Filter Founders list',
+	);
+	$args = array(
+		'label'                 => 'Founder',
+		'description'           => 'Founders post',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', ),
+		'taxonomies'            => array( 'category', 'post_tag' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-id',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => 'founders',
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'post',
+	);
+	register_post_type( 'founder', $args );
+
+}
+add_action( 'init', 'register_founders_post_type', 0 );

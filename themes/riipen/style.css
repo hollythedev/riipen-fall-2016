@@ -2482,3 +2482,9 @@ section {
       .error-404 .home-link a:hover {
         background-color: white;
         color: #4cc88d; }
+
+.about-hero {
+  height: 100vh; }
+  .about-hero h1 {
+    margin: 0;
+    height: 0; }
