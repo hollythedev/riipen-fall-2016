@@ -1801,6 +1801,9 @@ object {
 .site-footer {
   background: #333333;
   height: 226px; }
+  @media (min-width: 750px) {
+    .site-footer {
+      height: 350px; } }
   .site-footer .footer-container {
     margin: 0 30px;
     padding-top: 76px; }
@@ -1822,7 +1825,7 @@ object {
           padding: 3px 8px; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-social-media {
-          margin: 0 20%; } }
+          margin: 0px 382px; } }
     .site-footer .footer-container .footer-buttons {
       display: none; }
       @media (min-width: 750px) {
@@ -1854,7 +1857,7 @@ object {
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-information {
           font-size: 1rem;
-          margin-bottom: 10%; } }
+          margin: 0 354px; } }
 
 #bgvid {
   display: none; }
