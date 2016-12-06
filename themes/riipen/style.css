@@ -1631,7 +1631,8 @@ a {
   font: 1rem "Open Sans", sans-serif;
   font-weight: bold; }
   .educator-page .educator-talent-section-1 h1 {
-    color: #f1f1f1; }
+    color: #f1f1f1;
+    margin: 0; }
     .educator-page .educator-talent-section-1 h1 span {
       color: #f68708; }
 
@@ -1648,7 +1649,7 @@ a {
   padding: 10px 20px; }
 
 .educator-page .educator-talent-section-3 .educator-talent-section-5 {
-  font: 1.2rem "Open Sans", sans-serif; }
+  font: 1.5rem "Open Sans", sans-serif; }
   .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
     font-style: italics;
     color: #666; }
@@ -1800,14 +1801,16 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
-  background: #7E7E7E;
+  background: #333333;
   height: 226px; }
+  @media (min-width: 750px) {
+    .site-footer {
+      height: 350px; } }
   .site-footer .footer-container {
     margin: 0 30px;
-    padding-top: 3%; }
+    padding-top: 76px; }
     @media (min-width: 750px) {
       .site-footer .footer-container {
-        margin: 0 30%;
         padding-top: 5%; } }
     .site-footer .footer-container .footer-social-media {
       display: -ms-flexbox;
@@ -1815,15 +1818,16 @@ object {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
       .site-footer .footer-container .footer-social-media a {
-        color: grey;
+        color: #333333;
         background-color: white;
-        font-size: 2rem;
-        border-radius: 100%; }
+        font-size: 1.5rem;
+        border-radius: 100%;
+        display: block; }
         .site-footer .footer-container .footer-social-media a i {
-          padding: 15px; }
+          padding: 3px 8px; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-social-media {
-          margin: 0 20%; } }
+          margin: 0px 382px; } }
     .site-footer .footer-container .footer-buttons {
       display: none; }
       @media (min-width: 750px) {
@@ -1833,13 +1837,16 @@ object {
           -ms-flex-pack: distribute;
               justify-content: space-around;
           padding-bottom: 5%;
-          width: 100%; }
+          width: 100%;
+          width: 50%;
+          margin: 0px 270px; }
           .site-footer .footer-container .footer-buttons a {
             color: white;
             text-decoration: none;
             border: 1px solid green;
             padding: 10px 51px; } }
     .site-footer .footer-container .footer-information {
+      padding-top: 15px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
@@ -1852,7 +1859,7 @@ object {
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-information {
           font-size: 1rem;
-          margin-bottom: 10%; } }
+          margin: 0 354px; } }
 
 #bgvid {
   display: none; }
