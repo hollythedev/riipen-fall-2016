@@ -1875,6 +1875,11 @@ object {
     text-align: center;
     border-radius: 50%; }
 
+.video-wrapper {
+  float: left;
+  width: 100%;
+  height: 100%; }
+
 section {
   padding: 1.5rem 1rem; }
 
@@ -2128,6 +2133,19 @@ section {
   text-align: right;
   font-size: .8em;
   font-style: italic; }
+
+video#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../../images/new-york-stock-photo.jpg") no-repeat;
+  background-size: cover; }
 
 .wp-posts-carousel-container {
   box-shadow: none; }
