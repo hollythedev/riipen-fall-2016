@@ -60,13 +60,13 @@ function my_styles_method() {
 		 */
 		function my_background_method() {
 
-						if(!is_page_template( 'about.php' )){
+						if(!is_page_template( 'educator.php' )){
 							return;
 						}
 
-		        $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
+		        $url = CFS()->get( 'educator-talent-section-4' );//This is grabbing the background image vis Custom Field Suite Plugin
 		        $custom_css = "
-		                .about-hero{
+		                .banner{
 		                        background: url({$url}) no-repeat bottom center;
 														background-size: cover;
 		                }";
