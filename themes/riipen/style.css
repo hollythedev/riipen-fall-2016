@@ -1626,10 +1626,11 @@ a {
 
 .educator-page .educator-talent-section-1 {
   text-transform: uppercase;
-  font: 1.5rem "Open Sans", sans-serif;
+  font: 1rem "Open Sans", sans-serif;
   font-weight: bold; }
   .educator-page .educator-talent-section-1 h1 {
-    color: #f1f1f1; }
+    color: #f1f1f1;
+    margin: 0; }
     .educator-page .educator-talent-section-1 h1 span {
       color: #f68708; }
 
@@ -1646,7 +1647,7 @@ a {
   padding: 10px 20px; }
 
 .educator-page .educator-talent-section-3 .educator-talent-section-5 {
-  font: 1.2rem "Open Sans", sans-serif; }
+  font: 1.5rem "Open Sans", sans-serif; }
   .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
     font-style: italics;
     color: #666; }
@@ -1816,7 +1817,8 @@ object {
         color: grey;
         background-color: white;
         font-size: 2rem;
-        border-radius: 100%; }
+        border-radius: 100%;
+        display: block; }
         .site-footer .footer-container .footer-social-media a i {
           padding: 15px; }
       @media (min-width: 750px) {
