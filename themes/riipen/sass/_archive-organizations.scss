@@ -106,6 +106,9 @@
  				width: 100%;
  				img {
  					width: 50%;
+ 					@include desktop{
+ 						width: 25%;
+ 					}
  					margin: auto 0;
  					
  					padding-left: 5px;

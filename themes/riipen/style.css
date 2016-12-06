@@ -431,6 +431,7 @@ a {
   height: 68px;
   width: 100%; }
   .site-header .container {
+    background: white;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -1851,10 +1852,19 @@ object {
           font-size: 1rem;
           margin-bottom: 10%; } }
 
+#bgvid {
+  display: none; }
+  @media (min-width: 750px) {
+    #bgvid {
+      display: block; } }
+
 .hero {
   width: 100%;
+  position: relative;
+  overflow: hidden;
   height: calc(100vh - 64px);
-  background: rgba(0, 0, 0, 0.4);
+  background: url("../../images/new-york-stock-photo.jpg ") no-repeat, rgba(0, 0, 0, 0.4);
+  background-size: cover;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1862,6 +1872,9 @@ object {
   -ms-flex-align: center;
       align-items: center;
   color: white; }
+  @media (min-width: 750px) {
+    .hero {
+      background: rgba(0, 0, 0, 0.4); } }
   .hero .headline {
     width: 19em;
     height: 19em;
@@ -2136,12 +2149,12 @@ section {
   font-style: italic; }
 
 video#bgvid {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
+  width: 100%;
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
@@ -2308,6 +2321,9 @@ video#bgvid {
           padding-left: 5px;
           max-width: 100%;
           height: auto; }
+          @media (min-width: 750px) {
+            .post-type-archive-organizations .site-main .riipen-list.organizationlist .personwrapper a img {
+              width: 25%; } }
 
 .single-organizations {
   /*----- Tabs -----*/
