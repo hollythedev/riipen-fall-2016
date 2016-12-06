@@ -42,19 +42,21 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
 ///For the Educators and Talent Page
-function my_styles_method() {
+function background_method() {
 
-	if(!is_page_template('educator.php')){
-		return;
-    }
+						if(!is_page_template( 'educator.php' )){
+							return;
+						}
 
-
-		$url = CFS()->get ( 'banner'); // This is grabbing the background
-        wp_add_inline_style( 'riipen-style' );
-    }
-
-    add_action( 'wp_enqueue_scripts', 'my_styles_method' );
-
+		        $url = CFS()->get( 'educator-talent-section-4' );//This is grabbing the background image vis Custom Field Suite Plugin
+		        $custom_css = "
+		                .banner{
+		                        background: url({$url}) no-repeat bottom center;
+														background-size: cover;
+		                }";
+		        wp_add_inline_style( 'riipen-style', $custom_css );
+		}
+		add_action( 'wp_enqueue_scripts', 'background_method' );
 		/**
 		 * Custom About Page background image
 		 */

@@ -11,7 +11,9 @@
             <?php echo CFS()->get( 'story' ) ?>
           </div>
         </section>
-        <section class="founders">
+        <section class="founders container">
+
+          <?php dynamic_sidebar( 'carousels3' ); ?>
         </section>
       </main><!-- #main -->
     </div><!-- #primary -->
