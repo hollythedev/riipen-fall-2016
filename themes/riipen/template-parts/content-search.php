@@ -14,8 +14,8 @@
 		<?php endif; ?>
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		
-
-		<?php echo wpdocs_custom_taxonomies_terms_links(); ?>
+		<?php echo get_the_term_list( $post->ID, 'institution', 'Teaches At: ', ', ' ); ?>
+		<?php riipen_entry_footer() ?>
 
 	</header><!-- .entry-header -->
 
