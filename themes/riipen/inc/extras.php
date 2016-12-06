@@ -42,7 +42,7 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
 ///For the Educators and Talent Page
-function my_background_method() {
+function background_method() {
 
 						if(!is_page_template( 'educator.php' )){
 							return;
@@ -56,7 +56,7 @@ function my_background_method() {
 		                }";
 		        wp_add_inline_style( 'riipen-style', $custom_css );
 		}
-		add_action( 'wp_enqueue_scripts', 'my_background_method' );
+		add_action( 'wp_enqueue_scripts', 'background_method' );
 		/**
 		 * Custom About Page background image
 		 */
