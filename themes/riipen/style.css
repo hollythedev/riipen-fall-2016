@@ -1828,10 +1828,10 @@ object {
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-social-media {
           margin: 0px 382px; } }
-    .site-footer .footer-container .footer-buttons {
+    .site-footer .footer-container .footer-button {
       display: none; }
       @media (min-width: 750px) {
-        .site-footer .footer-container .footer-buttons {
+        .site-footer .footer-container .footer-button {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: distribute;
@@ -1840,7 +1840,7 @@ object {
           width: 100%;
           width: 50%;
           margin: 0px 270px; }
-          .site-footer .footer-container .footer-buttons a {
+          .site-footer .footer-container .footer-button a {
             color: white;
             text-decoration: none;
             border: 1px solid green;
