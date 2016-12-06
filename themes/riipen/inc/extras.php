@@ -55,3 +55,21 @@ function my_styles_method() {
 
     add_action( 'wp_enqueue_scripts', 'my_styles_method' );
 
+		/**
+		 * Custom About Page background image
+		 */
+		function my_background_method() {
+
+						if(!is_page_template( 'about.php' )){
+							return;
+						}
+
+		        $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
+		        $custom_css = "
+		                .about-hero{
+		                        background: url({$url}) no-repeat bottom center;
+														background-size: cover;
+		                }";
+		        wp_add_inline_style( 'riipen-style', $custom_css );
+		}
+		add_action( 'wp_enqueue_scripts', 'my_background_method' );
