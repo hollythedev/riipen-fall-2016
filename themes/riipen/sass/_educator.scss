@@ -5,6 +5,7 @@
         font-weight: bold;
         h1{
             color: $color__background-screen;
+            margin: 0;
             span{
                 color: $color_pumpkin-orange
             }
@@ -24,7 +25,7 @@
         padding: 10px 20px;
        }
 .educator-talent-section-5{
-    font: 1.2rem $font__main;
+    font: 1.5rem $font__main;
     .testimonial{
         font-style: italics;
         color: $color__border-abbr;
