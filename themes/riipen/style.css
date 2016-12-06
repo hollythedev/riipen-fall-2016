@@ -1799,7 +1799,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
-  background: #7E7E7E;
+  background: #333333;
   height: 226px; }
   .site-footer .footer-container {
     margin: 0 30px;
@@ -1814,13 +1814,13 @@ object {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
       .site-footer .footer-container .footer-social-media a {
-        color: grey;
+        color: #333333;
         background-color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-radius: 100%;
         display: block; }
         .site-footer .footer-container .footer-social-media a i {
-          padding: 15px; }
+          padding: 3px 8px; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-social-media {
           margin: 0 20%; } }

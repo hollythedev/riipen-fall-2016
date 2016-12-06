@@ -12,19 +12,20 @@
             display: flex;
             justify-content: space-around;
             a {
-                color: grey;
+                color: $color_footer;
                 background-color: white;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 border-radius: 100%;
                 display:block;
                 i {
-                    padding: 15px;
+                    padding: 3px 8px;
                 }
             }
             @media (min-width: $breakpoint) {
                 margin: 0 20%;
             }
         }
+
         .footer-buttons {
             display: none;
             @media (min-width: $breakpoint) {
