@@ -24,12 +24,9 @@
 				<a href="https://www.linkedin.com/in/riipen"> <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
 			</p>
 		</div>
-		<div class= "footer-buttons">
+		<div class= "footer-button">
 			<a href="<?php echo esc_url( '#' ); ?>">
-				<?php printf( esc_html( 'Riipen up' ) ); ?>
-			</a>
-			<a href="<?php echo esc_url( '#' ); ?>">
-				<?php printf( esc_html( 'Get pricing' ) ); ?>
+				<?php printf( esc_html( 'Subscribe' ) ); ?>
 			</a>
 		</div>
 		<div class="footer-information">
@@ -41,9 +38,6 @@
 			</a>
 			<a href="<?php echo esc_url( 'https://riipen.com/faq' ); ?>">
 				<?php printf( esc_html( 'help' ) ); ?>
-			</a>
-			<a href="<?php echo esc_url( 'https://riipen.com/careers' ); ?>">
-				<?php printf( esc_html( 'careers' ) ); ?>
 			</a>
 		</div>
 		</section>
