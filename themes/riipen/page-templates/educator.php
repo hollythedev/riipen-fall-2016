@@ -1,10 +1,4 @@
-<?php 
-/**
- * The template for displaying the educator page.
- *
- * @package Riipen_Theme
- */
-?>
+<?php /* Template Name: Educator */ ?>
 <?php get_header(); ?>
 <div id="primary" class="content-area">
     <button onclick="history.go(-1);" class="back"><  Back</button>
