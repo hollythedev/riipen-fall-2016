@@ -42,23 +42,7 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
 ///For the Educators and Talent Page
-function my_styles_method() {
-
-	if(!is_page_template('educator.php')){
-		return;
-    }
-
-
-		$url = CFS()->get ( 'banner'); // This is grabbing the background
-        wp_add_inline_style( 'riipen-style' );
-    }
-
-    add_action( 'wp_enqueue_scripts', 'my_styles_method' );
-
-		/**
-		 * Custom About Page background image
-		 */
-		function my_background_method() {
+function my_background_method() {
 
 						if(!is_page_template( 'educator.php' )){
 							return;
@@ -67,6 +51,24 @@ function my_styles_method() {
 		        $url = CFS()->get( 'educator-talent-section-4' );//This is grabbing the background image vis Custom Field Suite Plugin
 		        $custom_css = "
 		                .banner{
+		                        background: url({$url}) no-repeat bottom center;
+														background-size: cover;
+		                }";
+		        wp_add_inline_style( 'riipen-style', $custom_css );
+		}
+		add_action( 'wp_enqueue_scripts', 'my_background_method' );
+		/**
+		 * Custom About Page background image
+		 */
+		function my_background_method() {
+
+						if(!is_page_template( 'about.php' )){
+							return;
+						}
+
+		        $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
+		        $custom_css = "
+		                .about-hero{
 		                        background: url({$url}) no-repeat bottom center;
 														background-size: cover;
 		                }";
