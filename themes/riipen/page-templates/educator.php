@@ -6,8 +6,7 @@
         <section class="educator-page">
             <div class="educator-talent-section-1">
                 <h1>r<span>ii</span>pen</h1>
-                <p>
-                    <?php echo CFS()->get( 'motto'); ?> </p>
+                    <?php echo CFS()->get( 'motto'); ?> 
             </div>
             <div class="educator-talent-section-2">
                 <?php echo CFS()->get( 'banner'); ?>
