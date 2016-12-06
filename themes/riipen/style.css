@@ -2487,6 +2487,13 @@ section {
         background-color: white;
         color: #4cc88d; }
 
+.each-result {
+  width: 30%; }
+
+.search-results .site-main {
+  display: -ms-flexbox;
+  display: flex; }
+
 .about-hero {
   height: 100vh; }
   .about-hero h1 {
