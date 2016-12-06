@@ -90,7 +90,7 @@ add_action( 'widgets_init', 'riipen_slider2_widgets_init' );
 function riipen_slider_founders_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Carousel of Founders' ),
-		'id'            => 'carousels2',
+		'id'            => 'carousels3',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
