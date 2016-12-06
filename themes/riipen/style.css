@@ -1632,7 +1632,7 @@ a {
   font-weight: bold;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("/../images/organizationheader/jpg"); }
+  background-image: url("../../images/organizationheader.jpeg"); }
   .educator-page .educator-talent-section-1 h1 {
     color: #f68708;
     margin: 0; }
@@ -2490,9 +2490,11 @@ section {
 .each-result {
   width: 30%; }
 
-.search-results .site-main {
+.search-results .search-result-wrapper {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .about-hero {
   height: 100vh; }

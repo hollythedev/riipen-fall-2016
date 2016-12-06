@@ -2,7 +2,8 @@
 	width: 30%;
 }
 .search-results{
-	.site-main{
+	.search-result-wrapper{
 		display: flex;
+		flex-wrap: wrap;
 	}
 }
