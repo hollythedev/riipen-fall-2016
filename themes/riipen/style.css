@@ -2498,8 +2498,15 @@ section {
       flex-wrap: wrap; }
 
 .about-hero {
-  height: 100vh; }
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
   .about-hero h1 {
-    font-size: 0;
-    margin: 0;
-    height: 0; }
+    color: white; }
+
+.about-wrap h2 {
+  font-size: 1em; }
