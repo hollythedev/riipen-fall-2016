@@ -1638,6 +1638,9 @@ a {
     -ms-flex-align: end;
         align-items: flex-end;
     max-width: 100%; }
+    @media (min-width: 750px) {
+      .educator-page .educator-talent-section-1 {
+        height: 400px; } }
     .educator-page .educator-talent-section-1 .circle {
       display: none; }
       @media (min-width: 750px) {
