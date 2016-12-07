@@ -1642,15 +1642,15 @@ a {
       display: -ms-flexbox;
       display: flex; }
       .educator-page .educator-talent-section-1 .text-box h1 {
+        font-size: 1.7rem;
         color: #f68708;
         margin: 0; }
         .educator-page .educator-talent-section-1 .text-box h1 span {
           color: #f1f1f1; }
-      .educator-page .educator-talent-section-1 .text-box .motto {
+      .educator-page .educator-talent-section-1 .text-box p {
+        color: white;
+        margin: 0;
         padding-top: 12px; }
-        .educator-page .educator-talent-section-1 .text-box .motto p {
-          color: white;
-          margin: 0; }
   .educator-page .educator-talent-section-3 {
     text-align: center; }
     .educator-page .educator-talent-section-3 p {
@@ -1663,7 +1663,7 @@ a {
       border-radius: 13%; }
     .educator-page .educator-talent-section-3 .educator-talent-section-5 {
       font: 1.5rem "Open Sans", sans-serif; }
-      .educator-page .educator-talent-section-3 .educator-talent-section-5 p {
+      .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
         font-style: italics;
         color: #666; }
       .educator-page .educator-talent-section-3 .educator-talent-section-5 .position {
