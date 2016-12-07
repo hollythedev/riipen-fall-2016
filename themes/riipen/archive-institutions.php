@@ -12,7 +12,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="hero-banner">
 			<h1 class="uppercase banner-text">Where <span class="orange-text">talent</span> and <span class="orange-text">industry</span> meet</h1>
-
+		</div>
 			<div  class="tabbingwrapper">
 				<div class="tabbingsection">
 
