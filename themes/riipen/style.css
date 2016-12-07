@@ -875,6 +875,10 @@ a {
         color: white;
         margin: 0;
         padding-top: 12px; }
+  .educator-page .educator-talent-section-2 {
+    background-image: url("../../images/journeymap.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
   .educator-page .educator-talent-section-3 {
     text-align: center; }
     .educator-page .educator-talent-section-3 p {

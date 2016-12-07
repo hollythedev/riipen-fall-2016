@@ -5,18 +5,17 @@
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
             <div class="educator-talent-section-1">
-                <div class= "circle">
-                <h2 class="title">
-						<?php the_title();?>
-					</h2>
-                    </div>
-                <div class= "text-box">
-                <h1>r<span>ii</span>pen</h1>
-                    <?php echo CFS()->get( 'motto'); ?> 
-                    </div>
+                <div class="circle">
+                    <h2 class="title">
+                        <?php the_title();?>
+                    </h2>
+                </div>
+                <div class="text-box">
+                    <h1>r<span>ii</span>pen</h1>
+                    <?php echo CFS()->get( 'motto'); ?>
+                </div>
             </div>
             <div class="educator-talent-section-2">
-                <?php echo CFS()->get( 'banner'); ?>
             </div>
             <div class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
@@ -26,9 +25,13 @@
                 <?php echo CFS()->get( 'banner_2'); ?>
             </div>
             <div class="educator-talent-section-5">
-                <p class= "testimonial"> <?php echo CFS()->get( 'testimonial'); ?> <p>
-                <p class = "position"> <?php echo CFS()->get( 'position'); ?> </p>
-               <p class = "name"> <?php echo CFS()->get( 'name'); ?> </p>
+                <p class="testimonial">
+                    <?php echo CFS()->get( 'testimonial'); ?>
+                    <p>
+                        <p class="position">
+                            <?php echo CFS()->get( 'position'); ?> </p>
+                        <p class="name">
+                            <?php echo CFS()->get( 'name'); ?> </p>
             </div>
         </section>
         <?php dynamic_sidebar( 'carousels' ); ?>

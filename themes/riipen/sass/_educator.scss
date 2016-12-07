@@ -9,7 +9,7 @@
         align-items: flex-end;
         max-width: 100%;
         @media (min-width: $breakpoint) {
-             height: 400px;
+            height: 400px;
         }
         .circle {
             display: none;
@@ -20,7 +20,7 @@
                 display: flex;
                 text-align: center;
                 border-radius: 50%;
-                margin:auto;
+                margin: auto;
             }
             .title {
                 display: none;
@@ -28,7 +28,7 @@
                     margin: auto;
                     width: 400px;
                     display: block;
-                    color:white;
+                    color: white;
                     font: 2rem $font__main;
                 }
             }
@@ -55,6 +55,11 @@
                 padding-top: 12px;
             }
         }
+    }
+    .educator-talent-section-2 {
+        background-image: url('../../images/journeymap.png');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .educator-talent-section-3 {
         text-align: center;
