@@ -59,7 +59,7 @@ get_header(); ?>
 			</div>
 		</section>
 		<section class="difference">
-			<div class="container">
+			<div class="container animatedParent">
 				<h2>Riipen want's to make a difference</h2>
 				<p>and it's simple</p>
 				<ol>
@@ -69,11 +69,9 @@ get_header(); ?>
 					<li>Participate in projects</li>
 				</ol>
 				<p>Take the opportunity to discover what it's like to be a Riipened...</p>
-				<ul class="figures">
-					<li>Organizations</li>
-					<li>Talents</li>
-					<li>Educators</li>
-				</ul>
+				<div class="animated fadeIn">
+					<?php wp_nav_menu( array( 'theme_location' => 'journey-menu', 'container_class' => 'figures' ) ); ?>
+				</div>
 			</div>
 		</section>
 		<section class="testimonial">
