@@ -1479,6 +1479,8 @@ section {
   box-shadow: none; }
   .wp-posts-carousel-container img {
     height: 90px; }
+  .wp-posts-carousel-container a {
+    outline: none; }
 
 .post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
   background: #f7f7f7; }
