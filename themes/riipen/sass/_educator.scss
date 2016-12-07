@@ -1,11 +1,14 @@
 .educator-page{
     background-color: $color__background-screen;
     .educator-talent-section-1{
+       height: 252px;
         text-transform: uppercase;
         font: 1rem $font__main;
         font-weight: bold;
         display:flex;
        background-image: url('../../images/organizationheader.jpeg');
+       background-size: contain;
+           background-repeat: no-repeat;
         h1{
             color: $color_pumpkin-orange;
             margin: 0;
@@ -13,9 +16,12 @@
                 color: $color__background-screen;
             }
         }
+        .motto{
+                padding-top: 12px;
         p{
             color:white;
             margin:0;
+        }
         }
     }
    .educator-talent-section-3{
