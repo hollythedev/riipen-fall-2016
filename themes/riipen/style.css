@@ -1905,7 +1905,7 @@ object {
   .hero .headline {
     width: 19em;
     height: 19em;
-    background-color: #27aefb;
+    background-color: rgba(39, 174, 251, 0.4);
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
