@@ -1,7 +1,7 @@
 .educator-page {
     padding: 0;
     .educator-talent-section-1 {
-        height: 246px;
+        height: 242px;
         background-image: url('../../images/educatorheader.jpeg');
         background-size: contain;
         background-repeat: no-repeat;
@@ -56,23 +56,36 @@
             }
         }
     }
-    .educator-talent-section-2 {
+    .educator-talent-section-2{
         background-image: url('../../images/journeymap.png');
         background-size: contain;
         background-repeat: no-repeat;
+            height: 531px;
+
     }
     .educator-talent-section-3 {
         text-align: center;
+            margin: 58px 0;
         p {
             color: $color_azure;
             font: 1rem $font__main;
+            padding-bottom: 31px;
+            margin: 0;
         }
         .educator-talent-btn {
             color: $color__background-screen;
             background-color: $color_dark-mint;
-            padding: 10px 20px;
+            padding: 15px 20px;
             border-radius: 10%;
         }
+    }
+
+     .educator-talent-section-4{
+          background-image: url('../../images/educatoripad.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+            height: 274px;
+    }
         .educator-talent-section-5 {
             .testimonial {
                 font-style: italics;
@@ -89,4 +102,3 @@
             }
         }
     }
-}

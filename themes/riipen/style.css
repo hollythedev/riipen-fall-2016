@@ -823,7 +823,7 @@ a {
 .educator-page {
   padding: 0; }
   .educator-page .educator-talent-section-1 {
-    height: 246px;
+    height: 242px;
     background-image: url("../../images/educatorheader.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -878,28 +878,37 @@ a {
   .educator-page .educator-talent-section-2 {
     background-image: url("../../images/journeymap.png");
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    height: 531px; }
   .educator-page .educator-talent-section-3 {
-    text-align: center; }
+    text-align: center;
+    margin: 58px 0; }
     .educator-page .educator-talent-section-3 p {
       color: #27aefb;
-      font: 1rem "Open Sans", sans-serif; }
+      font: 1rem "Open Sans", sans-serif;
+      padding-bottom: 31px;
+      margin: 0; }
     .educator-page .educator-talent-section-3 .educator-talent-btn {
       color: #f1f1f1;
       background-color: #4cc88d;
-      padding: 10px 20px;
+      padding: 15px 20px;
       border-radius: 10%; }
-    .educator-page .educator-talent-section-3 .educator-talent-section-5 {
-      font: 1.5rem "Open Sans", sans-serif; }
-      .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
-        font-style: italics;
-        color: #666; }
-      .educator-page .educator-talent-section-3 .educator-talent-section-5 .position {
-        color: #f68708;
-        text-align: right; }
-      .educator-page .educator-talent-section-3 .educator-talent-section-5 .name {
-        color: #666;
-        text-align: right; }
+  .educator-page .educator-talent-section-4 {
+    background-image: url("../../images/educatoripad.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 274px; }
+  .educator-page .educator-talent-section-5 {
+    font: 1.5rem "Open Sans", sans-serif; }
+    .educator-page .educator-talent-section-5 .testimonial {
+      font-style: italics;
+      color: #666; }
+    .educator-page .educator-talent-section-5 .position {
+      color: #f68708;
+      text-align: right; }
+    .educator-page .educator-talent-section-5 .name {
+      color: #666;
+      text-align: right; }
 
 /*--------------------------------------------------------------
 # Widgets

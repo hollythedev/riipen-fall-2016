@@ -22,7 +22,7 @@
                 <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
             </div>
             <div class="educator-talent-section-4">
-                <?php echo CFS()->get( 'banner_2'); ?>
+                
             </div>
             <div class="educator-talent-section-5">
                 <p class="testimonial">
