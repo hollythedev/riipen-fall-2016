@@ -1637,6 +1637,10 @@ a {
     .educator-page .educator-talent-section-1 .text-box {
       position: absolute;
       text-transform: uppercase;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
       font: 1rem "Open Sans", sans-serif;
       font-weight: bold;
       display: -ms-flexbox;
