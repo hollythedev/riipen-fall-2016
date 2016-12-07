@@ -823,22 +823,51 @@ a {
 .educator-page {
   padding: 0; }
   .educator-page .educator-talent-section-1 {
-    height: 252px;
-    background-image: url("../../images/organizationheader.jpeg");
+    height: 246px;
+    background-image: url("../../images/educatorheader.jpeg");
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end;
+    max-width: 100%; }
+    @media (min-width: 750px) {
+      .educator-page .educator-talent-section-1 {
+        height: 400px; } }
+    .educator-page .educator-talent-section-1 .circle {
+      display: none; }
+      @media (min-width: 750px) {
+        .educator-page .educator-talent-section-1 .circle {
+          width: 14em;
+          height: 14em;
+          background-color: rgba(39, 174, 251, 0.4);
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          text-align: center;
+          border-radius: 50%; } }
+      .educator-page .educator-talent-section-1 .circle .title {
+        display: none; }
+        @media (min-width: 750px) {
+          .educator-page .educator-talent-section-1 .circle .title {
+            margin: auto;
+            width: 400px;
+            display: block;
+            color: white;
+            font: 2rem "Open Sans", sans-serif; } }
     .educator-page .educator-talent-section-1 .text-box {
-      position: absolute;
       text-transform: uppercase;
-      -ms-flex-align: end;
-          align-items: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
       font: 1rem "Open Sans", sans-serif;
       font-weight: bold;
       display: -ms-flexbox;
       display: flex; }
+      @media (min-width: 750px) {
+        .educator-page .educator-talent-section-1 .text-box {
+          display: none; } }
       .educator-page .educator-talent-section-1 .text-box h1 {
         font-size: 1.7rem;
         color: #f68708;
@@ -858,7 +887,7 @@ a {
       color: #f1f1f1;
       background-color: #4cc88d;
       padding: 10px 20px;
-      border-radius: 13%; }
+      border-radius: 10%; }
     .educator-page .educator-talent-section-3 .educator-talent-section-5 {
       font: 1.5rem "Open Sans", sans-serif; }
       .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
