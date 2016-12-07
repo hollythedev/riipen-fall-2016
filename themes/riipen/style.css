@@ -413,6 +413,11 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+@media (min-width: 750px) {
+  #primary-menu {
+    display: -ms-flexbox !important;
+    display: flex !important; } }
+
 /* Links */
 a {
   color: black;
