@@ -880,6 +880,41 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     height: 531px; }
+    @media (min-width: 750px) {
+      .educator-page .educator-talent-section-2 {
+        display: none; } }
+  .educator-page .desktop-green {
+    display: none; }
+    @media (min-width: 750px) {
+      .educator-page .desktop-green {
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #4cc88d;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .educator-page .desktop-green .desktop-green-container1 {
+          display: -ms-flexbox;
+          display: flex;
+          margin: auto;
+          -ms-flex-align: center;
+              align-items: center; }
+          .educator-page .desktop-green .desktop-green-container1 h2 {
+            color: #f68708; }
+            .educator-page .desktop-green .desktop-green-container1 h2 span {
+              color: #0c4160; }
+          .educator-page .desktop-green .desktop-green-container1 p {
+            color: white; }
+        .educator-page .desktop-green .desktop-green-container2 {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+          margin: auto;
+          width: 90%; }
+          .educator-page .desktop-green .desktop-green-container2 .left, .educator-page .desktop-green .desktop-green-container2 .middle, .educator-page .desktop-green .desktop-green-container2 .right {
+            width: 30%;
+            color: white;
+            font: 1rem "Open Sans", sans-serif; } }
   .educator-page .educator-talent-section-3 {
     text-align: center;
     margin: 58px 0; }

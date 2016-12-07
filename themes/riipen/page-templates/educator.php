@@ -18,7 +18,10 @@
             <div class="educator-talent-section-2">
             </div>
             <div class= "desktop-green"> 
+                <div class= "desktop-green-container1">
                 <h2>r<span>ii</span>pen</h2><p> your assignments</p>
+                </div>
+                <div class="desktop-green-container2">
                 <div class="left">
                     <p>Leverage your students work and add industry value to the academic curriculum</p>
                 </div>
@@ -28,6 +31,10 @@
                 <div class="right">
                     <p>It starts with developing an assignment that meets industry standards</p>
                 </div>
+                </div>
+                 </div>
+                 <div class= "desktop-circles">
+
                  </div>
             <div class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
