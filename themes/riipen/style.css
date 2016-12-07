@@ -821,7 +821,7 @@ a {
     width: 174px; }
 
 .educator-page {
-  background-color: #f1f1f1; }
+  padding: 0; }
   .educator-page .educator-talent-section-1 {
     height: 252px;
     background-image: url("../../images/organizationheader.jpeg");
