@@ -14,7 +14,7 @@ get_header(); ?>
 				<source src="<?php echo get_template_directory_uri();?>/images/city-1080.mp4" type="video/mp4">
 			</video>
 			<div class="headline">
-				<div class="headline-wrap animatedParent">
+				<div class="headline-wrap animatedParent animateOnce">
 					<h2 class="animated bounceIn">Riipen your life</h2>
 					<p class="animated bounceIn">Where talent and industry meet</p>
 				</div>
@@ -23,27 +23,27 @@ get_header(); ?>
 		<section class="stats">
 			<div class="container">
 				<ul>
-					<li class="animatedParent">
+					<li class="animatedParent animateOnce">
 						<div class="animated fadeInUp">
 							<h2>42%</h2>
 							<p>of new university graduates are under employed.</p>
 						</div>
 					</li>
-					<li class="animatedParent">
+					<li class="animatedParent animateOnce">
 						<div class="animated fadeInUp">
 							<h2>92%</h2>
 							<p>of Teachers say their students are ready for the job market after graduation.</p>
 
 						</div>
 					</li>
-					<li class="animatedParent">
+					<li class="animatedParent animateOnce">
 						<div class="animated fadeInUp">
 							<h2>18%</h2>
 							<p>Employers say 18% of students are ready for the job market after graduation</p>
 						</div>
 					</li>
 				</ul>
-				<div class="animatedParent">
+				<div class="animatedParent animateOnce">
 				<p class="double-border animated flipInX">"Why aren't students being evaluated on their school work by industry as well?"</p>
 				</div>
 			</div>
@@ -59,7 +59,7 @@ get_header(); ?>
 			</div>
 		</section>
 		<section class="difference">
-			<div class="container animatedParent">
+			<div class="container animatedParent animateOnce">
 				<h2>Riipen want's to make a difference</h2>
 				<p>and it's simple</p>
 				<ol>
