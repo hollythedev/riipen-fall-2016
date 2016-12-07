@@ -1626,43 +1626,44 @@ a {
     height: 250px;
     width: 174px; }
 
-.educator-page .educator-talent-section-1 {
-  text-transform: uppercase;
-  font: 1rem "Open Sans", sans-serif;
-  font-weight: bold;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url("../../images/organizationheader.jpeg"); }
-  .educator-page .educator-talent-section-1 h1 {
-    color: #f68708;
-    margin: 0; }
-    .educator-page .educator-talent-section-1 h1 span {
-      color: #f1f1f1; }
-  .educator-page .educator-talent-section-1 p {
-    color: white;
-    margin: 0; }
-
-.educator-page .educator-talent-section-3 {
-  text-align: center; }
-  .educator-page .educator-talent-section-3 p {
-    color: #27aefb;
-    font: 1rem "Open Sans", sans-serif; }
-  .educator-page .educator-talent-section-3 .educator-talent-btn {
-    color: #f1f1f1;
-    background-color: #4cc88d;
-    padding: 10px 20px;
-    border-radius: 13%; }
-  .educator-page .educator-talent-section-3 .educator-talent-section-5 {
-    font: 1.5rem "Open Sans", sans-serif; }
-    .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
-      font-style: italics;
-      color: #666; }
-    .educator-page .educator-talent-section-3 .educator-talent-section-5 .position {
+.educator-page {
+  background-color: #f1f1f1; }
+  .educator-page .educator-talent-section-1 {
+    text-transform: uppercase;
+    font: 1rem "Open Sans", sans-serif;
+    font-weight: bold;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../../images/organizationheader.jpeg"); }
+    .educator-page .educator-talent-section-1 h1 {
       color: #f68708;
-      text-align: right; }
-    .educator-page .educator-talent-section-3 .educator-talent-section-5 .name {
-      color: #666;
-      text-align: right; }
+      margin: 0; }
+      .educator-page .educator-talent-section-1 h1 span {
+        color: #f1f1f1; }
+    .educator-page .educator-talent-section-1 p {
+      color: white;
+      margin: 0; }
+  .educator-page .educator-talent-section-3 {
+    text-align: center; }
+    .educator-page .educator-talent-section-3 p {
+      color: #27aefb;
+      font: 1rem "Open Sans", sans-serif; }
+    .educator-page .educator-talent-section-3 .educator-talent-btn {
+      color: #f1f1f1;
+      background-color: #4cc88d;
+      padding: 10px 20px;
+      border-radius: 13%; }
+    .educator-page .educator-talent-section-3 .educator-talent-section-5 {
+      font: 1.5rem "Open Sans", sans-serif; }
+      .educator-page .educator-talent-section-3 .educator-talent-section-5 .testimonial {
+        font-style: italics;
+        color: #666; }
+      .educator-page .educator-talent-section-3 .educator-talent-section-5 .position {
+        color: #f68708;
+        text-align: right; }
+      .educator-page .educator-talent-section-3 .educator-talent-section-5 .name {
+        color: #666;
+        text-align: right; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1811,12 +1812,13 @@ object {
     .site-footer {
       height: 350px; } }
   .site-footer .footer-container {
-    margin: 0 30px;
     padding-top: 76px; }
     @media (min-width: 750px) {
       .site-footer .footer-container {
         padding-top: 5%; } }
     .site-footer .footer-container .footer-social-media {
+      margin: auto;
+      max-width: 220px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
@@ -1825,13 +1827,14 @@ object {
         color: #333333;
         background-color: white;
         font-size: 1.5rem;
-        border-radius: 100%;
+        border-radius: 50%;
         display: block; }
         .site-footer .footer-container .footer-social-media a i {
-          padding: 1px 10px; }
+          padding: 1px 8px; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-social-media {
-          margin: 0px 382px; } }
+          margin: auto;
+          max-width: 415px; } }
     .site-footer .footer-container .footer-button {
       display: none; }
       @media (min-width: 750px) {
@@ -1840,16 +1843,16 @@ object {
           display: flex;
           -ms-flex-pack: distribute;
               justify-content: space-around;
-          padding-bottom: 5%;
-          width: 100%;
-          width: 50%;
-          margin: 0px 315px; }
+          padding-bottom: 3%;
+          width: 100%; }
           .site-footer .footer-container .footer-button a {
             color: white;
             text-decoration: none;
             border: 1px solid green;
             padding: 10px 51px; } }
     .site-footer .footer-container .footer-information {
+      margin: auto;
+      max-width: 200px;
       padding-top: 15px;
       display: -ms-flexbox;
       display: flex;
@@ -1863,7 +1866,8 @@ object {
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-information {
           font-size: 1rem;
-          margin: 0 354px; } }
+          max-width: 400px;
+          margin: auto; } }
 
 #bgvid {
   display: none; }

@@ -2,42 +2,40 @@
     background: $color_footer;
     height: 226px;
     @media (min-width: $breakpoint) {
-                height: 350px;
-            }
+        height: 350px;
+    }
     .footer-container {
-        margin: 0 30px;
-padding-top: 76px;
+        padding-top: 76px;
         @media (min-width: $breakpoint) {
-            
             padding-top: 5%;
         }
         .footer-social-media {
+            margin: auto;
+            max-width: 220px;
             display: flex;
             justify-content: space-around;
             a {
                 color: $color_footer;
                 background-color: white;
                 font-size: 1.5rem;
-                border-radius: 100%;
-                display:block;
+                border-radius: 50%;
+                display: block;
                 i {
-                    padding: 1px 10px;
+                    padding: 1px 8px;
                 }
             }
             @media (min-width: $breakpoint) {
-                     margin: 0px 382px;
+                margin: auto;
+                max-width: 415px;
             }
         }
-
         .footer-button {
             display: none;
             @media (min-width: $breakpoint) {
                 display: flex;
                 justify-content: space-around;
-                padding-bottom: 5%;
+                padding-bottom: 3%;
                 width: 100%;
-                    width: 50%;
-                    margin: 0px 315px;
                 a {
                     color: white;
                     text-decoration: none;
@@ -47,7 +45,9 @@ padding-top: 76px;
             }
         }
         .footer-information {
-                padding-top: 15px;
+            margin: auto;
+            max-width: 200px;
+            padding-top: 15px;
             display: flex;
             justify-content: space-around;
             a {
@@ -58,7 +58,8 @@ padding-top: 76px;
             }
             @media (min-width: $breakpoint) {
                 font-size: 1rem;
-                    margin: 0 354px;
+                max-width: 400px;
+                margin: auto;
             }
         }
     }
