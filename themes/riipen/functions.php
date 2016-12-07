@@ -122,6 +122,18 @@ function riipen_scripts() {
 add_action( 'wp_enqueue_scripts', 'riipen_scripts' );
 
 /**
+ * Journeys Menu
+ */
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'journey-menu' => __( 'Journey Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';

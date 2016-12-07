@@ -2,15 +2,15 @@
 .educator-page {
     padding: 0;
     .educator-talent-section-1 {
-        height: 246px;
+        height: 242px;
         background-image: url('../../images/educatorheader.jpeg');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         display: flex;
         align-items: flex-end;
         max-width: 100%;
         @media (min-width: $breakpoint) {
-             height: 400px;
+            height: 400px;
         }
         .circle {
             display: none;
@@ -19,10 +19,9 @@
                 height: 14em;
                 background-color: $transparent_azure;
                 display: flex;
-                justify-content: center;
-                align-items: center;
                 text-align: center;
                 border-radius: 50%;
+                margin: auto;
             }
             .title {
                 display: none;
@@ -30,7 +29,7 @@
                     margin: auto;
                     width: 400px;
                     display: block;
-                    color:white;
+                    color: white;
                     font: 2rem $font__main;
                 }
             }
@@ -58,27 +57,50 @@
             }
         }
     }
+    .educator-talent-section-2{
+        background-image: url('../../images/journeymap.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+            height: 531px;
+
+    }
     .educator-talent-section-3 {
         text-align: center;
+            margin: 58px 0;
         p {
             color: $color_azure;
             font: 1rem $font__main;
+            padding-bottom: 31px;
+            margin: 0;
         }
         .educator-talent-btn {
             color: $color__background-screen;
             background-color: $color_dark-mint;
-            padding: 10px 20px;
+            padding: 15px 20px;
             border-radius: 10%;
         }
+    }
+
+     .educator-talent-section-4{
+          background-image: url('../../images/educatoripad.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+            height: 274px;
+    }
         .educator-talent-section-5 {
+                margin: auto;
+                    padding: 48px 0;
+    width: 87%;
             .testimonial {
-                font-style: italics;
+                font-style: italic;
+                font-weight: 100;
                 color: $color__border-abbr;
             }
             font: 1.5rem $font__main;
             .position {
                 color: $color_pumpkin-orange;
                 text-align: right;
+                    margin-bottom: 0;
             }
             .name {
                 color: $color__border-abbr;
@@ -86,4 +108,3 @@
             }
         }
     }
-}
