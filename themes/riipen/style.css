@@ -428,12 +428,12 @@ a {
 
 /* Menus */
 .site-header {
+  background: white;
   position: fixed;
   z-index: 1;
   height: 68px;
   width: 100%; }
   .site-header .container {
-    background: white;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
