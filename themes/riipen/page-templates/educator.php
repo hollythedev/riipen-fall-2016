@@ -5,8 +5,10 @@
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
             <div class="educator-talent-section-1">
+                <div class= "text-box">
                 <h1>r<span>ii</span>pen</h1>
                     <?php echo CFS()->get( 'motto'); ?> 
+                    </div>
             </div>
             <div class="educator-talent-section-2">
                 <?php echo CFS()->get( 'banner'); ?>
