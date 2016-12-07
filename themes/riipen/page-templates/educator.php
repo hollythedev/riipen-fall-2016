@@ -17,6 +17,18 @@
             </div>
             <div class="educator-talent-section-2">
             </div>
+            <div class= "desktop-green"> 
+                <h2>r<span>ii</span>pen</h2><p> your assignments</p>
+                <div class="left">
+                    <p>Leverage your students work and add industry value to the academic curriculum</p>
+                </div>
+                <div class="middle">
+                    <p>Riipen matches your projects desired learning outcomes to industry partners that share an interest in those skills, who in turn validate students success</p>
+                </div>
+                <div class="right">
+                    <p>It starts with developing an assignment that meets industry standards</p>
+                </div>
+                 </div>
             <div class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
                 <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
