@@ -1652,10 +1652,10 @@ section {
     position: relative;
     margin: 0; }
   .error-404 .error-image {
-    background-color: #0c4160;
-    width: 11em;
-    height: 11em;
-    border-radius: 100%;
+    background: url(../../images/404-image.png) no-repeat;
+    background-size: cover;
+    width: 12em;
+    height: 12em;
     position: absolute;
     top: 3em;
     margin-left: auto;
