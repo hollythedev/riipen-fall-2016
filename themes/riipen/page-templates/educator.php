@@ -6,6 +6,11 @@
         <section class="educator-page">
             <div class="educator-talent-section-1">
                 <div class= "text-box">
+                    <div class= "circle">
+                <h2 class="title">
+						<?php the_title();?>
+					</h2>
+                    </div>
                 <h1>r<span>ii</span>pen</h1>
                     <?php echo CFS()->get( 'motto'); ?> 
                     </div>

@@ -7,11 +7,32 @@
         background-repeat: no-repeat;
         display: flex;
         align-items: flex-end;
+        @media (min-width: $breakpoint) {
+            width: 19em;
+            height: 19em;
+            background-color: $transparent_azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .title {
+            display: none;
+            @media (min-width: $breakpoint) {
+                margin: auto;
+                width: 400px;
+                display: block;
+            }
+        }
         .text-box {
             text-transform: uppercase;
             font: 1rem $font__main;
             font-weight: bold;
             display: flex;
+            @media (min-width: $breakpoint) {
+                display: none;
+            }
             h1 {
                 font-size: 1.7rem;
                 color: $color_pumpkin-orange;
