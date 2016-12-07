@@ -31,11 +31,11 @@
         border-radius: 13%;
        }
 .educator-talent-section-5{
-    font: 1.5rem $font__main;
-    .testimonial{
+    p{
         font-style: italics;
         color: $color__border-abbr;
     }
+    font: 1.5rem $font__main;
     .position{
         color:$color_pumpkin-orange;
         text-align: right;
