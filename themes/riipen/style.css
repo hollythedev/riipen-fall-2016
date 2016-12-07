@@ -1123,6 +1123,7 @@ object {
   width: 100%;
   position: relative;
   overflow: hidden;
+  height: calc(100vh - 68px);
   background: url("../../images/new-york-stock-photo.jpg ") no-repeat, rgba(0, 0, 0, 0.4);
   background-size: cover;
   display: -ms-flexbox;
