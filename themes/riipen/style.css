@@ -420,7 +420,7 @@ a {
   a:visited {
     color: black; }
   a:hover, a:focus, a:active {
-    color: #999999; }
+    color: #f68708; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -430,9 +430,11 @@ a {
 .site-header {
   background: white;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   height: 68px;
-  width: 100%; }
+  width: 100%;
+  padding: 0 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7); }
   .site-header .container {
     display: -ms-flexbox;
     display: flex;
@@ -440,7 +442,6 @@ a {
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    padding: 0 20px;
     height: 100%;
     position: relative; }
   .site-header .fa {
@@ -449,9 +450,8 @@ a {
     -webkit-text-stroke: 1px white; }
 
 .site-branding {
-  background-color: #27aefb;
-  height: 1.5rem;
-  width: 5rem;
+  height: 1.5em;
+  width: 5em;
   -ms-flex-order: 1;
       order: 1; }
   @media (min-width: 750px) {
@@ -1394,14 +1394,41 @@ section {
           line-height: 1;
           width: 50%; } }
 
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-20px); }
+  80% {
+    transform: translateY(-10px); } }
+
 .figures {
   max-width: 600px;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex; }
+  margin: 0 auto; }
+  .figures ul {
+    display: -ms-flexbox;
+    display: flex; }
   .figures li {
     width: 33%;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
+  .figures a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .figures a:before {
+      color: #f68708;
+      font-size: 2em;
+      font-family: FontAwesome;
+      display: block; }
+    .figures a:hover:before {
+      animation: bounce 1s; }
+  .figures .org-li a:before {
+    content: "\f27e"; }
+  .figures .talent-li a:before {
+    content: "\f19d"; }
+  .figures .educator-li a:before {
+    content: "\f040"; }
 
 .testimonial .container {
   display: -ms-flexbox;

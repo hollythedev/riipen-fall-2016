@@ -14,7 +14,7 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: lighten( black, 60% )
+		color: $color_pumpkin-orange;
 	}
 	&:focus {
 		outline: thin dotted;
@@ -29,14 +29,15 @@ a {
 .site-header {
 	background: white;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	height: 68px;
 	width: 100%;
+	padding: 0 1rem;
+	box-shadow: 0 0 8px rgba(0,0,0,.7);
 	.container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 20px;
 		height: 100%;
 		position: relative;
 	}
@@ -48,9 +49,8 @@ a {
 }
 
 .site-branding {
-	background-color: $color_azure;
-	height: 1.5rem;
-	width: 5rem;
+	height: 1.5em;
+	width: 5em;
 	order: 1;
 	@include desktop {
 		order: 0;
