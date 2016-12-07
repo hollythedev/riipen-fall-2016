@@ -825,7 +825,7 @@ a {
   .educator-page .educator-talent-section-1 {
     height: 242px;
     background-image: url("../../images/educatorheader.jpeg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: -ms-flexbox;
     display: flex;
@@ -877,7 +877,7 @@ a {
         padding-top: 12px; }
   .educator-page .educator-talent-section-2 {
     background-image: url("../../images/journeymap.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 531px; }
   .educator-page .educator-talent-section-3 {
@@ -895,7 +895,7 @@ a {
       border-radius: 10%; }
   .educator-page .educator-talent-section-4 {
     background-image: url("../../images/educatoripad.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 274px; }
   .educator-page .educator-talent-section-5 {
