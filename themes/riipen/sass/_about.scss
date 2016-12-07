@@ -1,8 +1,15 @@
 .about-hero {
-  height: 100vh;
+  height: calc(100vh - 68px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   h1 {
-    font-size: 0;
-    margin: 0;
-    height: 0;
+    color: white;
+  }
+}
+
+.about-wrap {
+  h2 {
+    font-size: 1em;
   }
 }

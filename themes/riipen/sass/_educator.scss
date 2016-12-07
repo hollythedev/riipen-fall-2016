@@ -1,48 +1,61 @@
 .educator-page{
-    .educator-talent-section-1{
-        text-transform: uppercase;
-        font: 1rem $font__main;
-        font-weight: bold;
-        display:flex;
-       background-image: url('../../images/organizationheader.jpeg'); 
-        h1{
-            color: $color_pumpkin-orange;
-            margin: 0;
-            span{
-                color: $color__background-screen;
+     padding: 0;
+     .educator-talent-section-1{
+          height: 252px;
+          background-image: url('../../images/organizationheader.jpeg');
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: relative;
+          .text-box{
+               position: absolute;
+               text-transform: uppercase;
+               align-items: flex-end;
+               justify-content: flex-end;
+               font: 1rem $font__main;
+               font-weight: bold;
+               display:flex;
+               h1{
+                   font-size: 1.7rem;
+                   color: $color_pumpkin-orange;
+                   margin: 0;
+                   span{
+                      color: $color__background-screen;
+                 }
             }
-        }
-        p{
-            color:white;
-            margin:0;
-        }
-    }
-   .educator-talent-section-3{
-           text-align: center;
-       p{
-           color: $color_azure;
-           font: 1rem $font__main;
-       }
-       .educator-talent-btn{
-           color: $color__background-screen;
-           background-color: $color_dark-mint;
-        padding: 10px 20px;
-        border-radius: 13%;
-       }
-.educator-talent-section-5{
-    font: 1.5rem $font__main;
-    .testimonial{
-        font-style: italics;
-        color: $color__border-abbr;
-    }
-    .position{
-        color:$color_pumpkin-orange;
-        text-align: right;
-    }
-    .name{
-        color: $color__border-abbr;
-        text-align: right;
+
+            p{
+              color:white;
+              margin:0;
+              padding-top: 12px;
+         }
     }
 }
-   } 
+.educator-talent-section-3{
+     text-align: center;
+     p{
+       color: $color_azure;
+       font: 1rem $font__main;
+  }
+  .educator-talent-btn{
+       color: $color__background-screen;
+       background-color: $color_dark-mint;
+       padding: 10px 20px;
+       border-radius: 13%;
+  }
+  .educator-talent-section-5{
+   .testimonial{
+      font-style: italics;
+      color: $color__border-abbr;
+ }
+ font: 1.5rem $font__main;
+ .position{
+      color:$color_pumpkin-orange;
+      text-align: right;
+ }
+ .name{
+      color: $color__border-abbr;
+      text-align: right;
+ }
+}
+}
 }

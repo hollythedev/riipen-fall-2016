@@ -27,12 +27,12 @@ a {
 
 /* Menus */
 .site-header {
+	background: white;
 	position: fixed;
 	z-index: 1;
 	height: 68px;
 	width: 100%;
 	.container {
-		background: white;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
