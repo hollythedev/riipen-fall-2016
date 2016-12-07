@@ -15,11 +15,17 @@
             display: flex;
             justify-content: space-around;
             a {
-                color: $color_footer;
-                background-color: white;
+                color: #333;
+                height: 50px;
+                background-color: #fff;
                 font-size: 1.5rem;
                 border-radius: 50%;
                 display: block;
+                width: 50px;
+                align-items: center;
+                display: flex;
+                text-align: center;
+                justify-content: center;
                 i {
                     padding: 1px 8px;
                 }
@@ -31,17 +37,22 @@
         }
         .footer-button {
             display: none;
-            @media (min-width: $breakpoint) {
+            a {
+                    color: white;
+                    text-decoration: none;
+                    border: 1px solid $color_dark-mint;
+                    padding: 10px 51px;
+                    &:hover{
+                        color: black;
+                        background-color: $color_dark-mint;
+                    }
+                }
+            @include desktop {
                 display: flex;
                 justify-content: space-around;
                 padding-bottom: 3%;
                 width: 100%;
-                a {
-                    color: white;
-                    text-decoration: none;
-                    border: 1px solid green;
-                    padding: 10px 51px;
-                }
+                
             }
         }
         .footer-information {
