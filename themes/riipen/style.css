@@ -1627,27 +1627,30 @@ a {
     width: 174px; }
 
 .educator-page {
-  background-color: #f1f1f1; }
+  padding: 0; }
   .educator-page .educator-talent-section-1 {
     height: 252px;
-    text-transform: uppercase;
-    font: 1rem "Open Sans", sans-serif;
-    font-weight: bold;
-    display: -ms-flexbox;
-    display: flex;
     background-image: url("../../images/organizationheader.jpeg");
     background-size: contain;
-    background-repeat: no-repeat; }
-    .educator-page .educator-talent-section-1 h1 {
-      color: #f68708;
-      margin: 0; }
-      .educator-page .educator-talent-section-1 h1 span {
-        color: #f1f1f1; }
-    .educator-page .educator-talent-section-1 .motto {
-      padding-top: 12px; }
-      .educator-page .educator-talent-section-1 .motto p {
-        color: white;
+    background-repeat: no-repeat;
+    position: relative; }
+    .educator-page .educator-talent-section-1 .text-box {
+      position: absolute;
+      text-transform: uppercase;
+      font: 1rem "Open Sans", sans-serif;
+      font-weight: bold;
+      display: -ms-flexbox;
+      display: flex; }
+      .educator-page .educator-talent-section-1 .text-box h1 {
+        color: #f68708;
         margin: 0; }
+        .educator-page .educator-talent-section-1 .text-box h1 span {
+          color: #f1f1f1; }
+      .educator-page .educator-talent-section-1 .text-box .motto {
+        padding-top: 12px; }
+        .educator-page .educator-talent-section-1 .text-box .motto p {
+          color: white;
+          margin: 0; }
   .educator-page .educator-talent-section-3 {
     text-align: center; }
     .educator-page .educator-talent-section-3 p {

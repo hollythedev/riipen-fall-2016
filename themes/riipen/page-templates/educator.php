@@ -21,9 +21,9 @@
                 <?php echo CFS()->get( 'banner_2'); ?>
             </div>
             <div class="educator-talent-section-5">
-                <?php echo CFS()->get( 'testimonial'); ?>
-                <?php echo CFS()->get( 'position'); ?>
-                <?php echo CFS()->get( 'name'); ?>
+                <p class= testimonial> <?php echo CFS()->get( 'testimonial'); ?> </p>
+                <p class= "position"><?php echo CFS()->get( 'position'); ?></p>
+                <p class= "name"><?php echo CFS()->get( 'name'); ?> </p>
             </div>
         </section>
         <?php dynamic_sidebar( 'carousels' ); ?>
