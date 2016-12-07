@@ -87,8 +87,10 @@
             height: 274px;
     }
         .educator-talent-section-5 {
+                margin: auto;
+    width: 87%;
             .testimonial {
-                font-style: italics;
+                font-style: italic;
                 color: $color__border-abbr;
             }
             font: 1.5rem $font__main;
