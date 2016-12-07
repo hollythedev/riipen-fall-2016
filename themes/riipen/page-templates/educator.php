@@ -27,7 +27,7 @@
             <div class="educator-talent-section-5">
                 <p class="testimonial">
                     <?php echo CFS()->get( 'testimonial'); ?>
-                    <p>
+     
                         <p class="position">
                             <?php echo CFS()->get( 'position'); ?> </p>
                         <p class="name">

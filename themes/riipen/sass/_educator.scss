@@ -88,15 +88,18 @@
     }
         .educator-talent-section-5 {
                 margin: auto;
+                    padding: 48px 0;
     width: 87%;
             .testimonial {
                 font-style: italic;
+                font-weight: 100;
                 color: $color__border-abbr;
             }
             font: 1.5rem $font__main;
             .position {
                 color: $color_pumpkin-orange;
                 text-align: right;
+                    margin-bottom: 0;
             }
             .name {
                 color: $color__border-abbr;
