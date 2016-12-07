@@ -15,35 +15,37 @@ get_header(); ?>
 			</video>
 			<div class="headline">
 				<div class="headline-wrap animatedParent">
-					<h2 class="animated bounceInDown">Riipen your life</h2>
-					<p class="animated bounceInLeft">Where talent and industry meet</p>
+					<h2 class="animated bounceIn">Riipen your life</h2>
+					<p class="animated bounceIn">Where talent and industry meet</p>
 				</div>
 			</div>
 		</section>
 		<section class="stats">
 			<div class="container">
 				<ul>
-					<li>
-						<div>
+					<li class="animatedParent">
+						<div class="animated fadeInUp">
 							<h2>42%</h2>
 							<p>of new university graduates are under employed.</p>
 						</div>
 					</li>
-					<li>
-						<div>
+					<li class="animatedParent">
+						<div class="animated fadeInUp">
 							<h2>92%</h2>
 							<p>of Teachers say their students are ready for the job market after graduation.</p>
 
 						</div>
 					</li>
-					<li>
-						<div>
+					<li class="animatedParent">
+						<div class="animated fadeInUp">
 							<h2>18%</h2>
 							<p>Employers say 18% of students are ready for the job market after graduation</p>
 						</div>
 					</li>
 				</ul>
-				<p class="double-border">"Why aren't students being evaluated on their school work by industry as well?"</p>
+				<div class="animatedParent">
+				<p class="double-border animated flipInX">"Why aren't students being evaluated on their school work by industry as well?"</p>
+				</div>
 			</div>
 		</section>
 		<section class="about">
