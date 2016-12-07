@@ -413,6 +413,11 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+@media (min-width: 750px) {
+  #primary-menu {
+    display: -ms-flexbox !important;
+    display: flex !important; } }
+
 /* Links */
 a {
   color: black;
@@ -1086,6 +1091,12 @@ object {
 .gallery-caption {
   display: block; }
 
+.desktop-only {
+  display: none; }
+  @media (min-width: 750px) {
+    .desktop-only {
+      display: block; } }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -1109,11 +1120,20 @@ object {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
       .site-footer .footer-container .footer-social-media a {
-        color: #333333;
-        background-color: white;
+        color: #333;
+        height: 50px;
+        background-color: #fff;
         font-size: 1.5rem;
         border-radius: 50%;
-        display: block; }
+        display: block;
+        width: 50px;
+        -ms-flex-align: center;
+            align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+        text-align: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
         .site-footer .footer-container .footer-social-media a i {
           padding: 1px 8px; }
       @media (min-width: 750px) {
@@ -1122,6 +1142,14 @@ object {
           max-width: 415px; } }
     .site-footer .footer-container .footer-button {
       display: none; }
+      .site-footer .footer-container .footer-button a {
+        color: white;
+        text-decoration: none;
+        border: 1px solid #4cc88d;
+        padding: 10px 51px; }
+        .site-footer .footer-container .footer-button a:hover {
+          color: black;
+          background-color: #4cc88d; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-button {
           display: -ms-flexbox;
@@ -1129,12 +1157,7 @@ object {
           -ms-flex-pack: distribute;
               justify-content: space-around;
           padding-bottom: 3%;
-          width: 100%; }
-          .site-footer .footer-container .footer-button a {
-            color: white;
-            text-decoration: none;
-            border: 1px solid green;
-            padding: 10px 51px; } }
+          width: 100%; } }
     .site-footer .footer-container .footer-information {
       margin: auto;
       max-width: 200px;
@@ -1167,6 +1190,7 @@ object {
   width: 100%;
   position: relative;
   overflow: hidden;
+  height: calc(100vh - 68px);
   background: url("../../images/new-york-stock-photo.jpg ") no-repeat, rgba(0, 0, 0, 0.4);
   background-size: cover;
   display: -ms-flexbox;
@@ -1488,75 +1512,112 @@ section {
 
 .wp-posts-carousel-container {
   box-shadow: none; }
+  .wp-posts-carousel-container img {
+    height: 90px; }
+  .wp-posts-carousel-container a {
+    outline: none; }
 
 .post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
   background: #f7f7f7; }
 
-.post-type-archive-institutions .site-main, .post-type-archive-educator .site-main {
-  padding-top: 50px; }
-  .post-type-archive-institutions .site-main .tabbingwrapper, .post-type-archive-educator .site-main .tabbingwrapper {
-    display: -ms-flexbox;
-    display: flex; }
-  .post-type-archive-institutions .site-main .entry-title, .post-type-archive-educator .site-main .entry-title {
-    margin: 10px 0;
-    font-size: 18px; }
-  .post-type-archive-institutions .site-main .educator-image, .post-type-archive-educator .site-main .educator-image {
-    height: 200px;
-    width: 200px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover; }
-  .post-type-archive-institutions .site-main .educatorname, .post-type-archive-educator .site-main .educatorname {
-    letter-spacing: 0.9pt; }
-  .post-type-archive-institutions .site-main .educators-category, .post-type-archive-educator .site-main .educators-category {
-    color: #27aefb;
+.post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
+  height: calc(100vh - 68px);
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/picture-of-stairs.jpg") no-repeat center;
+  background-size: cover; }
+  @media (min-width: 750px) {
+    .post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
+      display: -ms-flexbox;
+      display: flex; } }
+
+.post-type-archive-institutions .banner-text, .post-type-archive-educator .banner-text {
+  color: white;
+  font-weight: bold;
+  font-size: 36px; }
+
+.post-type-archive-institutions .orange-text, .post-type-archive-educator .orange-text {
+  color: #f68708; }
+
+.post-type-archive-institutions .site-main .tabbingwrapper, .post-type-archive-educator .site-main .tabbingwrapper {
+  display: -ms-flexbox;
+  display: flex; }
+
+.post-type-archive-institutions .site-main .entry-title, .post-type-archive-educator .site-main .entry-title {
+  margin: 10px 0;
+  font-size: 18px; }
+
+.post-type-archive-institutions .site-main .educator-image, .post-type-archive-educator .site-main .educator-image {
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
+
+.post-type-archive-institutions .site-main .educatorname, .post-type-archive-educator .site-main .educatorname {
+  letter-spacing: 0.9pt; }
+
+.post-type-archive-institutions .site-main .educators-category, .post-type-archive-educator .site-main .educators-category {
+  color: #27aefb;
+  text-align: center; }
+  .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
+    color: #27aefb; }
+
+.post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+  margin: 0px auto;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  border: 1px grey solid;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0 10px; }
+  @media (min-width: 750px) {
+    .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+      display: none; } }
+  .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
+    color: #919191; }
+  .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
+    color: black;
+    margin: auto; }
+    .post-type-archive-institutions .site-main .tabbingsection .active:hover, .post-type-archive-educator .site-main .tabbingsection .active:hover {
+      color: #404040; }
+  .post-type-archive-institutions .site-main .tabbingsection a, .post-type-archive-educator .site-main .tabbingsection a {
+    font-size: 15px; }
+  .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
+    padding: 8px 0px;
+    padding-right: 10px;
+    border-right: 1px solid grey; }
+  .post-type-archive-institutions .site-main .tabbingsection a:last-child, .post-type-archive-educator .site-main .tabbingsection a:last-child {
+    padding-left: 5px;
+    margin: auto; }
+
+.post-type-archive-institutions .site-main .riipen-list, .post-type-archive-educator .site-main .riipen-list {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .post-type-archive-institutions .site-main .riipen-list .personwrapper, .post-type-archive-educator .site-main .riipen-list .personwrapper {
+    margin: 30px 2%;
+    width: 28%;
+    box-sizing: border-box; }
+    @media (min-width: 750px) {
+      .post-type-archive-institutions .site-main .riipen-list .personwrapper, .post-type-archive-educator .site-main .riipen-list .personwrapper {
+        width: 21%;
+        margin: 30px auto; } }
+  .post-type-archive-institutions .site-main .riipen-list h2, .post-type-archive-educator .site-main .riipen-list h2 {
     text-align: center; }
-    .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
-      color: #27aefb; }
-  .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
-    margin: 0px auto;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    text-align: center;
-    border: 1px grey solid;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 0 10px; }
-    .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
-      color: #919191; }
-    .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
-      color: black;
-      margin: auto; }
-      .post-type-archive-institutions .site-main .tabbingsection .active:hover, .post-type-archive-educator .site-main .tabbingsection .active:hover {
-        color: #404040; }
-    .post-type-archive-institutions .site-main .tabbingsection a, .post-type-archive-educator .site-main .tabbingsection a {
-      font-size: 15px; }
-    .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
-      padding: 8px 0px;
-      padding-right: 10px;
-      border-right: 1px solid grey; }
-    .post-type-archive-institutions .site-main .tabbingsection a:last-child, .post-type-archive-educator .site-main .tabbingsection a:last-child {
-      padding-left: 5px;
-      margin: auto; }
-  .post-type-archive-institutions .site-main .riipen-list, .post-type-archive-educator .site-main .riipen-list {
-    width: 90%;
-    margin: 0 auto;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .post-type-archive-institutions .site-main .riipen-list .personwrapper, .post-type-archive-educator .site-main .riipen-list .personwrapper {
-      width: 30%;
-      margin: 30px auto;
-      box-sizing: border-box; }
-    .post-type-archive-institutions .site-main .riipen-list h2, .post-type-archive-educator .site-main .riipen-list h2 {
-      text-align: center; }
-    .post-type-archive-institutions .site-main .riipen-list a img, .post-type-archive-educator .site-main .riipen-list a img {
-      box-shadow: 4px 17px 53px 1px #a6a6a6;
-      width: 100%;
-      height: 100%; }
+  .post-type-archive-institutions .site-main .riipen-list a img, .post-type-archive-educator .site-main .riipen-list a img {
+    box-shadow: 10px 10px 47px -8px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%; }
 
 .post-type-archive-institutions .personwrapper {
   width: 30%; }
@@ -1564,116 +1625,170 @@ section {
     .post-type-archive-institutions .personwrapper {
       width: 15%; } }
 
-.post-type-archive-organizations .content-area {
+.post-type-archive-organizations {
   background: #f7f7f7; }
-
-.post-type-archive-organizations .view-type-buttons {
-  width: 50%;
-  height: 100px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 auto;
-  padding-top: 36px; }
-
-.post-type-archive-organizations .grid-view {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .post-type-archive-organizations .grid-view:hover .grey-boxes {
-    background-color: #919191; }
-    .post-type-archive-organizations .grid-view:hover .grey-boxes:nth-child(0n+2) {
-      background-color: #f68708; }
-  .post-type-archive-organizations .grid-view .grey-boxes {
-    box-sizing: border-box;
-    width: 50%;
-    height: 50%;
-    background-color: #7e7e7e;
-    border: 2px #f7f7f7 solid; }
-    .post-type-archive-organizations .grid-view .grey-boxes:nth-child(0n+2) {
-      background-color: #f68708; }
-
-.post-type-archive-organizations .list-view {
-  padding-top: 2px; }
-  .post-type-archive-organizations .list-view:hover {
-    background-color: rgba(255, 255, 255, 0.5); }
-
-.post-type-archive-organizations .psudeo-button {
-  width: 50px;
-  height: 50px; }
-
-.post-type-archive-organizations .riipen-list {
-  transition: all 1s ease;
-  width: 90%;
-  margin: 0 auto; }
-
-.post-type-archive-organizations .riipen-list.organizationgrid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-bottom: 140px; }
-  .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
-    width: 30%;
-    margin: 30px auto;
-    box-sizing: border-box; }
+  .post-type-archive-organizations .orange-text {
+    color: #f68708; }
+  .post-type-archive-organizations .hero-banner {
+    height: calc(100vh - 68px);
+    display: none;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/org-hero.jpg") no-repeat center;
+    background-size: cover; }
     @media (min-width: 750px) {
-      .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
-        width: 15%; } }
-    .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-title {
-      display: none; }
-    .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-summary {
-      display: none; }
-  .post-type-archive-organizations .riipen-list.organizationgrid h2 {
-    text-align: center; }
-  .post-type-archive-organizations .riipen-list.organizationgrid a img {
-    box-shadow: 4px 17px 53px 1px #a6a6a6;
-    width: 100%;
-    height: 100%; }
-
-.post-type-archive-organizations .riipen-list.organizationlist {
-  padding-bottom: 140px;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px 0px;
-  margin: 10px auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .post-type-archive-organizations .riipen-list.organizationlist .personwrapper {
-    width: 100%;
+      .post-type-archive-organizations .hero-banner {
+        display: -ms-flexbox;
+        display: flex; } }
+  .post-type-archive-organizations .banner-text {
+    color: white;
+    font-weight: bold;
+    font-size: 36px; }
+  .post-type-archive-organizations .org-header {
+    text-align: center;
+    font-size: 20px; }
+  .post-type-archive-organizations .view-type-buttons {
+    width: 50%;
+    height: 100px;
     display: -ms-flexbox;
     display: flex;
-    height: 200px;
-    border: 2px solid grey; }
-    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper:hover {
-      border: 2px solid #7e7e7e; }
-    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content {
-      width: 75%; }
-    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .entry-title {
-      margin: 0; }
-    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a {
-      padding-left: 5px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 36px; }
+  .post-type-archive-organizations .grid-view {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .post-type-archive-organizations .grid-view:hover .grey-boxes {
+      background-color: #919191; }
+      .post-type-archive-organizations .grid-view:hover .grey-boxes:nth-child(0n+2) {
+        background-color: #f68708; }
+    .post-type-archive-organizations .grid-view .grey-boxes {
+      box-sizing: border-box;
+      width: 50%;
+      height: 50%;
+      background-color: #7e7e7e;
+      border: 2px #f7f7f7 solid; }
+      .post-type-archive-organizations .grid-view .grey-boxes:nth-child(0n+2) {
+        background-color: #f68708; }
+  .post-type-archive-organizations .list-view {
+    padding-top: 2px; }
+    .post-type-archive-organizations .list-view:hover {
+      background-color: rgba(255, 255, 255, 0.5); }
+  .post-type-archive-organizations .psudeo-button {
+    width: 50px;
+    height: 50px; }
+  .post-type-archive-organizations .riipen-list {
+    transition: all 1s ease;
+    width: 90%;
+    margin: 0 auto; }
+  .post-type-archive-organizations .riipen-list.organizationgrid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 140px; }
+    .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
+      width: 30%;
+      margin: 30px auto;
+      box-sizing: border-box; }
+      @media (min-width: 750px) {
+        .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
+          width: 22%; } }
+      .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-title {
+        display: none; }
+      .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-summary {
+        display: none; }
+    .post-type-archive-organizations .riipen-list.organizationgrid h2 {
+      text-align: center; }
+    .post-type-archive-organizations .riipen-list.organizationgrid a img {
+      box-shadow: 4px 10px 50px 1px #a6a6a6;
+      width: 100%;
+      height: 100%; }
+  .post-type-archive-organizations .riipen-list.organizationlist {
+    padding-bottom: 140px;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0px;
+    margin: 10px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper {
+      width: 100%;
       display: -ms-flexbox;
       display: flex;
-      width: 150px; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a img {
-        margin: auto 0;
-        max-width: 100%;
-        height: auto;
-        max-height: 100%; }
-    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content a {
-      width: auto;
-      padding-left: 10px; }
+      height: 200px;
+      border: 2px solid grey; }
+      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper:hover {
+        border: 2px solid #7e7e7e; }
+      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content {
+        width: 75%; }
+      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .entry-title {
+        margin: 0; }
+      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a {
+        padding-left: 5px;
+        display: -ms-flexbox;
+        display: flex;
+        width: 150px; }
+        .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a img {
+          margin: auto 0;
+          max-width: 100%;
+          height: auto;
+          max-height: 100%; }
+      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content a {
+        width: auto;
+        padding-left: 10px; }
 
 .single-organizations {
   /*----- Tabs -----*/
   /*----- Tab Links -----*/
   /* Clearfix */
   /*----- Content of Tabs -----*/ }
+  .single-organizations .tabbingwrapper {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 50px; }
+  .single-organizations .tabbingsection {
+    margin: 0px auto;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: center;
+    border: 1.5px #4cc88d solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: white; }
+    .single-organizations .tabbingsection .leftsection {
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      background: white; }
+    .single-organizations .tabbingsection .rightsection {
+      background: #4cc88d;
+      border-radius: 9px; }
+    .single-organizations .tabbingsection .inactive {
+      color: #4cc88d; }
+    .single-organizations .tabbingsection .active {
+      color: white;
+      margin: auto; }
+      .single-organizations .tabbingsection .active:hover {
+        color: #404040; }
+    .single-organizations .tabbingsection a {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+          align-self: center;
+      font-size: 15px; }
+    .single-organizations .tabbingsection a:first-child {
+      padding: 8px 0px;
+      padding-right: 10px; }
+    .single-organizations .tabbingsection a:last-child {
+      padding-left: 8px; }
   .single-organizations .site-content {
     background: #f7f7f7; }
   .single-organizations .entry-header {
@@ -1698,12 +1813,14 @@ section {
   .single-organizations .entry-content {
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 140px;
     font-size: 24px; }
   .single-organizations .tabs {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    padding-bottom: 146px; }
+    padding-bottom: 50px; }
+    @media (min-width: 750px) {
+      .single-organizations .tabs {
+        padding-bottom: 0; } }
     .single-organizations .tabs p {
       word-wrap: break-word;
       margin: 0; }
@@ -1714,11 +1831,22 @@ section {
       clear: both;
       content: ''; }
     .single-organizations .tab-links li {
-      max-width: 25%;
-      margin: 0px 5px;
+      position: relative;
+      top: 1px;
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      margin: 0px 1px;
+      height: 100%;
       float: left;
       list-style: none; }
+      @media (min-width: 750px) {
+        .single-organizations .tab-links li {
+          width: 15%; } }
     .single-organizations .tab-links a {
+      height: 100%;
+      min-height: 25px;
+      width: 100%;
+      text-align: center;
       padding: 9px 15px;
       display: inline-block;
       border-radius: 10px 10px 0 0;
@@ -1732,12 +1860,16 @@ section {
       background: #87dab2;
       text-decoration: none; }
   .single-organizations li.active a, .single-organizations li.active a:hover {
+    border: 1.5px solid grey;
+    border-bottom: 0px;
     background: #fff;
     outline: none;
     color: #27aefb; }
   .single-organizations .tab-content {
     padding: 15px;
     border-radius: 7px;
+    border-top-left-radius: 2px;
+    border: 1px solid grey;
     background: #fff; }
   .single-organizations .tab {
     display: none; }
@@ -1806,11 +1938,45 @@ section {
 .each-result {
   width: 30%; }
 
-.search-results .search-result-wrapper {
+.search-results .results-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .search-results .results-wrapper .type-page {
+    display: none; }
+
+.search-results .page-header {
+  width: 100%; }
+
+.search-results .status-publish {
+  display: none; }
+
+.search-results .has-post-thumbnail {
+  display: block;
+  width: 21%;
+  margin: 10px auto;
+  box-sizing: border-box;
+  text-align: center; }
+  @media (min-width: 750px) {
+    .search-results .has-post-thumbnail {
+      width: 19%; } }
+  .search-results .has-post-thumbnail img {
+    height: 100%;
+    max-height: 200px; }
+
+.search-results .featuredimage {
+  width: 100%;
+  height: 125px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (min-width: 750px) {
+    .search-results .featuredimage {
+      height: 250px; } }
+
+.search-results .search-pagination {
+  width: 100%; }
 
 .about-hero {
   height: calc(100vh - 68px);
