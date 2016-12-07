@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="each-result" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="each-result <?php post_class(); ?>">
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
@@ -19,7 +19,4 @@
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

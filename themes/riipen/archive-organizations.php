@@ -9,7 +9,11 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
 <button onclick="history.go(-1);" class="back"><  Back</button>
-	<main id="main" class="site-main animatedParent container" role="main">
+	<main id="main" class="site-main animatedParent" role="main">
+	<div class="hero-banner">
+	<h1 class="uppercase banner-text">Where <span class="orange-text">talent</span> and <span class="orange-text">industry</span> meet</h1>
+	</div class="container">
+			<h2 class="uppercase org-header desktop-only"> Companies we are working with </h2>
 		<div class="view-type-buttons">
 			<a class="list-view psudeo-button" > 
 				<div class="psudeo-button"> 

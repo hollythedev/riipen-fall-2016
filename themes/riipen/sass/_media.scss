@@ -86,3 +86,14 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+
+
+.desktop-only{
+	display: none;
+	@include desktop{
+		display: block;
+}
+}
+

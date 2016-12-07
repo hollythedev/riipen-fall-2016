@@ -2,8 +2,27 @@
 	width: 30%;
 }
 .search-results{
-	.search-result-wrapper{
+	.results-wrapper{
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.page-header{
+		width: 100%;
+	}
+	.each-result{
+ 			width: 25%;
+ 			height: 500px;
+ 			@include desktop{
+ 				width: 20%;
+ 			}
+ 			padding: 0 30px;
+ 			box-sizing: border-box;
+ 			text-align: center;
+ 			h2{
+ 				// font-size: 20px;
+ 			}
+ 		}
+ 		.search-pagination{
+ 			width: 100%;
+ 		}
 }

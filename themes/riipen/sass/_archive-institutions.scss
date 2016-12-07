@@ -2,6 +2,9 @@
 	.site-content{
 	background: $color__lightgrey;
 }
+.hero-banner{
+	height: 700px;
+}
 .site-main{
 	padding-top: 50px;
 	
@@ -39,7 +42,9 @@
 		box-sizing: border-box;
 		border-radius: 10px;
 		padding: 0 10px;
-		
+		@include desktop{
+			display: none;
+		}
 		.inactive{
 			color: $color_warm-grey-two;
 		}
@@ -70,7 +75,10 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 		.personwrapper{
-			width: 30%;		
+			width: 28%;		
+			@include desktop{
+			width: 21%;		
+			}
 			margin: 30px auto;
 			box-sizing: border-box;
 		}
@@ -79,7 +87,7 @@
 		}
 		a{
 			img{
-				box-shadow: 4px 17px 53px 1px rgba(166,166,166,1);
+				box-shadow: 10px 10px 47px -8px rgba(0,0,0,0.75);
 				width: 100%;
 				height: 100%;
 			}
