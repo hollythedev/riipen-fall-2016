@@ -440,18 +440,20 @@ a {
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    padding: 0 20px;
     height: 100%;
-    position: relative; }
+    position: relative;
+    padding: 0 20px; }
+    @media (min-width: 750px) {
+      .site-header .container {
+        padding: 0; } }
   .site-header .fa {
     color: #0c4160;
     font-size: 1.5rem;
     -webkit-text-stroke: 1px white; }
 
 .site-branding {
-  background-color: #27aefb;
-  height: 1.5rem;
-  width: 5rem;
+  height: 1.5em;
+  width: 5em;
   -ms-flex-order: 1;
       order: 1; }
   @media (min-width: 750px) {

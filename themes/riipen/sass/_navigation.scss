@@ -36,9 +36,12 @@ a {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0 20px;
 		height: 100%;
 		position: relative;
+		padding: 0 20px;
+		@include desktop {
+			padding: 0;
+		}
 	}
 	.fa {
 		color: $color_twilight-blue;
@@ -48,9 +51,8 @@ a {
 }
 
 .site-branding {
-	background-color: $color_azure;
-	height: 1.5rem;
-	width: 5rem;
+	height: 1.5em;
+	width: 5em;
 	order: 1;
 	@include desktop {
 		order: 0;
