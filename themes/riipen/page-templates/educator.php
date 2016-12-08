@@ -19,7 +19,7 @@
             </div>
             <div class= "desktop-green"> 
                 <div class= "desktop-green-container1">
-                <h2>r<span>ii</span>pen</h2><p> your assignments</p>
+                <h2>R<span>ii</span>pen</h2><p> your assignments</p>
                 </div>
                 <div class="desktop-green-container2">
                 <div class="left">

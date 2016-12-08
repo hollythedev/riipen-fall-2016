@@ -908,18 +908,20 @@ a {
             .educator-page .desktop-green .desktop-green-container1 h2 span {
               color: #0c4160; }
           .educator-page .desktop-green .desktop-green-container1 p {
-            color: white; }
+            color: white;
+            margin: 0;
+            padding-left: 12px; }
         .educator-page .desktop-green .desktop-green-container2 {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: justify;
               justify-content: space-between;
           margin: auto;
-          width: 90%; }
+          width: 80%; }
           .educator-page .desktop-green .desktop-green-container2 .left, .educator-page .desktop-green .desktop-green-container2 .middle, .educator-page .desktop-green .desktop-green-container2 .right {
             width: 30%;
             color: white;
-            font: 1rem "Open Sans", sans-serif; } }
+            font: 1.5rem "Open Sans", sans-serif; } }
   .educator-page .educator-talent-section-3 {
     text-align: center;
     margin: 58px 0; }

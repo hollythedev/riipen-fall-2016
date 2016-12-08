@@ -86,17 +86,19 @@
     }
     p{
         color: white;
+        margin: 0;
+    padding-left: 12px;
     }
     }
         .desktop-green-container2{
          display:flex;
          justify-content:space-between;
          margin: auto;
-    width: 90%;
+    width: 80%;
          .left, .middle, .right, {
              width:30%;
              color:white;
-             font: 1rem $font__main
+             font: 1.5rem $font__main
          }
         }
 } 
