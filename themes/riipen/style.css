@@ -1248,7 +1248,7 @@ section {
   position: relative;
   overflow: hidden;
   height: calc(100vh - 68px);
-  background: url("../../images/new-york-stock-photo.jpg ") no-repeat, rgba(0, 0, 0, 0.4);
+  background: url("../../images/new-york-stock-photo.jpg ") no-repeat;
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -1610,8 +1610,8 @@ section {
   -ms-flex-align: center;
       align-items: center;
   background: url("../../images/picture-of-stairs.jpg") no-repeat center;
-  background-color: #919191;
-  background-blend-mode: darken;
+  background-color: #aaaaaa;
+  background-blend-mode: multiply;
   background-size: cover; }
   @media (min-width: 750px) {
     .post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
@@ -1737,7 +1737,9 @@ section {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/org-hero.jpg") no-repeat center;
+    background: url("../../images/org-hero.jpg") no-repeat center;
+    background-color: #7e7e7e;
+    background-blend-mode: multiply;
     background-size: cover; }
     @media (min-width: 750px) {
       .post-type-archive-organizations .hero-banner {
