@@ -201,5 +201,12 @@
             color: $color__border-abbr;
             text-align: right;
         }
+       @media (min-width: $breakpoint) {
+           border: 1px solid $color_azure;
+           .testimonial{
+               font-style:normal;
+               color:black;
+           }
+        } 
     }
 }

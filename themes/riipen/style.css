@@ -1015,6 +1015,12 @@ a {
     .educator-page .educator-talent-section-5 .name {
       color: #666;
       text-align: right; }
+    @media (min-width: 750px) {
+      .educator-page .educator-talent-section-5 {
+        border: 1px solid #27aefb; }
+        .educator-page .educator-talent-section-5 .testimonial {
+          font-style: normal;
+          color: black; } }
 
 /*--------------------------------------------------------------
 # Widgets
