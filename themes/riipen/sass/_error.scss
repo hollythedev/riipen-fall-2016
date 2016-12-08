@@ -2,7 +2,7 @@
   background-color: $color_white-smoke;
   display: flex;
   text-align: center;
-  height: calc(100vh - 68px);
+  min-height: calc(100vh - 68px);
   justify-content: center;
   align-items: center;
   .page-content {
