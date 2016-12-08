@@ -10,7 +10,7 @@ get_header(); ?>
 <section id="primary" class="content-area">
 	<button onclick="history.go(-1);" class="back"><  Back</button>
 	<main id="main" class="site-main" role="main">
-		<div class="search-result-wrapper">
+		<div class="search-result-wrapper container">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
@@ -19,10 +19,10 @@ get_header(); ?>
 					<div class=" results-wrapper">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
-					
+
 
 					<?php get_template_part( 'template-parts/content', 'search' ); ?>
-					
+
 				<?php endwhile; ?>
 				</div>
 				<?php riipen_numbered_pagination(); ?>

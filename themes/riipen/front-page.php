@@ -23,25 +23,25 @@ get_header(); ?>
 		<section class="stats">
 			<div class="container">
 				<ul>
-					<li class="animatedParent animateOnce">
-						<div class="animated fadeInUp">
-							<h2>42%</h2>
-							<p>of new university graduates are under employed.</p>
-						</div>
-					</li>
-					<li class="animatedParent animateOnce">
-						<div class="animated fadeInUp">
-							<h2>92%</h2>
-							<p>of Teachers say their students are ready for the job market after graduation.</p>
+				  <li class="animatedParent animateOnce">
+				    <div class="animated fadeInUp">
+				      <p class="percent">42%</p>
+				      <p>of new university graduates are under employed.</p>
+				    </div>
+				  </li>
+				  <li class="animatedParent animateOnce">
+				    <div class="animated fadeInUp">
+				      <p class="percent">92%</p>
+				      <p>of Teachers say their students are ready for the job market after graduation.</p>
 
-						</div>
-					</li>
-					<li class="animatedParent animateOnce">
-						<div class="animated fadeInUp">
-							<h2>18%</h2>
-							<p>Employers say 18% of students are ready for the job market after graduation</p>
-						</div>
-					</li>
+				    </div>
+				  </li>
+				  <li class="animatedParent animateOnce">
+				    <div class="animated fadeInUp">
+				      <p class="percent">18%</p>
+				      <p>Employers say 18% of students are ready for the job market after graduation</p>
+				    </div>
+				  </li>
 				</ul>
 				<div class="animatedParent animateOnce">
 				<p class="double-border animated flipInX">"Why aren't students being evaluated on their school work by industry as well?"</p>
