@@ -1581,6 +1581,18 @@ section {
   .wp-posts-carousel-container a {
     outline: none; }
 
+.carousel-cell {
+  width: 25%;
+  padding: 10px;
+  height: 150px; }
+  .carousel-cell a {
+    height: 100%;
+    width: 100%; }
+    .carousel-cell a img {
+      height: 100%;
+      width: 100%;
+      max-width: 100%; }
+
 .post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
   background: #f7f7f7; }
 

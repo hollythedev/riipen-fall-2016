@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-<button onclick="history.go(-1);" class="back"><  Back</button>
+	<button onclick="history.go(-1);" class="back"><  Back</button>
 	<main id="main" class="site-main" role="main">
 		
 		<div class="riipen-list">
@@ -21,12 +21,12 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="personwrapper">
-					<a href="<?php echo the_permalink(); ?>">
-						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
-					</a>
-			</div>
+						<a href="<?php echo the_permalink(); ?>">
+							<?php if ( has_post_thumbnail() ) : ?>
+								<?php the_post_thumbnail( 'large' ); ?>
+							<?php endif; ?>
+						</a>
+					</div>
 				<?php endwhile; ?>
 
 				<?php the_posts_navigation(); ?>
@@ -40,5 +40,17 @@ get_header(); ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
-		<?php dynamic_sidebar( 'carousels2' ); ?>
+ <!-- "'.$image["link_to_course"].'"/>' -->
+
+<?php dynamic_sidebar( 'carousels2' ); ?>
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+	<?php $gallery_images = CFS()->get('course_pictures');?>
+	<?php foreach ($gallery_images as $image): ?>
+	<div class="carousel-cell">
+		<a href="<?php echo $image["link_to_course"] ?>">
+		<?php echo '<img src="'.$image["image"].'"/>'; ?>
+		</a>
+	</div>
+<?php endforeach; ?>
+</div>
 <?php get_footer(); ?>
