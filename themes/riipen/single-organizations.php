@@ -7,9 +7,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-areas">
+<div id="primary" class="content-areas">
 	<button onclick="history.go(-1);" class="back"><  Back</button>
-		<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
@@ -21,6 +21,7 @@ get_header(); ?>
 					<?php the_title( '<h1 class="entry-title uppercase">About ', '</h1>' ); ?>
 
 				</header><!-- .entry-header -->
+
 
 				<div class="entry-content">
 					<?php the_content(); ?>
@@ -35,6 +36,16 @@ get_header(); ?>
 
 				</article>
 			<?php endwhile; // End of the loop. ?>
+			<div class="tabbingwrapper">
+				<div class="tabbingsection">
+					<div class="leftsection">
+					<a class="inactive uppercase">Institutions</a>
+					</div>
+					<div class="rightsection">
+					<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
+					</div>	
+				</div>
+			</div>
 			<div class="tabs">
 				<ul class="tab-links">
 					<li class="active">

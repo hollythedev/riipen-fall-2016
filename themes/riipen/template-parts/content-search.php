@@ -7,19 +7,22 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="each-result" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class() ?> >
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<div class="featuredimage" style=background-image:url("<?php echo the_post_thumbnail_url()?>") >
+			<!-- <?php echo the_post_thumbnail_url() ?>  -->
+
+
+			</div>
 		<?php endif; ?>
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+		<br>
 		
 		<?php echo get_the_term_list( $post->ID, 'institution', 'Teaches At: ', ', ' ); ?>
+		<br>
 		<?php riipen_entry_footer() ?>
 
 	</header><!-- .entry-header -->
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

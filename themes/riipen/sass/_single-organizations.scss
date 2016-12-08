@@ -1,4 +1,54 @@
 .single-organizations{
+	.tabbingwrapper{
+		width: 100%;
+		display: flex;
+		padding-bottom: 50px;
+	}
+	.tabbingsection{
+		margin: 0px auto;
+		display: inline-flex;
+		text-align: center;
+		border: 1.5px $color_dark-mint solid;
+		box-sizing: border-box;
+		border-radius: 10px;
+		background: white;
+		.leftsection{
+			border-bottom-left-radius: 10px;
+			border-top-left-radius: 10px;
+			background: white;
+		}
+		.rightsection{
+
+			background: #4cc88d;
+			border-radius: 9px;
+		}
+		.inactive{
+			color: $color_dark-mint;
+		}
+		.active{
+			color: white;
+			// background: $color_dark-mint;
+			margin: auto;	
+			&:hover{
+				color:$color__text-main-hover;
+			}
+		}
+		a{
+			display: flex;
+			align-self:center;
+			font-size: 15px;
+		}
+		a:first-child{
+
+			padding: 8px 0px;
+			padding-right: 10px;
+			// border-right: 1px solid $color_dark-mint;
+		}
+		a:last-child{
+			padding-left: 8px;
+			// margin: auto;
+		}
+	}
 	.site-content{
 		background: $color_white-smoke;
 	}
@@ -10,7 +60,7 @@
 		h1{
 			padding-top: 90px;
 			font-size: 36px;
-		letter-spacing: 1.8pt
+			letter-spacing: 1.8pt
 		}
 		img{
 			width: 200px;
@@ -26,18 +76,22 @@
 	.entry-content{
 		width: 90%;
 		margin: 0 auto;
-		padding-bottom: 140px;
+		// padding-bottom: 140px;
 		font-size: 24px;
 	}
 
 	/*----- Tabs -----*/
 	.tabs {
 
-		width:90%;
-		// display:inline-block;
-
+		width:95%;
+		
+		
 		margin: 0 auto;
-		padding-bottom: 146px;
+		padding-bottom: 50px;
+
+		@include desktop{
+			padding-bottom: 0;
+		}
 		p{
 			word-wrap: break-word;
 			margin: 0;
@@ -47,21 +101,33 @@
 	/*----- Tab Links -----*/
 	/* Clearfix */
 	.tab-links{
+
 		margin: 0;
 		&:after {
 			display:block;
 			clear:both;
 			content:'';
 		}
-	
+
 		li {
-			max-width: 25%;
-			margin:0px 5px;
+			position: relative;
+			top: 1px;
+			border-bottom-left-radius: 100px;
+			border-bottom-right-radius: 100px;
+			margin:0px 1px;
+			height: 100%;
 			float:left;
 			list-style:none;
+			@include desktop {
+				width: 15%;
+			}
 		}
-	
+
 		a {
+			height: 100%;
+			min-height: 25px;
+			width: 100%;
+			text-align: center;
 			padding:9px 15px;
 			display:inline-block;
 			border-radius:10px 10px 0 0;
@@ -72,16 +138,18 @@
 			color: $color_white-smoke;
 			transition:all linear 0.15s;
 		}
-	
-		 a:hover {
-		 	outline: none;
+
+		a:hover {
+			outline: none;
 			background:$color_light-mint;
 			text-decoration:none;
 		}
 	}
 	li.active a, li.active a:hover {
+		border: 1.5px solid grey;
+		border-bottom: 0px;
 		background:#fff;
-			outline: none;
+		outline: none;
 		color:$color_azure;
 
 	}
@@ -90,7 +158,8 @@
 	.tab-content {
 		padding:15px;
 		border-radius:7px;
-		// box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+		border-top-left-radius: 2px;
+		border: 1px solid grey;
 		background:#fff;
 	}
 
