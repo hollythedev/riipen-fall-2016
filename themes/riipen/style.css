@@ -1304,11 +1304,11 @@ section {
   .stats li {
     list-style: none;
     margin-bottom: 1.5rem; }
-    .stats li:last-child h2 {
+    .stats li:last-child .percent {
       -ms-flex-order: 1;
           order: 1; }
       @media (min-width: 750px) {
-        .stats li:last-child h2 {
+        .stats li:last-child .percent {
           -ms-flex-order: 0;
               order: 0; } }
     .stats li:first-child div, .stats li:last-child div {
@@ -1316,7 +1316,7 @@ section {
       display: flex;
       -ms-flex-align: center;
           align-items: center; }
-    .stats li:first-child h2, .stats li:last-child h2 {
+    .stats li:first-child .percent, .stats li:last-child .percent {
       margin: 0 1rem;
       display: block;
       position: relative;
@@ -1331,7 +1331,7 @@ section {
           align-items: center;
       -ms-flex-pack: center;
           justify-content: center; }
-      .stats li:first-child h2:after, .stats li:last-child h2:after {
+      .stats li:first-child .percent:after, .stats li:last-child .percent:after {
         content: '';
         border: 2px solid #f68708;
         top: 2px;
@@ -1340,7 +1340,7 @@ section {
         height: 100%;
         border-radius: 100%;
         position: absolute; }
-      .stats li:first-child h2:before, .stats li:last-child h2:before {
+      .stats li:first-child .percent:before, .stats li:last-child .percent:before {
         content: '';
         border: 2px solid #4cc88d;
         top: 2px;
@@ -1350,7 +1350,7 @@ section {
         border-radius: 100%;
         position: absolute; }
       @media (min-width: 750px) {
-        .stats li:first-child h2, .stats li:last-child h2 {
+        .stats li:first-child .percent, .stats li:last-child .percent {
           min-width: 15rem;
           height: 15rem; } }
     .stats li:nth-child(2) {
@@ -1407,7 +1407,7 @@ section {
             content: none; }
           .stats li:nth-child(2):after {
             content: none; }
-          .stats li:nth-child(2) h2 {
+          .stats li:nth-child(2) .percent {
             margin: 0 1rem;
             display: block;
             position: relative;
@@ -1422,7 +1422,7 @@ section {
                 align-items: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-            .stats li:nth-child(2) h2:after {
+            .stats li:nth-child(2) .percent:after {
               content: '';
               border: 2px solid #f68708;
               top: 2px;
@@ -1431,7 +1431,7 @@ section {
               height: 100%;
               border-radius: 100%;
               position: absolute; }
-            .stats li:nth-child(2) h2:before {
+            .stats li:nth-child(2) .percent:before {
               content: '';
               border: 2px solid #4cc88d;
               top: 2px;
@@ -1442,9 +1442,8 @@ section {
               position: absolute; } }
     .stats li p {
       margin: 0; }
-    .stats li h2 {
+    .stats li .percent {
       font-size: 3.5rem;
-      margin: 0;
       font-weight: lighter; }
     @media (min-width: 750px) {
       .stats li {
