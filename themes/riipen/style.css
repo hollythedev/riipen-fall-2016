@@ -991,6 +991,9 @@ a {
       background-color: #4cc88d;
       padding: 15px 20px;
       border-radius: 10%; }
+    @media (min-width: 750px) {
+      .educator-page .educator-talent-section-3 {
+        display: none; } }
   .educator-page .educator-talent-section-4 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/educatoripad.jpg");
     background-size: cover;
@@ -1017,10 +1020,24 @@ a {
       text-align: right; }
     @media (min-width: 750px) {
       .educator-page .educator-talent-section-5 {
-        border: 1px solid #27aefb; }
-        .educator-page .educator-talent-section-5 .testimonial {
-          font-style: normal;
-          color: black; } }
+        margin-top: 4%;
+        margin-bottom: 4%;
+        border: 1px solid #4cc88d;
+        width: 59%; }
+        .educator-page .educator-talent-section-5 .text-container {
+          margin-top: -31px;
+          margin-bottom: -31px;
+          border: 1px solid #27aefb;
+          margin: auto;
+          width: 88%;
+          padding: 4%; }
+          .educator-page .educator-talent-section-5 .text-container .testimonial {
+            font-style: normal;
+            color: black; }
+          .educator-page .educator-talent-section-5 .text-container .position,
+          .educator-page .educator-talent-section-5 .text-container .name {
+            color: black;
+            display: inline-block; } }
 
 /*--------------------------------------------------------------
 # Widgets
