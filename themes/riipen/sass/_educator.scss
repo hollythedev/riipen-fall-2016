@@ -1,268 +1,270 @@
 .educator-page {
     padding: 0;
-    .educator-talent-section-1 {
-        height: 242px;
-        background-image: url('../../images/educatorheader.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: flex-end;
-        max-width: 100%;
+}
+
+.educator-talent-section-1 {
+    height: 242px;
+    background-image: url('../../images/educatorheader.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    max-width: 100%;
+    @media (min-width: $breakpoint) {
+        height: 400px;
+    }
+    .circle {
+        display: none;
         @media (min-width: $breakpoint) {
-            height: 400px;
+            width: 14em;
+            height: 14em;
+            background-color: $transparent_azure;
+            display: flex;
+            text-align: center;
+            border-radius: 50%;
+            margin: auto;
         }
-        .circle {
+        .title {
             display: none;
             @media (min-width: $breakpoint) {
-                width: 14em;
-                height: 14em;
-                background-color: $transparent_azure;
-                display: flex;
+                margin: auto;
+                width: 400px;
+                display: block;
+                color: white;
+                font: 2rem $font__main;
+            }
+        }
+    }
+    .text-box {
+        text-transform: uppercase;
+        font: 1rem $font__main;
+        font-weight: bold;
+        display: flex;
+        @media (min-width: $breakpoint) {
+            display: none;
+        }
+        h1 {
+            font-size: 1.7rem;
+            color: $color_pumpkin-orange;
+            margin: 0;
+            span {
+                color: $color__background-screen;
+            }
+        }
+        p {
+            color: white;
+            margin: 0;
+            padding-top: 12px;
+        }
+    }
+}
+
+.educator-talent-section-2 {
+    padding-top: 3rem;
+    background-color: $color_journey-blue;
+    @media (min-width: $breakpoint) {
+        display: none;
+    }
+}
+
+.desktop-green {
+    background-color: $color_dark-mint;
+    h2 {
+        color: $color_pumpkin-orange;
+        span {
+            color: $color_twilight-blue;
+        }
+    }
+    p {
+        color: white;
+        margin: 0;
+        padding-left: 12px;
+    }
+    @media (min-width: $breakpoint) {
+        display: flex;
+        flex-direction: column;
+        .desktop-green-container1 {
+            display: flex;
+            align-items: center;
+        }
+        .desktop-green-container2 {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            width: 80%;
+            .left,
+            .middle,
+            .right,
+            {
+                width: 30%;
+                color: white;
+                font: 1.5rem $font__main
+            }
+        }
+    }
+}
+
+.desktop-circles {
+    display: none;
+    @media (min-width: $breakpoint) {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 87%;
+        div {
+            display: flex;
+            h2 {
+                display: block;
+                position: relative;
+                border: 3px solid $color_azure;
+                min-width: 10rem;
+                height: 10rem;
                 text-align: center;
                 border-radius: 50%;
-                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:after {
+                    content: '';
+                    border: 2px solid $color_pumpkin-orange;
+                    top: 2px;
+                    left: -6px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    position: absolute;
+                }
+                &:before {
+                    content: '';
+                    border: 2px solid $color_dark-mint;
+                    top: 2px;
+                    left: 5px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    position: absolute;
+                }
             }
-            .title {
+            .circle-text {
+                flex-direction: column;
+                margin-left: 28px;
+                margin-top: 23px;
+                width: 33%;
+            }
+            .desktop-circles {
                 display: none;
                 @media (min-width: $breakpoint) {
-                    margin: auto;
-                    width: 400px;
-                    display: block;
-                    color: white;
-                    font: 2rem $font__main;
-                }
-            }
-        }
-        .text-box {
-            text-transform: uppercase;
-            font: 1rem $font__main;
-            font-weight: bold;
-            display: flex;
-            @media (min-width: $breakpoint) {
-                display: none;
-            }
-            h1 {
-                font-size: 1.7rem;
-                color: $color_pumpkin-orange;
-                margin: 0;
-                span {
-                    color: $color__background-screen;
-                }
-            }
-            p {
-                color: white;
-                margin: 0;
-                padding-top: 12px;
-            }
-        }
-    }
-    .educator-talent-section-2 {
-        padding-top: 3rem;
-        background-color: $color_journey-blue;
-        @media (min-width: $breakpoint) {
-            display: none;
-        }
-    }
-    .desktop-green {
-        display: none;
-        @media (min-width: $breakpoint) {
-            display: flex;
-            background-color: $color_dark-mint;
-            flex-direction: column;
-            .desktop-green-container1 {
-                display: flex;
-                margin: auto;
-                align-items: center;
-                h2 {
-                    color: $color_pumpkin-orange;
-                    span {
-                        color: $color_twilight-blue;
-                    }
-                }
-                p {
-                    color: white;
-                    margin: 0;
-                    padding-left: 12px;
-                }
-            }
-            .desktop-green-container2 {
-                display: flex;
-                justify-content: space-between;
-                margin: auto;
-                width: 80%;
-                .left,
-                .middle,
-                .right,
-                {
-                    width: 30%;
-                    color: white;
-                    font: 1.5rem $font__main
-                }
-            }
-        }
-    }
-    .desktop-circles {
-        display: none;
-        @media (min-width: $breakpoint) {
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            width: 87%;
-            div {
-                display: flex;
-                h2 {
-                    display: block;
-                    position: relative;
-                    border: 3px solid $color_azure;
-                    min-width: 10rem;
-                    height: 10rem;
-                    text-align: center;
-                    border-radius: 50%;
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    &:after {
-                        content: '';
-                        border: 2px solid $color_pumpkin-orange;
-                        top: 2px;
-                        left: -6px;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 50%;
-                        position: absolute;
-                    }
-                    &:before {
-                        content: '';
-                        border: 2px solid $color_dark-mint;
-                        top: 2px;
-                        left: 5px;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 50%;
-                        position: absolute;
-                    }
-                }
-                .circle-text {
                     flex-direction: column;
-                    margin-left: 28px;
-                    margin-top: 23px;
-                    width: 33%;
-                }
-                .desktop-circles {
-                    display: none;
-                    @media (min-width: $breakpoint) {
+                    margin: auto;
+                    width: 87%;
+                    div {
                         display: flex;
-                        flex-direction: column;
-                        margin: auto;
-                        width: 87%;
-                        div {
+                        h2 {
+                            display: block;
+                            position: relative;
+                            border: 3px solid $color_azure;
+                            min-width: 10rem;
+                            height: 10rem;
+                            text-align: center;
+                            border-radius: 50%;
                             display: flex;
-                            h2 {
-                                display: block;
-                                position: relative;
-                                border: 3px solid $color_azure;
-                                min-width: 10rem;
-                                height: 10rem;
-                                text-align: center;
+                            align-items: center;
+                            justify-content: center;
+                            &:after {
+                                content: '';
+                                border: 2px solid $color_pumpkin-orange;
+                                top: 2px;
+                                left: -6px;
+                                width: 100%;
+                                height: 100%;
                                 border-radius: 50%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                &:after {
-                                    content: '';
-                                    border: 2px solid $color_pumpkin-orange;
-                                    top: 2px;
-                                    left: -6px;
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 50%;
-                                    position: absolute;
-                                }
-                                &:before {
-                                    content: '';
-                                    border: 2px solid $color_dark-mint;
-                                    top: 2px;
-                                    left: 5px;
-                                    width: 100%;
-                                    height: 100%;
-                                    border-radius: 50%;
-                                    position: absolute;
-                                }
+                                position: absolute;
                             }
-                            .upload {
-                                text-align: left;
-                                    justify-content: flex-end;
+                            &:before {
+                                content: '';
+                                border: 2px solid $color_dark-mint;
+                                top: 2px;
+                                left: 5px;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                position: absolute;
                             }
                         }
-                    }
-                    .educator-talent-section-3 {
-                        text-align: center;
-                        margin: 58px 0;
-                        p {
-                            color: $color_azure;
-                            font: 1rem $font__main;
-                            padding-bottom: 31px;
-                            margin: 0;
-                        }
-                        .educator-talent-btn {
-                            color: $color__background-screen;
-                            background-color: $color_dark-mint;
-                            padding: 15px 20px;
-                            border-radius: 10%;
-                        }
-                        @media (min-width: $breakpoint) {
-                            display: none;
+                        .upload {
+                            text-align: left;
+                            justify-content: flex-end;
                         }
                     }
-                    .educator-talent-section-4 {
-                        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/educatoripad.jpg');
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        height: 274px;
-                        @media (min-width: $breakpoint) {
-                            height: 138vh;
-                        }
+                }
+                .educator-talent-section-3 {
+                    text-align: center;
+                    margin: 58px 0;
+                    p {
+                        color: $color_azure;
+                        font: 1rem $font__main;
+                        padding-bottom: 31px;
+                        margin: 0;
                     }
-                    .educator-talent-section-5 {
-                        margin: auto;
-                        padding: 48px 0;
-                        width: 87%;
-                        .testimonial {
-                            font-style: italic;
-                            font-weight: 100;
-                            color: $color__border-abbr;
-                        }
-                        font: 1.5rem $font__main;
-                        .position {
-                            color: $color_pumpkin-orange;
-                            text-align: right;
-                            margin-bottom: 0;
-                        }
-                        .name {
-                            color: $color__border-abbr;
-                            text-align: right;
-                        }
-                        @media (min-width: $breakpoint) {
-                            margin-top: 4%;
-                            margin-bottom: 4%;
-                            border: 1px solid $color_dark-mint;
-                            width: 59%;
-                            .text-container {
-                                margin-top: -31px;
-                                margin-bottom: -31px;
-                                border: 1px solid $color_azure;
-                                margin: auto;
-                                width: 88%;
-                                padding: 4%;
-                                .testimonial {
-                                    font-style: normal;
-                                    color: black;
-                                }
-                                .position,
-                                .name {
-                                    color: black;
-                                    display: inline-block;
-                                }
+                    .educator-talent-btn {
+                        color: $color__background-screen;
+                        background-color: $color_dark-mint;
+                        padding: 15px 20px;
+                        border-radius: 10%;
+                    }
+                    @media (min-width: $breakpoint) {
+                        display: none;
+                    }
+                }
+                .educator-talent-section-4 {
+                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/educatoripad.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 274px;
+                    @media (min-width: $breakpoint) {
+                        height: 138vh;
+                    }
+                }
+                .educator-talent-section-5 {
+                    margin: auto;
+                    padding: 48px 0;
+                    width: 87%;
+                    font: 1.5rem $font__main;
+                    .testimonial {
+                        font-style: italic;
+                        font-weight: 100;
+                        color: $color__border-abbr;
+                    }
+                    .position {
+                        color: $color_pumpkin-orange;
+                        text-align: right;
+                        margin-bottom: 0;
+                    }
+                    .name {
+                        color: $color__border-abbr;
+                        text-align: right;
+                    }
+                    @media (min-width: $breakpoint) {
+                        margin-top: 4%;
+                        margin-bottom: 4%;
+                        border: 1px solid $color_dark-mint;
+                        width: 59%;
+                        .text-container {
+                            margin-top: -31px;
+                            margin-bottom: -31px;
+                            border: 1px solid $color_azure;
+                            margin: auto;
+                            width: 88%;
+                            padding: 4%;
+                            .testimonial {
+                                font-style: normal;
+                                color: black;
+                            }
+                            .position,
+                            .name {
+                                color: black;
+                                display: inline-block;
                             }
                         }
                     }
