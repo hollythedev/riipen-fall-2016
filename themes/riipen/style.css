@@ -1178,11 +1178,12 @@ object {
       .site-footer .footer-container .footer-social-media a {
         color: #333;
         height: 50px;
+        width: 50px;
         background-color: #fff;
         font-size: 1.5rem;
         border-radius: 50%;
+        border: 2px solid #fff;
         display: block;
-        width: 50px;
         -ms-flex-align: center;
             align-items: center;
         display: -ms-flexbox;
@@ -1192,6 +1193,9 @@ object {
             justify-content: center; }
         .site-footer .footer-container .footer-social-media a i {
           padding: 1px 8px; }
+        .site-footer .footer-container .footer-social-media a:hover {
+          background-color: transparent;
+          color: #fff; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-social-media {
           margin: auto;
@@ -1227,6 +1231,8 @@ object {
         color: white;
         text-transform: uppercase;
         text-decoration: none; }
+        .site-footer .footer-container .footer-information a:hover {
+          text-decoration: underline; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-information {
           font-size: 1rem;
