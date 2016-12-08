@@ -882,10 +882,8 @@ a {
         margin: 0;
         padding-top: 12px; }
   .educator-page .educator-talent-section-2 {
-    background-image: url("../../images/journeymap.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 531px; }
+    padding-top: 3rem;
+    background-color: #122A38; }
     @media (min-width: 750px) {
       .educator-page .educator-talent-section-2 {
         display: none; } }
@@ -1206,11 +1204,12 @@ object {
       .site-footer .footer-container .footer-social-media a {
         color: #333;
         height: 50px;
+        width: 50px;
         background-color: #fff;
         font-size: 1.5rem;
         border-radius: 50%;
+        border: 2px solid #fff;
         display: block;
-        width: 50px;
         -ms-flex-align: center;
             align-items: center;
         display: -ms-flexbox;
@@ -1220,6 +1219,9 @@ object {
             justify-content: center; }
         .site-footer .footer-container .footer-social-media a i {
           padding: 1px 8px; }
+        .site-footer .footer-container .footer-social-media a:hover {
+          background-color: transparent;
+          color: #fff; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-social-media {
           margin: auto;
@@ -1255,6 +1257,8 @@ object {
         color: white;
         text-transform: uppercase;
         text-decoration: none; }
+        .site-footer .footer-container .footer-information a:hover {
+          text-decoration: underline; }
       @media (min-width: 750px) {
         .site-footer .footer-container .footer-information {
           font-size: 1rem;
@@ -1511,19 +1515,20 @@ section {
     text-align: center; }
   .difference ol {
     margin: 0 auto 2rem;
-    width: 85%;
+    max-width: 300px;
     padding: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style: none; }
+    @media (min-width: 750px) {
+      .difference ol {
+        max-width: 85%; } }
     .difference ol li {
-      padding-left: 30%;
       width: 100%;
       counter-increment: item;
-      margin-bottom: 2rem;
-      padding-right: 5px; }
+      margin-bottom: 2rem; }
       .difference ol li:before {
         margin-right: 10px;
         content: counter(item);
@@ -1588,7 +1593,7 @@ section {
 .testimonial .icon {
   margin-right: 2em; }
   .testimonial .icon i {
-    font-size: 11em;
+    font-size: 6em;
     color: #f68708; }
 
 .testimonial .text {

@@ -264,21 +264,18 @@ section {
   }
   ol {
     margin: 0 auto 2rem;
-    width: 85%;
+    max-width: 300px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     @include desktop{
-
+      max-width: 85%;
     }
     li {
-      padding-left: 30%;
       width: 100%;
       counter-increment: item;
       margin-bottom: 2rem;
-      padding-right: 5px;
-
       &:before {
         margin-right: 10px;
         content: counter(item);
@@ -380,7 +377,7 @@ section {
   .icon {
     margin-right: 2em;
     i {
-      font-size: 11em;
+      font-size: 6em;
       color: $color_pumpkin-orange;
     }
   }

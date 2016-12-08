@@ -16,6 +16,7 @@
                 </div>
             </div>
             <div class="educator-talent-section-2">
+              <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" alt="Journey Map" />
             </div>
             <section class="desktop-green">
                 <div class="desktop-green-container1">
@@ -36,7 +37,7 @@
                 </div>
             </section>
             <section class="desktop-circles">
-				
+
 						<div class="form">
 							<h2>1</h2>
                              <div class= "circle-text">
@@ -44,7 +45,7 @@
                             <p>Think about learning outcomes that you want for this project</p>
 						</div>
                         </div>
-					
+
 						<div class="upload">
 							<h2>2</h2>
                              <div class= "circle-text">
@@ -52,7 +53,7 @@
                             <p> Fill in the form on our platform and press submit</p>
 						</div>
                         </div>
-					
+
 						<div class="answer">
 							<h2>3</h2>
                             <div class= "circle-text">
