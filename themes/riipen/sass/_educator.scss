@@ -62,8 +62,45 @@
         background-size: cover;
         background-repeat: no-repeat;
             height: 531px;
+            @media (min-width: $breakpoint) {
+           display:none;
+        }
 
     }
+
+.desktop-green{
+    display:none;
+     @media (min-width: $breakpoint) {
+         display:flex;
+          background-color:$color_dark-mint;
+    flex-direction: column;
+    .desktop-green-container1{
+        display:flex;
+        margin: auto;
+    align-items: center;
+    h2{
+        color: $color_pumpkin-orange;
+        span{
+            color:$color_twilight-blue;
+        }
+    }
+    p{
+        color: white;
+    }
+    }
+        .desktop-green-container2{
+         display:flex;
+         justify-content:space-between;
+         margin: auto;
+    width: 90%;
+         .left, .middle, .right, {
+             width:30%;
+             color:white;
+             font: 1rem $font__main
+         }
+        }
+} 
+}
     .educator-talent-section-3 {
         text-align: center;
             margin: 58px 0;
