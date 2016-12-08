@@ -7,29 +7,29 @@
 
 // Add your custom taxonomies here...
 // Register Custom Taxonomy
-function Institution_taxonomy() {
+function Place_of_Employment_taxonomy() {
 
 	$labels = array(
-		'name'                       => 'Institutions',
-		'singular_name'              => 'Institution',
-		'menu_name'                  => 'Institution',
-		'all_items'                  => 'All Institutions',
-		'parent_item'                => 'Parent Institution',
-		'parent_item_colon'          => 'Parent Institution:',
-		'new_item_name'              => 'New Institution Name',
-		'add_new_item'               => 'Add Institution Item',
-		'edit_item'                  => 'Edit Institution',
-		'update_item'                => 'Update Institution',
-		'view_item'                  => 'View Institution',
-		'separate_items_with_commas' => 'Separate Institutions with commas',
-		'add_or_remove_items'        => 'Add or remove Institutions',
+		'name'                       => 'Place of Employment',
+		'singular_name'              => 'Place of Employment',
+		'menu_name'                  => 'Place of Employment',
+		'all_items'                  => 'All Place of Employments',
+		'parent_item'                => 'Parent Place of Employment',
+		'parent_item_colon'          => 'Parent Place of Employment:',
+		'new_item_name'              => 'New Place of Employment Name',
+		'add_new_item'               => 'Add Place of Employment Item',
+		'edit_item'                  => 'Edit Place of Employment',
+		'update_item'                => 'Update Place of Employment',
+		'view_item'                  => 'View Place of Employment',
+		'separate_items_with_commas' => 'Separate Places of Employment with commas',
+		'add_or_remove_items'        => 'Add or remove Places of Employment',
 		'choose_from_most_used'      => 'Choose from the most used',
-		'popular_items'              => 'Popular Institutions',
-		'search_items'               => 'Search Institutions',
+		'popular_items'              => 'Popular Places of Employments',
+		'search_items'               => 'Search Places of Employment',
 		'not_found'                  => 'Not Found',
-		'no_terms'                   => 'No Institutions',
-		'items_list'                 => 'Institutions list',
-		'items_list_navigation'      => 'Institutions list navigation',
+		'no_terms'                   => 'No Place of Employments',
+		'items_list'                 => 'Place of Employments list',
+		'items_list_navigation'      => 'Place of Employments list navigation',
 	);
 	$args = array(
 		'labels'                     => $labels,
@@ -40,10 +40,10 @@ function Institution_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'Institution', array( 'educator' ), $args );
+	register_taxonomy( 'Placeof Employment', array( 'educator' ), $args );
 
 }
-add_action( 'init', 'Institution_taxonomy', 0 );
+add_action( 'init', 'Place_of_Employment_taxonomy', 0 );
 
 // Register Custom Taxonomy
 function register_educator_subjects() {
