@@ -7,3 +7,19 @@
 		outline: none;
 	}
 }
+
+.carousel-cell{
+	width: 25%;
+	padding: 10px;
+	height: 150px;
+	a{
+		height: 100%;
+		width: 100%;
+		img{
+			height: 100%;
+		width: 100%;
+			
+			max-width: 100%;
+		}
+	}
+}

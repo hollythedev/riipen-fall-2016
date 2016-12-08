@@ -438,19 +438,17 @@ a {
   z-index: 2;
   height: 68px;
   width: 100%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  padding: 0 1rem; }
-  @media (min-width: 750px) {
-    .site-header {
-      padding: 0; } }
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7); }
   .site-header .container {
+    height: 100%;
+    max-width: calc(1000px + 2rem);
+    padding: 0 1rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    height: 100%;
     position: relative; }
   .site-header .fa {
     color: #0c4160;
@@ -1582,6 +1580,18 @@ section {
     height: 90px; }
   .wp-posts-carousel-container a {
     outline: none; }
+
+.carousel-cell {
+  width: 25%;
+  padding: 10px;
+  height: 150px; }
+  .carousel-cell a {
+    height: 100%;
+    width: 100%; }
+    .carousel-cell a img {
+      height: 100%;
+      width: 100%;
+      max-width: 100%; }
 
 .post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
   background: #f7f7f7; }
