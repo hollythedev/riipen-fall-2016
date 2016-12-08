@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<button onclick="history.go(-1);" class="back"><  Back</button>
+	<button onclick="history.go(-1);" class="back">&lt;  Back</button>
 	<main id="main" class="site-main" role="main">
 		
 		<div class="riipen-list">

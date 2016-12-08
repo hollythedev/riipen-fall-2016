@@ -80,8 +80,8 @@ get_header(); ?>
 					<i class="fa fa-line-chart" aria-hidden="true"></i>
 				</div>
 				<div class="text">
-					<p>We did great volunteers through Riipen for our projects. Caitlyn & Carly from Bites of Vitality heard about the social media project through Riipen, applied and we worked with them. Overall we were really happy with our experience and have been spreading the word</p>
-					<h3>Amy Robinson, Founder & Co-Executive Director LOCO BC</h3>
+					<p>We did great volunteers through Riipen for our projects. Caitlyn &amp; Carly from Bites of Vitality heard about the social media project through Riipen, applied and we worked with them. Overall we were really happy with our experience and have been spreading the word</p>
+					<h3>Amy Robinson, Founder &amp; Co-Executive Director LOCO BC</h3>
 				</div>
 			</div>
 		</section>
