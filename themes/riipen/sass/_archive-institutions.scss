@@ -32,13 +32,27 @@
 			margin: 10px 0;
 			font-size: 18px;
 		}
+		.image-wrapper{
+			height: 275px;
+			width: 275px;
+			border: 5px solid $color_azure;
+			content: '';
+			    display: flex;
+    align-items: center;
+    justify-content: center;
+			position: relative;
+
+		}
 		.educator-image{
 			height: 200px;
 			width: 200px;
+			border-collapse: separate;
+			border-spacing: 10px 50px;
+			content: '';
+			position: absolute;
+			box-sizing:padding-box;			
 			background-repeat: no-repeat;
-			background-position: top;
 			background-size: cover;
-
 		}
 		.educatorname{
 			letter-spacing: 0.9pt;
