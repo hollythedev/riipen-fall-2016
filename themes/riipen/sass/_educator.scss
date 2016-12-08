@@ -105,9 +105,12 @@
     }
     
     .desktop-circles{
-         background-color: $color_white-smoke;
-         display:flex; 
+        display:none;
+         @media (min-width: $breakpoint) {
+            display:flex;
          flex-direction: column;
+          margin: auto;
+        width: 87%;
          div{
             display:flex;
             h2 {
@@ -144,8 +147,12 @@
             }
             .circle-text{
                 flex-direction: column;
+                margin-left:28px;
+                margin-top: 61px;
+                width:32%;
             }
          }
+    }
     }
     .educator-talent-section-3 {
         text-align: center;
