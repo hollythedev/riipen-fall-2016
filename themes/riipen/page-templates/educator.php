@@ -63,20 +63,22 @@
                         </div>
             </section>
 
-            <div class="educator-talent-section-3">
+            <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
                 <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
-            </div>
-            <div class="educator-talent-section-4">
-            </div>
-            <div class="educator-talent-section-5">
+            </section>
+            <section class="educator-talent-section-4">
+            </section>
+            <section class="educator-talent-section-5">
+                <div class= "text-container">   
                 <p class="testimonial">
                     <?php echo CFS()->get( 'testimonial'); ?>
                     <p class="position">
                         <?php echo CFS()->get( 'position'); ?> </p>
                     <p class="name">
                         <?php echo CFS()->get( 'name'); ?> </p>
-            </div>
+           </div>
+            </section>
         </section>
         <?php dynamic_sidebar( 'carousels' ); ?>
     </main>
