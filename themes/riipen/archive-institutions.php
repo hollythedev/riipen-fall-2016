@@ -22,6 +22,7 @@ get_header(); ?>
 
 				</div>
 			</div>
+			
 			<div class="riipen-list">
 				<?php if ( have_posts() ) : ?>
 
