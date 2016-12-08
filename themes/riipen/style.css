@@ -973,7 +973,7 @@ a {
                 flex-direction: column;
             margin-left: 28px;
             margin-top: 23px;
-            width: 32%; }
+            width: 33%; }
           .educator-page .desktop-circles div .desktop-circles {
             display: none; } }
       @media (min-width: 750px) and (min-width: 750px) {
@@ -1020,7 +1020,9 @@ a {
                 border-radius: 50%;
                 position: absolute; }
             .educator-page .desktop-circles div .desktop-circles div .upload {
-              text-align: left; } }
+              text-align: left;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
     @media (min-width: 750px) {
             .educator-page .desktop-circles div .desktop-circles .educator-talent-section-3 {
               text-align: center;
@@ -1326,7 +1328,7 @@ section {
   position: relative;
   overflow: hidden;
   height: calc(100vh - 68px);
-  background: url("../../images/new-york-stock-photo.jpg ") no-repeat, rgba(0, 0, 0, 0.4);
+  background: url("../../images/new-york-stock-photo.jpg ") no-repeat;
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -1658,10 +1660,16 @@ section {
   .wp-posts-carousel-container a {
     outline: none; }
 
+.wp-posts-carousel-slide .wp-posts-carousel-container {
+  box-shadow: none !important; }
+
 .carousel-cell {
-  width: 25%;
+  width: 30%;
   padding: 10px;
-  height: 200px; }
+  height: 275px; }
+  @media (min-width: 750px) {
+    .carousel-cell {
+      width: 25%; } }
   .carousel-cell a {
     height: 100%;
     width: 100%; }
@@ -1680,7 +1688,9 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/picture-of-stairs.jpg") no-repeat center;
+  background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+  background-color: #aaaaaa;
+  background-blend-mode: multiply;
   background-size: cover; }
   @media (min-width: 750px) {
     .post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
@@ -1806,7 +1816,9 @@ section {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/org-hero.jpg") no-repeat center;
+    background: url("../../images/org-hero.jpg") no-repeat center;
+    background-color: #7e7e7e;
+    background-blend-mode: multiply;
     background-size: cover; }
     @media (min-width: 750px) {
       .post-type-archive-organizations .hero-banner {

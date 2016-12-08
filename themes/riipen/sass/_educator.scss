@@ -146,7 +146,7 @@
                     flex-direction: column;
                     margin-left: 28px;
                     margin-top: 23px;
-                    width: 32%;
+                    width: 33%;
                 }
                 .desktop-circles {
                     display: none;
@@ -191,6 +191,7 @@
                             }
                             .upload {
                                 text-align: left;
+                                    justify-content: flex-end;
                             }
                         }
                     }
