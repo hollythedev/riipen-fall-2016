@@ -7,7 +7,7 @@
 get_header(); ?>
 
 	<section id="primary" class="content-area-sep">
-	<button onclick="history.go(-1);" class="back">&lt; Back</button>
+	<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button>
 		<main id="main" class="site-main-sep" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 					<h2 class="sep-title">
@@ -16,7 +16,7 @@ get_header(); ?>
 				<div class="sep-picture-container">
 				</div>
 				<div class= "sep-picture"><?php the_post_thumbnail( 'category-thumb'); ?></div>
-				<div class="sep-classes">
+				<div class="sep-course-title">
 		 <?php the_content();?>
 				</div>
 			<?php endwhile; // End of the loop. ?>
@@ -24,4 +24,4 @@ get_header(); ?>
 		<!-- #main -->
 	</section>
 	<!-- #primary -->
-	<?php get_footer(); ?>
+<?php get_footer(); ?>
