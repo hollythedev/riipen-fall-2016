@@ -1581,10 +1581,16 @@ section {
   .wp-posts-carousel-container a {
     outline: none; }
 
+.wp-posts-carousel-slide .wp-posts-carousel-container {
+  box-shadow: none !important; }
+
 .carousel-cell {
-  width: 25%;
+  width: 30%;
   padding: 10px;
-  height: 200px; }
+  height: 275px; }
+  @media (min-width: 750px) {
+    .carousel-cell {
+      width: 25%; } }
   .carousel-cell a {
     height: 100%;
     width: 100%; }
@@ -1603,7 +1609,9 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/picture-of-stairs.jpg") no-repeat center;
+  background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+  background-color: #919191;
+  background-blend-mode: darken;
   background-size: cover; }
   @media (min-width: 750px) {
     .post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
