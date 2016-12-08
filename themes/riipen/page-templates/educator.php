@@ -1,7 +1,7 @@
 <?php /* Template Name: Educator */ ?>
 <?php get_header(); ?>
 <div id="primary" class="content-area">
-    <button onclick="history.go(-1);" class="back"><  Back</button>
+    <button onclick="history.go(-1);" class="back">&lt;  Back</button>
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
             <div class="educator-talent-section-1">
@@ -65,9 +65,10 @@
 
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
-                <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
+                <a href="<?php the_permalink(); ?>" class="educator-talent-btn"> riipen up</a>
             </section>
             <section class="educator-talent-section-4">
+                 <img src="<?php echo get_template_directory_uri() . '/images/educatoripad.jpg'; ?>" alt="Photo of iPad" />
             </section>
             <section class="educator-talent-section-5">
                 <div class= "text-container">   

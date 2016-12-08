@@ -7,7 +7,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area-sep-archive">
-	<button onclick="history.go(-1);" class="back"><  Back</button>
+	<button onclick="history.go(-1);" class="back">&lt;  Back</button>
 		<main id="main" class="site-main-sep-archive" role="main">
 			<?php if ( have_posts() ) : ?>
 			<header class="page-header">
