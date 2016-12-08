@@ -992,10 +992,13 @@ a {
       padding: 15px 20px;
       border-radius: 10%; }
   .educator-page .educator-talent-section-4 {
-    background-image: url("../../images/educatoripad.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/educatoripad.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 274px; }
+    @media (min-width: 750px) {
+      .educator-page .educator-talent-section-4 {
+        height: 138vh; } }
   .educator-page .educator-talent-section-5 {
     margin: auto;
     padding: 48px 0;

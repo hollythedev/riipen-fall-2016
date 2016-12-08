@@ -174,11 +174,14 @@
         }
     }
     .educator-talent-section-4 {
-        background-image: url('../../images/educatoripad.jpg');
+        background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url('../../images/educatoripad.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         height: 274px;
-    }
+        @media (min-width: $breakpoint) {
+           height: 138vh;
+        }
+    } 
     .educator-talent-section-5 {
         margin: auto;
         padding: 48px 0;
