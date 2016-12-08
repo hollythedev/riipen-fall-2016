@@ -30,17 +30,19 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="personwrapper">
-						<div>
-							<a href="<?php the_permalink(); ?>" rel="bookmark"> 
+						
+							<a class="picturewrapper" href="<?php the_permalink(); ?>" rel="bookmark"> 
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php $url = wp_get_attachment_url( get_post_thumbnail_id() ) ?>
-									
-									<div class="educator-image" style=background-image:url("<?php echo $url ?>") no repeat ;>
+									<div class="image-wrapper">
+									<div class="educator-image" style=background-image:url("<?php echo $url ?>");>
 
 									</div>
+									</div>
 								</a>
+
 							<?php endif ?>
-						</div>
+						
 						<?php the_title( sprintf( '<h2 class="entry-title uppercase educatorname"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 						<p class="educators-category educatorname uppercase"> 
 
