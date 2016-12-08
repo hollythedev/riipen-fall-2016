@@ -1,4 +1,3 @@
-
 .educator-page {
     padding: 0;
     .educator-talent-section-1 {
@@ -57,53 +56,110 @@
             }
         }
     }
-    .educator-talent-section-2{
+    .educator-talent-section-2 {
         background-image: url('../../images/journeymap.png');
         background-size: cover;
         background-repeat: no-repeat;
-            height: 531px;
-            @media (min-width: $breakpoint) {
-           display:none;
-        }
-
-    }
-
-.desktop-green{
-    display:none;
-     @media (min-width: $breakpoint) {
-         display:flex;
-          background-color:$color_dark-mint;
-    flex-direction: column;
-    .desktop-green-container1{
-        display:flex;
-        margin: auto;
-    align-items: center;
-    h2{
-        color: $color_pumpkin-orange;
-        span{
-            color:$color_twilight-blue;
+        height: 531px;
+        @media (min-width: $breakpoint) {
+            display: none;
         }
     }
-    p{
-        color: white;
+    .desktop-green {
+        display: none;
+        @media (min-width: $breakpoint) {
+            display: flex;
+            background-color: $color_dark-mint;
+            flex-direction: column;
+            .desktop-green-container1 {
+                display: flex;
+                margin: auto;
+                align-items: center;
+                h2 {
+                    color: $color_pumpkin-orange;
+                    span {
+                        color: $color_twilight-blue;
+                    }
+                }
+                p {
+                    color: white;
+                    margin: 0;
+                    padding-left: 12px;
+                }
+            }
+            .desktop-green-container2 {
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                width: 80%;
+                .left,
+                .middle,
+                .right,
+                {
+                    width: 30%;
+                    color: white;
+                    font: 1.5rem $font__main
+                }
+            }
+        }
     }
-    }
-        .desktop-green-container2{
-         display:flex;
-         justify-content:space-between;
-         margin: auto;
-    width: 90%;
-         .left, .middle, .right, {
-             width:30%;
-             color:white;
-             font: 1rem $font__main
+    
+    .desktop-circles{
+        display:none;
+         @media (min-width: $breakpoint) {
+            display:flex;
+         flex-direction: column;
+          margin: auto;
+        width: 87%;
+         div{
+            display:flex;
+            h2 {
+        display: block;
+        position: relative;
+        border: 3px solid $color_azure;
+        min-width: 10rem;
+        height: 10rem;
+        text-align: center;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+          content: '';
+          border: 2px solid $color_pumpkin-orange;
+          top: 2px;
+          left: -6px;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          position: absolute;
+        }
+        &:before {
+          content: '';
+          border: 2px solid $color_dark-mint;
+          top: 2px;
+          left: 5px;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          position: absolute;
+        }
+            }
+            .circle-text{
+                flex-direction: column;
+                margin-left:28px;
+                margin-top: 23px;
+                width:32%;
+            }
          }
-        }
-} 
-}
+         .upload{
+             text-align: left;
+         }
+    }
+    }
     .educator-talent-section-3 {
         text-align: center;
-            margin: 58px 0;
+        margin: 58px 0;
         p {
             color: $color_azure;
             font: 1rem $font__main;
@@ -117,31 +173,30 @@
             border-radius: 10%;
         }
     }
-
-     .educator-talent-section-4{
-          background-image: url('../../images/educatoripad.jpg');
+    .educator-talent-section-4 {
+        background-image: url('../../images/educatoripad.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-            height: 274px;
+        height: 274px;
     }
-        .educator-talent-section-5 {
-                margin: auto;
-                    padding: 48px 0;
-    width: 87%;
-            .testimonial {
-                font-style: italic;
-                font-weight: 100;
-                color: $color__border-abbr;
-            }
-            font: 1.5rem $font__main;
-            .position {
-                color: $color_pumpkin-orange;
-                text-align: right;
-                    margin-bottom: 0;
-            }
-            .name {
-                color: $color__border-abbr;
-                text-align: right;
-            }
+    .educator-talent-section-5 {
+        margin: auto;
+        padding: 48px 0;
+        width: 87%;
+        .testimonial {
+            font-style: italic;
+            font-weight: 100;
+            color: $color__border-abbr;
+        }
+        font: 1.5rem $font__main;
+        .position {
+            color: $color_pumpkin-orange;
+            text-align: right;
+            margin-bottom: 0;
+        }
+        .name {
+            color: $color__border-abbr;
+            text-align: right;
         }
     }
+}

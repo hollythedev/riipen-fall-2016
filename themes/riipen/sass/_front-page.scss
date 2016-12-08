@@ -1,12 +1,15 @@
-#bgvid {
-  display: none;
-  @include desktop{
-    display: block;
-  }
-}
+/* Base */
+
 .site-content{
 padding-top: 68px;
 }
+
+section {
+  padding: 1.5rem 1rem;
+}
+
+/* Hero Section */
+
 .hero {
   width: 100%;
   position: relative;
@@ -22,8 +25,8 @@ padding-top: 68px;
    background: rgba(0, 0, 0, 0.4);
   }
   .headline {
-    width: 19em;
-    height: 19em;
+    width: 18em;
+    height: 18em;
     background-color: $transparent_azure;
     display: flex;
     justify-content: center;
@@ -32,6 +35,7 @@ padding-top: 68px;
     border-radius: 50%;
   }
   video {
+    display: none;
     position: absolute;
     min-height: 100%;
     min-width: 100%;
@@ -40,12 +44,13 @@ padding-top: 68px;
     right: 0;
     z-index: -100;
     background: url("../../images/new-york-stock-photo.jpg") no-repeat;
+    @include desktop {
+      display: block;
+    }
   }
 }
 
-section {
-  padding: 1.5rem 1rem;
-}
+/* Stats Section */
 
 .stats {
   background-color: $color_white-smoke;
@@ -115,8 +120,8 @@ section {
       display: block;
       position: relative;
       border: 3px solid $color_azure;
-      width: 20rem;
-      height: 20rem;
+      width: 18rem;
+      height: 18rem;
       text-align: center;
       border-radius: 100%;
       display: flex;
@@ -231,6 +236,8 @@ section {
   }
 }
 
+/* About Section */
+
 .about {
   background-color: $color_dark-mint;
   padding: 16px;
@@ -243,6 +250,8 @@ section {
     margin-left: 20px;
   }
 }
+
+/* Differene Section */
 
 .difference {
   background-color: $color_white-smoke;
@@ -290,6 +299,8 @@ section {
   }
 }
 
+/* Figures Animation */
+
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -306,6 +317,8 @@ section {
 		transform: translateY(-10px);
 	}
 }
+
+/* Figures Section */
 
 .figures {
   max-width: 600px;
@@ -357,17 +370,19 @@ section {
   }
 }
 
+/* Testimonial Section */
+
 .testimonial {
   .container {
-
     display: flex;
     align-items: center;
   }
   .icon {
-    width: 12em;
-    height: 12em;
     margin-right: 2em;
-    background-color: grey;
+    i {
+      font-size: 11em;
+      color: $color_pumpkin-orange;
+    }
   }
   .text {
     width: 75%;
