@@ -1563,7 +1563,6 @@ section {
   .difference ol {
     margin: 0 auto 2rem;
     max-width: 300px;
-    padding: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
