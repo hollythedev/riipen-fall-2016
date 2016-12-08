@@ -39,60 +39,83 @@ get_header(); ?>
 			<div class="tabbingwrapper">
 				<div class="tabbingsection">
 					<div class="leftsection">
-					<a class="inactive uppercase">Institutions</a>
+						<a class="inactive uppercase">Institutions</a>
 					</div>
 					<div class="rightsection">
-					<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
+						<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
 					</div>	
 				</div>
 			</div>
-			<div class="tabs">
-				<ul class="tab-links">
-					<li class="active">
-						<a href="#tab1">
-							<?php echo CFS()->get( 'first_tab_name' ); ?>	
-						</a>
-					</li>
-					<li>
-						<a href="#tab2">
-							<?php echo CFS()->get( 'second_tab_name' ); ?>
-						</a>
-					</li>
-					<li>
-						<a href="#tab3">
-							<?php echo CFS()->get( 'third_tab_name' ); ?>
-						</a>
-					</li>
-					<li>
-						<a href="#tab4">
-							<?php echo CFS()->get( 'fourth_tab_name' ); ?>
-						</a>
-					</li>
-				</ul>
+			<?php 
+			$tab_one_name = CFS()->get( 'first_tab_name' );
+			$tab_two_name =CFS()->get( 'second_tab_name' );
+			$tab_three_name =CFS()->get( 'third_tab_name' );
+			$tab_forth_name =CFS()->get( 'fourth_tab_name' );
+			?>
+			<?php if ($tab_one_name == true || $tab_two_name == true || $tab_three_name == true || $tab_forth_name == true ): ?>
+				<div class="tabs">
+					<ul class="tab-links">
+						<li class="active">
+							
+								<?php if  ($tab_one_name == true): ?>
+									<a href="#tab1">
+									<?php echo $tab_one_name ?>	
+								</a>
+							</li>
+							<li>
+							<?php endif ?>
+							<?php if ($tab_two_name == true): ?>
 
-				<div class="tab-content">
-					<div id="tab1" class="tab active">
-						<h3><?php echo CFS()->get( 'first_tab_title' ); ?></h3>
-						<p><?php echo CFS()->get( 'first_tab_content' ); ?></p>
-					</div>
+								<a href="#tab2">
+									<?php echo $tab_two_name ?>	
+								</a>
+							</li>
+							<li>
+							<?php endif; ?>
+							<?php if ($tab_three_name == true):?>
 
-					<div id="tab2" class="tab">
-						<h3><?php echo CFS()->get( 'second_tab_title' ); ?></h3>
-						<p><?php echo CFS()->get( 'second_tab_content' ); ?></p>
-					</div>
+								<a href="#tab3">
+									<?php echo $tab_three_name ?>
+								</a>
+							</li>
+							<li>
+							<?php endif ?>
 
-					<div id="tab3" class="tab">
-						<h3><?php echo CFS()->get( 'third_tab_title' ); ?></h3>
-						<p><?php echo CFS()->get( 'third_tab_content' ); ?></p>
-					</div>
 
-					<div id="tab4" class="tab">
-						<h3><?php echo CFS()->get( 'fourth_tab_title' ); ?></h3>
-						<p><?php echo CFS()->get( 'fourth_tab_content' ); ?></p>
+
+							<?php if ($tab_forth_name == true):?>
+
+								<a href="#tab4">
+									<?php echo CFS()->get( 'fourth_tab_name' ); ?>
+								</a>
+
+							<?php endif ?>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="tab1" class="tab active">
+							<h3><?php echo CFS()->get( 'first_tab_title' ); ?></h3>
+							<p><?php echo CFS()->get( 'first_tab_content' ); ?></p>
+						</div>
+
+						<div id="tab2" class="tab">
+							<h3><?php echo CFS()->get( 'second_tab_title' ); ?></h3>
+							<p><?php echo CFS()->get( 'second_tab_content' ); ?></p>
+						</div>
+
+						<div id="tab3" class="tab">
+							<h3><?php echo CFS()->get( 'third_tab_title' ); ?></h3>
+							<p><?php echo CFS()->get( 'third_tab_content' ); ?></p>
+						</div>
+
+						<div id="tab4" class="tab">
+							<h3><?php echo CFS()->get( 'fourth_tab_title' ); ?></h3>
+							<p><?php echo CFS()->get( 'fourth_tab_content' ); ?></p>
+						</div>
 					</div>
 				</div>
-			</div>
-
+			<?php endif; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

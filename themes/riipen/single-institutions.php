@@ -43,14 +43,18 @@ get_header(); ?>
 <!-- "'.$image["link_to_course"].'"/>' -->
 
 <?php dynamic_sidebar( 'carousels2' ); ?>
-<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-	<?php $gallery_images = CFS()->get('course_pictures');?>
-	<?php foreach ($gallery_images as $image): ?>
-		<div class="carousel-cell">
-			<a href="<?php echo $image["link_to_course"] ?>">
-				<?php echo '<img src="'.$image["image"].'"/>'; ?>
-			</a>
-		</div>
-	<?php endforeach; ?>
-</div>
+
+<?php if(CFS()->get('course_pictures')): ?>
+	<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+		<?php $gallery_images = CFS()->get('course_pictures');?>
+		<?php foreach ($gallery_images as $image): ?>
+			<div class="carousel-cell">
+				<a href="<?php echo $image["link_to_course"] ?>">
+					<?php echo '<img src="'.$image["image"].'"/>'; ?>
+				</a>
+			</div>
+		<?php endforeach; ?>
+	</div>
+<?php endif; ?>
+
 <?php get_footer(); ?>
