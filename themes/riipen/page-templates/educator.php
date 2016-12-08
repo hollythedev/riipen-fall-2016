@@ -65,7 +65,7 @@
 
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
-                <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
+                <a href="<?php the_permalink(); ?>" class="educator-talent-btn"> riipen up</a>
             </section>
             <section class="educator-talent-section-4">
                  <img src="<?php echo get_template_directory_uri() . '/images/educatoripad.jpg'; ?>" alt="Photo of iPad" />
