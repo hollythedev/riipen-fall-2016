@@ -1237,15 +1237,14 @@ object {
           max-width: 400px;
           margin: auto; } }
 
-#bgvid {
-  display: none; }
-  @media (min-width: 750px) {
-    #bgvid {
-      display: block; } }
-
+/* Base */
 .site-content {
   padding-top: 68px; }
 
+section {
+  padding: 1.5rem 1rem; }
+
+/* Hero Section */
 .hero {
   width: 100%;
   position: relative;
@@ -1276,6 +1275,7 @@ object {
     text-align: center;
     border-radius: 50%; }
   .hero video {
+    display: none;
     position: absolute;
     min-height: 100%;
     min-width: 100%;
@@ -1284,10 +1284,11 @@ object {
     right: 0;
     z-index: -100;
     background: url("../../images/new-york-stock-photo.jpg") no-repeat; }
+    @media (min-width: 750px) {
+      .hero video {
+        display: block; } }
 
-section {
-  padding: 1.5rem 1rem; }
-
+/* Stats Section */
 .stats {
   background-color: #f7f7f7; }
   .stats ul {
@@ -1465,6 +1466,7 @@ section {
       white-space: nowrap;
       box-sizing: initial; }
 
+/* About Section */
 .about {
   background-color: #4cc88d;
   padding: 16px;
@@ -1475,6 +1477,7 @@ section {
     list-style: disc;
     margin-left: 20px; }
 
+/* Differene Section */
 .difference {
   background-color: #f7f7f7; }
   .difference h2 {
@@ -1513,6 +1516,7 @@ section {
           line-height: 1;
           width: 50%; } }
 
+/* Figures Animation */
 @keyframes bounce {
   0%, 20%, 60%, 100% {
     transform: translateY(0); }
@@ -1521,6 +1525,7 @@ section {
   80% {
     transform: translateY(-10px); } }
 
+/* Figures Section */
 .figures {
   max-width: 600px;
   margin: 0 auto; }
@@ -1549,6 +1554,7 @@ section {
   .figures .educator-li a:before {
     content: "\f040"; }
 
+/* Testimonial Section */
 .testimonial .container {
   display: -ms-flexbox;
   display: flex;
@@ -1556,10 +1562,10 @@ section {
       align-items: center; }
 
 .testimonial .icon {
-  width: 12em;
-  height: 12em;
-  margin-right: 2em;
-  background-color: grey; }
+  margin-right: 2em; }
+  .testimonial .icon i {
+    font-size: 11em;
+    color: #f68708; }
 
 .testimonial .text {
   width: 75%;

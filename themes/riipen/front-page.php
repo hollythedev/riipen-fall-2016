@@ -77,6 +77,7 @@ get_header(); ?>
 		<section class="testimonial">
 			<div class="container">
 				<div class="icon">
+					<i class="fa fa-line-chart" aria-hidden="true"></i>
 				</div>
 				<div class="text">
 					<p>We did great volunteers through Riipen for our projects. Caitlyn & Carly from Bites of Vitality heard about the social media project through Riipen, applied and we worked with them. Overall we were really happy with our experience and have been spreading the word</p>
