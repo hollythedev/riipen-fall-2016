@@ -15,7 +15,7 @@ section {
   position: relative;
   overflow: hidden;
   height: calc(100vh - 68px);
-  background: url( "../../images/new-york-stock-photo.jpg " ) no-repeat,rgba(0, 0, 0, 0.4);
+  background:url( "../../images/new-york-stock-photo.jpg " ) no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -264,7 +264,6 @@ section {
   ol {
     margin: 0 auto 2rem;
     max-width: 300px;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;

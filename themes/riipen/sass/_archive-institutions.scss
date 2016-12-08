@@ -7,7 +7,9 @@
 		display: none;
 		justify-content: center;
 		align-items: center;
-		background: linear-gradient(to right, rgba(50,50,50,0.75) 0%, rgba(50,50,50,0.75) 100%),url("../../images/picture-of-stairs.jpg") no-repeat center;
+		background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+		background-color: $color_greyish;
+		background-blend-mode: multiply;
 		background-size: cover;
 		@include desktop{
 			display: flex;
@@ -37,9 +39,9 @@
 			width: 275px;
 			border: 5px solid $color_azure;
 			content: '';
-			    display: flex;
-    align-items: center;
-    justify-content: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			position: relative;
 
 		}

@@ -46,7 +46,7 @@ get_header(); ?>
 						<?php the_title( sprintf( '<h2 class="entry-title uppercase educatorname"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 						<p class="educators-category educatorname uppercase"> 
 
-							<?php the_tags("" ); ?> 
+							 <?php echo get_the_term_list( $post->ID , 'subject', "" , " ") ?> 
 						</div>
 					<?php endwhile; ?>
 

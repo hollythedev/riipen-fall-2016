@@ -7,11 +7,18 @@
 		outline: none;
 	}
 }
-
+.wp-posts-carousel-slide {
+	.wp-posts-carousel-container{
+		box-shadow: none !important;
+	}
+}
 .carousel-cell{
-	width: 25%;
+	width: 30%;
+	@include desktop{
+		width: 25%;
+	}
 	padding: 10px;
-	height: 200px;
+	height: 275px;
 	a{
 		height: 100%;
 		width: 100%;

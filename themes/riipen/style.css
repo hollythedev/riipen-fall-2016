@@ -1328,7 +1328,7 @@ section {
   position: relative;
   overflow: hidden;
   height: calc(100vh - 68px);
-  background: url("../../images/new-york-stock-photo.jpg ") no-repeat, rgba(0, 0, 0, 0.4);
+  background: url("../../images/new-york-stock-photo.jpg ") no-repeat;
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -1565,7 +1565,6 @@ section {
   .difference ol {
     margin: 0 auto 2rem;
     max-width: 300px;
-    padding: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -1661,10 +1660,16 @@ section {
   .wp-posts-carousel-container a {
     outline: none; }
 
+.wp-posts-carousel-slide .wp-posts-carousel-container {
+  box-shadow: none !important; }
+
 .carousel-cell {
-  width: 25%;
+  width: 30%;
   padding: 10px;
-  height: 200px; }
+  height: 275px; }
+  @media (min-width: 750px) {
+    .carousel-cell {
+      width: 25%; } }
   .carousel-cell a {
     height: 100%;
     width: 100%; }
@@ -1683,7 +1688,9 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/picture-of-stairs.jpg") no-repeat center;
+  background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+  background-color: #aaaaaa;
+  background-blend-mode: multiply;
   background-size: cover; }
   @media (min-width: 750px) {
     .post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
@@ -1809,7 +1816,9 @@ section {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    background: linear-gradient(to right, rgba(50, 50, 50, 0.75) 0%, rgba(50, 50, 50, 0.75) 100%), url("../../images/org-hero.jpg") no-repeat center;
+    background: url("../../images/org-hero.jpg") no-repeat center;
+    background-color: #7e7e7e;
+    background-blend-mode: multiply;
     background-size: cover; }
     @media (min-width: 750px) {
       .post-type-archive-organizations .hero-banner {
