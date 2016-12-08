@@ -2,19 +2,13 @@
 	width: 30%;
 }
 .search-results{
-
 	.results-wrapper{
 		display: flex;
 		flex-wrap: wrap;
-		.type-page{
-			display: none;
-		}
+
 	}
 	.page-header{
 		width: 100%;
-	}
-	.status-publish {
-		display: none;
 	}
 	.has-post-thumbnail {
 		display: block;

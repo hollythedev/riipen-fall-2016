@@ -24,7 +24,7 @@ add_filter( 'body_class', 'riipen_body_classes' );
 //Changes login logo of site
 function my_custom_login_logo() { ?>
 <style type="text/css">
-	#login h1 a, .login h1 a {  background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
+	#login h1 a, .login h1 a {  background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/riipen-logo.jpeg);
 		padding-bottom: 30px; background-size: 220px !important; width: 230px !important;background-position: bottom !important;
 	}
 </style>

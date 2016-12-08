@@ -16,6 +16,7 @@
                 </div>
             </div>
             <div class="educator-talent-section-2">
+              <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" alt="Journey Map" />
             </div>
             <section class="desktop-green">
                 <div class="desktop-green-container1">
@@ -36,7 +37,7 @@
                 </div>
             </section>
             <section class="desktop-circles">
-				
+
 						<div class="form">
 							<h2>1</h2>
                              <div class= "circle-text">
@@ -44,7 +45,7 @@
                             <p>Think about learning outcomes that you want for this project</p>
 						</div>
                         </div>
-					
+
 						<div class="upload">
 							<h2>2</h2>
                              <div class= "circle-text">
@@ -52,7 +53,7 @@
                             <p> Fill in the form on our platform and press submit</p>
 						</div>
                         </div>
-					
+
 						<div class="answer">
 							<h2>3</h2>
                             <div class= "circle-text">
@@ -62,20 +63,22 @@
                         </div>
             </section>
 
-            <div class="educator-talent-section-3">
+            <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
                 <a href="<?php the_permalink(); ?>" class='educator-talent-btn'> riipen up</a>
-            </div>
-            <div class="educator-talent-section-4">
-            </div>
-            <div class="educator-talent-section-5">
+            </section>
+            <section class="educator-talent-section-4">
+            </section>
+            <section class="educator-talent-section-5">
+                <div class= "text-container">   
                 <p class="testimonial">
                     <?php echo CFS()->get( 'testimonial'); ?>
                     <p class="position">
                         <?php echo CFS()->get( 'position'); ?> </p>
                     <p class="name">
                         <?php echo CFS()->get( 'name'); ?> </p>
-            </div>
+           </div>
+            </section>
         </section>
         <?php dynamic_sidebar( 'carousels' ); ?>
     </main>
