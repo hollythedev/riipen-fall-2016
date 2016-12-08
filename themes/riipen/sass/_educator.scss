@@ -57,10 +57,8 @@
         }
     }
     .educator-talent-section-2 {
-        background-image: url('../../images/journeymap.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 531px;
+        padding-top: 3rem;
+        background-color: $color_journey-blue;
         @media (min-width: $breakpoint) {
             display: none;
         }
@@ -103,7 +101,7 @@
             }
         }
     }
-    
+
     .desktop-circles{
         display:none;
          @media (min-width: $breakpoint) {
