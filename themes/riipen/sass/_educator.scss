@@ -63,8 +63,8 @@
         }
     }
     .normal {
-        padding-top: 3rem;
-        background-color: $color_journey-blue;
+            width: 100vw;
+            height: 100vh;
         @media (min-width: $breakpoint) {
             display:none;
         }
@@ -73,7 +73,8 @@
         display:none;
         @media (min-width: $breakpoint) {
             display:block;
-            height: 300px;
+            height: 100vh;
+            width: 100vw;
         }
     }
 
@@ -138,11 +139,9 @@ display:block;
                 display: none;
             }
         }
-        .educator-talent-section-4 {
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
+
+        .educator-talent-section-4  {
+           padding:0;
         }
         .educator-talent-section-5 {
             margin: auto;
