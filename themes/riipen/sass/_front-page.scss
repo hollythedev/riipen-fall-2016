@@ -323,7 +323,12 @@ section {
       width: 100%;
       height: 100%;
       &:before {
-        color: $color_pumpkin-orange;
+        background-color: $color_pumpkin-orange;
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0 auto;
+        color: white;
+        border-radius: 10px;
         font-size: 2em;
         font-family: FontAwesome;
         display: block;
