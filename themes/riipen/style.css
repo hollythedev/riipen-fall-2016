@@ -2004,6 +2004,20 @@ section {
   .single-organizations .tab.active {
     display: block; }
 
+.single-institutions .personwrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.riipen-since {
+  padding: 10px 15px;
+  text-align: right;
+  color: #7e7e7e; }
+
+.carousel-section {
+  background-color: #f7f7f7; }
+
 .error-404 {
   background-color: #f7f7f7;
   display: -ms-flexbox;
