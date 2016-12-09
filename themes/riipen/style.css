@@ -911,7 +911,8 @@ a {
         margin: 0;
         padding-left: 12px; }
     .educator-page .desktop-green .desktop-green-container2 {
-      display: block; }
+      display: block;
+      color: white; }
       @media (min-width: 750px) {
         .educator-page .desktop-green .desktop-green-container2 {
           display: -ms-flexbox;
@@ -919,13 +920,13 @@ a {
           -ms-flex-pack: justify;
               justify-content: space-between;
           margin: auto;
-          width: 80%; }
-          .educator-page .desktop-green .desktop-green-container2 .left,
-          .educator-page .desktop-green .desktop-green-container2 .middle,
-          .educator-page .desktop-green .desktop-green-container2 .right {
-            width: 30%;
-            color: white;
-            font: 1.5rem "Open Sans", sans-serif; } }
+          width: 80%; } }
+  @media (min-width: 750px) and (min-width: 750px) {
+    .educator-page .desktop-green .desktop-green-container2 .left,
+    .educator-page .desktop-green .desktop-green-container2 .middle,
+    .educator-page .desktop-green .desktop-green-container2 .right {
+      width: 30%;
+      font: 1.5rem "Open Sans", sans-serif; } }
   .educator-page .educator-talent-section-3 {
     text-align: center;
     margin: 58px 0; }

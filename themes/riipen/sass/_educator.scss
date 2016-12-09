@@ -64,114 +64,115 @@
         }
     }
     .desktop-green {
-        background-color: $color_dark-mint;
-        display: block;
+background-color: $color_dark-mint;
+display:block;
         @media (min-width: $breakpoint) {
             display: flex;
-            flex-direction: column;
-        }
-        .desktop-green-container1 {
-            display: flex;
-            margin: auto;
-            align-items: center;
-            h2 {
-                color: $color_pumpkin-orange;
-                span {
-                    color: $color_twilight-blue;
+            flex-direction: column;}
+            .desktop-green-container1 {
+                display: flex;
+                margin: auto;
+                align-items: center;
+                h2 {
+                    color: $color_pumpkin-orange;
+                    span {
+                        color: $color_twilight-blue;
+                    }
+                }
+                p {
+                    color: white;
+                    margin: 0;
+                    padding-left: 12px;
                 }
             }
-            p {
+            .desktop-green-container2 {
+                display:block;
                 color: white;
-                margin: 0;
-                padding-left: 12px;
-            }
-        }
-        .desktop-green-container2 {
-            display: block;
-            @media (min-width: $breakpoint) {
+                @media (min-width: $breakpoint) {
                 display: flex;
                 justify-content: space-between;
                 margin: auto;
                 width: 80%;
                 .left,
                 .middle,
-                .right,
-                {
-                    color: white;
-                    @media (min-width: $breakpoint) {
-                        width: 30%;
-                        font: 1.5rem $font__main；
+                .right{
+                @media (min-width: $breakpoint) {
+                    width: 30%;
+                    font: 1.5rem $font__main;
+                }
+                }
+                }
+            }
+    }
+            
+        
+
+        .educator-talent-section-3 {
+            text-align: center;
+            margin: 58px 0;
+            p {
+                color: $color_azure;
+                font: 1rem $font__main;
+                padding-bottom: 31px;
+                margin: 0;
+            }
+            .educator-talent-btn {
+                color: $color__background-screen;
+                background-color: $color_dark-mint;
+                padding: 15px 20px;
+                border-radius: 10%;
+            }
+            @media (min-width: $breakpoint) {
+                display: none;
+            }
+        }
+        .educator-talent-section-4 {
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .educator-talent-section-5 {
+            margin: auto;
+            padding: 48px 0;
+            width: 87%;
+            .testimonial {
+                font-style: italic;
+                font-weight: 100;
+                color: $color__border-abbr;
+            }
+            font: 1.5rem $font__main;
+            .position {
+                color: $color_pumpkin-orange;
+                text-align: right;
+                margin-bottom: 0;
+            }
+            .name {
+                color: $color__border-abbr;
+                text-align: right;
+            }
+            @media (min-width: $breakpoint) {
+                margin-top: 4%;
+                margin-bottom: 4%;
+                border: 1px solid $color_dark-mint;
+                width: 59%;
+                .text-container {
+                    margin-top: -31px;
+                    margin-bottom: -31px;
+                    border: 1px solid $color_azure;
+                    margin: auto;
+                    width: 88%;
+                    padding: 4%;
+                    .testimonial {
+                        font-style: normal;
+                        color: black;
+                    }
+                    .position,
+                    .name {
+                        color: black;
+                        display: inline-block;
                     }
                 }
             }
         }
     }
-    .educator-talent-section-3 {
-        text-align: center;
-        margin: 58px 0;
-        p {
-            color: $color_azure;
-            font: 1rem $font__main;
-            padding-bottom: 31px;
-            margin: 0;
-        }
-        .educator-talent-btn {
-            color: $color__background-screen;
-            background-color: $color_dark-mint;
-            padding: 15px 20px;
-            border-radius: 10%;
-        }
-        @media (min-width: $breakpoint) {
-            display: none;
-        }
-    }
-    .educator-talent-section-4 {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
-    .educator-talent-section-5 {
-        margin: auto;
-        padding: 48px 0;
-        width: 87%;
-        .testimonial {
-            font-style: italic;
-            font-weight: 100;
-            color: $color__border-abbr;
-        }
-        font: 1.5rem $font__main;
-        .position {
-            color: $color_pumpkin-orange;
-            text-align: right;
-            margin-bottom: 0;
-        }
-        .name {
-            color: $color__border-abbr;
-            text-align: right;
-        }
-        @media (min-width: $breakpoint) {
-            margin-top: 4%;
-            margin-bottom: 4%;
-            border: 1px solid $color_dark-mint;
-            width: 59%;
-            .text-container {
-                margin-top: -31px;
-                margin-bottom: -31px;
-                border: 1px solid $color_azure;
-                margin: auto;
-                width: 88%;
-                padding: 4%;
-                .testimonial {
-                    font-style: normal;
-                    color: black;
-                }
-                .position,
-                .name {
-                    color: black;
-                    display: inline-block;
-                }
-            }
-        }
-    }
-}
