@@ -5,6 +5,7 @@
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
             <div class="educator-talent-section-1">
+             <img src="<?php echo get_template_directory_uri() . '../../images/educatorheader.jpeg'; ?>" alt="Journey Map" />
                 <div class="circle">
                     <h2 class="title">
                         <?php the_title();?>
