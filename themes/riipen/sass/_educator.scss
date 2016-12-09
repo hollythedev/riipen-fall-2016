@@ -2,7 +2,6 @@
     padding: 0;
     .educator-talent-section-1 {
         height: 242px;
-        background-image: url('../../images/educatorheader.jpeg');
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -56,13 +55,21 @@
             }
         }
     }
-    .educator-talent-section-2 {
+    .normal {
         padding-top: 3rem;
         background-color: $color_journey-blue;
         @media (min-width: $breakpoint) {
-            display: none;
+            display:none;
         }
     }
+    .sideways{
+        display:none;
+        @media (min-width: $breakpoint) {
+            display:block;
+            height: 300px;
+        }
+    }
+    
     .desktop-green {
 background-color: $color_dark-mint;
 display:block;
@@ -105,8 +112,6 @@ display:block;
             }
     }
             
-        
-
         .educator-talent-section-3 {
             text-align: center;
             margin: 58px 0;
