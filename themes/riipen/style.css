@@ -861,10 +861,7 @@ a {
           margin: auto;
           width: 400px;
           display: block;
-          color: white;
-          font: 2rem "Open Sans", sans-serif; }
-          .educator-page .circle .title p {
-            font-size: 1rem; } }
+          color: white; } }
   .educator-page .text-box {
     text-transform: uppercase;
     font: 1rem "Open Sans", sans-serif;
@@ -1027,6 +1024,18 @@ a {
   @media (min-width: 750px) {
     .talent-section-1 {
       height: 400px; } }
+
+.talent-title {
+  display: none; }
+  @media (min-width: 750px) {
+    .talent-title {
+      display: block;
+      color: white;
+      margin: auto; }
+      .talent-title h4 {
+        font: 2rem "Open Sans", sans-serif; }
+        .talent-title h4 p {
+          font-size: 1rem; } }
 
 /*--------------------------------------------------------------
 # Widgets

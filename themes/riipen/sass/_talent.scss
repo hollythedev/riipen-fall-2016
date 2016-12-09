@@ -12,3 +12,17 @@
         }
 }
 
+.talent-title{
+    display: none;
+    @media (min-width: $breakpoint) {
+        display:block;
+        color:white;
+        margin: auto;
+        h4{
+           font: 2rem $font__main;
+                    p{
+                        font-size:1rem;
+                    }
+        }
+    }
+}
