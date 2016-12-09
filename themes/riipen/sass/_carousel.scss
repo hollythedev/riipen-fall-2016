@@ -14,13 +14,13 @@
 	}
 }
 .carousel-cell{
-		
-		width: 33%;
-		height: 200px;
-		@include desktop{
-			width: 25%;
-				height: 275px;
-		}
+
+	width: 33%;
+	height: 200px;
+	@include desktop{
+		width: 25%;
+		height: 275px;
+	}
 
 	
 	padding: 10px;
@@ -30,9 +30,61 @@
 		width: 100%;
 		img{
 			height: 100%;
-		width: 100%;
-			
+			width: 100%;
 			max-width: 100%;
 		}
+		.overley{
+			position: absolute;
+			bottom: 50%;
+			right: 50%;
+			background: $color_dark-mint;
+			// width: 120%;
+			
+			transform: translate(50%,50%);
+			display: none;
+			@include desktop{
+			display: block;
+			}
+		}
+		p{
+			
+			align-self: center;
+			text-align: center;
+			font-size: 20px;
+			display: flex;
+			margin: 0;
+			padding: 10px;
+			color: $color_white-smoke;
+		}
 	}
+}
+.single-institutions{
+	#wp_posts_carousel-4{
+
+		.owl-stage-outer{
+			*{
+				width: 100%;
+				height: 100%;
+			}
+			img{
+				height:200px;
+			}
+		}
+	}
+	.cell-wrapper{
+		height: 100%;
+		width: 100%;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: grey;
+		@include desktop{
+				background-blend-mode:luminosity;
+				&:hover{
+					background-blend-mode:normal;
+				}
+			}
+	}
+	
+
 }

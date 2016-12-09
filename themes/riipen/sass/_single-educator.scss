@@ -27,20 +27,20 @@
     margin-top: 20px;
       // This is something i made without asking holly 
       height: 200px;
-    width: 70%;
-    position: absolute;
-    border: 2px solid orange;
-    margin: 0 auto;
-    left: 15%;
-    margin-top: 20px;
+      width: 70%;
+      position: absolute;
+      border: 2px solid orange;
+      margin: 0 auto;
+      left: 15%;
+      margin-top: 20px;
     // 
     :after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+      content: "";
+      display: block;
+      padding-bottom: 100%;
 
 
-}
+  }
 }
 
 .sep-picture {
@@ -48,7 +48,7 @@
     img {
         display: block;
         margin: auto auto;
-            height: 250px;
-    width: 174px;
+        height: 250px;
+        width: 174px;
     }
 }

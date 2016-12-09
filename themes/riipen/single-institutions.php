@@ -29,33 +29,41 @@ get_header(); ?>
 					</div>
 				<?php endwhile; ?>
 
-		<p class="riipen-since"> Riipen Since <?php echo CFS()->get('riipen_since') ?>
+				<p class="riipen-since"> Riipen Since <?php echo CFS()->get('riipen_since') ?>
 
-			<?php else : ?>
+				<?php else : ?>
 
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php endif; ?>
-		</div>
-
-	</main><!-- #main -->
-</div><!-- #primary -->
-<!-- "'.$image["link_to_course"].'"/>' -->
-<div class="carousel-section">
-<?php dynamic_sidebar( 'carousels2' ); ?>
-
-<?php if(CFS()->get('course_pictures')): ?>
-	<h2 class="course-header"> Past Course </h2>
-	<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-		<?php $gallery_images = CFS()->get('course_pictures');?>
-		<?php foreach ($gallery_images as $image): ?>
-			<div class="carousel-cell">
-				<a href="<?php echo $image["link_to_course"] ?>">
-					<?php echo '<img src="'.$image["image"].'"/>'; ?>
-				</a>
+				<?php endif; ?>
 			</div>
-		<?php endforeach; ?>
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	<!-- "'.$image["link_to_course"].'"/>' -->
+	<div class="carousel-section">
+		<?php dynamic_sidebar( 'carousels2' ); ?>
+
+		<?php if(CFS()->get('course_pictures')): ?>
+			<h2 class="course-header"> Past Course </h2>
+			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+				<?php $gallery_images = CFS()->get('course_pictures');?>
+				<?php foreach ($gallery_images as $image): ?>
+
+					<div class="carousel-cell">
+						<div class="cell-wrapper" style="background-image:url(<?php echo $image["image"]; ?>) ">
+							<a href="<?php echo $image["link_to_course"] ?>">
+							
+								
+								<div class="overley">
+									<p> <?php echo $image['text_inside_carousel'] ?> </p>
+								</div>
+								
+							</a>
+						</div>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
 	</div>
-<?php endif; ?>
-</div>
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
