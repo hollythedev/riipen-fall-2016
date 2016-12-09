@@ -36,7 +36,7 @@ get_header(); ?>
 
 				</article>
 			<?php endwhile; // End of the loop. ?>
-			<div class="tabbingwrapper">
+			<div class="tabbing-wrapper">
 				<div class="tabbingsection">
 					<div class="leftsection">
 						<a class="inactive uppercase">Institutions</a>

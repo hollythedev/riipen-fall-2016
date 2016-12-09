@@ -11,7 +11,7 @@ get_header(); ?>
 	
 	<main id="main" class="site-main container" role="main">
 	<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
-		<div  class="tabbingwrapper">
+		<div  class="tabbing-wrapper">
 			<div class="tabbingsection">
 
 				<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'institutions' ); ?>" >Institutions</a>
