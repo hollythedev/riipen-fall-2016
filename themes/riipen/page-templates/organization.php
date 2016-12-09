@@ -4,8 +4,7 @@
     <button onclick="history.go(-1);" class="back"> <i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
-            <div class="educator-talent-section-1">
-            <img src="<?php echo get_template_directory_uri() . '../../images/organizationheader.jpeg'; ?>" alt="Journey Map" />
+            <div class="organization-section-1">
                 <div class="circle">
                     <h2 class="title">
                         <?php the_title();?>
