@@ -35,6 +35,9 @@
 			font-size: 18px;
 		}
 		.image-wrapper{
+			box-shadow: 4px 10px 50px 1px rgba(166,166,166,1);
+			background-color: white;
+
 			height: 275px;
 			width: 275px;
 			border: 5px solid $color_azure;
@@ -106,17 +109,14 @@
 			margin: 0 auto;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-around;
 			.personwrapper{
-				margin: 30px 2%;
-				width: 28%;		
+				
 				@include desktop{
-					width: 21%;	
-					margin: 30px auto;
+					
+
 
 				}
 				
-				box-sizing: border-box;
 			}
 			h2{
 				text-align: center;
@@ -133,10 +133,22 @@
 	}
 }
 .post-type-archive-institutions {
-	.personwrapper{
-		width: 30%;
-		@include desktop{
-			width: 15%;
+	.riipen-list{
+		.personwrapper{
+			margin: 30px 2%;
+			width: 28%;		
+
+			@include desktop{
+				width: 15%;
+
+				margin: 30px 2%;
+			}
 		}
+	}
+}
+
+.post-type-archive-educator{
+	.personwrapper{
+		margin: 30px auto;
 	}
 }

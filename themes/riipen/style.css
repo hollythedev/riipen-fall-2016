@@ -1662,6 +1662,8 @@ section {
   font-size: 18px; }
 
 .post-type-archive-institutions .site-main .image-wrapper, .post-type-archive-educator .site-main .image-wrapper {
+  box-shadow: 4px 10px 50px 1px #a6a6a6;
+  background-color: white;
   height: 275px;
   width: 275px;
   border: 5px solid #27aefb;
@@ -1729,17 +1731,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-  .post-type-archive-institutions .site-main .riipen-list .personwrapper, .post-type-archive-educator .site-main .riipen-list .personwrapper {
-    margin: 30px 2%;
-    width: 28%;
-    box-sizing: border-box; }
-    @media (min-width: 750px) {
-      .post-type-archive-institutions .site-main .riipen-list .personwrapper, .post-type-archive-educator .site-main .riipen-list .personwrapper {
-        width: 21%;
-        margin: 30px auto; } }
+      flex-wrap: wrap; }
   .post-type-archive-institutions .site-main .riipen-list h2, .post-type-archive-educator .site-main .riipen-list h2 {
     text-align: center; }
   .post-type-archive-institutions .site-main .riipen-list a img, .post-type-archive-educator .site-main .riipen-list a img {
@@ -1747,11 +1739,16 @@ section {
     width: 100%;
     height: 100%; }
 
-.post-type-archive-institutions .personwrapper {
-  width: 30%; }
+.post-type-archive-institutions .riipen-list .personwrapper {
+  margin: 30px 2%;
+  width: 28%; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .personwrapper {
-      width: 15%; } }
+    .post-type-archive-institutions .riipen-list .personwrapper {
+      width: 15%;
+      margin: 30px 2%; } }
+
+.post-type-archive-educator .personwrapper {
+  margin: 30px auto; }
 
 .post-type-archive-organizations {
   background: #f7f7f7; }
@@ -1821,12 +1818,10 @@ section {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     padding-bottom: 140px; }
     .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
       width: 30%;
-      margin: 30px auto;
+      margin: 30px 1%;
       box-sizing: border-box; }
       @media (min-width: 750px) {
         .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
@@ -2004,6 +1999,7 @@ section {
     border: 1px solid grey;
     background: #fff; }
   .single-organizations .tab {
+    padding-bottom: 40px;
     display: none; }
   .single-organizations .tab.active {
     display: block; }
