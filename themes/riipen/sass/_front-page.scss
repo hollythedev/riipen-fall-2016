@@ -64,14 +64,6 @@ section {
   li {
     list-style: none;
     margin-bottom: 1.5rem;
-    &:last-child {
-      .percent {
-        order: 1;
-        @include desktop {
-          order: 0;
-        }
-      }
-    }
     &:first-child,
     &:last-child {
       div {

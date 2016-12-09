@@ -1329,13 +1329,6 @@ section {
   .stats li {
     list-style: none;
     margin-bottom: 1.5rem; }
-    .stats li:last-child .percent {
-      -ms-flex-order: 1;
-          order: 1; }
-      @media (min-width: 750px) {
-        .stats li:last-child .percent {
-          -ms-flex-order: 0;
-              order: 0; } }
     .stats li:first-child div, .stats li:last-child div {
       display: -ms-flexbox;
       display: flex;
@@ -2117,4 +2110,6 @@ section {
     color: white; }
 
 .about-wrap h2 {
-  font-size: 1em; }
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold; }
