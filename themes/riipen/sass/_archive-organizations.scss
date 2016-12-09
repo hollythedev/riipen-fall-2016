@@ -83,7 +83,6 @@
 
  		display: flex;
  		flex-wrap: wrap;
- 		justify-content: space-around;
  		padding-bottom: 140px;
  		.personwrapper{
  			width: 30%;
@@ -91,7 +90,7 @@
  				width: 22%;
  				
  			}
- 			margin: 30px auto;
+ 			margin: 30px 1%;
  			box-sizing: border-box;
  			.entry-title{
  				display: none;

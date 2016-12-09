@@ -10,15 +10,21 @@
 .wp-posts-carousel-slide {
 	.wp-posts-carousel-container{
 		box-shadow: none !important;
+		background: none !important;
 	}
 }
 .carousel-cell{
-	width: 30%;
-	@include desktop{
-		width: 25%;
-	}
+		
+		width: 33%;
+		height: 200px;
+		@include desktop{
+			width: 25%;
+				height: 275px;
+		}
+
+	
 	padding: 10px;
-	height: 275px;
+
 	a{
 		height: 100%;
 		width: 100%;

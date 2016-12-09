@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * The template for displaying archive pages.
  *
@@ -29,7 +29,7 @@ get_header(); ?>
 					</div>
 				<?php endwhile; ?>
 
-				<?php the_posts_navigation(); ?>
+		<p class="riipen-since"> Riipen Since <?php echo CFS()->get('riipen_since') ?>
 
 			<?php else : ?>
 
@@ -41,10 +41,11 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <!-- "'.$image["link_to_course"].'"/>' -->
-
+<div class="carousel-section">
 <?php dynamic_sidebar( 'carousels2' ); ?>
 
 <?php if(CFS()->get('course_pictures')): ?>
+	<h2 class="course-header"> Past Course </h2>
 	<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 		<?php $gallery_images = CFS()->get('course_pictures');?>
 		<?php foreach ($gallery_images as $image): ?>
@@ -56,5 +57,5 @@ get_header(); ?>
 		<?php endforeach; ?>
 	</div>
 <?php endif; ?>
-
+</div>
 <?php get_footer(); ?>

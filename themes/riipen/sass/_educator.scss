@@ -8,9 +8,12 @@
         display: flex;
         align-items: flex-end;
         max-width: 100%;
+        position:relative;
         @media (min-width: $breakpoint) {
             height: 400px;
         }
+    }
+
         .circle {
             display: none;
             @media (min-width: $breakpoint) {
@@ -24,12 +27,15 @@
             }
             .title {
                 display: none;
-                @media (min-width: $breakpoint) {
+               @media (min-width: $breakpoint) {
                     margin: auto;
                     width: 400px;
                     display: block;
                     color: white;
                     font: 2rem $font__main;
+                    p{
+                        font-size:1rem;
+                    }
                 }
             }
         }
@@ -56,13 +62,21 @@
             }
         }
     }
-    .educator-talent-section-2 {
+    .normal {
         padding-top: 3rem;
         background-color: $color_journey-blue;
         @media (min-width: $breakpoint) {
-            display: none;
+            display:none;
         }
     }
+    .sideways{
+        display:none;
+        @media (min-width: $breakpoint) {
+            display:block;
+            height: 300px;
+        }
+    }
+
     .desktop-green {
 background-color: $color_dark-mint;
 display:block;
@@ -105,8 +119,6 @@ display:block;
             }
     }
             
-        
-
         .educator-talent-section-3 {
             text-align: center;
             margin: 58px 0;
@@ -175,4 +187,3 @@ display:block;
                 }
             }
         }
-    }
