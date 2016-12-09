@@ -11,7 +11,7 @@ get_header(); ?>
 <button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
 	<main id="main" class="site-main animatedParent" role="main">
 	<div class="hero-banner">
-	<h1 class="uppercase banner-text">Where <span class="orange-text">talent</span> and <span class="orange-text">industry</span> meet</h1>
+	<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
 	</div class="container">
 			<h2 class="uppercase org-header desktop-only"> Companies we are working with </h2>
 		<div class="view-type-buttons">

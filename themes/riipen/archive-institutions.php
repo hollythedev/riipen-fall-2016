@@ -11,9 +11,9 @@ get_header(); ?>
 	<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
 	<main id="main" class="site-main" role="main">
 		<div class="hero-banner">
-			<h1 class="uppercase banner-text">Where <span class="orange-text">talent</span> and <span class="orange-text">industry</span> meet</h1>
+			<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
 		</div>
-			<div  class="tabbingwrapper">
+			<section  class="tabbing-wrapper">
 				<div class="tabbingsection">
 
 					<a class="inactive uppercase">Institutions</a>
@@ -21,9 +21,9 @@ get_header(); ?>
 					<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
 
 				</div>
-			</div>
+			</section>
 			
-			<div class="riipen-list">
+			<section class="riipen-list">
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
@@ -48,7 +48,7 @@ get_header(); ?>
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 				<?php endif; ?>
-			</div>
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

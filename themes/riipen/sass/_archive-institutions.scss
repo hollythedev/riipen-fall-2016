@@ -21,13 +21,13 @@
 		font-weight: bold;
 		font-size: 36px;
 	}
-	.orange-text{
+	.highlight-orange{
 		color: $color_pumpkin-orange;
 	}
 	.site-main{
 		
 
-		.tabbingwrapper{
+		.tabbing-wrapper{
 			display: flex;
 		}
 		.entry-title{
@@ -105,7 +105,7 @@
 			}
 		}
 		.riipen-list{
-			width: 90%;
+		
 			margin: 0 auto;
 			display: flex;
 			flex-wrap: wrap;

@@ -1648,10 +1648,10 @@ section {
   font-weight: bold;
   font-size: 36px; }
 
-.post-type-archive-institutions .orange-text, .post-type-archive-educator .orange-text {
+.post-type-archive-institutions .highlight-orange, .post-type-archive-educator .highlight-orange {
   color: #f68708; }
 
-.post-type-archive-institutions .site-main .tabbingwrapper, .post-type-archive-educator .site-main .tabbingwrapper {
+.post-type-archive-institutions .site-main .tabbing-wrapper, .post-type-archive-educator .site-main .tabbing-wrapper {
   display: -ms-flexbox;
   display: flex; }
 
@@ -1724,7 +1724,6 @@ section {
     margin: auto; }
 
 .post-type-archive-institutions .site-main .riipen-list, .post-type-archive-educator .site-main .riipen-list {
-  width: 90%;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
@@ -1750,7 +1749,7 @@ section {
 
 .post-type-archive-organizations {
   background: #f7f7f7; }
-  .post-type-archive-organizations .orange-text {
+  .post-type-archive-organizations .highlight-orange {
     color: #f68708; }
   .post-type-archive-organizations .hero-banner {
     height: calc(100vh - 68px);
@@ -1875,7 +1874,7 @@ section {
   /*----- Tab Links -----*/
   /* Clearfix */
   /*----- Content of Tabs -----*/ }
-  .single-organizations .tabbingwrapper {
+  .single-organizations .tabbing-wrapper {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
