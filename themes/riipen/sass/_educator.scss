@@ -55,13 +55,21 @@
             }
         }
     }
-    .educator-talent-section-2 {
+    .normal {
         padding-top: 3rem;
         background-color: $color_journey-blue;
         @media (min-width: $breakpoint) {
-            display: none;
+            display:none;
         }
     }
+    .sideways{
+        display:none;
+        @media (min-width: $breakpoint) {
+            display:block;
+            height: 300px;
+        }
+    }
+    
     .desktop-green {
 background-color: $color_dark-mint;
 display:block;

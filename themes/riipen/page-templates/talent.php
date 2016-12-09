@@ -17,8 +17,8 @@
                 </div>
             </div>
             <div class="educator-talent-section-2">
-              <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" alt="Journey Map" />
-               <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" alt="Journey Map" />
+               <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
+              <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
             </div>
             <section class="desktop-green">
                 <div class="desktop-green-container1">
