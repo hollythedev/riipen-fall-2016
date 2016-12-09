@@ -608,7 +608,7 @@ a {
     border-radius: 0;
     padding-left: 1rem;
     margin: 0;
-    width: 200px;
+    width: 250px;
     display: none; }
     .site-search input[type=search]:focus {
       outline: 0; }
@@ -1220,7 +1220,7 @@ object {
   padding-top: 68px; }
 
 section {
-  padding: 1.5rem 1rem; }
+  padding: 2rem 1rem; }
 
 /* Hero Section */
 .hero {
@@ -1236,7 +1236,8 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  color: white; }
+  color: white;
+  padding: 0; }
   @media (min-width: 750px) {
     .hero {
       background: rgba(0, 0, 0, 0.4); } }
@@ -1280,13 +1281,6 @@ section {
   .stats li {
     list-style: none;
     margin-bottom: 1.5rem; }
-    .stats li:last-child .percent {
-      -ms-flex-order: 1;
-          order: 1; }
-      @media (min-width: 750px) {
-        .stats li:last-child .percent {
-          -ms-flex-order: 0;
-              order: 0; } }
     .stats li:first-child div, .stats li:last-child div {
       display: -ms-flexbox;
       display: flex;
@@ -1446,7 +1440,6 @@ section {
 /* About Section */
 .about {
   background-color: #4cc88d;
-  padding: 16px;
   color: white; }
   .about ul {
     padding-left: 40px; }
@@ -1986,7 +1979,7 @@ section {
     right: 0; }
   .error-404 h1 {
     color: rgba(246, 135, 8, 0.2);
-    font-size: 12em;
+    font-size: 11em;
     font-weight: bold;
     line-height: 1;
     margin: 0 0 5rem;
@@ -2064,9 +2057,12 @@ section {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-position: 50%; }
   .about-hero h1 {
     color: white; }
 
 .about-wrap h2 {
-  font-size: 1em; }
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold; }

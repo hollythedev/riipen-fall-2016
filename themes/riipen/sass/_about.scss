@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: 50%;
   h1 {
     color: white;
   }
@@ -11,5 +12,7 @@
 .about-wrap {
   h2 {
     font-size: 1em;
+    text-align: center;
+    font-weight: bold;
   }
 }
