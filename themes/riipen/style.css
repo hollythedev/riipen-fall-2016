@@ -1088,6 +1088,12 @@ a {
   max-width: 1000px;
   margin: 0 auto; }
 
+.site-content {
+  padding-top: 68px; }
+
+section {
+  padding: 2rem 1rem; }
+
 .back {
   color: grey;
   background-color: transparent;
@@ -1258,13 +1264,6 @@ object {
           font-size: 1rem;
           max-width: 400px;
           margin: auto; } }
-
-/* Base */
-.site-content {
-  padding-top: 68px; }
-
-section {
-  padding: 2rem 1rem; }
 
 /* Hero Section */
 .hero {
