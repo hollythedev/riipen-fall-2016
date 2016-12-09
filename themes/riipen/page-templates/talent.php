@@ -1,11 +1,11 @@
-<?php /* Template Name: Organization */ ?>
+<?php /* Template Name: Talent */ ?>
 <?php get_header(); ?>
 <div id="primary" class="content-area">
     <button onclick="history.go(-1);" class="back"> <i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
             <div class="educator-talent-section-1">
-            <img src="<?php echo get_template_directory_uri() . '../../images/organizationheader.jpeg'; ?>" alt="Journey Map" />
+             <img src="<?php echo get_template_directory_uri() . '../../images/talentheader.jpeg'; ?>" alt="Journey Map" />
                 <div class="circle">
                     <h2 class="title">
                         <?php the_title();?>
@@ -18,6 +18,7 @@
             </div>
             <div class="educator-talent-section-2">
               <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" alt="Journey Map" />
+               <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" alt="Journey Map" />
             </div>
             <section class="desktop-green">
                 <div class="desktop-green-container1">
@@ -43,7 +44,7 @@
                 <a href="<?php the_permalink(); ?>" class="educator-talent-btn"> riipen up</a>
             </section>
             <section class="educator-talent-section-4">
-                 <img src="<?php echo get_template_directory_uri() . '/images/organizationipad.jpg'; ?>" alt="Photo of iPad" />
+                 <img src="<?php echo get_template_directory_uri() . '/images/talentipad.jpg'; ?>" alt="Photo of iPad" />
             </section>
             <section class="educator-talent-section-5">
                 <div class= "text-container">   
