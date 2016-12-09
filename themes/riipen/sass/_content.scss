@@ -57,7 +57,9 @@
 
 .back{
 	color: $color__greyborders;
+	background-color: transparent;
 	font: 1rem $font__main;
+	position:absolute;
 	@media (min-width: $breakpoint) {
                 display:none;
             }

@@ -60,7 +60,7 @@ get_header(); ?>
 		</section>
 		<section class="difference">
 			<div class="container animatedParent animateOnce">
-				<h2>Riipen want's to make a difference</h2>
+				<h2>Riipen wants to make a difference</h2>
 				<p>and it's simple</p>
 				<ol>
 					<li>You sign up</li>

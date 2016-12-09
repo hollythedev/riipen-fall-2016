@@ -18,7 +18,7 @@
 		<?php endif; ?>
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<br>
-		
+
 		<?php echo get_the_term_list( $post->ID, 'institution', 'Teaches At: ', ', ' ); ?>
 		<br>
 		<?php riipen_entry_footer() ?>

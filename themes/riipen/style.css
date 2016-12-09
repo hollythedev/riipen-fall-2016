@@ -421,7 +421,8 @@ textarea {
 /* Links */
 a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.5s ease; }
   a:visited {
     color: black; }
   a:hover, a:focus, a:active {
@@ -608,7 +609,7 @@ a {
     border-radius: 0;
     padding-left: 1rem;
     margin: 0;
-    width: 200px;
+    width: 250px;
     display: none; }
     .site-search input[type=search]:focus {
       outline: 0; }
@@ -888,152 +889,102 @@ a {
       .educator-page .educator-talent-section-2 {
         display: none; } }
   .educator-page .desktop-green {
-    display: none; }
+    background-color: #4cc88d;
+    display: block; }
     @media (min-width: 750px) {
       .educator-page .desktop-green {
         display: -ms-flexbox;
         display: flex;
-        background-color: #4cc88d;
         -ms-flex-direction: column;
-            flex-direction: column; }
-        .educator-page .desktop-green .desktop-green-container1 {
-          display: -ms-flexbox;
-          display: flex;
-          margin: auto;
-          -ms-flex-align: center;
-              align-items: center; }
-          .educator-page .desktop-green .desktop-green-container1 h2 {
-            color: #f68708; }
-            .educator-page .desktop-green .desktop-green-container1 h2 span {
-              color: #0c4160; }
-          .educator-page .desktop-green .desktop-green-container1 p {
-            color: white;
-            margin: 0;
-            padding-left: 12px; }
+            flex-direction: column; } }
+    .educator-page .desktop-green .desktop-green-container1 {
+      display: -ms-flexbox;
+      display: flex;
+      margin: auto;
+      -ms-flex-align: center;
+          align-items: center; }
+      .educator-page .desktop-green .desktop-green-container1 h2 {
+        color: #f68708; }
+        .educator-page .desktop-green .desktop-green-container1 h2 span {
+          color: #0c4160; }
+      .educator-page .desktop-green .desktop-green-container1 p {
+        color: white;
+        margin: 0;
+        padding-left: 12px; }
+    .educator-page .desktop-green .desktop-green-container2 {
+      display: block;
+      color: white; }
+      @media (min-width: 750px) {
         .educator-page .desktop-green .desktop-green-container2 {
           display: -ms-flexbox;
           display: flex;
           -ms-flex-pack: justify;
               justify-content: space-between;
           margin: auto;
-          width: 80%; }
-          .educator-page .desktop-green .desktop-green-container2 .left,
-          .educator-page .desktop-green .desktop-green-container2 .middle,
-          .educator-page .desktop-green .desktop-green-container2 .right {
-            width: 30%;
-            color: white;
-            font: 1.5rem "Open Sans", sans-serif; } }
-  .educator-page .desktop-circles {
-    display: none; }
+          width: 80%; } }
+  @media (min-width: 750px) and (min-width: 750px) {
+    .educator-page .desktop-green .desktop-green-container2 .left,
+    .educator-page .desktop-green .desktop-green-container2 .middle,
+    .educator-page .desktop-green .desktop-green-container2 .right {
+      width: 30%;
+      font: 1.5rem "Open Sans", sans-serif; } }
+  .educator-page .educator-talent-section-3 {
+    text-align: center;
+    margin: 58px 0; }
+    .educator-page .educator-talent-section-3 p {
+      color: #27aefb;
+      font: 1rem "Open Sans", sans-serif;
+      padding-bottom: 31px;
+      margin: 0; }
+    .educator-page .educator-talent-section-3 .educator-talent-btn {
+      color: #f1f1f1;
+      background-color: #4cc88d;
+      padding: 15px 20px;
+      border-radius: 10%; }
     @media (min-width: 750px) {
-      .educator-page .desktop-circles {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        margin: auto;
-        width: 87%; }
-        .educator-page .desktop-circles div {
-          display: -ms-flexbox;
-          display: flex; }
-          .educator-page .desktop-circles div h2 {
-            display: block;
-            position: relative;
-            border: 3px solid #27aefb;
-            min-width: 10rem;
-            height: 10rem;
-            text-align: center;
-            border-radius: 50%;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-align: center;
-                align-items: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-            .educator-page .desktop-circles div h2:after {
-              content: '';
-              border: 2px solid #f68708;
-              top: 2px;
-              left: -6px;
-              width: 100%;
-              height: 100%;
-              border-radius: 50%;
-              position: absolute; }
-            .educator-page .desktop-circles div h2:before {
-              content: '';
-              border: 2px solid #4cc88d;
-              top: 2px;
-              left: 5px;
-              width: 100%;
-              height: 100%;
-              border-radius: 50%;
-              position: absolute; }
-          .educator-page .desktop-circles div .circle-text {
-            -ms-flex-direction: column;
-                flex-direction: column;
-            margin-left: 28px;
-            margin-top: 23px;
-            width: 33%; }
-            .educator-page .desktop-circles div .circle-text .upload {
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
-    .educator-page .desktop-circles .educator-talent-section-3 {
-      text-align: center;
-      margin: 58px 0; }
-      .educator-page .desktop-circles .educator-talent-section-3 p {
-        color: #27aefb;
-        font: 1rem "Open Sans", sans-serif;
-        padding-bottom: 31px;
-        margin: 0; }
-      .educator-page .desktop-circles .educator-talent-section-3 .educator-talent-btn {
-        color: #f1f1f1;
-        background-color: #4cc88d;
-        padding: 15px 20px;
-        border-radius: 10%; }
-      @media (min-width: 750px) {
-        .educator-page .desktop-circles .educator-talent-section-3 {
-          display: none; } }
-    .educator-page .desktop-circles .educator-talent-section-4 {
-      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh; }
-    .educator-page .desktop-circles .educator-talent-section-5 {
-      margin: auto;
-      padding: 48px 0;
-      width: 87%;
-      font: 1.5rem "Open Sans", sans-serif; }
-      .educator-page .desktop-circles .educator-talent-section-5 .testimonial {
-        font-style: italic;
-        font-weight: 100;
-        color: #666; }
-      .educator-page .desktop-circles .educator-talent-section-5 .position {
-        color: #f68708;
-        text-align: right;
-        margin-bottom: 0; }
-      .educator-page .desktop-circles .educator-talent-section-5 .name {
-        color: #666;
-        text-align: right; }
-      @media (min-width: 750px) {
-        .educator-page .desktop-circles .educator-talent-section-5 {
-          margin-top: 4%;
-          margin-bottom: 4%;
-          border: 1px solid #4cc88d;
-          width: 59%; }
-          .educator-page .desktop-circles .educator-talent-section-5 .text-container {
-            margin-top: -31px;
-            margin-bottom: -31px;
-            border: 1px solid #27aefb;
-            margin: auto;
-            width: 88%;
-            padding: 4%; }
-            .educator-page .desktop-circles .educator-talent-section-5 .text-container .testimonial {
-              font-style: normal;
-              color: black; }
-            .educator-page .desktop-circles .educator-talent-section-5 .text-container .position,
-            .educator-page .desktop-circles .educator-talent-section-5 .text-container .name {
-              color: black;
-              display: inline-block; } }
+      .educator-page .educator-talent-section-3 {
+        display: none; } }
+  .educator-page .educator-talent-section-4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; }
+  .educator-page .educator-talent-section-5 {
+    margin: auto;
+    padding: 48px 0;
+    width: 87%;
+    font: 1.5rem "Open Sans", sans-serif; }
+    .educator-page .educator-talent-section-5 .testimonial {
+      font-style: italic;
+      font-weight: 100;
+      color: #666; }
+    .educator-page .educator-talent-section-5 .position {
+      color: #f68708;
+      text-align: right;
+      margin-bottom: 0; }
+    .educator-page .educator-talent-section-5 .name {
+      color: #666;
+      text-align: right; }
+    @media (min-width: 750px) {
+      .educator-page .educator-talent-section-5 {
+        margin-top: 4%;
+        margin-bottom: 4%;
+        border: 1px solid #4cc88d;
+        width: 59%; }
+        .educator-page .educator-talent-section-5 .text-container {
+          margin-top: -31px;
+          margin-bottom: -31px;
+          border: 1px solid #27aefb;
+          margin: auto;
+          width: 88%;
+          padding: 4%; }
+          .educator-page .educator-talent-section-5 .text-container .testimonial {
+            font-style: normal;
+            color: black; }
+          .educator-page .educator-talent-section-5 .text-container .position,
+          .educator-page .educator-talent-section-5 .text-container .name {
+            color: black;
+            display: inline-block; } }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1096,7 +1047,9 @@ a {
 
 .back {
   color: grey;
-  font: 1rem "Open Sans", sans-serif; }
+  background-color: transparent;
+  font: 1rem "Open Sans", sans-serif;
+  position: absolute; }
   @media (min-width: 750px) {
     .back {
       display: none; } }
@@ -1194,7 +1147,7 @@ object {
         padding-top: 5%; } }
     .site-footer .footer-container .footer-social-media {
       margin: auto;
-      max-width: 220px;
+      max-width: 279px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
@@ -1268,7 +1221,7 @@ object {
   padding-top: 68px; }
 
 section {
-  padding: 1.5rem 1rem; }
+  padding: 2rem 1rem; }
 
 /* Hero Section */
 .hero {
@@ -1284,7 +1237,8 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  color: white; }
+  color: white;
+  padding: 0; }
   @media (min-width: 750px) {
     .hero {
       background: rgba(0, 0, 0, 0.4); } }
@@ -1328,13 +1282,6 @@ section {
   .stats li {
     list-style: none;
     margin-bottom: 1.5rem; }
-    .stats li:last-child .percent {
-      -ms-flex-order: 1;
-          order: 1; }
-      @media (min-width: 750px) {
-        .stats li:last-child .percent {
-          -ms-flex-order: 0;
-              order: 0; } }
     .stats li:first-child div, .stats li:last-child div {
       display: -ms-flexbox;
       display: flex;
@@ -1494,7 +1441,6 @@ section {
 /* About Section */
 .about {
   background-color: #4cc88d;
-  padding: 16px;
   color: white; }
   .about ul {
     padding-left: 40px; }
@@ -1566,7 +1512,12 @@ section {
     width: 100%;
     height: 100%; }
     .figures a:before {
-      color: #f68708;
+      background-color: #f68708;
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0 auto;
+      color: white;
+      border-radius: 10px;
       font-size: 2em;
       font-family: FontAwesome;
       display: block; }
@@ -2064,7 +2015,7 @@ section {
     right: 0; }
   .error-404 h1 {
     color: rgba(246, 135, 8, 0.2);
-    font-size: 12em;
+    font-size: 11em;
     font-weight: bold;
     line-height: 1;
     margin: 0 0 5rem;
@@ -2142,9 +2093,12 @@ section {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-position: 50%; }
   .about-hero h1 {
     color: white; }
 
 .about-wrap h2 {
-  font-size: 1em; }
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold; }

@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	
 	<main id="main" class="site-main container" role="main">
-	<button onclick="history.go(-1);" class="back">&lt;  Back</button>
+	<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
 		<div  class="tabbingwrapper">
 			<div class="tabbingsection">
 

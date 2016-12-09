@@ -1,7 +1,7 @@
 <?php /* Template Name: Educator */ ?>
 <?php get_header(); ?>
 <div id="primary" class="content-area">
-    <button onclick="history.go(-1);" class="back">&lt;  Back</button>
+    <button onclick="history.go(-1);" class="back"> <i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
             <div class="educator-talent-section-1">
@@ -36,32 +36,6 @@
                     </div>
                 </div>
             </section>
-            <section class="desktop-circles">
-
-						<div class="form">
-							<h2>1</h2>
-                             <div class= "circle-text">
-							<p>Fill out a form</p>
-                            <p>Think about learning outcomes that you want for this project</p>
-						</div>
-                        </div>
-
-						<div class="upload">
-							<h2>2</h2>
-                             <div class= "circle-text">
-							<p> Upload your assignment</p>
-                            <p> Fill in the form on our platform and press submit</p>
-						</div>
-                        </div>
-
-						<div class="answer">
-							<h2>3</h2>
-                            <div class= "circle-text">
-							<p>Answer your phone</p>
-                            <p>Once we have this information, we will call you within 48 hours.</p>
-						</div>
-                        </div>
-            </section>
 
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
@@ -75,7 +49,7 @@
                 <p class="testimonial">
                     <?php echo CFS()->get( 'testimonial'); ?>
                     <p class="position">
-                        <?php echo CFS()->get( 'position'); ?> </p>
+                       - <?php echo CFS()->get( 'position'); ?> </p>
                     <p class="name">
                         <?php echo CFS()->get( 'name'); ?> </p>
            </div>
