@@ -45,6 +45,7 @@ get_header(); ?>
 <?php dynamic_sidebar( 'carousels2' ); ?>
 
 <?php if(CFS()->get('course_pictures')): ?>
+	<h2 class="course-header"> Past Course </h2>
 	<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 		<?php $gallery_images = CFS()->get('course_pictures');?>
 		<?php foreach ($gallery_images as $image): ?>
