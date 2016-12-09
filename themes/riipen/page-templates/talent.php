@@ -4,11 +4,11 @@
     <button onclick="history.go(-1);" class="back"> <i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
-            <div class="educator-talent-section-1">
-             <img src="<?php echo get_template_directory_uri() . '../../images/talentheader.jpeg'; ?>" alt="Journey Map" />
+            <div class="talent-section-1">
                 <div class="circle">
                     <h2 class="title">
-                        <?php the_title();?>
+                       <h4> Riipen your life</h4>
+                       <p>  Where talent and industry meet.</p>
                     </h2>
                 </div>
                 <div class="text-box">
@@ -16,10 +16,7 @@
                     <?php echo CFS()->get( 'motto'); ?>
                 </div>
             </div>
-            <div class="educator-talent-section-2">
-               <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
-              <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
-            </div>
+           
             <section class="desktop-green">
                 <div class="desktop-green-container1">
                     <h2>R<span>ii</span>pen</h2>
@@ -38,6 +35,9 @@
                     </div>
                 </div>
             </section>
+
+            <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
+              <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
 
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>

@@ -4,8 +4,7 @@
     <button onclick="history.go(-1);" class="back"> <i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
-            <div class="educator-talent-section-1">
-            <img src="<?php echo get_template_directory_uri() . '../../images/organizationheader.jpeg'; ?>" alt="Journey Map" />
+            <div class="organization-section-1">
                 <div class="circle">
                     <h2 class="title">
                         <?php the_title();?>
@@ -16,10 +15,7 @@
                     <?php echo CFS()->get( 'motto'); ?>
                 </div>
             </div>
-            <div class="educator-talent-section-2">
-               <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
-              <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
-            </div>
+            
             <section class="desktop-green">
                 <div class="desktop-green-container1">
                     <h2>R<span>ii</span>pen</h2>
@@ -38,23 +34,25 @@
                     </div>
                 </div>
             </section>
-
+            <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
+            <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class="sideways" alt="Journey Map" />
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
                 <a href="<?php the_permalink(); ?>" class="educator-talent-btn"> riipen up</a>
             </section>
             <section class="educator-talent-section-4">
-                 <img src="<?php echo get_template_directory_uri() . '/images/organizationipad.jpg'; ?>" alt="Photo of iPad" />
+                <img src="<?php echo get_template_directory_uri() . '/images/organizationipad.jpg'; ?>" alt="Photo of iPad" />
             </section>
             <section class="educator-talent-section-5">
-                <div class= "text-container">   
-                <p class="testimonial">
-                    <?php echo CFS()->get( 'testimonial'); ?>
-                    <p class="position">
-                       - <?php echo CFS()->get( 'position'); ?> </p>
-                    <p class="name">
-                        <?php echo CFS()->get( 'name'); ?> </p>
-           </div>
+                <div class="text-container">
+                    <p class="testimonial">
+                        <?php echo CFS()->get( 'testimonial'); ?>
+                        <p class="position">
+                            -
+                            <?php echo CFS()->get( 'position'); ?> </p>
+                        <p class="name">
+                            <?php echo CFS()->get( 'name'); ?> </p>
+                </div>
             </section>
         </section>
         <?php dynamic_sidebar( 'carousels' ); ?>

@@ -5,7 +5,6 @@
     <main id="main" class="site-main" role="main">
         <section class="educator-page">
             <div class="educator-talent-section-1">
-             <img src="<?php echo get_template_directory_uri() . '../../images/educatorheader.jpeg'; ?>" alt="Journey Map" />
                 <div class="circle">
                     <h2 class="title">
                         <?php the_title();?>
@@ -15,10 +14,6 @@
                     <h1>r<span>ii</span>pen</h1>
                     <?php echo CFS()->get( 'motto'); ?>
                 </div>
-            </div>
-            <div class="educator-talent-section-2">
-              <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
-              <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
             </div>
             <section class="desktop-green">
                 <div class="desktop-green-container1">
@@ -38,6 +33,10 @@
                     </div>
                 </div>
             </section>
+
+<img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
+              <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
+
 
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
