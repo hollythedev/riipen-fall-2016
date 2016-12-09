@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-<button onclick="history.go(-1);" class="back">&lt;  Back</button>
+<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
 	<main id="main" class="site-main animatedParent" role="main">
 	<div class="hero-banner">
 	<h1 class="uppercase banner-text">Where <span class="orange-text">talent</span> and <span class="orange-text">industry</span> meet</h1>
