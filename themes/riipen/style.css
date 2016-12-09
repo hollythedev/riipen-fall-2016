@@ -838,11 +838,22 @@ a {
     display: flex;
     -ms-flex-align: end;
         align-items: flex-end;
-    max-width: 100%;
-    position: relative; }
+    max-width: 100%; }
     @media (min-width: 750px) {
       .educator-page .educator-talent-section-1 {
         height: 400px; } }
+  .educator-page .journey-map {
+    background-color: #122A38; }
+    .educator-page .journey-map img {
+      margin: 0 auto; }
+    @media (min-width: 750px) {
+      .educator-page .journey-map .normal {
+        display: none; } }
+    .educator-page .journey-map .sideways {
+      display: none; }
+      @media (min-width: 750px) {
+        .educator-page .journey-map .sideways {
+          display: block; } }
   .educator-page .circle {
     display: none; }
     @media (min-width: 750px) {
@@ -862,10 +873,7 @@ a {
           margin: auto;
           width: 400px;
           display: block;
-          color: white;
-          font: 2rem "Open Sans", sans-serif; }
-          .educator-page .circle .title p {
-            font-size: 1rem; } }
+          color: white; } }
   .educator-page .text-box {
     text-transform: uppercase;
     font: 1rem "Open Sans", sans-serif;
@@ -885,21 +893,6 @@ a {
       color: white;
       margin: 0;
       padding-top: 12px; }
-
-.normal {
-  width: 100vw;
-  height: 100vh; }
-  @media (min-width: 750px) {
-    .normal {
-      display: none; } }
-
-.sideways {
-  display: none; }
-  @media (min-width: 750px) {
-    .sideways {
-      display: block;
-      height: 100vh;
-      width: 100vw; } }
 
 .desktop-green {
   background-color: #4cc88d;
@@ -1016,7 +1009,7 @@ a {
 
 .talent-section-1 {
   height: 242px;
-  background-image: url("../../images/talentheader.jpeg");
+  background-image: url("../../images/talentheader.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: -ms-flexbox;
@@ -1028,6 +1021,18 @@ a {
   @media (min-width: 750px) {
     .talent-section-1 {
       height: 400px; } }
+
+.talent-title {
+  display: none; }
+  @media (min-width: 750px) {
+    .talent-title {
+      display: block;
+      color: white;
+      margin: auto; }
+      .talent-title h4 {
+        font: 2rem "Open Sans", sans-serif; }
+        .talent-title h4 p {
+          font-size: 1rem; } }
 
 /*--------------------------------------------------------------
 # Widgets

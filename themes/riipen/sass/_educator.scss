@@ -8,11 +8,29 @@
         display: flex;
         align-items: flex-end;
         max-width: 100%;
-        position:relative;
-        @media (min-width: $breakpoint) {
+        @include desktop {
             height: 400px;
         }
     }
+
+    .journey-map {
+      background-color: $color_journey-blue;
+      img {
+        margin: 0 auto;
+      }
+      .normal {
+        @media (min-width: $breakpoint) {
+          display:none;
+        }
+      }
+      .sideways{
+        display:none;
+        @media (min-width: $breakpoint) {
+          display:block;
+        }
+      }
+    }
+
 
         .circle {
             display: none;
@@ -32,10 +50,6 @@
                     width: 400px;
                     display: block;
                     color: white;
-                    font: 2rem $font__main;
-                    p{
-                        font-size:1rem;
-                    }
                 }
             }
         }
@@ -62,21 +76,7 @@
             }
         }
     }
-    .normal {
-            width: 100vw;
-            height: 100vh;
-        @media (min-width: $breakpoint) {
-            display:none;
-        }
-    }
-    .sideways{
-        display:none;
-        @media (min-width: $breakpoint) {
-            display:block;
-            height: 100vh;
-            width: 100vw;
-        }
-    }
+
 
     .desktop-green {
 background-color: $color_dark-mint;
@@ -119,7 +119,7 @@ display:block;
                 }
             }
     }
-            
+
         .educator-talent-section-3 {
             text-align: center;
             margin: 58px 0;
@@ -143,6 +143,7 @@ display:block;
         .educator-talent-section-4  {
            padding:0;
         }
+
         .educator-talent-section-5 {
             margin: auto;
             padding: 48px 0;

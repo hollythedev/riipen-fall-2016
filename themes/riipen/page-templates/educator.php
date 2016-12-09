@@ -12,7 +12,7 @@
                 </div>
                 <div class="text-box">
                     <h1>r<span>ii</span>pen</h1>
-                    <?php echo CFS()->get( 'motto'); ?>
+                   <p class= "motto"> <?php echo CFS()->get( 'motto'); ?> </p>
                 </div>
             </div>
             <section class="desktop-green">
@@ -33,11 +33,10 @@
                     </div>
                 </div>
             </section>
-
-<img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
+            <section class="journey-map">
+              <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
               <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
-
-
+            </section>
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
                 <a href="<?php the_permalink(); ?>" class="educator-talent-btn"> riipen up</a>
@@ -46,9 +45,9 @@
                  <img src="<?php echo get_template_directory_uri() . '/images/educatoripad.jpg'; ?>" alt="Photo of iPad" />
             </section>
             <section class="educator-talent-section-5">
-                <div class= "text-container">   
+                <div class= "text-container">
                 <p class="testimonial">
-                    <?php echo CFS()->get( 'testimonial'); ?>
+                    <?php echo CFS()->get( 'testimonial'); ?> </p>
                     <p class="position">
                        - <?php echo CFS()->get( 'position'); ?> </p>
                     <p class="name">
