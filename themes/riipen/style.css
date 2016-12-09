@@ -2027,7 +2027,7 @@ section {
     right: 0; }
   .error-404 h1 {
     color: rgba(246, 135, 8, 0.2);
-    font-size: 12em;
+    font-size: 11em;
     font-weight: bold;
     line-height: 1;
     margin: 0 0 5rem;
@@ -2105,7 +2105,8 @@ section {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  background-position: 50%; }
   .about-hero h1 {
     color: white; }
 
