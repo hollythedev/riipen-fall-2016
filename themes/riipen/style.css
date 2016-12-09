@@ -608,7 +608,7 @@ a {
     border-radius: 0;
     padding-left: 1rem;
     margin: 0;
-    width: 200px;
+    width: 250px;
     display: none; }
     .site-search input[type=search]:focus {
       outline: 0; }
@@ -1268,7 +1268,7 @@ object {
   padding-top: 68px; }
 
 section {
-  padding: 1.5rem 1rem; }
+  padding: 2rem 1rem; }
 
 /* Hero Section */
 .hero {
@@ -1284,7 +1284,8 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  color: white; }
+  color: white;
+  padding: 0; }
   @media (min-width: 750px) {
     .hero {
       background: rgba(0, 0, 0, 0.4); } }
@@ -1494,7 +1495,6 @@ section {
 /* About Section */
 .about {
   background-color: #4cc88d;
-  padding: 16px;
   color: white; }
   .about ul {
     padding-left: 40px; }

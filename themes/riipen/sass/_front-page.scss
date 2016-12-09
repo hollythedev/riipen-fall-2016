@@ -5,7 +5,7 @@ padding-top: 68px;
 }
 
 section {
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
 }
 
 /* Hero Section */
@@ -21,6 +21,7 @@ section {
   justify-content: center;
   align-items: center;
   color: white;
+  padding: 0;
   @include desktop{
    background: rgba(0, 0, 0, 0.4);
   }
@@ -239,7 +240,6 @@ section {
 
 .about {
   background-color: $color_dark-mint;
-  padding: 16px;
   color: white;
   ul {
     padding-left: 40px;
