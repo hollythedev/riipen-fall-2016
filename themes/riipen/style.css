@@ -863,7 +863,9 @@ a {
           width: 400px;
           display: block;
           color: white;
-          font: 2rem "Open Sans", sans-serif; } }
+          font: 2rem "Open Sans", sans-serif; }
+          .educator-page .circle .title p {
+            font-size: 1rem; } }
   .educator-page .text-box {
     text-transform: uppercase;
     font: 1rem "Open Sans", sans-serif;
