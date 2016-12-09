@@ -27,7 +27,7 @@
             }
             .title {
                 display: none;
-                @media (min-width: $breakpoint) {
+               @media (min-width: $breakpoint) {
                     margin: auto;
                     width: 400px;
                     display: block;
