@@ -838,8 +838,7 @@ a {
     display: flex;
     -ms-flex-align: end;
         align-items: flex-end;
-    max-width: 100%;
-    position: relative; }
+    max-width: 100%; }
     @media (min-width: 750px) {
       .educator-page .educator-talent-section-1 {
         height: 400px; } }
@@ -1016,7 +1015,7 @@ a {
 
 .talent-section-1 {
   height: 242px;
-  background-image: url("../../images/talentheader.jpeg");
+  background-image: url("../../images/talentheader.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: -ms-flexbox;

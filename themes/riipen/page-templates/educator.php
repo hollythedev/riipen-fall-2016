@@ -12,7 +12,7 @@
                 </div>
                 <div class="text-box">
                     <h1>r<span>ii</span>pen</h1>
-                    <?php echo CFS()->get( 'motto'); ?>
+                   <p class= "motto"> <?php echo CFS()->get( 'motto'); ?> </p>
                 </div>
             </div>
             <section class="desktop-green">
@@ -48,7 +48,7 @@
             <section class="educator-talent-section-5">
                 <div class= "text-container">   
                 <p class="testimonial">
-                    <?php echo CFS()->get( 'testimonial'); ?>
+                    <?php echo CFS()->get( 'testimonial'); ?> </p>
                     <p class="position">
                        - <?php echo CFS()->get( 'position'); ?> </p>
                     <p class="name">

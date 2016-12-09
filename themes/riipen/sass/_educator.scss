@@ -8,7 +8,6 @@
         display: flex;
         align-items: flex-end;
         max-width: 100%;
-        position:relative;
         @media (min-width: $breakpoint) {
             height: 400px;
         }
@@ -144,6 +143,7 @@ display:block;
         .educator-talent-section-4  {
            padding:0;
         }
+        
         .educator-talent-section-5 {
             margin: auto;
             padding: 48px 0;
