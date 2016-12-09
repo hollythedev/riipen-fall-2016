@@ -5,14 +5,6 @@
     return html.replace('Riipen ', '<span class="highlight-orange">R<span class="highlight-blue">ii</span>pen</span> ');
   });
 
-  $('#wp_posts_carousel-2').html(function (i, html) {
-    return html.replace('Riipened', '<span class="highlight-orange">R<span class="highlight-blue">ii</span>pened</span>');
-  });
-
-  $('#wp_posts_carousel-3').html(function (i, html) {
-    return html.replace('Riipened', '<span class="highlight-blue">R<span class="highlight-orange">ii</span>pened</span>');
-  });
-
  //This will show/hide the navigation list in mobile view.
  $('.menu-toggle').on('click', function(){
    event.preventDefault();
