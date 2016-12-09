@@ -1560,7 +1560,8 @@ section {
     outline: none; }
 
 .wp-posts-carousel-slide .wp-posts-carousel-container {
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  background: none !important; }
 
 .carousel-cell {
   width: 33%;
