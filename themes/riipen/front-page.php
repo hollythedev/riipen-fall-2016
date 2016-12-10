@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<section class="hero">
-			<video playsinline autoplay muted loop poster="<?php echo get_template_directory_uri();?>/images/new-york-stock-photo.jpg" id="bgvid">
+			<video playsinline autoplay muted loop id="bgvid">
 				<source src="<?php echo get_template_directory_uri();?>/images/city-1080.mp4" type="video/mp4">
 			</video>
 			<div class="headline">
