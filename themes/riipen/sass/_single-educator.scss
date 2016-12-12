@@ -23,10 +23,10 @@
     width: 61%;
     position: absolute;
     border: 2px solid orange;
-    margin-left: 58px;
+    margin: auto;
     margin-top: 20px;
-      // This is something i made without asking holly 
-      height: 200px;
+    // This is something i made without asking holly 
+    height: 200px;
     width: 70%;
     position: absolute;
     border: 2px solid orange;
@@ -34,13 +34,11 @@
     left: 15%;
     margin-top: 20px;
     // 
-    :after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-
-
-}
+     :after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
 }
 
 .sep-picture {
@@ -48,7 +46,7 @@
     img {
         display: block;
         margin: auto auto;
-            height: 250px;
-    width: 174px;
+        height: 250px;
+        width: 174px;
     }
 }
