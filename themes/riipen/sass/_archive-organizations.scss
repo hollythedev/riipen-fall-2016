@@ -78,6 +78,8 @@
  		transition: all 1s ease;
  		width: 90%;
  		margin: 0 auto;
+ 		display: flex;
+ 		// justify-content: center;
  	}
  	.riipen-list.organizationgrid{
 
@@ -85,12 +87,12 @@
  		flex-wrap: wrap;
  		padding-bottom: 140px;
  		.personwrapper{
- 			width: 30%;
+ 				width: 45%;
+ 				margin: 30px 2%;
  			@include desktop{
- 				width: 22%;
- 				
+ 				width: 21%;
  			}
- 			margin: 30px 1%;
+ 			
  			box-sizing: border-box;
  			.entry-title{
  				display: none;
@@ -135,11 +137,11 @@
  			a{
  				height: 150px;
  				margin: auto 0;
- 				padding-left: 5px;
+ 				padding-left: 23px;
  				display: flex;
- 				width: 150px;
+ 				width: 180px;
  				img {
- 					margin: auto 0;
+ 					margin: 0;
  					max-width: 100%;
  					height: auto;
  					max-height: 100%;
@@ -148,7 +150,7 @@
  			.organization-content{
  				a{
  					width: auto;
- 					padding-left: 10px;
+ 					// padding-left: 10px;
  				}
  			}
  		}
