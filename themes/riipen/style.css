@@ -1196,15 +1196,18 @@ object {
 /* Front page */
 .site-footer {
   background: #333333;
-  height: 226px; }
+  height: 226px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   @media (min-width: 750px) {
     .site-footer {
       height: 350px; } }
   .site-footer .footer-container {
-    padding-top: 76px; }
-    @media (min-width: 750px) {
-      .site-footer .footer-container {
-        padding-top: 5%; } }
+    width: 100%; }
     .site-footer .footer-container .footer-social-media {
       margin: auto;
       max-width: 279px;
@@ -1253,7 +1256,7 @@ object {
           display: flex;
           -ms-flex-pack: distribute;
               justify-content: space-around;
-          padding: 3%;
+          padding: 1em;
           width: 100%; } }
     .site-footer .footer-container .footer-information {
       margin: auto;
