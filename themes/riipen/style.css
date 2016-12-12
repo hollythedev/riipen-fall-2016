@@ -927,7 +927,8 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between;
         margin: auto;
-        width: 80%; } }
+        width: 80%;
+        max-width: 1000px; } }
   @media (min-width: 750px) and (min-width: 750px) {
     .desktop-green .desktop-green-container2 .left,
     .desktop-green .desktop-green-container2 .middle,
