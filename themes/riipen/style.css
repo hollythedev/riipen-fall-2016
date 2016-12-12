@@ -828,6 +828,10 @@ a {
     width: 174px;
     object-fit: cover; }
 
+.sep-course-content p {
+  margin: 0;
+  font: 1rem "Open Sans", sans-serif; }
+
 .educator-page {
   padding: 0; }
   .educator-page .educator-talent-section-1 {
