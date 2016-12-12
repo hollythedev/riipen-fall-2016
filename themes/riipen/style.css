@@ -1783,12 +1783,12 @@ object {
     height: 100%; }
 
 .post-type-archive-institutions .riipen-list .personwrapper {
-  margin: 30px 2%;
+  margin: 30px 2.5%;
   width: 28%; }
   @media (min-width: 750px) {
     .post-type-archive-institutions .riipen-list .personwrapper {
       width: 15%;
-      margin: 30px 2%; } }
+      margin: 30px 2.5%; } }
 
 .post-type-archive-educator .hero-banner {
   background: url("../../images/hills.jpg") no-repeat center;
@@ -1797,7 +1797,7 @@ object {
   background-size: cover; }
 
 .post-type-archive-educator .personwrapper {
-  margin: 30px 2%; }
+  margin: 30px 2.5%; }
 
 .post-type-archive-institutions .hero-banner {
   background: url("../../images/picture-of-stairs.jpg") no-repeat center;
@@ -1822,6 +1822,7 @@ object {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 2%;
   -ms-flex-pack: end;
       justify-content: flex-end; }
 
