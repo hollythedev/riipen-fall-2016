@@ -29,11 +29,7 @@ get_header(); ?>
 		</div>
 		<div class="riipen-list organizationgrid animated bounceInRight">
 			<?php if ( have_posts() ) : ?>
-
-				<header class="page-header">
-
-				</header><!-- .page-header -->
-				
+				<div class="company-wrapper">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="person-wrapper ">
@@ -56,7 +52,7 @@ get_header(); ?>
 						</div>
 					</div>
 				<?php endwhile; ?>
-
+				</div>
 				<div class="class_nav">
 				<?php posts_nav_link( " ", "Previous", "More" ); ?> 
 			</div>

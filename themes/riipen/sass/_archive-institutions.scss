@@ -107,19 +107,9 @@
 			}
 		}
 		.riipen-list{
-
 			margin: 0 auto;
 			display: flex;
 			flex-wrap: wrap;
-			.person-wrapper{
-
-				@include desktop{
-
-
-
-				}
-
-			}
 			h2{
 				text-align: center;
 			}
@@ -137,13 +127,14 @@
 .post-type-archive-institutions {
 	.riipen-list{
 
-		.personwrapper{
-			margin: 30px 2.5%;
-			width: 28%;		
+		.person-wrapper{
+			padding: 20px;
+			width: 50%;
+			box-sizing: border-box;		
 
 			@include desktop{
-				width: 15%;
-				margin: 30px 2.5%;
+				width: 20%;
+				
 			}
 		}
 	}
@@ -157,10 +148,6 @@
 		background-size: cover;
 	}
 
-	.person-wrapper{
-		margin: 30px 2%;
-
-	}
 }
 .post-type-archive-institutions{
 	.hero-banner{
@@ -189,9 +176,9 @@
 
 	}
 	.class_nav{
+		padding-right: 20px;
 		width: 100%;
 		display: flex;
-		margin: 0 2%;
 		justify-content: flex-end;
 		a{
 			color: black;

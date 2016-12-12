@@ -1800,22 +1800,19 @@ object {
     width: 100%;
     height: 100%; }
 
-.post-type-archive-institutions .riipen-list .personwrapper {
-  margin: 30px 2.5%;
-  width: 28%; }
+.post-type-archive-institutions .riipen-list .person-wrapper {
+  padding: 20px;
+  width: 50%;
+  box-sizing: border-box; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .riipen-list .personwrapper {
-      width: 15%;
-      margin: 30px 2.5%; } }
+    .post-type-archive-institutions .riipen-list .person-wrapper {
+      width: 20%; } }
 
 .post-type-archive-educator .hero-banner {
   background: url("../../images/hills.jpg") no-repeat center;
   background-color: #aaaaaa;
   background-blend-mode: multiply;
   background-size: cover; }
-
-.post-type-archive-educator .person-wrapper {
-  margin: 30px 2%; }
 
 .post-type-archive-institutions .hero-banner {
   background: url("../../images/picture-of-stairs.jpg") no-repeat center;
@@ -1837,10 +1834,10 @@ object {
     text-align: left; }
 
 .archive .class_nav {
+  padding-right: 20px;
   width: 100%;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 2%;
   -ms-flex-pack: end;
       justify-content: flex-end; }
   .archive .class_nav a {
@@ -1924,12 +1921,15 @@ object {
         flex-wrap: wrap;
     padding-bottom: 140px; }
     .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper {
-      width: 45%;
-      margin: 30px 2%;
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
       box-sizing: border-box; }
       @media (min-width: 750px) {
         .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper {
-          width: 16%; } }
+          width: 20%;
+          padding: 20px;
+          box-sizing: border-box; } }
       .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper .entry-title {
         display: none; }
       .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper .entry-summary {
@@ -1974,6 +1974,12 @@ object {
           max-height: 100%; }
       .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper .organization-content a {
         width: auto; }
+
+.company-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .single-organizations {
   /*----- Tabs -----*/

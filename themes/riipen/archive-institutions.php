@@ -24,15 +24,14 @@ get_header(); ?>
 			</section>
 
 			<section class="riipen-list">
+
 				<?php if ( have_posts() ) : ?>
-
-					<header class="page-header">
-
-					</header><!-- .page-header -->
+				<div class="company-wrapper">
+			
 
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="personwrapper container">
+						<div class="person-wrapper">
 							<a href="<?php echo the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'large' ); ?>
@@ -44,7 +43,7 @@ get_header(); ?>
 					<div class="class_nav">
 					<?php posts_nav_link( " ", "Previous", "More" ); ?> 
 					</div>
-
+				</div>
 				<?php else : ?>
 
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
