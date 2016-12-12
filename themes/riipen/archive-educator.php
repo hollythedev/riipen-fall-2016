@@ -7,10 +7,13 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area ">
 	
-	<main id="main" class="site-main container" role="main">
+	<main id="main" class="site-main" role="main">
 	<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
+	<div class="hero-banner">
+			<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
+		</div>
 		<div  class="tabbing-wrapper">
 			<div class="tabbingsection">
 
@@ -20,7 +23,7 @@ get_header(); ?>
 
 			</div>
 		</div>
-		<div class="riipen-list">
+		<div class="riipen-list container">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">

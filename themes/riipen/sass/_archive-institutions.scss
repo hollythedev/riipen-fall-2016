@@ -7,10 +7,10 @@
 		display: none;
 		justify-content: center;
 		align-items: center;
-		background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+		
 		background-color: $color_greyish;
 		background-blend-mode: multiply;
-		background-size: cover;
+		
 		@include desktop{
 			display: flex;
 		}
@@ -148,7 +148,21 @@
 }
 
 .post-type-archive-educator{
+	.hero-banner{
+	background: url("../../images/hills.jpg") no-repeat center;
+		background-color: $color_greyish;
+		background-blend-mode: multiply;
+		background-size: cover;
+	}
 	.personwrapper{
 		margin: 30px 2%;
+	}
+}
+.post-type-archive-institutions{
+	.hero-banner{
+	background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+		background-color: $color_greyish;
+		background-blend-mode: multiply;
+		background-size: cover;
 	}
 }
