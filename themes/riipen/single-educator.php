@@ -18,7 +18,19 @@ get_header(); ?>
 				<?php the_post_thumbnail( 'category-thumb'); ?>
 			</div>
 			<div class="sep-course-content1">
-				<?php echo CFS()->get( 'school_logo' ) ?>
+				<?php
+					$upload_path = content_url() . '/uploads/';
+					$logo_image_ID = CFS()->get('school_logo');
+					$logo_image_ALT = get_post_meta($logo_image_ID, '_wp_attachment_image_alt', true);
+					$logo_image_TITLE = get_the_title($logo_image_ID);
+					$logo_image_URL_data = wp_get_attachment_metadata($logo_image_ID, true);
+					$logo_image_URL = $logo_image_URL_data["file"];
+					echo '<img src="';
+					echo $upload_path . $logo_image_URL;
+					echo '" title="'.$logo_image_TITLE.'" alt="';
+					echo $logo_image_ALT;
+					echo '">';
+				?>
 			</div>
 			<div class="sep-course-content2">
 				<h2>

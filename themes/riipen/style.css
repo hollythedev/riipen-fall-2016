@@ -827,9 +827,14 @@ a {
     width: 174px;
     object-fit: cover; }
 
-@media (min-width: 750px) {
-  .sep-course-content1 {
-    margin-top: 56px; } }
+.sep-course-content1 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  @media (min-width: 750px) {
+    .sep-course-content1 {
+      margin-top: 56px; } }
 
 .sep-course-content2 {
   font: 1rem "Open Sans", sans-serif; }
@@ -1802,16 +1807,16 @@ object {
       width: 15%;
       margin: 30px auto; } }
 
-.post-type-archive-institutions .post-type-archive-educator .hero-banner {
+.post-type-archive-educator .hero-banner {
   background: url("../../images/hills.jpg") no-repeat center;
   background-color: #aaaaaa;
   background-blend-mode: multiply;
   background-size: cover; }
 
-.post-type-archive-institutions .post-type-archive-educator .person-wrapper {
+.post-type-archive-educator .person-wrapper {
   margin: 30px 2%; }
 
-.post-type-archive-institutions .post-type-archive-institutions .hero-banner {
+.post-type-archive-institutions .hero-banner {
   background: url("../../images/picture-of-stairs.jpg") no-repeat center;
   background-color: #aaaaaa;
   background-blend-mode: multiply;
