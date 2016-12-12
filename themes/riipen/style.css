@@ -828,9 +828,13 @@ a {
     width: 174px;
     object-fit: cover; }
 
-.sep-course-content2 p {
-  margin: 0;
+.sep-course-content2 {
   font: 1rem "Open Sans", sans-serif; }
+  .sep-course-content2 h2 {
+    margin: 0;
+    color: royalblue; }
+  .sep-course-content2 p {
+    margin: 0; }
 
 .educator-page {
   padding: 0; }
