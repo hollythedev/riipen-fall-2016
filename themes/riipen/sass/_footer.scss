@@ -1,12 +1,12 @@
 .site-footer {
     background: $color_footer;
     height: 226px;
-    @media (min-width: $breakpoint) {
+    @include desktop {
         height: 350px;
     }
     .footer-container {
         padding-top: 76px;
-        @media (min-width: $breakpoint) {
+        @include desktop {
             padding-top: 5%;
         }
         .footer-social-media {
@@ -35,7 +35,7 @@
                     color: #fff;
                 }
             }
-            @media (min-width: $breakpoint) {
+            @include desktop {
                 margin: auto;
                 max-width: 415px;
             }
@@ -74,7 +74,7 @@
                     text-decoration: underline;
                 }
             }
-            @media (min-width: $breakpoint) {
+            @include desktop{
                 font-size: 1rem;
                 max-width: 400px;
                 margin: auto;
