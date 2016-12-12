@@ -1,38 +1,43 @@
-.post-type-archive-institutions,
-.post-type-archive-educator {
-	.site-content {
+.post-type-archive-institutions ,.post-type-archive-educator {
+	.site-content{
 		background: $color__lightgrey;
 	}
-	.hero-banner {
+	.hero-banner{
 		height: calc(100vh - 68px);
 		display: none;
 		justify-content: center;
 		align-items: center;
+		
 		background-color: $color_greyish;
 		background-blend-mode: multiply;
-		@include desktop {
+		
+		@include desktop{
 			display: flex;
 		}
 	}
-	.banner-text {
+	.banner-text{
+		
 		color: white;
 		font-weight: bold;
 		font-size: 36px;
 	}
-	.highlight-orange {
+	.highlight-orange{
 		color: $color_pumpkin-orange;
 	}
-	.site-main {
-		.tabbing-wrapper {
+	.site-main{
+		
+
+		.tabbing-wrapper{
 			display: flex;
 		}
-		.entry-title {
+		.entry-title{
 			margin: 10px 0;
 			font-size: 18px;
 		}
-		.image-wrapper {
-			box-shadow: 4px 10px 50px 1px rgba(166, 166, 166, 1);
+		.image-wrapper{
+			box-shadow: 4px 10px 50px 1px rgba(166,166,166,1);
 			background-color: white;
+
 			height: 275px;
 			width: 275px;
 			border: 5px solid $color_azure;
@@ -41,27 +46,31 @@
 			align-items: center;
 			justify-content: center;
 			position: relative;
+
 		}
-		.educator-image {
+		.educator-image{
 			height: 200px;
 			width: 200px;
 			border-collapse: separate;
 			border-spacing: 10px 50px;
 			content: '';
+			
+			
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
-		.educatorname {
+		.educatorname{
 			letter-spacing: 0.9pt;
 		}
-		.educators-category {
-			color: $color_azure;
+		.educators-category{
+			color:$color_azure;
 			text-align: center;
-			a {
-				color: $color_azure;
+			a{
+				color:$color_azure;
 			}
+
 		}
-		.tabbingsection {
+		.tabbing-section{
 			margin: 0px auto;
 			display: inline-flex;
 			text-align: center;
@@ -69,81 +78,90 @@
 			box-sizing: border-box;
 			border-radius: 10px;
 			padding: 0 10px;
-			@include desktop {
+			@include desktop{
 				display: none;
 			}
-			.inactive {
+			.inactive{
 				color: $color_warm-grey-two;
 			}
-			.active {
+			.active{
 				color: black;
-				margin: auto;
-				&:hover {
-					color: $color__text-main-hover;
+				margin: auto;	
+				&:hover{
+					color:$color__text-main-hover;
 				}
 			}
-			a {
+			a{
 				font-size: 15px;
 			}
-			a:first-child {
+			a:first-child{
 				padding: 8px 0px;
 				padding-right: 10px;
 				border-right: 1px solid $color__greyborders;
 			}
-			a:last-child {
+			a:last-child{
 				padding-left: 5px;
 				margin: auto;
 			}
 		}
-		.riipen-list {
+		.riipen-list{
+		
 			margin: 0 auto;
 			display: flex;
 			flex-wrap: wrap;
-			.personwrapper {
-				@include desktop {}
+			.person-wrapper{
+				
+				@include desktop{
+					
+
+
+				}
+				
 			}
-			h2 {
+			h2{
 				text-align: center;
 			}
-			a {
-				img {
-					box-shadow: 10px 10px 47px -8px rgba(0, 0, 0, 0.75);
+			a{
+				img{
+					box-shadow: 10px 10px 47px -8px rgba(0,0,0,0.75);
 					width: 100%;
 					height: 100%;
 				}
 			}
 		}
+
 	}
 }
-
 .post-type-archive-institutions {
-	.riipen-list {
-		.personwrapper {
-			margin: 30px auto;
-			width: 28%;
-			@include desktop {
+	.riipen-list{
+		.person-wrapper{
+			margin: 30px 2%;
+			width: 28%;		
+
+			@include desktop{
 				width: 15%;
-				margin: 30px 2%;
+
+				    margin: 30px auto;
+}
 			}
 		}
 	}
-}
 
-.post-type-archive-educator {
-	.hero-banner {
-		background: url("../../images/hills.jpg") no-repeat center;
+
+.post-type-archive-educator{
+	.hero-banner{
+	background: url("../../images/hills.jpg") no-repeat center;
 		background-color: $color_greyish;
 		background-blend-mode: multiply;
 		background-size: cover;
 	}
-	.personwrapper {
+	.person-wrapper{
 		margin: 30px 2%;
 	}
 }
-
-.post-type-archive-institutions {
-	.hero-banner {
-		background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+.post-type-archive-institutions{
+	.hero-banner{
+	background: url("../../images/picture-of-stairs.jpg") no-repeat center;
 		background-color: $color_greyish;
 		background-blend-mode: multiply;
 		background-size: cover;

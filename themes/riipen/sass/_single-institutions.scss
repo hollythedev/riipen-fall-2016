@@ -1,3 +1,4 @@
+
 .single-institutions {
 	.sep-picture-container1 {
 		border: 2px solid orange;
@@ -12,10 +13,16 @@
 			left: 36%;
 			margin-top: 10px;
 		}
+	
+	.person-wrapper{
+		padding-top: 30px;
+		display: flex;
+		justify-content: center;
+
 	}
 }
 
-.personwrapper {
+.person-wrapper {
 	padding-top: 30px;
 	display: flex;
 	justify-content: center;
@@ -61,3 +68,4 @@
 .carousel-section {
 	background-color: $color_white-smoke;
 }
+	}

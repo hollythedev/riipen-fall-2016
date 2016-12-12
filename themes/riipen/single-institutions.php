@@ -17,15 +17,13 @@ get_header(); ?>
 					<!-- .page-header -->
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-					<div class="sep-picture-container1">
-					</div>
-					<div class="personwrapper">
-						<a href="<?php echo the_permalink(); ?>">
-							<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-							<?php endif; ?>
-						</a>
-					</div>
+						<div class="person-wrapper">
+							<a href="<?php echo the_permalink(); ?>">
+								<?php if ( has_post_thumbnail() ) : ?>
+									<?php the_post_thumbnail( 'large' ); ?>
+								<?php endif; ?>
+							</a>
+						</div>
 					<?php endwhile; ?>
 					<p class="riipen-since"> Riipen Since
 						<?php echo CFS()->get('riipen_since') ?>
