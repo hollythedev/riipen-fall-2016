@@ -56,16 +56,17 @@ get_header(); ?>
 						</div>
 					</div>
 				<?php endwhile; ?>
-				
+
+				<div class="class_nav">
 				<?php posts_nav_link( " ", "Previous", "More" ); ?> 
+			</div>
+		<?php else : ?>
 
-			<?php else : ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
-		</div>
-	</main><!-- #main -->
+		<?php endif; ?>
+	</div>
+</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -32,7 +32,7 @@ get_header(); ?>
 					
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="personwrapper">
+						<div class="personwrapper container">
 							<a href="<?php echo the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'large' ); ?>
@@ -41,7 +41,9 @@ get_header(); ?>
 						</div>
 					<?php endwhile; ?>
 
+					<div class="class_nav">
 					<?php posts_nav_link( " ", "Previous", "More" ); ?> 
+					</div>
 
 				<?php else : ?>
 
