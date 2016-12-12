@@ -20,24 +20,22 @@
 
 .sep-picture-container {
     height: 200px;
-    width: 61%;
-    position: absolute;
-    border: 2px solid orange;
-    margin: auto;
-    margin-top: 20px;
-
-    height: 200px;
     width: 70%;
     position: absolute;
     border: 2px solid orange;
-    margin: 0 auto;
     left: 15%;
     margin-top: 20px;
-
      :after {
         content: "";
         display: block;
         padding-bottom: 100%;
+    }
+    @include desktop {
+        width: 61%;
+        height: 290px;
+        width: 22%;
+        left: 39%;
+        margin-top: -18px;
     }
 }
 
@@ -52,9 +50,24 @@
     }
 }
 
-.sep-course-content2{
-    p{
-        margin:0;
-        font: 1rem $font__main;
+.sep-course-content1 {
+    @include desktop {
+        margin-top: 56px;
+    }
+}
+
+.sep-course-content2 {
+    font: 1rem $font__main;
+    @include desktop {
+        margin: auto;
+        width: 15%;
+    }
+    h2 {
+        margin: 0;
+        color: $color__link;
+        padding-top: 20px;
+    }
+    p {
+        margin: 0;
     }
 }
