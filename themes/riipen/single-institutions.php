@@ -21,6 +21,8 @@ get_header(); ?>
 					
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
+					<div class="sep-picture-container1">
+			</div>
 						<div class="personwrapper">
 							<a href="<?php echo the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ) : ?>
