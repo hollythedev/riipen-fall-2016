@@ -7,16 +7,16 @@
 		display: none;
 		justify-content: center;
 		align-items: center;
-		
+
 		background-color: $color_greyish;
 		background-blend-mode: multiply;
-		
+
 		@include desktop{
 			display: flex;
 		}
 	}
 	.banner-text{
-		
+
 		color: white;
 		font-weight: bold;
 		font-size: 36px;
@@ -25,7 +25,7 @@
 		color: $color_pumpkin-orange;
 	}
 	.site-main{
-		
+
 
 		.tabbing-wrapper{
 			display: flex;
@@ -54,8 +54,8 @@
 			border-collapse: separate;
 			border-spacing: 10px 50px;
 			content: '';
-			
-			
+
+
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
@@ -86,7 +86,7 @@
 			}
 			.active{
 				color: black;
-				margin: auto;	
+				margin: auto;
 				&:hover{
 					color:$color__text-main-hover;
 				}
@@ -105,18 +105,18 @@
 			}
 		}
 		.riipen-list{
-		
+
 			margin: 0 auto;
 			display: flex;
 			flex-wrap: wrap;
 			.person-wrapper{
-				
+
 				@include desktop{
-					
+
 
 
 				}
-				
+
 			}
 			h2{
 				text-align: center;
@@ -136,17 +136,17 @@
 	.riipen-list{
 		.person-wrapper{
 			margin: 30px 2%;
-			width: 28%;		
+			width: 28%;
 
 			@include desktop{
 				width: 15%;
 
-				    margin: 30px auto;
-}
+				margin: 30px auto;
 			}
 		}
 	}
 }
+
 
 .post-type-archive-educator{
 	.hero-banner{

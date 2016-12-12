@@ -802,15 +802,9 @@ a {
 
 .sep-picture-container {
   height: 200px;
-  position: absolute;
-  border: 2px solid orange;
-  margin: auto;
-  margin-top: 20px;
-  height: 200px;
   width: 70%;
   position: absolute;
   border: 2px solid orange;
-  margin: 0 auto;
   left: 15%;
   margin-top: 20px; }
   .sep-picture-container :after {
@@ -819,7 +813,10 @@ a {
     padding-bottom: 100%; }
   @media (min-width: 750px) {
     .sep-picture-container {
+      width: 61%;
       height: 290px;
+      width: 22%;
+      left: 39%;
       margin-top: -18px; } }
 
 .sep-picture {
@@ -852,6 +849,7 @@ a {
   padding: 0; }
   .educator-page .educator-talent-section-1 {
     height: 242px;
+    padding: .5em 1em;
     background-image: url("../../images/educatorheader.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1016,6 +1014,7 @@ a {
 
 .organization-section-1 {
   height: 242px;
+  padding: .5em 1em;
   background-image: url("../../images/organizationheader.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1031,6 +1030,7 @@ a {
 
 .talent-section-1 {
   height: 242px;
+  padding: .5em 1em;
   background-image: url("../../images/talentheader.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1801,7 +1801,7 @@ object {
   @media (min-width: 750px) {
     .post-type-archive-institutions .riipen-list .person-wrapper {
       width: 15%;
-      margin: 30px 2%; } }
+      margin: 30px auto; } }
 
 .post-type-archive-educator .hero-banner {
   background: url("../../images/hills.jpg") no-repeat center;
@@ -2104,6 +2104,14 @@ object {
 
 .carousel-section {
   background-color: #f7f7f7; }
+
+.sep-picture-container1 {
+  border: 2px solid orange;
+  position: absolute;
+  height: 200px;
+  width: 70%;
+  left: 15%;
+  margin-top: 20px; }
 
 .error-404 {
   background-color: #f7f7f7;
