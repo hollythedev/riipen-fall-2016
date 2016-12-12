@@ -1,9 +1,22 @@
 .single-institutions{
-	
+	.sep-picture-container1{
+	border: 2px solid orange;
+    position: absolute;
+	height: 263px;
+    width: 95%;
+    left: 2%;
+    margin-top: 75px;
+}
+
 	.personwrapper{
 		padding-top: 30px;
 		display: flex;
 		justify-content: center;
+		img{
+			    height: 358px;
+    width: 323px;
+    position: relative;
+		}
 	}
 	.course-header{
 		text-align: left;
@@ -35,11 +48,3 @@
 	background-color: $color_white-smoke;
 }
 
-.sep-picture-container1{
-	border: 2px solid orange;
-    position: absolute;
-    height: 346px;
-    width: 95%;
-    left: 2%;
-    margin-top: 37px;
-}

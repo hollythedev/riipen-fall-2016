@@ -823,7 +823,7 @@ a {
   position: relative; }
   .sep-picture img {
     display: block;
-    margin: auto auto;
+    margin: auto;
     height: 250px;
     width: 174px;
     object-fit: cover; }
@@ -2069,12 +2069,24 @@ object {
   .single-organizations .tab.active {
     display: block; }
 
+.single-institutions .sep-picture-container1 {
+  border: 2px solid orange;
+  position: absolute;
+  height: 263px;
+  width: 95%;
+  left: 2%;
+  margin-top: 75px; }
+
 .single-institutions .personwrapper {
   padding-top: 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .single-institutions .personwrapper img {
+    height: 358px;
+    width: 323px;
+    position: relative; }
 
 .single-institutions .course-header {
   text-align: left;
@@ -2101,14 +2113,6 @@ object {
 
 .carousel-section {
   background-color: #f7f7f7; }
-
-.sep-picture-container1 {
-  border: 2px solid orange;
-  position: absolute;
-  height: 346px;
-  width: 95%;
-  left: 2%;
-  margin-top: 37px; }
 
 .error-404 {
   background-color: #f7f7f7;
