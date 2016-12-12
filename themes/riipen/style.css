@@ -1802,16 +1802,16 @@ object {
       width: 15%;
       margin: 30px auto; } }
 
-.post-type-archive-educator .hero-banner {
+.post-type-archive-institutions .post-type-archive-educator .hero-banner {
   background: url("../../images/hills.jpg") no-repeat center;
   background-color: #aaaaaa;
   background-blend-mode: multiply;
   background-size: cover; }
 
-.post-type-archive-educator .person-wrapper {
+.post-type-archive-institutions .post-type-archive-educator .person-wrapper {
   margin: 30px 2%; }
 
-.post-type-archive-institutions .hero-banner {
+.post-type-archive-institutions .post-type-archive-institutions .hero-banner {
   background: url("../../images/picture-of-stairs.jpg") no-repeat center;
   background-color: #aaaaaa;
   background-blend-mode: multiply;

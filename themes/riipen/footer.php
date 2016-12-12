@@ -25,7 +25,7 @@
 			</p>
 		</div>
 		<div class= "footer-button">
-			<a href="<?php echo esc_url( '#' ); ?>">
+			<a href="<?php echo esc_url( 'https://riipen.com/' ); ?>">
 				<?php printf( esc_html( 'Subscribe' ) ); ?>
 			</a>
 		</div>
