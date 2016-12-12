@@ -86,11 +86,11 @@
  		display: flex;
  		flex-wrap: wrap;
  		padding-bottom: 140px;
- 		.personwrapper{
+ 		.person-wrapper{
  				width: 45%;
  				margin: 30px 2%;
  			@include desktop{
- 				width: 21%;
+ 				width: 16%;
  			}
  			
  			box-sizing: border-box;

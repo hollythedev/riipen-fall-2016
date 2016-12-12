@@ -23,14 +23,7 @@ add_filter( 'body_class', 'riipen_body_classes' );
 
 //Changes login logo of site
 function my_custom_login_logo() { ?>
-<<<<<<< HEAD
-<style type="text/css">
-	#login h1 a, .login h1 a {  background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/riipen-logo.svg);
-		padding-bottom: 30px; background-size: 220px !important; width: 230px !important;background-position: bottom !important;
-	}
-</style>
-<?php }
-=======
+
 	<style type="text/css">
 		#login h1 a,
 		.login h1 a {
@@ -43,7 +36,7 @@ function my_custom_login_logo() { ?>
 		}
 	</style>
 	<?php }
->>>>>>> 1284c0289bbdd1d9c830cab2c58c23ba9d405bc5
+
 add_action( 'login_enqueue_scripts', 'my_custom_login_logo' );
 
 function my_login_logo_url() {
@@ -126,29 +119,6 @@ add_action('admin_menu','remove_default_post_type');
 
 function remove_default_post_type() {
 	remove_menu_page('edit.php');
-<<<<<<< HEAD
+
 }
-/* 
-** This removes the standard post per page for custom post types 
-*/
 
-
-
-function get_all_Institutions_posts( $query ) {
-	if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'Institutions' ) ) {
-		$query->set( 'posts_per_page', '1' );
-	}
-	if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'educator' ) ) {
-		$query->set( 'posts_per_page', '12' );
-	}
-	if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'Organizations' ) ) {
-		$query->set( 'posts_per_page', '1' );
-	}
-}
-add_action( 'pre_get_posts', 'get_all_Institutions_posts' );
-
-
-
-=======
-}
->>>>>>> 1284c0289bbdd1d9c830cab2c58c23ba9d405bc5

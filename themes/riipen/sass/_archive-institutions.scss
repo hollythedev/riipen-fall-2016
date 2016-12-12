@@ -157,41 +157,51 @@
 		background-size: cover;
 	}
 
-		.person-wrapper{
-			margin: 30px 2%;
-			
-		}
-	}
-	.post-type-archive-institutions{
-		.hero-banner{
-			background: url("../../images/picture-of-stairs.jpg") no-repeat center;
-			background-color: $color_greyish;
-			background-blend-mode: multiply;
-			background-size: cover;
-		}
-	}
-	.archive{
-		.posts-navigation{
-			display: flex;
-			width: 100%;
-			justify-content: flex-end;
+	.person-wrapper{
+		margin: 30px 2%;
 
-		}
-		.nav-links{
-			width: 100%;
-			.nav-previous{
-				width: 100%;
-				text-align: left;
-				a{
+	}
+}
+.post-type-archive-institutions{
+	.hero-banner{
+		background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+		background-color: $color_greyish;
+		background-blend-mode: multiply;
+		background-size: cover;
+	}
+}
+.archive{
+	.posts-navigation{
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
 
-				}
+	}
+	.nav-links{
+		width: 100%;
+		.nav-previous{
+			width: 100%;
+			text-align: left;
+			a{
+
 			}
-
 		}
-		.class_nav{
-			width: 100%;
-			display: flex;
-			margin: 0 2%;
-			justify-content: flex-end;
+
+	}
+	.class_nav{
+		width: 100%;
+		display: flex;
+		margin: 0 2%;
+		justify-content: flex-end;
+		a{
+			color: black;
+			text-decoration: none;
+			border: 1px solid #4cc88d;
+			padding: 10px 51px;
+			&:hover{
+				color: white;
+				background-color: #4cc88d;
+			}
 		}
 	}
+}
