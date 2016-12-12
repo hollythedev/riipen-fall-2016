@@ -1279,7 +1279,7 @@ object {
     .site-footer .footer-container .footer-information {
       margin: auto;
       max-width: 200px;
-      padding-top: 15px;
+      padding-top: 1em;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
