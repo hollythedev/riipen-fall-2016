@@ -68,7 +68,7 @@ section {
 	background-color: transparent;
 	font: 1rem $font__main;
 	position:absolute;
-	@media (min-width: $breakpoint) {
+@include desktop{
                 display:none;
             }
 }

@@ -19,13 +19,13 @@
         margin: 0 auto;
       }
       .normal {
-        @media (min-width: $breakpoint) {
+        @include desktop{
           display:none;
         }
       }
       .sideways{
         display:none;
-        @media (min-width: $breakpoint) {
+        @include desktop{
           display:block;
         }
       }
@@ -34,7 +34,7 @@
 
         .circle {
             display: none;
-            @media (min-width: $breakpoint) {
+            @include desktop{
                 width: 14em;
                 height: 14em;
                 background-color: $transparent_azure;
@@ -45,7 +45,7 @@
             }
             .title {
                 display: none;
-               @media (min-width: $breakpoint) {
+               @include desktop{
                     margin: auto;
                     width: 400px;
                     display: block;
@@ -58,7 +58,7 @@
             font: 1rem $font__main;
             font-weight: bold;
             display: flex;
-            @media (min-width: $breakpoint) {
+            @include desktop{
                 display: none;
             }
             h1 {
@@ -81,7 +81,7 @@
     .desktop-green {
 background-color: $color_dark-mint;
 display:block;
-        @media (min-width: $breakpoint) {
+        @include desktop{
             display: flex;
             flex-direction: column;}
             .desktop-green-container1 {
@@ -103,7 +103,7 @@ display:block;
             .desktop-green-container2 {
                 display:block;
                 color: white;
-                @media (min-width: $breakpoint) {
+                @include desktop{
                 display: flex;
                 justify-content: space-between;
                 margin: auto;
@@ -112,7 +112,7 @@ display:block;
                 .left,
                 .middle,
                 .right{
-                @media (min-width: $breakpoint) {
+                @include desktop{
                     width: 30%;
                     font: 1.5rem $font__main;
                 }
@@ -136,7 +136,7 @@ display:block;
                 padding: 15px 20px;
                 border-radius: 10%;
             }
-            @media (min-width: $breakpoint) {
+            @include desktop{
                 display: none;
             }
         }
@@ -164,7 +164,7 @@ display:block;
                 color: $color__border-abbr;
                 text-align: right;
             }
-            @media (min-width: $breakpoint) {
+            @include desktop{
                 margin-top: 4%;
                 margin-bottom: 4%;
                 border: 1px solid $color_dark-mint;

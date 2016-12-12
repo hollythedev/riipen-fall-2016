@@ -7,7 +7,7 @@ height: 242px;
         align-items: flex-end;
         max-width: 100%;
         position:relative;
-        @media (min-width: $breakpoint) {
+        @include desktop{
             height: 400px;
         }
 }

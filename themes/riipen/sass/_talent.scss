@@ -7,14 +7,14 @@
         align-items: flex-end;
         max-width: 100%;
         position:relative;
-        @media (min-width: $breakpoint) {
+        @include desktop{
             height: 400px;
         }
 }
 
 .talent-title{
     display: none;
-    @media (min-width: $breakpoint) {
+    @include desktop{
         display:block;
         color:white;
         margin: auto;

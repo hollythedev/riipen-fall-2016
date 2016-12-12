@@ -16,9 +16,11 @@ get_header(); ?>
 				<div class="sep-picture-container">
 				</div>
 				<div class= "sep-picture"><?php the_post_thumbnail( 'category-thumb'); ?></div>
-				<div class="sep-course-content">
+				<div class="sep-course-content1">
   			<?php echo CFS()->get( 'school_logo' ) ?>
-		  <?php echo CFS()->get( 'course_head' ) ?>
+			  </div>
+			  <div class="sep-course-content2">
+		  <h2> <?php echo CFS()->get( 'course_head' ) ?> </h2>
 		  <?php echo CFS()->get( 'courses' ) ?>
 				</div>
 			<?php endwhile; // End of the loop. ?>

@@ -24,7 +24,7 @@ add_filter( 'body_class', 'riipen_body_classes' );
 //Changes login logo of site
 function my_custom_login_logo() { ?>
 <style type="text/css">
-	#login h1 a, .login h1 a {  background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/riipen-logo.svg;
+#login h1 a, .login h1 a {  background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/riipen-logo.svg);
 		padding-bottom: 30px; background-size: 220px !important; width: 230px !important;background-position: bottom !important;
 	}
 </style>
@@ -57,39 +57,39 @@ function background_method() {
 	wp_add_inline_style( 'riipen-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'background_method' );
-		/**
-		 * Custom About Page background image
-		 */
-		function my_background_method() {
+/**
+* Custom About Page background image
+*/
+function my_background_method() {
 
-			if(!is_page_template( 'about.php' )){
-				return;
-			}
+	if(!is_page_template( 'about.php' )){
+		return;
+	}
 
-		        $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
-		        $custom_css = "
-		        .about-hero{
-		        	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url({$url}) no-repeat bottom center;
-		        	background-size: cover;
-							background-position: 50% center;
-		        }";
-		        wp_add_inline_style( 'riipen-style', $custom_css );
-		    }
+	$url = CFS()->get( 'about_background_image' );//This is grabbing the background image via Custom Field Suite Plugin
+	$custom_css = "
+	.about-hero{
+		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url({$url}) no-repeat bottom center;
+		background-size: cover;
+		background-position: 50% center;
+	}";
+	wp_add_inline_style( 'riipen-style', $custom_css );
+}
 
-		    add_action( 'wp_enqueue_scripts', 'my_background_method' );
+add_action( 'wp_enqueue_scripts', 'my_background_method' );
 
-		    function search_filter($query) {
+function search_filter($query) {
 
-		    	if ($query->is_search) {
-		    		$query->set('posts_per_page', 20 );
-		    	}
-		    }
+	if ($query->is_search) {
+		$query->set('posts_per_page', 20 );
+	}
+}
 
 
-		    add_action('pre_get_posts','search_filter');
+add_action('pre_get_posts','search_filter');
 
-		    add_action('admin_menu','remove_default_post_type');
+add_action('admin_menu','remove_default_post_type');
 
-		    function remove_default_post_type() {
-		    	remove_menu_page('edit.php');
-		    }
+function remove_default_post_type() {
+	remove_menu_page('edit.php');
+}
