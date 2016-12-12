@@ -813,7 +813,6 @@ a {
     padding-bottom: 100%; }
   @media (min-width: 750px) {
     .sep-picture-container {
-      width: 61%;
       height: 290px;
       width: 22%;
       left: 39%;
@@ -1803,16 +1802,16 @@ object {
       width: 15%;
       margin: 30px auto; } }
 
-.post-type-archive-educator .hero-banner {
+.post-type-archive-institutions .post-type-archive-educator .hero-banner {
   background: url("../../images/hills.jpg") no-repeat center;
   background-color: #aaaaaa;
   background-blend-mode: multiply;
   background-size: cover; }
 
-.post-type-archive-educator .person-wrapper {
+.post-type-archive-institutions .post-type-archive-educator .person-wrapper {
   margin: 30px 2%; }
 
-.post-type-archive-institutions .hero-banner {
+.post-type-archive-institutions .post-type-archive-institutions .hero-banner {
   background: url("../../images/picture-of-stairs.jpg") no-repeat center;
   background-color: #aaaaaa;
   background-blend-mode: multiply;
@@ -2125,14 +2124,6 @@ object {
 
 .carousel-section {
   background-color: #f7f7f7; }
-
-.sep-picture-container1 {
-  border: 2px solid orange;
-  position: absolute;
-  height: 200px;
-  width: 70%;
-  left: 15%;
-  margin-top: 20px; }
 
 .error-404 {
   background-color: #f7f7f7;
