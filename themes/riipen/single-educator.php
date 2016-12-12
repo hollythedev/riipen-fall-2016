@@ -17,6 +17,7 @@ get_header(); ?>
 				</div>
 				<div class= "sep-picture"><?php the_post_thumbnail( 'category-thumb'); ?></div>
 				<div class="sep-course-content">
+  <?php echo CFS()->get( 'school_logo' ) ?>
 		  <?php echo CFS()->get( 'course_head' ) ?>
 		  <?php echo CFS()->get( 'courses' ) ?>
 				</div>
