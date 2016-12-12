@@ -8,9 +8,27 @@
         display: flex;
         align-items: flex-end;
         max-width: 100%;
-        @media (min-width: $breakpoint) {
+        @include desktop {
             height: 400px;
         }
+    }
+
+    .journey-map {
+      background-color: $color_journey-blue;
+      img {
+        margin: 0 auto;
+      }
+      .normal {
+        @media (min-width: $breakpoint) {
+          display:none;
+        }
+      }
+      .sideways{
+        display:none;
+        @media (min-width: $breakpoint) {
+          display:block;
+        }
+      }
     }
 
 
@@ -58,21 +76,7 @@
             }
         }
     }
-    .normal {
-            width: 100vw;
-            height: 100vh;
-        @media (min-width: $breakpoint) {
-            display:none;
-        }
-    }
-    .sideways{
-        display:none;
-        @media (min-width: $breakpoint) {
-            display:block;
-            height: 100vh;
-            width: 100vw;
-        }
-    }
+
 
     .desktop-green {
 background-color: $color_dark-mint;
@@ -116,7 +120,7 @@ display:block;
                 }
             }
     }
-            
+
         .educator-talent-section-3 {
             text-align: center;
             margin: 58px 0;

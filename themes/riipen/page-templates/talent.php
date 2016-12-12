@@ -16,7 +16,7 @@
                   <p class= "motto">  <?php echo CFS()->get( 'motto'); ?> </p>
                 </div>
             </div>
-           
+
             <section class="desktop-green">
                 <div class="desktop-green-container1">
                     <h2>R<span>ii</span>pen</h2>
@@ -36,9 +36,10 @@
                 </div>
             </section>
 
-            <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
+            <section class="journey-map">
+              <img src="<?php echo get_template_directory_uri() . '/images/journeymap.png'; ?>" class="normal" alt="Journey Map" />
               <img src="<?php echo get_template_directory_uri() . '/images/sidewaysjourneymap.png'; ?>" class= "sideways" alt="Journey Map" />
-
+            </section>
             <section class="educator-talent-section-3">
                 <p> 4 easy steps to being Riipened </p>
                 <a href="<?php the_permalink(); ?>" class="educator-talent-btn"> riipen up</a>
@@ -47,7 +48,7 @@
                  <img src="<?php echo get_template_directory_uri() . '/images/talentipad.jpg'; ?>" alt="Photo of iPad" />
             </section>
             <section class="educator-talent-section-5">
-                <div class= "text-container">   
+                <div class= "text-container">
                 <p class="testimonial">
                     <?php echo CFS()->get( 'testimonial'); ?> </p>
                     <p class="position">

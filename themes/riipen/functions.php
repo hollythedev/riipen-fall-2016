@@ -87,19 +87,6 @@ function riipen_slider2_widgets_init() {
 }
 add_action( 'widgets_init', 'riipen_slider2_widgets_init' );
 
-function riipen_slider3_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html( 'Carousel of Courses' ),
-		'id'            => 'carousels3',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-
-}
-add_action( 'widgets_init', 'riipen_slider3_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.

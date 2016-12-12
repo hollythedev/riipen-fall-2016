@@ -842,6 +842,18 @@ a {
     @media (min-width: 750px) {
       .educator-page .educator-talent-section-1 {
         height: 400px; } }
+  .educator-page .journey-map {
+    background-color: #122A38; }
+    .educator-page .journey-map img {
+      margin: 0 auto; }
+    @media (min-width: 750px) {
+      .educator-page .journey-map .normal {
+        display: none; } }
+    .educator-page .journey-map .sideways {
+      display: none; }
+      @media (min-width: 750px) {
+        .educator-page .journey-map .sideways {
+          display: block; } }
   .educator-page .circle {
     display: none; }
     @media (min-width: 750px) {
@@ -881,21 +893,6 @@ a {
       color: white;
       margin: 0;
       padding-top: 12px; }
-
-.normal {
-  width: 100vw;
-  height: 100vh; }
-  @media (min-width: 750px) {
-    .normal {
-      display: none; } }
-
-.sideways {
-  display: none; }
-  @media (min-width: 750px) {
-    .sideways {
-      display: block;
-      height: 100vh;
-      width: 100vw; } }
 
 .desktop-green {
   background-color: #4cc88d;
@@ -1312,8 +1309,7 @@ object {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -100;
-    background: url("../../images/new-york-stock-photo.jpg") no-repeat; }
+    z-index: -100; }
     @media (min-width: 750px) {
       .hero video {
         display: block; } }
@@ -1628,6 +1624,43 @@ object {
       height: 100%;
       width: 100%;
       max-width: 100%; }
+    .carousel-cell a .overley {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      background: #4cc88d;
+      transform: translate(50%, 50%);
+      display: none; }
+      @media (min-width: 750px) {
+        .carousel-cell a .overley {
+          display: block; } }
+    .carousel-cell a p {
+      -ms-flex-item-align: center;
+          align-self: center;
+      text-align: center;
+      font-size: 20px;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      padding: 10px;
+      color: #f7f7f7; }
+
+.single-institutions #wp_posts_carousel-4 .owl-stage-outer * {
+  width: 100%;
+  height: 100%; }
+
+.single-institutions .cell-wrapper {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: grey; }
+  @media (min-width: 750px) {
+    .single-institutions .cell-wrapper {
+      background-blend-mode: luminosity; }
+      .single-institutions .cell-wrapper:hover {
+        background-blend-mode: normal; } }
 
 .post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
   background: #f7f7f7; }
@@ -1685,8 +1718,6 @@ object {
   border-collapse: separate;
   border-spacing: 10px 50px;
   content: '';
-  position: absolute;
-  box-sizing: padding-box;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -2033,7 +2064,7 @@ object {
 
 .riipen-since {
   padding: 10px 15px;
-  text-align: right;
+  text-align: center;
   color: #7e7e7e; }
 
 .carousel-section {
