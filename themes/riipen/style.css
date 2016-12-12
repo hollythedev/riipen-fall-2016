@@ -813,7 +813,6 @@ a {
     padding-bottom: 100%; }
   @media (min-width: 750px) {
     .sep-picture-container {
-      width: 61%;
       height: 290px;
       width: 22%;
       left: 39%;
@@ -1684,10 +1683,12 @@ object {
       .single-institutions .cell-wrapper:hover {
         background-blend-mode: normal; } }
 
-.post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
+.post-type-archive-institutions .site-content,
+.post-type-archive-educator .site-content {
   background: #f7f7f7; }
 
-.post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
+.post-type-archive-institutions .hero-banner,
+.post-type-archive-educator .hero-banner {
   height: calc(100vh - 68px);
   display: none;
   -ms-flex-pack: center;
@@ -1697,27 +1698,33 @@ object {
   background-color: #aaaaaa;
   background-blend-mode: multiply; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .hero-banner, .post-type-archive-educator .hero-banner {
+    .post-type-archive-institutions .hero-banner,
+    .post-type-archive-educator .hero-banner {
       display: -ms-flexbox;
       display: flex; } }
 
-.post-type-archive-institutions .banner-text, .post-type-archive-educator .banner-text {
+.post-type-archive-institutions .banner-text,
+.post-type-archive-educator .banner-text {
   color: white;
   font-weight: bold;
   font-size: 36px; }
 
-.post-type-archive-institutions .highlight-orange, .post-type-archive-educator .highlight-orange {
+.post-type-archive-institutions .highlight-orange,
+.post-type-archive-educator .highlight-orange {
   color: #f68708; }
 
-.post-type-archive-institutions .site-main .tabbing-wrapper, .post-type-archive-educator .site-main .tabbing-wrapper {
+.post-type-archive-institutions .site-main .tabbing-wrapper,
+.post-type-archive-educator .site-main .tabbing-wrapper {
   display: -ms-flexbox;
   display: flex; }
 
-.post-type-archive-institutions .site-main .entry-title, .post-type-archive-educator .site-main .entry-title {
+.post-type-archive-institutions .site-main .entry-title,
+.post-type-archive-educator .site-main .entry-title {
   margin: 10px 0;
   font-size: 18px; }
 
-.post-type-archive-institutions .site-main .image-wrapper, .post-type-archive-educator .site-main .image-wrapper {
+.post-type-archive-institutions .site-main .image-wrapper,
+.post-type-archive-educator .site-main .image-wrapper {
   box-shadow: 4px 10px 50px 1px #a6a6a6;
   background-color: white;
   height: 275px;
@@ -1732,7 +1739,8 @@ object {
       justify-content: center;
   position: relative; }
 
-.post-type-archive-institutions .site-main .educator-image, .post-type-archive-educator .site-main .educator-image {
+.post-type-archive-institutions .site-main .educator-image,
+.post-type-archive-educator .site-main .educator-image {
   height: 200px;
   width: 200px;
   border-collapse: separate;
@@ -1741,16 +1749,20 @@ object {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.post-type-archive-institutions .site-main .educatorname, .post-type-archive-educator .site-main .educatorname {
+.post-type-archive-institutions .site-main .educatorname,
+.post-type-archive-educator .site-main .educatorname {
   letter-spacing: 0.9pt; }
 
-.post-type-archive-institutions .site-main .educators-category, .post-type-archive-educator .site-main .educators-category {
+.post-type-archive-institutions .site-main .educators-category,
+.post-type-archive-educator .site-main .educators-category {
   color: #27aefb;
   text-align: center; }
-  .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
+  .post-type-archive-institutions .site-main .educators-category a,
+  .post-type-archive-educator .site-main .educators-category a {
     color: #27aefb; }
 
-.post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+.post-type-archive-institutions .site-main .tabbingsection,
+.post-type-archive-educator .site-main .tabbingsection {
   margin: 0px auto;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1760,34 +1772,44 @@ object {
   border-radius: 10px;
   padding: 0 10px; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+    .post-type-archive-institutions .site-main .tabbingsection,
+    .post-type-archive-educator .site-main .tabbingsection {
       display: none; } }
-  .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
+  .post-type-archive-institutions .site-main .tabbingsection .inactive,
+  .post-type-archive-educator .site-main .tabbingsection .inactive {
     color: #919191; }
-  .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
+  .post-type-archive-institutions .site-main .tabbingsection .active,
+  .post-type-archive-educator .site-main .tabbingsection .active {
     color: black;
     margin: auto; }
-    .post-type-archive-institutions .site-main .tabbingsection .active:hover, .post-type-archive-educator .site-main .tabbingsection .active:hover {
+    .post-type-archive-institutions .site-main .tabbingsection .active:hover,
+    .post-type-archive-educator .site-main .tabbingsection .active:hover {
       color: #404040; }
-  .post-type-archive-institutions .site-main .tabbingsection a, .post-type-archive-educator .site-main .tabbingsection a {
+  .post-type-archive-institutions .site-main .tabbingsection a,
+  .post-type-archive-educator .site-main .tabbingsection a {
     font-size: 15px; }
-  .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
+  .post-type-archive-institutions .site-main .tabbingsection a:first-child,
+  .post-type-archive-educator .site-main .tabbingsection a:first-child {
     padding: 8px 0px;
     padding-right: 10px;
     border-right: 1px solid grey; }
-  .post-type-archive-institutions .site-main .tabbingsection a:last-child, .post-type-archive-educator .site-main .tabbingsection a:last-child {
+  .post-type-archive-institutions .site-main .tabbingsection a:last-child,
+  .post-type-archive-educator .site-main .tabbingsection a:last-child {
     padding-left: 5px;
     margin: auto; }
 
-.post-type-archive-institutions .site-main .riipen-list, .post-type-archive-educator .site-main .riipen-list {
+.post-type-archive-institutions .site-main .riipen-list,
+.post-type-archive-educator .site-main .riipen-list {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .post-type-archive-institutions .site-main .riipen-list h2, .post-type-archive-educator .site-main .riipen-list h2 {
+  .post-type-archive-institutions .site-main .riipen-list h2,
+  .post-type-archive-educator .site-main .riipen-list h2 {
     text-align: center; }
-  .post-type-archive-institutions .site-main .riipen-list a img, .post-type-archive-educator .site-main .riipen-list a img {
+  .post-type-archive-institutions .site-main .riipen-list a img,
+  .post-type-archive-educator .site-main .riipen-list a img {
     box-shadow: 10px 10px 47px -8px rgba(0, 0, 0, 0.75);
     width: 100%;
     height: 100%; }
@@ -2076,19 +2098,25 @@ object {
   width: 95%;
   left: 2%;
   margin-top: 75px; }
+  @media (min-width: 750px) {
+    .single-institutions .sep-picture-container1 {
+      height: 399px;
+      width: 28%;
+      left: 36%;
+      margin-top: 10px; } }
 
-.single-institutions .personwrapper {
+.personwrapper {
   padding-top: 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
-  .single-institutions .personwrapper img {
+  .personwrapper img {
     height: 358px;
     width: 323px;
     position: relative; }
 
-.single-institutions .course-header {
+.course-header {
   text-align: left;
   padding-left: 20px;
   font-size: 24px;
@@ -2097,7 +2125,7 @@ object {
   margin-bottom: 5px;
   color: #7e7e7e; }
 
-.single-institutions #wp_posts_carousel-4 h2 {
+#wp_posts_carousel-4 h2 {
   text-align: left;
   padding-left: 20px;
   font-size: 24px;
@@ -2110,6 +2138,9 @@ object {
   padding: 10px 15px;
   text-align: center;
   color: #7e7e7e; }
+  @media (min-width: 750px) {
+    .riipen-since {
+      margin-top: 18px; } }
 
 .carousel-section {
   background-color: #f7f7f7; }

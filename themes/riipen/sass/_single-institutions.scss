@@ -1,50 +1,63 @@
-.single-institutions{
-	.sep-picture-container1{
-	border: 2px solid orange;
-    position: absolute;
-	height: 263px;
-    width: 95%;
-    left: 2%;
-    margin-top: 75px;
-}
-
-	.personwrapper{
-		padding-top: 30px;
-		display: flex;
-		justify-content: center;
-		img{
-			    height: 358px;
-    width: 323px;
-    position: relative;
+.single-institutions {
+	.sep-picture-container1 {
+		border: 2px solid orange;
+		position: absolute;
+		height: 263px;
+		width: 95%;
+		left: 2%;
+		margin-top: 75px;
+		@include desktop {
+			height: 399px;
+			width: 28%;
+			left: 36%;
+			margin-top: 10px;
 		}
 	}
-	.course-header{
-		text-align: left;
-		padding-left: 20px;
-		font-size: 24px;
-		padding-top: 20px;
-		padding-bottom: 0px;
-		margin-bottom: 5px;
-		color:$color_warm-grey;
-	}
-#wp_posts_carousel-4{
-	h2{
-		text-align: left;
-		padding-left: 20px;
-		font-size: 24px;
-		padding-top: 20px;
-		padding-bottom: 0px;
-		margin-bottom: 5px;
-		color:$color_warm-grey;
-	}
-}
-}
-.riipen-since{
-	padding: 10px 15px;
-	text-align: center;
-	color:$color_warm-grey;
-}
-.carousel-section{
-	background-color: $color_white-smoke;
 }
 
+.personwrapper {
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	img {
+		height: 358px;
+		width: 323px;
+		position: relative;
+	}
+}
+
+.course-header {
+	text-align: left;
+	padding-left: 20px;
+	font-size: 24px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	color: $color_warm-grey;
+}
+
+#wp_posts_carousel-4 {
+	h2 {
+		text-align: left;
+		padding-left: 20px;
+		font-size: 24px;
+		padding-top: 20px;
+		padding-bottom: 0px;
+		margin-bottom: 5px;
+		color: $color_warm-grey;
+	}
+}
+
+
+
+.riipen-since {
+	padding: 10px 15px;
+	text-align: center;
+	color: $color_warm-grey;
+	@include desktop{
+		    margin-top: 18px;
+	}
+}
+.carousel-section {
+	background-color: $color_white-smoke;
+}
