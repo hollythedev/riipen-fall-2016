@@ -1212,6 +1212,9 @@ object {
       display: flex;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+      @media (min-width: 750px) {
+        .site-footer .footer-container .footer-social-media p {
+          margin: 0; } }
       .site-footer .footer-container .footer-social-media a {
         color: #333;
         height: 50px;
@@ -1253,7 +1256,7 @@ object {
           display: flex;
           -ms-flex-pack: distribute;
               justify-content: space-around;
-          padding: 3%;
+          padding: 2em;
           width: 100%; } }
     .site-footer .footer-container .footer-information {
       margin: auto;
@@ -1274,6 +1277,7 @@ object {
         .site-footer .footer-container .footer-information {
           font-size: 1rem;
           max-width: 400px;
+          padding: 0;
           margin: auto; } }
 
 /* Hero Section */
@@ -1666,7 +1670,9 @@ object {
     .single-institutions .cell-wrapper {
       background-blend-mode: luminosity; }
       .single-institutions .cell-wrapper:hover {
-        background-blend-mode: normal; } }
+        background-blend-mode: normal; }
+        .single-institutions .cell-wrapper:hover .overley {
+          display: none; } }
 
 .post-type-archive-institutions .site-content, .post-type-archive-educator .site-content {
   background: #f7f7f7; }
@@ -1798,6 +1804,26 @@ object {
   background-color: #aaaaaa;
   background-blend-mode: multiply;
   background-size: cover; }
+
+.archive .posts-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.archive .nav-links {
+  width: 100%; }
+  .archive .nav-links .nav-previous {
+    width: 100%;
+    text-align: left; }
+
+.archive .class_nav {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
 
 .post-type-archive-organizations {
   background: #f7f7f7; }

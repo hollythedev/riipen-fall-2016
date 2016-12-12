@@ -41,7 +41,7 @@ get_header(); ?>
 						</div>
 					<?php endwhile; ?>
 
-					<?php the_posts_navigation(); ?>
+					<?php posts_nav_link( " ", "Previous", "More" ); ?> 
 
 				<?php else : ?>
 

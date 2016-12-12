@@ -93,3 +93,26 @@ add_action('admin_menu','remove_default_post_type');
 function remove_default_post_type() {
 	remove_menu_page('edit.php');
 }
+/* 
+** This removes the standard post per page for custom post types 
+*/
+
+// Institutions
+function get_all_educator_posts( $query ) {
+    if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'educator' ) ) {
+        $query->set( 'posts_per_page', '-1' );
+    }
+}
+add_action( 'pre_get_posts', 'get_all_educator_posts' );
+
+
+
+function get_all_Institutions_posts( $query ) {
+    if( !is_admin() && $query->is_main_query() && is_post_type_archive( 'Institutions' ) ) {
+        $query->set( 'posts_per_page', '-1' );
+    }
+}
+add_action( 'pre_get_posts', 'get_all_Institutions_posts' );
+
+
+

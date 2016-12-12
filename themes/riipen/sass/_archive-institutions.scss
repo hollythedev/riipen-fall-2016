@@ -1,4 +1,6 @@
 .post-type-archive-institutions ,.post-type-archive-educator {
+
+	
 	.site-content{
 		background: $color__lightgrey;
 	}
@@ -105,7 +107,7 @@
 			}
 		}
 		.riipen-list{
-		
+
 			margin: 0 auto;
 			display: flex;
 			flex-wrap: wrap;
@@ -149,7 +151,7 @@
 
 .post-type-archive-educator{
 	.hero-banner{
-	background: url("../../images/hills.jpg") no-repeat center;
+		background: url("../../images/hills.jpg") no-repeat center;
 		background-color: $color_greyish;
 		background-blend-mode: multiply;
 		background-size: cover;
@@ -160,9 +162,34 @@
 }
 .post-type-archive-institutions{
 	.hero-banner{
-	background: url("../../images/picture-of-stairs.jpg") no-repeat center;
+		background: url("../../images/picture-of-stairs.jpg") no-repeat center;
 		background-color: $color_greyish;
 		background-blend-mode: multiply;
 		background-size: cover;
+	}
+}
+
+.archive{
+	.posts-navigation{
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+		
+	}
+	.nav-links{
+		width: 100%;
+		.nav-previous{
+			width: 100%;
+			text-align: left;
+			a{
+				
+			}
+		}
+
+	}
+	.class_nav{
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
 	}
 }

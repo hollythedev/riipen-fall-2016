@@ -52,9 +52,9 @@ get_header(); ?>
 							 <?php echo get_the_term_list( $post->ID , 'subject', "" , " ") ?> 
 						</div>
 					<?php endwhile; ?>
-
-					<?php the_posts_navigation(); ?>
-
+					<div class="class_nav">
+					<?php posts_nav_link( " ", "Previous", "More" ); ?> 
+					</div>
 				<?php else : ?>
 
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>

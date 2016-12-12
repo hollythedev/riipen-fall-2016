@@ -8,18 +8,18 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
+	<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
 	<main id="main" class="site-main animatedParent" role="main">
-	<div class="hero-banner">
-	<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
-	</div class="container">
-			<h2 class="uppercase org-header desktop-only"> Companies we are working with </h2>
+		<div class="hero-banner">
+			<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
+		</div class="container">
+		<h2 class="uppercase org-header desktop-only"> Companies we are working with </h2>
 		<div class="view-type-buttons">
 			<a class="list-view psudeo-button" > 
 				<div class="psudeo-button"> 
 					<img src=" <?php echo get_template_directory_uri() ?>/images/btsMobileListgallery.png"> 
-					</div>
-					</a>
+				</div>
+			</a>
 			<a class="grid-view psudeo-button"> 
 				<div class="grey-boxes"></div>
 				<div class="grey-boxes"></div>
@@ -56,8 +56,8 @@ get_header(); ?>
 						</div>
 					</div>
 				<?php endwhile; ?>
-
-				<?php the_posts_navigation(); ?>
+				
+				<?php posts_nav_link( " ", "Previous", "More" ); ?> 
 
 			<?php else : ?>
 
