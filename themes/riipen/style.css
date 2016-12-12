@@ -802,40 +802,53 @@ a {
 
 .sep-picture-container {
   height: 200px;
-  width: 61%;
-  position: absolute;
-  border: 2px solid orange;
-  margin: auto;
-  margin-top: 20px;
-  height: 200px;
   width: 70%;
   position: absolute;
   border: 2px solid orange;
-  margin: 0 auto;
   left: 15%;
   margin-top: 20px; }
   .sep-picture-container :after {
     content: "";
     display: block;
     padding-bottom: 100%; }
+  @media (min-width: 750px) {
+    .sep-picture-container {
+      height: 290px;
+      width: 22%;
+      left: 39%;
+      margin-top: -18px; } }
 
 .sep-picture {
   position: relative; }
   .sep-picture img {
     display: block;
-    margin: auto auto;
+    margin: auto;
     height: 250px;
     width: 174px;
     object-fit: cover; }
 
-.sep-course-content2 p {
-  margin: 0;
+@media (min-width: 750px) {
+  .sep-course-content1 {
+    margin-top: 56px; } }
+
+.sep-course-content2 {
   font: 1rem "Open Sans", sans-serif; }
+  @media (min-width: 750px) {
+    .sep-course-content2 {
+      margin: auto;
+      width: 15%; } }
+  .sep-course-content2 h2 {
+    margin: 0;
+    color: royalblue;
+    padding-top: 20px; }
+  .sep-course-content2 p {
+    margin: 0; }
 
 .educator-page {
   padding: 0; }
   .educator-page .educator-talent-section-1 {
     height: 242px;
+    padding: .5em 1em;
     background-image: url("../../images/educatorheader.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1000,6 +1013,7 @@ a {
 
 .organization-section-1 {
   height: 242px;
+  padding: .5em 1em;
   background-image: url("../../images/organizationheader.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1015,6 +1029,7 @@ a {
 
 .talent-section-1 {
   height: 242px;
+  padding: .5em 1em;
   background-image: url("../../images/talentheader.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1196,15 +1211,18 @@ object {
 /* Front page */
 .site-footer {
   background: #333333;
-  height: 226px; }
+  height: 226px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   @media (min-width: 750px) {
     .site-footer {
       height: 350px; } }
   .site-footer .footer-container {
-    padding-top: 76px; }
-    @media (min-width: 750px) {
-      .site-footer .footer-container {
-        padding-top: 5%; } }
+    width: 100%; }
     .site-footer .footer-container .footer-social-media {
       margin: auto;
       max-width: 279px;
@@ -1740,7 +1758,7 @@ object {
   .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
     color: #27aefb; }
 
-.post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+.post-type-archive-institutions .site-main .tabbing-section, .post-type-archive-educator .site-main .tabbing-section {
   margin: 0px auto;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1750,22 +1768,22 @@ object {
   border-radius: 10px;
   padding: 0 10px; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+    .post-type-archive-institutions .site-main .tabbing-section, .post-type-archive-educator .site-main .tabbing-section {
       display: none; } }
-  .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
+  .post-type-archive-institutions .site-main .tabbing-section .inactive, .post-type-archive-educator .site-main .tabbing-section .inactive {
     color: #919191; }
-  .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
+  .post-type-archive-institutions .site-main .tabbing-section .active, .post-type-archive-educator .site-main .tabbing-section .active {
     color: black;
     margin: auto; }
-    .post-type-archive-institutions .site-main .tabbingsection .active:hover, .post-type-archive-educator .site-main .tabbingsection .active:hover {
+    .post-type-archive-institutions .site-main .tabbing-section .active:hover, .post-type-archive-educator .site-main .tabbing-section .active:hover {
       color: #404040; }
-  .post-type-archive-institutions .site-main .tabbingsection a, .post-type-archive-educator .site-main .tabbingsection a {
+  .post-type-archive-institutions .site-main .tabbing-section a, .post-type-archive-educator .site-main .tabbing-section a {
     font-size: 15px; }
-  .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
+  .post-type-archive-institutions .site-main .tabbing-section a:first-child, .post-type-archive-educator .site-main .tabbing-section a:first-child {
     padding: 8px 0px;
     padding-right: 10px;
     border-right: 1px solid grey; }
-  .post-type-archive-institutions .site-main .tabbingsection a:last-child, .post-type-archive-educator .site-main .tabbingsection a:last-child {
+  .post-type-archive-institutions .site-main .tabbing-section a:last-child, .post-type-archive-educator .site-main .tabbing-section a:last-child {
     padding-left: 5px;
     margin: auto; }
 
@@ -1796,8 +1814,8 @@ object {
   background-blend-mode: multiply;
   background-size: cover; }
 
-.post-type-archive-educator .personwrapper {
-  margin: 30px 2.5%; }
+.post-type-archive-educator .person-wrapper {
+  margin: 30px 2%; }
 
 .post-type-archive-institutions .hero-banner {
   background: url("../../images/picture-of-stairs.jpg") no-repeat center;
@@ -1922,31 +1940,31 @@ object {
     margin: 10px auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper {
+    .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
       height: 200px;
       border: 2px solid grey; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper:hover {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper:hover {
         border: 2px solid #7e7e7e; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper .organization-content {
         width: 75%; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .entry-title {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper .entry-title {
         margin: 0; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper a {
         height: 150px;
         margin: auto 0;
         padding-left: 23px;
         display: -ms-flexbox;
         display: flex;
         width: 180px; }
-        .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a img {
+        .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper a img {
           margin: 0;
           max-width: 100%;
           height: auto;
           max-height: 100%; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content a {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper .organization-content a {
         width: auto; }
 
 .single-organizations {
@@ -1959,7 +1977,7 @@ object {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 50px; }
-  .single-organizations .tabbingsection {
+  .single-organizations .tabbing-section {
     margin: 0px auto;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -1968,30 +1986,30 @@ object {
     box-sizing: border-box;
     border-radius: 10px;
     background: white; }
-    .single-organizations .tabbingsection .leftsection {
+    .single-organizations .tabbing-section .leftsection {
       border-bottom-left-radius: 10px;
       border-top-left-radius: 10px;
       background: white; }
-    .single-organizations .tabbingsection .rightsection {
+    .single-organizations .tabbing-section .rightsection {
       background: #4cc88d;
       border-radius: 9px; }
-    .single-organizations .tabbingsection .inactive {
+    .single-organizations .tabbing-section .inactive {
       color: #4cc88d; }
-    .single-organizations .tabbingsection .active {
+    .single-organizations .tabbing-section .active {
       color: white;
       margin: auto; }
-      .single-organizations .tabbingsection .active:hover {
+      .single-organizations .tabbing-section .active:hover {
         color: #404040; }
-    .single-organizations .tabbingsection a {
+    .single-organizations .tabbing-section a {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-item-align: center;
           align-self: center;
       font-size: 15px; }
-    .single-organizations .tabbingsection a:first-child {
+    .single-organizations .tabbing-section a:first-child {
       padding: 8px 0px;
       padding-right: 10px; }
-    .single-organizations .tabbingsection a:last-child {
+    .single-organizations .tabbing-section a:last-child {
       padding-left: 8px; }
   .single-organizations .site-content {
     background: #f7f7f7; }
@@ -2081,14 +2099,32 @@ object {
   .single-organizations .tab.active {
     display: block; }
 
-.single-institutions .personwrapper {
+.single-institutions .sep-picture-container1 {
+  border: 2px solid orange;
+  position: absolute;
+  height: 263px;
+  width: 95%;
+  left: 2%;
+  margin-top: 75px; }
+  @media (min-width: 750px) {
+    .single-institutions .sep-picture-container1 {
+      height: 399px;
+      width: 28%;
+      left: 36%;
+      margin-top: 10px; } }
+
+.single-institutions .person-wrapper {
   padding-top: 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center; }
+  .single-institutions .person-wrapper img {
+    height: 358px;
+    width: 323px;
+    position: relative; }
 
-.single-institutions .course-header {
+.course-header {
   text-align: left;
   padding-left: 20px;
   font-size: 24px;
@@ -2097,7 +2133,7 @@ object {
   margin-bottom: 5px;
   color: #7e7e7e; }
 
-.single-institutions #wp_posts_carousel-4 h2 {
+#wp_posts_carousel-4 h2 {
   text-align: left;
   padding-left: 20px;
   font-size: 24px;
@@ -2110,6 +2146,9 @@ object {
   padding: 10px 15px;
   text-align: center;
   color: #7e7e7e; }
+  @media (min-width: 750px) {
+    .riipen-since {
+      margin-top: 18px; } }
 
 .carousel-section {
   background-color: #f7f7f7; }

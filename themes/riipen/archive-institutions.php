@@ -14,7 +14,7 @@ get_header(); ?>
 			<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
 		</div>
 			<section  class="tabbing-wrapper">
-				<div class="tabbingsection">
+				<div class="tabbing-section">
 
 					<a class="inactive uppercase">Institutions</a>
 
@@ -22,17 +22,21 @@ get_header(); ?>
 
 				</div>
 			</section>
-			
+
 			<section class="riipen-list">
 				<?php if ( have_posts() ) : ?>
 
 					<header class="page-header">
 
 					</header><!-- .page-header -->
-					
+
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
+<<<<<<< HEAD
 						<div class="personwrapper container">
+=======
+						<div class="person-wrapper">
+>>>>>>> 1284c0289bbdd1d9c830cab2c58c23ba9d405bc5
 							<a href="<?php echo the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'large' ); ?>

@@ -1,14 +1,14 @@
 .site-footer {
     background: $color_footer;
     height: 226px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include desktop {
         height: 350px;
     }
     .footer-container {
-        padding-top: 76px;
-        @include desktop {
-            padding-top: 5%;
-        }
+        width: 100%;
         .footer-social-media {
             margin: auto;
             max-width: 279px;
