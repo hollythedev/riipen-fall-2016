@@ -1849,6 +1849,11 @@ object {
       color: white;
       background-color: #4cc88d; }
 
+.post-type-archive-educator .person-wrapper {
+  width: 33.333%;
+  box-sizing: border-box;
+  padding: 30px; }
+
 .post-type-archive-organizations {
   background: #f7f7f7; }
   .post-type-archive-organizations .highlight-orange {
