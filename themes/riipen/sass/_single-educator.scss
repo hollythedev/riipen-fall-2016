@@ -31,7 +31,6 @@
         padding-bottom: 100%;
     }
     @include desktop {
-        width: 61%;
         height: 290px;
         width: 22%;
         left: 39%;
@@ -43,7 +42,7 @@
     position: relative;
     img {
         display: block;
-        margin: auto auto;
+        margin: auto;
         height: 250px;
         width: 174px;
         object-fit: cover;
