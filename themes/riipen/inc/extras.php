@@ -23,12 +23,18 @@ add_filter( 'body_class', 'riipen_body_classes' );
 
 //Changes login logo of site
 function my_custom_login_logo() { ?>
-<style type="text/css">
-#login h1 a, .login h1 a {  background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/riipen-logo.svg);
-		padding-bottom: 30px; background-size: 220px !important; width: 230px !important;background-position: bottom !important;
-	}
-</style>
-<?php }
+	<style type="text/css">
+		#login h1 a,
+		.login h1 a {
+			background-image: url(<?php echo get_stylesheet_directory_uri();
+			?>/images/riipen-logo.svg);
+			padding-bottom: 30px;
+			background-size: 220px !important;
+			width: 230px !important;
+			background-position: bottom !important;
+		}
+	</style>
+	<?php }
 add_action( 'login_enqueue_scripts', 'my_custom_login_logo' );
 
 function my_login_logo_url() {
@@ -48,7 +54,7 @@ function background_method() {
 		return;
 	}
 
-	$url = CFS()->get( 'educator-talent-section-4' );//This is grabbing the background image vis Custom Field Suite Plugin
+	$url = CFS()->get( 'educator-talent-section-4' );//This is grabbing the background image via Custom Field Suite Plugin
 	$custom_css = "
 	.banner{
 		background: url({$url}) no-repeat bottom center;
@@ -57,6 +63,25 @@ function background_method() {
 	wp_add_inline_style( 'riipen-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'background_method' );
+
+//Custom single educator page school logo 
+
+function the_background_method() {
+
+	if(!is_page_template( 'single-educator.php' )){
+		return;
+	}
+
+	$url = CFS()->get( '.school_logo' );//This is grabbing the background image via Custom Field Suite Plugin
+	$custom_css = "
+	.sep-course-content1{
+		background: url({$url}) no-repeat bottom center;
+		background-size: cover;
+	}";
+	wp_add_inline_style( 'riipen-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'the_background_method' );
+
 /**
 * Custom About Page background image
 */
