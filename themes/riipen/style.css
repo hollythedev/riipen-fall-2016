@@ -825,7 +825,8 @@ a {
     display: block;
     margin: auto auto;
     height: 250px;
-    width: 174px; }
+    width: 174px;
+    object-fit: cover; }
 
 .educator-page {
   padding: 0; }
@@ -1248,7 +1249,7 @@ object {
           display: flex;
           -ms-flex-pack: distribute;
               justify-content: space-around;
-          padding-bottom: 3%;
+          padding: 3%;
           width: 100%; } }
     .site-footer .footer-container .footer-information {
       margin: auto;
