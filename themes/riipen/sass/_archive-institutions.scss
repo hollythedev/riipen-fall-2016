@@ -70,7 +70,7 @@
 			}
 
 		}
-		.tabbingsection{
+		.tabbing-section{
 			margin: 0px auto;
 			display: inline-flex;
 			text-align: center;
@@ -109,7 +109,7 @@
 			margin: 0 auto;
 			display: flex;
 			flex-wrap: wrap;
-			.personwrapper{
+			.person-wrapper{
 				
 				@include desktop{
 					
@@ -134,7 +134,7 @@
 }
 .post-type-archive-institutions {
 	.riipen-list{
-		.personwrapper{
+		.person-wrapper{
 			margin: 30px 2%;
 			width: 28%;		
 
@@ -155,7 +155,7 @@
 		background-blend-mode: multiply;
 		background-size: cover;
 	}
-	.personwrapper{
+	.person-wrapper{
 		margin: 30px 2%;
 	}
 }

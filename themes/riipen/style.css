@@ -1753,7 +1753,7 @@ object {
   .post-type-archive-institutions .site-main .educators-category a, .post-type-archive-educator .site-main .educators-category a {
     color: #27aefb; }
 
-.post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+.post-type-archive-institutions .site-main .tabbing-section, .post-type-archive-educator .site-main .tabbing-section {
   margin: 0px auto;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1763,22 +1763,22 @@ object {
   border-radius: 10px;
   padding: 0 10px; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .site-main .tabbingsection, .post-type-archive-educator .site-main .tabbingsection {
+    .post-type-archive-institutions .site-main .tabbing-section, .post-type-archive-educator .site-main .tabbing-section {
       display: none; } }
-  .post-type-archive-institutions .site-main .tabbingsection .inactive, .post-type-archive-educator .site-main .tabbingsection .inactive {
+  .post-type-archive-institutions .site-main .tabbing-section .inactive, .post-type-archive-educator .site-main .tabbing-section .inactive {
     color: #919191; }
-  .post-type-archive-institutions .site-main .tabbingsection .active, .post-type-archive-educator .site-main .tabbingsection .active {
+  .post-type-archive-institutions .site-main .tabbing-section .active, .post-type-archive-educator .site-main .tabbing-section .active {
     color: black;
     margin: auto; }
-    .post-type-archive-institutions .site-main .tabbingsection .active:hover, .post-type-archive-educator .site-main .tabbingsection .active:hover {
+    .post-type-archive-institutions .site-main .tabbing-section .active:hover, .post-type-archive-educator .site-main .tabbing-section .active:hover {
       color: #404040; }
-  .post-type-archive-institutions .site-main .tabbingsection a, .post-type-archive-educator .site-main .tabbingsection a {
+  .post-type-archive-institutions .site-main .tabbing-section a, .post-type-archive-educator .site-main .tabbing-section a {
     font-size: 15px; }
-  .post-type-archive-institutions .site-main .tabbingsection a:first-child, .post-type-archive-educator .site-main .tabbingsection a:first-child {
+  .post-type-archive-institutions .site-main .tabbing-section a:first-child, .post-type-archive-educator .site-main .tabbing-section a:first-child {
     padding: 8px 0px;
     padding-right: 10px;
     border-right: 1px solid grey; }
-  .post-type-archive-institutions .site-main .tabbingsection a:last-child, .post-type-archive-educator .site-main .tabbingsection a:last-child {
+  .post-type-archive-institutions .site-main .tabbing-section a:last-child, .post-type-archive-educator .site-main .tabbing-section a:last-child {
     padding-left: 5px;
     margin: auto; }
 
@@ -1795,11 +1795,11 @@ object {
     width: 100%;
     height: 100%; }
 
-.post-type-archive-institutions .riipen-list .personwrapper {
+.post-type-archive-institutions .riipen-list .person-wrapper {
   margin: 30px 2%;
   width: 28%; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .riipen-list .personwrapper {
+    .post-type-archive-institutions .riipen-list .person-wrapper {
       width: 15%;
       margin: 30px 2%; } }
 
@@ -1809,7 +1809,7 @@ object {
   background-blend-mode: multiply;
   background-size: cover; }
 
-.post-type-archive-educator .personwrapper {
+.post-type-archive-educator .person-wrapper {
   margin: 30px 2%; }
 
 .post-type-archive-institutions .hero-banner {
@@ -1887,16 +1887,16 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-bottom: 140px; }
-    .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
+    .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper {
       width: 30%;
       margin: 30px 1%;
       box-sizing: border-box; }
       @media (min-width: 750px) {
-        .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper {
+        .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper {
           width: 22%; } }
-      .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-title {
+      .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper .entry-title {
         display: none; }
-      .post-type-archive-organizations .riipen-list.organizationgrid .personwrapper .entry-summary {
+      .post-type-archive-organizations .riipen-list.organizationgrid .person-wrapper .entry-summary {
         display: none; }
     .post-type-archive-organizations .riipen-list.organizationgrid h2 {
       text-align: center; }
@@ -1912,31 +1912,31 @@ object {
     margin: 10px auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-    .post-type-archive-organizations .riipen-list.organizationlist .personwrapper {
+    .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
       height: 200px;
       border: 2px solid grey; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper:hover {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper:hover {
         border: 2px solid #7e7e7e; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper .organization-content {
         width: 75%; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .entry-title {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper .entry-title {
         margin: 0; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper a {
         height: 150px;
         margin: auto 0;
         padding-left: 5px;
         display: -ms-flexbox;
         display: flex;
         width: 150px; }
-        .post-type-archive-organizations .riipen-list.organizationlist .personwrapper a img {
+        .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper a img {
           margin: auto 0;
           max-width: 100%;
           height: auto;
           max-height: 100%; }
-      .post-type-archive-organizations .riipen-list.organizationlist .personwrapper .organization-content a {
+      .post-type-archive-organizations .riipen-list.organizationlist .person-wrapper .organization-content a {
         width: auto;
         padding-left: 10px; }
 
@@ -1950,7 +1950,7 @@ object {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 50px; }
-  .single-organizations .tabbingsection {
+  .single-organizations .tabbing-section {
     margin: 0px auto;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -1959,30 +1959,30 @@ object {
     box-sizing: border-box;
     border-radius: 10px;
     background: white; }
-    .single-organizations .tabbingsection .leftsection {
+    .single-organizations .tabbing-section .leftsection {
       border-bottom-left-radius: 10px;
       border-top-left-radius: 10px;
       background: white; }
-    .single-organizations .tabbingsection .rightsection {
+    .single-organizations .tabbing-section .rightsection {
       background: #4cc88d;
       border-radius: 9px; }
-    .single-organizations .tabbingsection .inactive {
+    .single-organizations .tabbing-section .inactive {
       color: #4cc88d; }
-    .single-organizations .tabbingsection .active {
+    .single-organizations .tabbing-section .active {
       color: white;
       margin: auto; }
-      .single-organizations .tabbingsection .active:hover {
+      .single-organizations .tabbing-section .active:hover {
         color: #404040; }
-    .single-organizations .tabbingsection a {
+    .single-organizations .tabbing-section a {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-item-align: center;
           align-self: center;
       font-size: 15px; }
-    .single-organizations .tabbingsection a:first-child {
+    .single-organizations .tabbing-section a:first-child {
       padding: 8px 0px;
       padding-right: 10px; }
-    .single-organizations .tabbingsection a:last-child {
+    .single-organizations .tabbing-section a:last-child {
       padding-left: 8px; }
   .single-organizations .site-content {
     background: #f7f7f7; }
@@ -2072,7 +2072,7 @@ object {
   .single-organizations .tab.active {
     display: block; }
 
-.single-institutions .personwrapper {
+.single-institutions .person-wrapper {
   padding-top: 30px;
   display: -ms-flexbox;
   display: flex;

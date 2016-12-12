@@ -21,7 +21,7 @@ get_header(); ?>
 					
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-						<div class="personwrapper">
+						<div class="person-wrapper">
 							<a href="<?php echo the_permalink(); ?>">
 								<?php if ( has_post_thumbnail() ) : ?>
 									<?php the_post_thumbnail( 'large' ); ?>
