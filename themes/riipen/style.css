@@ -1342,6 +1342,12 @@ object {
         display: block; } }
 
 /* Stats Section */
+.stats h2,
+.about h2 {
+  height: 0;
+  font-size: 0;
+  margin: 0; }
+
 .stats {
   background-color: #f7f7f7; }
   .stats ul {
