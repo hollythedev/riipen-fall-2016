@@ -1,5 +1,6 @@
 /*!
 Theme Name: Riipen Theme
+Text Domain: riipen-theme
 Theme URI: http://underscores.me/
 Author: Holly, Ringo & Jonathan
 Author URI: http://www.redacademy.com
@@ -1540,7 +1541,6 @@ object {
 .difference {
   background-color: #f7f7f7; }
   .difference h2 {
-    background-color: #fff;
     text-align: center; }
   .difference p {
     text-align: center; }
