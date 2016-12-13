@@ -1341,6 +1341,12 @@ object {
         display: block; } }
 
 /* Stats Section */
+.stats h2,
+.about h2 {
+  height: 0;
+  font-size: 0;
+  margin: 0; }
+
 .stats {
   background-color: #f7f7f7; }
   .stats ul {
@@ -1855,7 +1861,8 @@ object {
   margin: 30px auto; }
   @media (min-width: 750px) {
     .post-type-archive-educator .person-wrapper {
-      width: 33.333%; } }
+      width: 33.333%;
+      margin: 0; } }
 
 .post-type-archive-educator .company-wrapper {
   display: -ms-flexbox;

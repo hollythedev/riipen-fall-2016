@@ -12,12 +12,12 @@ get_header(); ?>
 	<main id="main" class="site-main animatedParent" role="main">
 		<div class="hero-banner">
 			<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
-		</div class="container">
+		</div>
 		<h2 class="uppercase org-header desktop-only"> Companies we are working with </h2>
 		<div class="view-type-buttons">
 			<a class="list-view psudeo-button" > 
 				<div class="psudeo-button"> 
-					<img src=" <?php echo get_template_directory_uri() ?>/images/btsMobileListgallery.png"> 
+					<img src=" <?php echo get_template_directory_uri() ?>/images/btsMobileListgallery.png" alt="<?php echo get_the_title() ?>"> 
 				</div>
 			</a>
 			<a class="grid-view psudeo-button"> 

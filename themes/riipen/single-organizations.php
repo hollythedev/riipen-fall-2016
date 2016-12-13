@@ -96,22 +96,22 @@ get_header(); ?>
 					<div class="tab-content">
 						<div id="tab1" class="tab active">
 							<h3><?php echo CFS()->get( 'first_tab_title' ); ?></h3>
-							<p><?php echo CFS()->get( 'first_tab_content' ); ?></p>
+							<p><?php echo CFS()->get( 'first_tab_content' ); ?>
 						</div>
 
 						<div id="tab2" class="tab">
 							<h3><?php echo CFS()->get( 'second_tab_title' ); ?></h3>
-							<p><?php echo CFS()->get( 'second_tab_content' ); ?></p>
+							<p><?php echo CFS()->get( 'second_tab_content' ); ?>
 						</div>
 
 						<div id="tab3" class="tab">
 							<h3><?php echo CFS()->get( 'third_tab_title' ); ?></h3>
-							<p><?php echo CFS()->get( 'third_tab_content' ); ?></p>
+							<p><?php echo CFS()->get( 'third_tab_content' ); ?>
 						</div>
 
 						<div id="tab4" class="tab">
 							<h3><?php echo CFS()->get( 'fourth_tab_title' ); ?></h3>
-							<p><?php echo CFS()->get( 'fourth_tab_content' ); ?></p>
+							<p><?php echo CFS()->get( 'fourth_tab_content' ); ?>
 						</div>
 					</div>
 				</div>
