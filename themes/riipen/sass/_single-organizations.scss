@@ -1,174 +1,153 @@
-.single-organizations{
-	.tabbing-wrapper{
+.single-organizations {
+	.tabbing-wrapper {
 		width: 100%;
 		display: flex;
 		padding-bottom: 50px;
 	}
-	.tabbing-section{
+	.tabbing-section {
 		margin: 0px auto;
 		display: inline-flex;
 		text-align: center;
 		border: 1.5px $color_dark-mint solid;
 		box-sizing: border-box;
 		border-radius: 10px;
-		background: white;
-		.leftsection{
+		background: $color__background-body;
+		.leftsection {
 			border-bottom-left-radius: 10px;
 			border-top-left-radius: 10px;
-			background: white;
+			background: $color__background-body;
 		}
-		.rightsection{
-
-			background: #4cc88d;
+		.rightsection {
+			background: $color_dark-mint;
 			border-radius: 9px;
 		}
-		.inactive{
+		.inactive {
 			color: $color_dark-mint;
 		}
-		.active{
-			color: white;
-			// background: $color_dark-mint;
-			margin: auto;	
-			&:hover{
-				color:$color__text-main-hover;
+		.active {
+			color: $color__background-body;
+			margin: auto;
+			&:hover {
+				color: $color__text-main-hover;
 			}
 		}
-		a{
+		a {
 			display: flex;
-			align-self:center;
+			align-self: center;
 			font-size: 15px;
 		}
-		a:first-child{
-
+		a:first-child {
 			padding: 8px 0px;
 			padding-right: 10px;
-			// border-right: 1px solid $color_dark-mint;
 		}
-		a:last-child{
+		a:last-child {
 			padding-left: 8px;
-			// margin: auto;
 		}
 	}
-	.site-content{
+	.site-content {
 		background: $color_white-smoke;
 	}
-	.entry-header{
+	.entry-header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		padding-top: 110px;
-		h1{
+		h1 {
 			padding-top: 90px;
 			font-size: 36px;
 			letter-spacing: 1.8pt
 		}
-		img{
+		img {
 			width: 200px;
 			height: 200px;
 		}
-		.entry-title{
+		.entry-title {
 			width: 100%;
 			padding-left: 5%;
 			margin-bottom: 90px;
-			
 		}
-	}	
-	.entry-content{
+	}
+	.entry-content {
 		width: 90%;
 		margin: 0 auto;
-		// padding-bottom: 140px;
 		font-size: 24px;
 	}
-
 	/*----- Tabs -----*/
 	.tabs {
-
-		width:95%;
-		
-		
+		width: 95%;
 		margin: 0 auto;
 		padding-bottom: 50px;
-
-		@include desktop{
+		@include desktop {
 			padding-bottom: 0;
 		}
-		p{
+		p {
 			word-wrap: break-word;
 			margin: 0;
 		}
 	}
-
 	/*----- Tab Links -----*/
 	/* Clearfix */
-	.tab-links{
-
+	.tab-links {
 		margin: 0;
 		&:after {
-			display:block;
-			clear:both;
-			content:'';
+			display: block;
+			clear: both;
+			content: '';
 		}
-
 		li {
 			position: relative;
 			top: 1px;
 			border-bottom-left-radius: 100px;
 			border-bottom-right-radius: 100px;
-			margin:0px 1px;
+			margin: 0px 1px;
 			height: 100%;
-			float:left;
-			list-style:none;
+			float: left;
+			list-style: none;
 			@include desktop {
 				width: 15%;
 			}
 		}
-
 		a {
 			height: 100%;
 			min-height: 25px;
 			width: 100%;
 			text-align: center;
-			padding:9px 15px;
-			display:inline-block;
-			border-radius:10px 10px 0 0;
+			padding: 9px 15px;
+			display: inline-block;
+			border-radius: 10px 10px 0 0;
 			background: $color_dark-mint;
-
-			font-size:16px;
-			font-weight:600;
+			font-size: 16px;
+			font-weight: 600;
 			color: $color_white-smoke;
-			transition:all linear 0.15s;
+			transition: all linear 0.15s;
 		}
-
 		a:hover {
 			outline: none;
-			background:$color_light-mint;
-			text-decoration:none;
+			background: $color_light-mint;
+			text-decoration: none;
 		}
 	}
-	li.active a, li.active a:hover {
-		border: 1.5px solid grey;
+	li.active a,
+	li.active a:hover {
+		border: 1.5px solid $color__greyborders;
 		border-bottom: 0px;
-		background:#fff;
+		background: $color__background-body;
 		outline: none;
-		color:$color_azure;
-
+		color: $color_azure;
 	}
-
 	/*----- Content of Tabs -----*/
 	.tab-content {
-		padding:15px;
-		border-radius:7px;
+		padding: 15px;
+		border-radius: 7px;
 		border-top-left-radius: 2px;
-		border: 1px solid grey;
-		background:#fff;
+		border: 1px solid $color__greyborders;
+		background: $color__background-body;
 	}
-
 	.tab {
 		padding-bottom: 40px;
-		display:none;
+		display: none;
 	}
-
 	.tab.active {
-		display:block;
+		display: block;
 	}
 }

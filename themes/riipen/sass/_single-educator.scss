@@ -9,7 +9,7 @@
         margin: 0;
     }
     .sep-course-title {
-        color: lightblue;
+        color: $color_azure;
         font-size: 1rem;
         margin-top: 50px;
     }
@@ -22,7 +22,7 @@
     height: 200px;
     width: 70%;
     position: absolute;
-    border: 2px solid orange;
+    border: 2px solid $color_pumpkin-orange;
     left: 15%;
     margin-top: 20px;
     @include desktop {
@@ -45,8 +45,8 @@
 }
 
 .sep-course-content1 {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
     @include desktop {
         margin-top: 56px;
     }
