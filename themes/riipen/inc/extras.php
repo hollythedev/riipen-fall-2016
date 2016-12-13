@@ -49,23 +49,6 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
-///For the Educators and Talent Page
-function background_method() {
-
-	if(!is_page_template( 'educator.php' )){
-		return;
-	}
-
-	$url = CFS()->get( 'educator-talent-section-4' );//This is grabbing the background image via Custom Field Suite Plugin
-	$custom_css = "
-	.banner{
-		background: url({$url}) no-repeat bottom center;
-		background-size: cover;
-	}";
-	wp_add_inline_style( 'riipen-style', $custom_css );
-}
-add_action( 'wp_enqueue_scripts', 'background_method' );
-
 //Custom single educator page school logo 
 
 function the_background_method() {

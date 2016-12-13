@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<section class="hero">
-			<video playsinline autoplay muted loop id="bgvid">
+			<video autoplay muted loop id="bgvid">
 				<source src="<?php echo get_template_directory_uri();?>/images/city-1080.mp4" type="video/mp4">
 			</video>
 			<div class="headline">
@@ -22,6 +22,7 @@ get_header(); ?>
 		</section>
 		<section class="stats">
 			<div class="container">
+				<h2>Statistics</h2>
 				<ul class="animatedParent animateOnce" data-sequence="500" data-appear-top-offset='-200'>
 				  <li class="animated fadeInUp" data-id="1">
 				    <div>
@@ -49,6 +50,7 @@ get_header(); ?>
 		</section>
 		<section class="about">
 			<div class="container">
+				<h2>Statistics</h2>
 				<p>Riipen is a web platform that partners with post-secondary schools from around the globe. We enable meaningful in-class project-based experimential learning that mutually benefits all parties involved.</p>
 				<ul>
 					<li>Talent increases skill</li>
