@@ -2,12 +2,6 @@
 # Navigation
 --------------------------------------------------------------*/
 
-#primary-menu {
-	@include desktop {
-		display: flex !important;
-	}
-}
-
 
 /* Links */
 
@@ -69,7 +63,11 @@ a {
 
 .main-navigation {
 	order: 0;
-	display: flex;
+	#primary-menu {
+		@include desktop {
+			display: flex !important;
+		}
+	}
 	ul {
 		font-size: 1rem;
 		display: none;
@@ -78,11 +76,11 @@ a {
 		left: 0;
 		background: $color_white-smoke;
 		width: 100vw;
+		height: calc(100vh - 68px);
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
 		li {
-			background-color: $color_white-smoke;
 			padding: 10px 20px;
 			white-space: nowrap;
 			&:hover>a,
@@ -149,9 +147,9 @@ a {
 			display: block;
 		}
 		@include desktop {
+			background-color: white;
 			font-weight: bold;
 			width: auto;
-			display: flex;
 			position: initial;
 			height: 68px;
 			a {
@@ -231,7 +229,7 @@ a {
 	}
 	input[type=search] {
 		font-size: 1rem;
-		background-color: $color__background-body
+		background-color: $color__background-body;
 		border: 0;
 		border-radius: 0;
 		padding-left: 1rem;
