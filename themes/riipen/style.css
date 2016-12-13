@@ -1651,6 +1651,9 @@ object {
   .wp-posts-carousel-container a {
     outline: none; }
 
+.cell-wrapper {
+  position: relative; }
+
 .wp-posts-carousel-slide .wp-posts-carousel-container {
   box-shadow: none !important;
   background: none !important; }
