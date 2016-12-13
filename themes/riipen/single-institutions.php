@@ -61,4 +61,5 @@ get_header(); ?>
 			<?php endif; ?>
 		</div>
 	</div>
+	<?php comments_template(); ?>
 	<?php get_footer(); ?>
