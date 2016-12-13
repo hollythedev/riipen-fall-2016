@@ -51,9 +51,9 @@
       line-height: 2.5em;
       border-radius: 5px;
       border: 2px solid $color_dark-mint;
-      color: white;
+      color: $color__background-body;
       &:hover {
-        background-color: white;
+        background-color: $color__background-body;
         color: $color_dark-mint;
       }
     }

@@ -2,6 +2,7 @@
 # Content
 --------------------------------------------------------------*/
 
+
 /* Posts and pages */
 
 .sticky {
@@ -12,7 +13,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
+.updated:not(.published) {
 	display: none;
 }
 
@@ -32,6 +33,7 @@
 	margin: 0 0 $base__space-unit;
 }
 
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -39,14 +41,17 @@
 	display: none;
 }
 
+
 /* Comments */
 
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
 }
+
 
 /* Base Structure & Style */
 
@@ -55,34 +60,34 @@
 	margin: 0 auto;
 }
 
-.site-content{
-padding-top: 68px;
+.site-content {
+	padding-top: 68px;
 }
 
 section {
-  padding: 2rem 1rem;
+	padding: 2rem 1rem;
 }
 
-.back{
+.back {
 	color: $color__greyborders;
 	background-color: transparent;
 	font: 1rem $font__main;
-	position:absolute;
-@include desktop{
-                display:none;
-            }
+	position: absolute;
+	@include desktop {
+		display: none;
+	}
 }
 
 .highlight-orange {
-  color: $color_pumpkin-orange;
-  a {
-    color: $color_pumpkin-orange;
-  }
+	color: $color_pumpkin-orange;
+	a {
+		color: $color_pumpkin-orange;
+	}
 }
 
 .highlight-blue {
-  color:  $color_twilight-blue;
-  a {
-    color: $color_twilight-blue;
-  }
+	color: $color_twilight-blue;
+	a {
+		color: $color_twilight-blue;
+	}
 }
