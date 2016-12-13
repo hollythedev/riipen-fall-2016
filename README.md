@@ -2,7 +2,7 @@
 
 ![alt tag](https://i.gyazo.com/f9685e9393245334a78a95b9741e9c48.png)
 
-Created by Holly, Jon and Ringo
+Created by [Holly Cheng](https://github.com/dumplinghub), [Jonathan Funk](https://github.com/jonathanfunk)and [Ringo Ng](https://github.com/ringong95).
 
 For this project, we made a website through WordPress for our client, Riipen. We used Javascript, Jquery, CSS and HTML elements to develop the site. Not only is the site designed with a mobile-first approach (responsive), but it also contains motions such as parallax scrolling and animations.
 
