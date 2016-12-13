@@ -108,8 +108,9 @@
 		}
 		.riipen-list{
 			margin: 0 auto;
+			@include desktop{
 			display: flex;
-			flex-wrap: wrap;
+			flex-wrap: wrap;}
 			h2{
 				text-align: center;
 			}
@@ -125,8 +126,6 @@
 	}
 }
 .post-type-archive-institutions {
-	.riipen-list{
-
 		.person-wrapper{
 			padding: 20px;
 			width: 50%;
@@ -138,7 +137,6 @@
 			}
 		}
 	}
-}
 
 .post-type-archive-educator{
 	.hero-banner{
@@ -169,9 +167,6 @@
 		.nav-previous{
 			width: 100%;
 			text-align: left;
-			a{
-
-			}
 		}
 
 	}
@@ -194,8 +189,18 @@
 }
 .post-type-archive-educator {
 	.person-wrapper{
-		width: 33.333%;
 		box-sizing: border-box;
 		padding: 30px;
+    margin: 30px auto;
+		@include desktop{
+		width: 33.333%;
+		}
+	}
+	.company-wrapper{
+		display: flex;
+		    flex-direction: column;
+			@include desktop{
+				flex-direction: row;
+			}
 	}
 }
