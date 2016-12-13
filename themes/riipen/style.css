@@ -1756,8 +1756,8 @@ object {
 .post-type-archive-educator .image-wrapper {
   box-shadow: 4px 10px 50px 1px #a6a6a6;
   background-color: white;
-  height: 275px;
-  width: 275px;
+  height: 250px;
+  width: 250px;
   border: 5px solid #27aefb;
   content: '';
   display: -ms-flexbox;
