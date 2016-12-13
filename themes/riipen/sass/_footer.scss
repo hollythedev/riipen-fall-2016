@@ -14,19 +14,19 @@
             max-width: 279px;
             display: flex;
             justify-content: space-around;
-            p{
-                @include desktop{
+            p {
+                @include desktop {
                     margin: 0
                 }
             }
             a {
-                color: #333;
+                color:$color_footer;
                 height: 50px;
                 width: 50px;
-                background-color: #fff;
+                background-color: $color__background-body;
                 font-size: 1.5rem;
                 border-radius: 50%;
-                border: 2px solid #fff;
+                border: 2px solid $color__background-body;
                 display: block;
                 align-items: center;
                 display: flex;
@@ -37,9 +37,8 @@
                 }
                 &:hover {
                     background-color: transparent;
-                    color: #fff;
+                    color: $color__background-body;
                 }
-
             }
             @include desktop {
                 margin: auto;
@@ -49,7 +48,7 @@
         .footer-button {
             display: none;
             a {
-                color: white;
+                color: $color__background-body;
                 text-decoration: none;
                 border: 1px solid $color_dark-mint;
                 padding: 10px 51px;
@@ -73,14 +72,14 @@
             justify-content: space-around;
             a {
                 font-size: 0.75rem;
-                color: white;
+                color: $color__background-body;
                 text-transform: uppercase;
                 text-decoration: none;
                 &:hover {
                     text-decoration: underline;
                 }
             }
-            @include desktop{
+            @include desktop {
                 font-size: 1rem;
                 max-width: 400px;
                 padding: 0;

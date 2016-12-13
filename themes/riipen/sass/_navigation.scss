@@ -1,18 +1,20 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-#primary-menu{
-	@include desktop{
+
+#primary-menu {
+	@include desktop {
 		display: flex !important;
 	}
 }
+
+
 /* Links */
 
 a {
 	color: black;
 	text-decoration: none;
 	transition: all 0.5s ease;
-
 	&:visited {
 		color: $color__link-visited;
 	}
@@ -30,14 +32,16 @@ a {
 	}
 }
 
+
 /* Menus */
+
 .site-header {
-	background: white;
+	background: $color__background-body;
 	position: fixed;
 	z-index: 2;
 	height: 68px;
 	width: 100%;
-	box-shadow: 0 0 8px rgba(0,0,0,.7);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 	.container {
 		height: 100%;
 		max-width: calc(1000px + 2rem);
@@ -50,7 +54,7 @@ a {
 	.fa {
 		color: $color_twilight-blue;
 		font-size: 1.5rem;
-		-webkit-text-stroke: 1px white;
+		-webkit-text-stroke: 1px $color__background-body;
 	}
 }
 
@@ -81,9 +85,8 @@ a {
 			background-color: $color_white-smoke;
 			padding: 10px 20px;
 			white-space: nowrap;
-			&:hover > a,
-			&.focus > a {
-			}
+			&:hover>a,
+			&.focus>a {}
 			@include desktop {
 				position: relative;
 				background-color: transparent;
@@ -109,7 +112,7 @@ a {
 			top: inherit;
 			position: inherit;
 			height: auto;
-			@include desktop{
+			@include desktop {
 				padding: 0;
 				position: absolute;
 				top: 100%;
@@ -125,8 +128,8 @@ a {
 				margin: 0;
 				padding: 10px 0;
 				display: block;
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					margin-left: auto;
 					margin-right: auto;
 					left: 100%;
@@ -136,15 +139,13 @@ a {
 					padding: 0;
 				}
 			}
-			:hover > a,
-			.focus > a {
-			}
+			:hover>a,
+			.focus>a {}
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			display: block;
 		}
 		@include desktop {
@@ -159,22 +160,23 @@ a {
 				padding: 0 10px;
 				color: $color_twilight-blue;
 				&:hover {
-					color: white;
+					color: $color__background-body;
 					background-color: $color_twilight-blue;
 					.highlight-blue {
-						color: white;
+						color: $color__background-body;
 					}
 				}
 			}
 		}
 	}
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
+
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -184,24 +186,20 @@ a {
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation ul {
-	}
+	.main-navigation ul {}
 }
 
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
 	.site-main & {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-
 	.nav-previous {
 		float: left;
 		width: 50%;
 	}
-
 	.nav-next {
 		float: right;
 		text-align: right;
@@ -209,7 +207,9 @@ a {
 	}
 }
 
+
 /* Search Bar */
+
 .site-search {
 	order: 3;
 	fieldset {
@@ -231,7 +231,7 @@ a {
 	}
 	input[type=search] {
 		font-size: 1rem;
-		background-color: white;
+		background-color: $color__background-body
 		border: 0;
 		border-radius: 0;
 		padding-left: 1rem;
