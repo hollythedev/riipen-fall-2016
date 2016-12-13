@@ -1,5 +1,7 @@
 #A Custom Wordpress Theme For Riipen
 
+![alt tag](https://i.gyazo.com/f9685e9393245334a78a95b9741e9c48.png)
+
 Created by Holly, Jon and Ringo
 
 For this project, we made a website through WordPress for our client, Riipen. We used Javascript, Jquery, CSS and HTML elements to develop the site. Not only is the site designed with a mobile-first approach (responsive), but it also contains motions such as parallax scrolling and animations.

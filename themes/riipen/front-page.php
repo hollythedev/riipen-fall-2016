@@ -77,6 +77,7 @@ get_header(); ?>
 		</section>
 		<section class="testimonial">
 			<div class="container">
+				<h2>Testimonial</h2>
 				<div class="icon">
 					<i class="fa fa-line-chart" aria-hidden="true"></i>
 				</div>

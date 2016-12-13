@@ -178,9 +178,9 @@
 		box-sizing: border-box;
 		padding: 30px;
 		margin: 30px auto;
-		@include desktop {
-			width: 33.333%;
-			margin: 0;
+		@include desktop{
+		width: 33.333%;
+		margin: 0;
 		}
 	}
 	.company-wrapper {
