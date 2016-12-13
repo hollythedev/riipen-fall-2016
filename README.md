@@ -1,6 +1,6 @@
 #A Custom Wordpress Theme For Riipen
 
-![alt tag](https://gyazo.com/f9685e9393245334a78a95b9741e9c48)
+![alt tag](https://i.gyazo.com/f9685e9393245334a78a95b9741e9c48.png)
 
 Created by Holly, Jon and Ringo
 
