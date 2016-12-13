@@ -1342,7 +1342,8 @@ object {
 
 /* Stats Section */
 .stats h2,
-.about h2 {
+.about h2,
+.testimonial h2 {
   height: 0;
   font-size: 0;
   margin: 0; }
