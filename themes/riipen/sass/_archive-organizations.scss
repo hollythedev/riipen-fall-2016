@@ -1,9 +1,9 @@
 .post-type-archive-organizations {
-	background: $color__lightgrey; 
-	.highlight-orange{
+	background: $color__lightgrey;
+	.highlight-orange {
 		color: $color_pumpkin-orange;
 	}
-	.hero-banner{
+	.hero-banner {
 		height: calc(100vh - 68px);
 		display: none;
 		justify-content: center;
@@ -12,154 +12,140 @@
 		background-color: $color_warm-grey;
 		background-blend-mode: multiply;
 		background-size: cover;
-		@include desktop{
+		@include desktop {
 			display: flex;
-		}	
+		}
 	}
-
-	.banner-text{	
+	.banner-text {
 		color: white;
 		font-weight: bold;
 		font-size: 36px;
 	}
-	.org-header{
+	.org-header {
 		text-align: center;
 		font-size: 20px;
 	}
-	
-	.view-type-buttons{
-		width:50%;
+	.view-type-buttons {
+		width: 50%;
 		height: 100px;
 		display: flex;
 		justify-content: space-around;
 		margin: 0 auto;
 		padding-top: 36px;
 	}
-
-	.grid-view{
+	.grid-view {
 		display: flex;
 		flex-wrap: wrap;
-		&:hover{
-			.grey-boxes{
-				background-color: $color_warm-grey-two;	
-				&:nth-child(0n+2){
+		&:hover {
+			.grey-boxes {
+				background-color: $color_warm-grey-two;
+				&:nth-child(0n+2) {
 					background-color: $color_pumpkin-orange;
 				}
 			}
-
 		}
-		.grey-boxes{
+		.grey-boxes {
 			box-sizing: border-box;
 			width: 50%;
 			height: 50%;
 			background-color: $color_warm-grey;
 			border: 2px $color__lightgrey solid;
-			&:nth-child(0n+2){
+			&:nth-child(0n+2) {
 				background-color: $color_pumpkin-orange;
 			}
-
 		}
 	}
-	.list-view{
+	.list-view {
 		padding-top: 2px;
-		&:hover{
+		&:hover {
 			background-color: rgba(255, 255, 255, 0.5);
- 			// background: url("../../images/btsMobileListgallery.png")
- 		}
- 	}
- 	.psudeo-button{
- 		width: 50px;
- 		height: 50px;
+		}
+	}
+	.psudeo-button {
+		width: 50px;
+		height: 50px;
+	}
+	.riipen-list {
+		transition: all 1s ease;
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+	}
+	.riipen-list.organizationgrid {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 140px;
+		.person-wrapper {
+			width: 50%;
+			padding: 20px;
+			box-sizing: border-box;
+			@include desktop {
+				width: 20%;
+				padding: 20px;
+				box-sizing: border-box;
+			}
+			box-sizing: border-box;
+			.entry-title {
+				display: none;
+			}
+			.entry-summary {
+				display: none;
+			}
+		}
+		h2 {
+			text-align: center;
+		}
+		a {
+			img {
+				box-shadow: 4px 10px 50px 1px rgba(166, 166, 166, 1);
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.riipen-list.organizationlist {
+		padding-bottom: 140px;
+		display: flex;
+		margin: 10px 0px;
+		margin: 10px auto;
+		flex-wrap: wrap;
+		.person-wrapper {
+			width: 100%;
+			display: flex;
+			height: 200px;
+			border: 2px solid $color__greyborders;
+			&:hover {
+				border: 2px solid $color_warm-grey;
+			}
+			.organization-content {
+				width: 75%;
+			}
+			.entry-title {
+				margin: 0;
+			}
+			a {
+				height: 150px;
+				margin: auto 0;
+				padding-left: 23px;
+				display: flex;
+				width: 180px;
+				img {
+					margin: 0;
+					max-width: 100%;
+					height: auto;
+					max-height: 100%;
+				}
+			}
+			.organization-content {
+				a {
+					width: auto;
+				}
+			}
+		}
+	}
+}
 
- 	}
- 	.riipen-list{
- 		transition: all 1s ease;
- 		width: 90%;
- 		margin: 0 auto;
- 		display: flex;
- 		// justify-content: center;
- 	}
- 	.riipen-list.organizationgrid{
-
- 		display: flex;
- 		flex-wrap: wrap;
- 		padding-bottom: 140px;
- 		.person-wrapper{
- 			width: 50%;
- 			padding: 20px;
- 				box-sizing:border-box;
- 			// margin: 30px 2%;
- 			@include desktop{
- 				width: 20%;
- 				padding: 20px;
- 				box-sizing:border-box;
- 			}
- 			
- 			box-sizing: border-box;
- 			.entry-title{
- 				display: none;
- 			}
- 			.entry-summary{
- 				display: none;
- 			}
- 		}
- 		h2{
- 			text-align: center;
- 		}
- 		a{
- 			
- 			img{
- 				box-shadow: 4px 10px 50px 1px rgba(166,166,166,1);
- 				width: 100%;
- 				height: 100%;
- 			}
- 		}
- 	}
- 	.riipen-list.organizationlist{
-
- 		padding-bottom: 140px;
- 		display: flex;
- 		margin: 10px 0px;
- 		margin: 10px auto;
- 		flex-wrap: wrap;
- 		.person-wrapper{
- 			width: 100%;
- 			display: flex;
- 			height: 200px;
- 			border: 2px solid $color__greyborders;
- 			&:hover{
- 				border: 2px solid $color_warm-grey;
- 			}
- 			.organization-content{
- 				width: 75%;
- 			}
- 			.entry-title{
-
- 				margin: 0;
- 			}
- 			a{
- 				height: 150px;
- 				margin: auto 0;
- 				padding-left: 23px;
- 				display: flex;
- 				width: 180px;
- 				img {
- 					margin: 0;
- 					max-width: 100%;
- 					height: auto;
- 					max-height: 100%;
- 				}
- 			}
- 			.organization-content{
- 				a{
- 					width: auto;
- 					// padding-left: 10px;
- 				}
- 			}
- 		}
- 	}
- }
- .company-wrapper{
- 	display: flex;
- 		flex-wrap: wrap;
- }
+.company-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}

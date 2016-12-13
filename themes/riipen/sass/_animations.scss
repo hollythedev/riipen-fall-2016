@@ -1,5 +1,6 @@
 /*animations*/
 
+
 /******************
 * Bounce in right *
 *******************/
@@ -10,66 +11,83 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-.slow{
-     -webkit-animation-duration: 1.5s;
+
+.slow {
+    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-.slower{
-     -webkit-animation-duration: 2s;
+
+.slower {
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-.slowest{
-     -webkit-animation-duration: 3s;
+
+.slowest {
+    -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
-.bounceInRight, .bounceInLeft, .bounceInUp, .bounceInDown{
-    opacity:0;
-    -webkit-transform: translateX(400px);
-    transform: translateX(400px);
-}
-.fadeInRight, .fadeInLeft, .fadeInUp, .fadeInDown{
-    opacity:0;
+.bounceInRight,
+.bounceInLeft,
+.bounceInUp,
+.bounceInDown {
+    opacity: 0;
     -webkit-transform: translateX(400px);
     transform: translateX(400px);
 }
 
-.flipInX, .flipInY, .rotateIn, .rotateInUpLeft, .rotateInUpRight, .rotateInDownLeft, .rotateDownUpRight, .rollIn{
-    opacity:0;
-}
-
-.lightSpeedInRight, .lightSpeedInLeft{
-    opacity:0;
+.fadeInRight,
+.fadeInLeft,
+.fadeInUp,
+.fadeInDown {
+    opacity: 0;
     -webkit-transform: translateX(400px);
     transform: translateX(400px);
 }
+
+.flipInX,
+.flipInY,
+.rotateIn,
+.rotateInUpLeft,
+.rotateInUpRight,
+.rotateInDownLeft,
+.rotateDownUpRight,
+.rollIn {
+    opacity: 0;
+}
+
+.lightSpeedInRight,
+.lightSpeedInLeft {
+    opacity: 0;
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+}
+
 
 /***********
 * bounceIn *
 ************/
+
 @-webkit-keyframes bounceIn {
     0% {
         opacity: 0;
         -webkit-transform: scale(.3);
     }
-
     50% {
         opacity: 1;
         -webkit-transform: scale(1.05);
     }
-
     70% {
         -webkit-transform: scale(.9);
     }
-
     100% {
-         -webkit-transform: scale(1);
+        -webkit-transform: scale(1);
     }
 }
 
@@ -78,16 +96,13 @@
         opacity: 0;
         transform: scale(.3);
     }
-
     50% {
         opacity: 1;
         transform: scale(1.05);
     }
-
     70% {
         transform: scale(.9);
     }
-
     100% {
         transform: scale(1);
     }
@@ -98,26 +113,40 @@
     animation-name: bounceIn;
 }
 
+
 /**********
 * Fade In *
 **********/
+
 @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;
-        display:block;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
 }
+
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;
-        display:block;}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
 }
-.fadeIn{
-    opacity:0;
+
+.fadeIn {
+    opacity: 0;
 }
+
 .fadeIn.go {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
+
 
 /*************
 * FadeInUp *
@@ -128,36 +157,40 @@
         opacity: 0;
         -webkit-transform: translateY(400px);
     }
-    50%{
-       opacity: 0.3;
+    50% {
+        opacity: 0.3;
     }
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
     }
 }
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(400px);
     }
-    50%{
-       opacity: 0.3;
+    50% {
+        opacity: 0.3;
     }
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
-.fadeInUp{
+
+.fadeInUp {
     opacity: 0;
     -webkit-transform: translateY(400px);
     transform: translateY(400px);
 }
+
 .fadeInUp.go {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
 }
+
 
 /**********
 * flipInX *
@@ -179,6 +212,7 @@
         opacity: 1;
     }
 }
+
 @keyframes flipInX {
     0% {
         transform: perspective(400px) rotateX(90deg);
@@ -195,6 +229,7 @@
         opacity: 1;
     }
 }
+
 .flipInX.go {
     -webkit-backface-visibility: visible !important;
     -webkit-animation-name: flipInX;
