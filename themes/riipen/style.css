@@ -1213,10 +1213,6 @@ object {
     .desktop-only {
       display: block; } }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 .site-footer {
   background: #333333;
   height: 226px;
