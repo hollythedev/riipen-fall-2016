@@ -50,6 +50,8 @@
 }
 
 .sep-course-content1 {
+  display: flex;
+  justify-content: center;
     @include desktop {
         margin-top: 56px;
     }
