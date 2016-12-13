@@ -2230,6 +2230,12 @@ object {
         background-color: white;
         color: #4cc88d; }
 
+.search-results article {
+  display: none; }
+
+.search-results br {
+  display: none; }
+
 .search-results .entry-title {
   font-size: 1.5rem; }
 
@@ -2286,3 +2292,15 @@ object {
   font-size: 1em;
   text-align: center;
   font-weight: bold; }
+
+.search-pagination a {
+  background: #2c8ddc;
+  padding: 10px;
+  border: 1px solid black; }
+  .search-pagination a:hover {
+    background: #f68708;
+    color: white; }
+
+.search-pagination span {
+  background: #aaaaaa;
+  padding: 10px; }
