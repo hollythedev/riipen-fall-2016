@@ -27,7 +27,7 @@ get_header(); ?>
 				<div class="grey-boxes"></div> 
 			</a>
 		</div>
-		<div class="riipen-list organizationgrid animated bounceInRight">
+		<div class="riipen-list organizationgrid animated fadeInUp">
 			<?php if ( have_posts() ) : ?>
 				<div class="company-wrapper">
 				<?php /* Start the Loop */ ?>

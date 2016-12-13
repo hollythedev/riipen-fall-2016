@@ -1,7 +1,8 @@
-.each-result{
-	width: 30%;
-}
+
 .search-results{
+	.entry-title{
+		font-size: 1.5rem;
+	}
 	.results-wrapper{
 		display: flex;
 		flex-wrap: wrap;
@@ -12,11 +13,13 @@
 	}
 	.has-post-thumbnail {
 		display: block;
-		width: 21%;
-		margin: 10px auto;
+		width: 50%;
+		box-sizing: border-box;
+		padding: 10px;
+		margin: 0;
 
 		@include desktop{
-			width: 19%;
+			width: 25%;
 		}
 
 		box-sizing: border-box;

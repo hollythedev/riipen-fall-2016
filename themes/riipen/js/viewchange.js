@@ -2,22 +2,18 @@
 (function($){
 setTimeout(removeanimation,1000);
 $('.list-view').on('click', function(){
-	$( ".riipen-list" ).removeClass( "organizationgrid bounceInRight" ).addClass( "organizationlist bounceInRight")
+	$( ".riipen-list" ).removeClass( "organizationgrid fadeInUp" ).addClass( "organizationlist fadeInUp")
 		
 		setTimeout(removeanimation,1000);
 
 })
 $('.grid-view').on('click', function(){
-	$( ".riipen-list" ).removeClass( "organizationlist bounceInRight" ).addClass( "organizationgrid bounceInRight" )
-	console.log("hope")
+	$( ".riipen-list" ).removeClass( "organizationlist fadeInUp" ).addClass( "organizationgrid fadeInUp" )
+	
 		setTimeout(removeanimation,1000);
 })
-function removeanimation() {
-    alert("plop");
-}
-
 function removeanimation(){
-	$( ".riipen-list" ).removeClass( "bounceInRight" );
-	console.log("hope")
+	$( ".riipen-list" ).removeClass( "fadeInUp" );
+
 }
 })(jQuery);
