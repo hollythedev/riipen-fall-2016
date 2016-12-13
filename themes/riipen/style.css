@@ -477,7 +477,7 @@ a {
     position: absolute;
     top: 100%;
     left: 0;
-    background: white;
+    background: #f7f7f7;
     width: 100vw;
     list-style: none;
     margin: 0;
@@ -1036,8 +1036,7 @@ a {
   display: flex;
   -ms-flex-align: end;
       align-items: flex-end;
-  max-width: 100%;
-  position: relative; }
+  max-width: 100%; }
   @media (min-width: 750px) {
     .talent-section-1 {
       height: 400px; } }
@@ -2251,6 +2250,12 @@ object {
         background-color: white;
         color: #4cc88d; }
 
+.search-results article {
+  display: none; }
+
+.search-results br {
+  display: none; }
+
 .search-results .entry-title {
   font-size: 1.5rem; }
 
@@ -2307,3 +2312,15 @@ object {
   font-size: 1em;
   text-align: center;
   font-weight: bold; }
+
+.search-pagination a {
+  background: #2c8ddc;
+  padding: 10px;
+  border: 1px solid black; }
+  .search-pagination a:hover {
+    background: #f68708;
+    color: white; }
+
+.search-pagination span {
+  background: #aaaaaa;
+  padding: 10px; }
