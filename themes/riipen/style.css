@@ -1791,11 +1791,13 @@ object {
     margin: auto; }
 
 .post-type-archive-institutions .site-main .riipen-list, .post-type-archive-educator .site-main .riipen-list {
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  margin: 0 auto; }
+  @media (min-width: 750px) {
+    .post-type-archive-institutions .site-main .riipen-list, .post-type-archive-educator .site-main .riipen-list {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   .post-type-archive-institutions .site-main .riipen-list h2, .post-type-archive-educator .site-main .riipen-list h2 {
     text-align: center; }
   .post-type-archive-institutions .site-main .riipen-list a img, .post-type-archive-educator .site-main .riipen-list a img {
@@ -1803,12 +1805,12 @@ object {
     width: 100%;
     height: 100%; }
 
-.post-type-archive-institutions .riipen-list .person-wrapper {
+.post-type-archive-institutions .person-wrapper {
   padding: 20px;
   width: 50%;
   box-sizing: border-box; }
   @media (min-width: 750px) {
-    .post-type-archive-institutions .riipen-list .person-wrapper {
+    .post-type-archive-institutions .person-wrapper {
       width: 20%; } }
 
 .post-type-archive-educator .hero-banner {
@@ -1853,9 +1855,22 @@ object {
       background-color: #4cc88d; }
 
 .post-type-archive-educator .person-wrapper {
-  width: 33.333%;
   box-sizing: border-box;
-  padding: 30px; }
+  padding: 30px;
+  margin: 30px auto; }
+  @media (min-width: 750px) {
+    .post-type-archive-educator .person-wrapper {
+      width: 33.333%; } }
+
+.post-type-archive-educator .company-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 750px) {
+    .post-type-archive-educator .company-wrapper {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
 
 .post-type-archive-organizations {
   background: #f7f7f7; }
