@@ -799,7 +799,7 @@ a {
     text-transform: uppercase;
     margin: 0; }
   .sep-classes .sep-course-title {
-    color: lightblue;
+    color: #27aefb;
     font-size: 1rem;
     margin-top: 50px; }
   .sep-classes .sep-course-info {
@@ -809,7 +809,7 @@ a {
   height: 200px;
   width: 70%;
   position: absolute;
-  border: 2px solid orange;
+  border: 2px solid #f68708;
   left: 15%;
   margin-top: 20px; }
   @media (min-width: 750px) {
@@ -835,14 +835,14 @@ a {
       justify-content: center; }
   @media (min-width: 750px) {
     .sep-course-content1 {
-      margin-top: 56px; } }
+      margin-top: 65px; } }
 
 .sep-course-content2 {
   font: 1rem "Open Sans", sans-serif; }
   @media (min-width: 750px) {
     .sep-course-content2 {
       margin: auto;
-      width: 15%; } }
+      width: 20%; } }
   .sep-course-content2 h2 {
     margin: 0;
     color: royalblue;
@@ -2059,18 +2059,18 @@ object {
     border: 1.5px #4cc88d solid;
     box-sizing: border-box;
     border-radius: 10px;
-    background: white; }
+    background: #fff; }
     .single-organizations .tabbing-section .leftsection {
       border-bottom-left-radius: 10px;
       border-top-left-radius: 10px;
-      background: white; }
+      background: #fff; }
     .single-organizations .tabbing-section .rightsection {
       background: #4cc88d;
       border-radius: 9px; }
     .single-organizations .tabbing-section .inactive {
       color: #4cc88d; }
     .single-organizations .tabbing-section .active {
-      color: white;
+      color: #fff;
       margin: auto; }
       .single-organizations .tabbing-section .active:hover {
         color: #404040; }
@@ -2155,7 +2155,8 @@ object {
       outline: none;
       background: #87dab2;
       text-decoration: none; }
-  .single-organizations li.active a, .single-organizations li.active a:hover {
+  .single-organizations li.active a,
+  .single-organizations li.active a:hover {
     border: 1.5px solid grey;
     border-bottom: 0px;
     background: #fff;
@@ -2174,7 +2175,7 @@ object {
     display: block; }
 
 .single-institutions .sep-picture-container1 {
-  border: 2px solid orange;
+  border: 2px solid #f68708;
   position: absolute;
   height: 263px;
   width: 95%;
@@ -2355,7 +2356,7 @@ object {
   border: 1px solid black; }
   .search-pagination a:hover {
     background: #f68708;
-    color: white; }
+    color: #fff; }
 
 .search-pagination span {
   background: #aaaaaa;

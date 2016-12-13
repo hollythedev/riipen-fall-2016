@@ -1,16 +1,14 @@
-
-
-.search-pagination{
-	a{
+.search-pagination {
+	a {
 		background: $color_dark-sky-blue;
 		padding: 10px;
-		border: 1px solid black;
-		&:hover{
-			background: rgb(246, 135, 8);
-			color: white;
+		border: 1px solid $color__text-main;
+		&:hover {
+			background: $color_pumpkin-orange;
+			color: $color__background-body;
 		}
 	}
-	span{
+	span {
 		background: $color_greyish;
 		padding: 10px;
 	}
