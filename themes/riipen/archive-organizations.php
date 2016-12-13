@@ -8,18 +8,18 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
+	<button onclick="history.go(-1);" class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</button>
 	<main id="main" class="site-main animatedParent" role="main">
-	<div class="hero-banner">
-	<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
-	</div class="container">
-			<h2 class="uppercase org-header desktop-only"> Companies we are working with </h2>
+		<div class="hero-banner">
+			<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
+		</div class="container">
+		<h2 class="uppercase org-header desktop-only"> Companies we are working with </h2>
 		<div class="view-type-buttons">
 			<a class="list-view psudeo-button" > 
 				<div class="psudeo-button"> 
 					<img src=" <?php echo get_template_directory_uri() ?>/images/btsMobileListgallery.png"> 
-					</div>
-					</a>
+				</div>
+			</a>
 			<a class="grid-view psudeo-button"> 
 				<div class="grey-boxes"></div>
 				<div class="grey-boxes"></div>
@@ -27,13 +27,9 @@ get_header(); ?>
 				<div class="grey-boxes"></div> 
 			</a>
 		</div>
-		<div class="riipen-list organizationgrid animated bounceInRight">
+		<div class="riipen-list organizationgrid animated fadeInUp">
 			<?php if ( have_posts() ) : ?>
-
-				<header class="page-header">
-
-				</header><!-- .page-header -->
-				
+				<div class="company-wrapper">
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<div class="person-wrapper ">
@@ -56,16 +52,17 @@ get_header(); ?>
 						</div>
 					</div>
 				<?php endwhile; ?>
+				</div>
+				<div class="class_nav">
+				<?php posts_nav_link( " ", "Previous", "More" ); ?> 
+			</div>
+		<?php else : ?>
 
-				<?php the_posts_navigation(); ?>
+			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
-		</div>
-	</main><!-- #main -->
+		<?php endif; ?>
+	</div>
+</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php get_footer(); ?>

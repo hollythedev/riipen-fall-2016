@@ -24,11 +24,10 @@ get_header(); ?>
 			</section>
 
 			<section class="riipen-list">
+
 				<?php if ( have_posts() ) : ?>
-
-					<header class="page-header">
-
-					</header><!-- .page-header -->
+				<div class="company-wrapper">
+			
 
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -41,8 +40,10 @@ get_header(); ?>
 						</div>
 					<?php endwhile; ?>
 
-					<?php the_posts_navigation(); ?>
-
+					<div class="class_nav">
+					<?php posts_nav_link( " ", "Previous", "More" ); ?> 
+					</div>
+				</div>
 				<?php else : ?>
 
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>

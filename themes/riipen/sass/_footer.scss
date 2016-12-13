@@ -14,6 +14,11 @@
             max-width: 279px;
             display: flex;
             justify-content: space-around;
+            p{
+                @include desktop{
+                    margin: 0
+                }
+            }
             a {
                 color: #333;
                 height: 50px;
@@ -34,6 +39,7 @@
                     background-color: transparent;
                     color: #fff;
                 }
+
             }
             @include desktop {
                 margin: auto;
@@ -55,7 +61,7 @@
             @include desktop {
                 display: flex;
                 justify-content: space-around;
-                padding: 1em;
+                padding: 2em;
                 width: 100%;
             }
         }
@@ -77,6 +83,7 @@
             @include desktop{
                 font-size: 1rem;
                 max-width: 400px;
+                padding: 0;
                 margin: auto;
             }
         }

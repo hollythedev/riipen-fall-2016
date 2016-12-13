@@ -23,6 +23,7 @@ add_filter( 'body_class', 'riipen_body_classes' );
 
 //Changes login logo of site
 function my_custom_login_logo() { ?>
+
 	<style type="text/css">
 		#login h1 a,
 		.login h1 a {
@@ -35,6 +36,7 @@ function my_custom_login_logo() { ?>
 		}
 	</style>
 	<?php }
+
 add_action( 'login_enqueue_scripts', 'my_custom_login_logo' );
 
 function my_login_logo_url() {
@@ -117,4 +119,6 @@ add_action('admin_menu','remove_default_post_type');
 
 function remove_default_post_type() {
 	remove_menu_page('edit.php');
+
 }
+

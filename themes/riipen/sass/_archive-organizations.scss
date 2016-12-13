@@ -14,12 +14,10 @@
 		background-size: cover;
 		@include desktop{
 			display: flex;
-		}
-
-
+		}	
 	}
-	.banner-text{
-		
+
+	.banner-text{	
 		color: white;
 		font-weight: bold;
 		font-size: 36px;
@@ -78,6 +76,8 @@
  		transition: all 1s ease;
  		width: 90%;
  		margin: 0 auto;
+ 		display: flex;
+ 		// justify-content: center;
  	}
  	.riipen-list.organizationgrid{
 
@@ -85,12 +85,16 @@
  		flex-wrap: wrap;
  		padding-bottom: 140px;
  		.person-wrapper{
- 			width: 30%;
+ 			width: 50%;
+ 			padding: 20px;
+ 				box-sizing:border-box;
+ 			// margin: 30px 2%;
  			@include desktop{
- 				width: 22%;
- 				
+ 				width: 20%;
+ 				padding: 20px;
+ 				box-sizing:border-box;
  			}
- 			margin: 30px 1%;
+ 			
  			box-sizing: border-box;
  			.entry-title{
  				display: none;
@@ -103,6 +107,7 @@
  			text-align: center;
  		}
  		a{
+ 			
  			img{
  				box-shadow: 4px 10px 50px 1px rgba(166,166,166,1);
  				width: 100%;
@@ -135,11 +140,11 @@
  			a{
  				height: 150px;
  				margin: auto 0;
- 				padding-left: 5px;
+ 				padding-left: 23px;
  				display: flex;
- 				width: 150px;
+ 				width: 180px;
  				img {
- 					margin: auto 0;
+ 					margin: 0;
  					max-width: 100%;
  					height: auto;
  					max-height: 100%;
@@ -148,9 +153,13 @@
  			.organization-content{
  				a{
  					width: auto;
- 					padding-left: 10px;
+ 					// padding-left: 10px;
  				}
  			}
  		}
  	}
+ }
+ .company-wrapper{
+ 	display: flex;
+ 		flex-wrap: wrap;
  }

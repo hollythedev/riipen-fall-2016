@@ -60,7 +60,6 @@
 }
 .single-institutions{
 	#wp_posts_carousel-4{
-
 		.owl-stage-outer{
 			*{
 				width: 100%;
@@ -79,9 +78,10 @@
 			background-blend-mode:luminosity;
 			&:hover{
 				background-blend-mode:normal;
+				.overley{
+					display: none;
+				}
 			}
 		}
 	}
-	
-
 }
