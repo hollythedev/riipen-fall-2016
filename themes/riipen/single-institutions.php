@@ -47,7 +47,7 @@ get_header(); ?>
 				<?php $gallery_images = CFS()->get('course_pictures');?>
 				<?php foreach ($gallery_images as $image): ?>
 				<div class="carousel-cell">
-					<div class="cell-wrapper" style="background-image:url(<?php echo $image[" image "]; ?>) ">
+					<div class="cell-wrapper" style="background-image:url(<?php echo $image["image"]; ?>) ">
 						<a href="<?php echo $image[" link_to_course "] ?>">
 							<div class="overley">
 								<p>

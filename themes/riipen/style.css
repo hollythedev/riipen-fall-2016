@@ -1856,7 +1856,8 @@ object {
   margin: 30px auto; }
   @media (min-width: 750px) {
     .post-type-archive-educator .person-wrapper {
-      width: 33.333%; } }
+      width: 33.333%;
+      margin: 0; } }
 
 .post-type-archive-educator .company-wrapper {
   display: -ms-flexbox;
