@@ -1788,7 +1788,7 @@ object {
 
 .post-type-archive-institutions .tabbing-section,
 .post-type-archive-educator .tabbing-section {
-  margin: 0px auto;
+  margin: 30px auto;
   display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: center;
