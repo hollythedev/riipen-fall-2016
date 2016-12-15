@@ -36,16 +36,7 @@ get_header(); ?>
 
 				</article>
 			<?php endwhile; // End of the loop. ?>
-			<div class="tabbing-wrapper">
-				<div class="tabbing-section">
-					<div class="leftsection">
-						<a class="inactive uppercase">Institutions</a>
-					</div>
-					<div class="rightsection">
-						<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
-					</div>	
-				</div>
-			</div>
+			
 			<?php 
 			$tab_one_name = CFS()->get( 'first_tab_name' );
 			$tab_two_name =CFS()->get( 'second_tab_name' );
