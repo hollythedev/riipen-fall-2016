@@ -132,7 +132,7 @@ add_action( 'wp_enqueue_scripts', 'riipen_scripts' );
 function register_my_menus() {
   register_nav_menus(
     array(
-      'journey-menu' => __( 'Journey Menu' )
+      'journey-menu' => __( 'Journey Menu', 'riipen' )
     )
   );
 }
