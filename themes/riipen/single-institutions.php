@@ -37,25 +37,30 @@ get_header(); ?>
 		<!-- #main -->
 	</div>
 	<!-- #primary -->
-	<!-- "'.$image["link_to_course"].'"/>' -->
 	<div class="carousel-section">
 		<div class="container">
 			<?php dynamic_sidebar( 'carousels2' ); ?>
-			<?php if(CFS()->get('course_pictures')): ?>
+			<?php if(empty(CFS()->get('course_pictures'))): ?>
 			<h2 class="course-header"> Past Course </h2>
 			<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 				<?php $gallery_images = CFS()->get('course_pictures');?>
+
 				<?php foreach ($gallery_images as $image): ?>
+					<?php if (empty($image)): ?>
+
 				<div class="carousel-cell">
 					<div class="cell-wrapper" style="background-image:url(<?php echo $image["image"]; ?>) ">
 						<a href="<?php echo $image["link_to_course"]; ?>">
+						<?php if ($image['text_inside_carousel'] == true): ?>
 							<div class="overley">
 								<p>
 									<?php echo $image['text_inside_carousel'] ?> </p>
 							</div>
+						<? endif; ?>
 						</a>
 					</div>
 				</div>
+			<?php endif; ?>
 				<?php endforeach; ?>
 			</div>
 			<?php endif; ?>
