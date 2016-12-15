@@ -13,15 +13,7 @@ get_header(); ?>
 		<div class="hero-banner">
 			<h1 class="uppercase banner-text">Where <span class="highlight-orange">talent</span> and <span class="highlight-orange">industry</span> meet</h1>
 		</div>
-			<section  class="tabbing-wrapper">
-				<div class="tabbing-section">
-
-					<a class="inactive uppercase">Institutions</a>
-
-					<a class="active uppercase" href="<?php echo get_post_type_archive_link( 'educator' ); ?>">Educators</a>
-
-				</div>
-			</section>
+		
 
 			<section class="riipen-list">
 
