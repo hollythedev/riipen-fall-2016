@@ -811,7 +811,6 @@ a {
 .sep-picture-container {
   height: 200px;
   width: 70%;
-  position: absolute;
   border: 2px solid #f68708;
   left: 15%;
   margin-top: 20px; }
@@ -820,16 +819,16 @@ a {
       height: 290px;
       width: 22%;
       left: 39%;
-      margin-top: -18px; } }
-
-.sep-picture {
-  position: relative; }
-  .sep-picture img {
+      margin: auto; } }
+  .sep-picture-container .sep-picture img {
     display: block;
     margin: auto;
     height: 250px;
     width: 174px;
     object-fit: cover; }
+    @media (min-width: 750px) {
+      .sep-picture-container .sep-picture img {
+        margin-top: 17px; } }
 
 .sep-course-content1 {
   display: -ms-flexbox;
@@ -1213,10 +1212,6 @@ object {
     .desktop-only {
       display: block; } }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
 .site-footer {
   background: #333333;
   height: 226px;
