@@ -1,6 +1,6 @@
 #A Custom Wordpress Theme For Riipen
 
-![alt tag](https://i.gyazo.com/f9685e9393245334a78a95b9741e9c48.png)
+![Screenshot](http://i.imgur.com/R03SYeP.jpg)
 
 Created by [Holly Cheng](https://github.com/dumplinghub), [Jonathan Funk](https://github.com/jonathanfunk)and [Ringo Ng](https://github.com/ringong95).
 
